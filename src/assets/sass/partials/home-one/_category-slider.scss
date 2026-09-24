@@ -1,0 +1,61 @@
+/* category slider section start */
+.category-slider {
+  &__track {
+    width: max-content;
+    // first pill starts partly off-screen, as in the design
+    margin-inline-start: -44px;
+    animation: categoryMarquee 40s linear infinite;
+  }
+
+  &__list {
+    gap: 13px;
+    padding-inline-end: 13px;
+  }
+
+  &:hover {
+    .category-slider__track {
+      animation-play-state: paused;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__track {
+      animation: none;
+    }
+  }
+}
+
+.category-pill {
+  &--green {
+    background-color: #e9f8e9;
+  }
+
+  &--gray {
+    background-color: #eeeeee;
+  }
+}
+
+@keyframes categoryMarquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes categoryMarqueeRtl {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(50%);
+  }
+}
+
+[dir="rtl"] .category-slider__track {
+  animation-name: categoryMarqueeRtl;
+}
+/* category slider section end */

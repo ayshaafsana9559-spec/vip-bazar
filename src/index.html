@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="EduAll, Social Media, and Digital Marketing Agency HTML Template. Fully responsive, creative design, and easy to customize. Ideal for EduAll agencies, marketing firms, and startups.">
+  <meta name="keywords"
+    content="EduAll HTML Template, Digital Marketing, Social Media Agency, Marketing Template, Advertising Agency, Creative Agency, Bootstrap, Responsive">
+  <meta name="robots" content="INDEX,FOLLOW">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>EduAll HTML Template</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo/favicon.png" type="image/png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!--==================== Preloader End ====================-->
+
+  <!-- ========================== Settings Panel start ==================================== -->
+<div class="settings-panel position-fixed top-50 translate-middle-y tw-z-999 d-flex align-items-center">
+  <button type="button"
+    class="settings-button tw-w-12 tw-h-12 bg-main-600 text-white hover-bg-main-800 tw-duration-100 d-flex justify-content-center align-items-center">
+    <i class="ph-fill ph-gear-six setting-icon tw-text-2xl tw-leading-none animation-rotate tw-w-6 tw-h-6"></i>
+    <i class="ph-bold ph-x close-icon tw-text-2xl tw-leading-none tw-w-6 tw-h-6"></i>
+  </button>
+
+  <div class="settings-panel__content bg-white tw-px-6 tw-py-13 d-flex flex-column tw-gap-10 scroll-sm overflow-y-auto">
+    <div class="d-flex flex-column tw-gap-10">
+      <div class="">
+        <h6 class="settings-panel__title text-center tw-mb-6 text-uppercase">
+          Cursor
+        </h6>
+        <div class="settings-panel__buttons cursor__buttons d-flex tw-gap-4">
+          <button type="button"
+            class="settings-panel__button cursor-animate bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active">
+            Animate
+          </button>
+          <button type="button"
+            class="settings-panel__button cursor-default bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1">
+            Default
+          </button>
+        </div>
+      </div>
+      <div class="">
+        <h6 class="settings-panel__title text-center tw-mb-6 text-uppercase">
+          Direction
+        </h6>
+        <div class="settings-panel__buttons d-flex tw-gap-4">
+          <button type="button"
+            class="settings-panel__button direction-ltr bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active">
+            LTR
+          </button>
+          <button type="button"
+            class="settings-panel__button direction-rtl bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1">
+            RTL
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ========================== Settings Panel end ==================================== -->
+
+  <!--==================== Overlay Start ====================-->
+  <div class="overlay"></div>
+  <!--==================== Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="side-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!-- Custom Toast Message start -->
+  <div id="toast-container"></div>
+  <!-- Custom Toast Message End -->
+
+  <!-- ==================== Scroll to Top End Here ==================== -->
+  <div class="progress-wrap cursor-big">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- ==================== Scroll to Top End Here ==================== -->
+
+  <!-- Custom Cursor Start -->
+  <div class="cursor"></div>
+  <span class="dot"></span>
+  <!-- Custom Cursor End -->
+
+  <!-- ==================== Mobile Menu Start Here ==================== -->
+<div class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ">
+
+    <button type="button" class="close-button position-absolute tw-end-0 top-0 tw-me-2 tw-mt-2 tw-w-605 tw-h-605 rounded-circle d-flex justify-content-center align-items-center text-neutral-900 bg-neutral-200 hover-bg-neutral-900 hover-text-white"> 
+        <i class="ph ph-x"></i>
+    </button>
+
+    <div class="mobile-menu__inner">
+        <a href="index.html" class="mobile-menu__logo">
+            <img src="assets/images/logo/logo.png" alt="Logo">
+        </a>
+        <div class="mobile-menu__menu">
+            <!-- Nav menu Start -->
+<ul class="nav-menu d-lg-flex align-items-center nav-menu--mobile d-block tw-mt-8">
+  <li class="nav-menu__item activePage">
+    <a href="index.html" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100">Home</a>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Browsed Products</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Recently Viewed</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Best Sellers</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          New Arrivals</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Pages</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          About Us</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="register.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Register</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          FAQ</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Shops</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Shop Grid</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Product Details</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Cart</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100">Contact Us</a>
+  </li>
+</ul>
+<!-- Nav menu End  -->
+
+        </div>
+    </div>
+</div>
+<!-- ==================== Mobile Menu End Here ==================== -->
+
+    <!-- ============================ Top header Start ============================ -->
+<div class="top-header bg-white">
+    <div class="container container-two">
+        <div class="top-header__inner d-flex align-items-center justify-content-between tw-gap-6">
+            <div class="d-flex align-items-center tw-gap-505">
+                <a href="tel:2085550112" class="top-header__link d-flex align-items-center tw-gap-2 text-heading hover-text-main-600">
+                    <i class="ph ph-phone-call tw-text-base tw-leading-none"></i>
+                    (208) 555-0112
+                </a>
+                <a href="mailto:demo@gmail.com" class="top-header__link d-md-flex d-none align-items-center tw-gap-2 text-heading hover-text-main-600">
+                    <i class="ph ph-envelope-open tw-text-base tw-leading-none"></i>
+                    demo@gmail.com
+                </a>
+            </div>
+
+            <a href="javascript:void(0)" class="top-header__link d-xl-flex d-none align-items-center tw-gap-305 text-heading hover-text-main-600">
+                Free delivery &amp; 40% Discount for next 3 orders!
+                <i class="ph ph-arrow-up-right tw-text-base tw-leading-none"></i>
+            </a>
+
+            <div class="d-flex align-items-center tw-gap-5">
+                <a href="javascript:void(0)" class="top-header__link d-sm-flex d-none align-items-center tw-gap-2 text-heading hover-text-main-600">
+                    <i class="ph ph-truck tw-text-lg tw-leading-none"></i>
+                    Tracking Orders
+                </a>
+                <span class="top-header__divider d-sm-block d-none"></span>
+                <div class="dropdown">
+                    <button type="button" class="top-header__link d-flex align-items-center tw-gap-105 text-heading hover-text-main-600" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/icons/flag-uk.png" alt="English" class="tw-w-505 tw-h-505 rounded-circle">
+                        EN
+                        <i class="ph ph-caret-down tw-text-sm tw-leading-none"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end tw-text-sm">
+                        <li><a class="dropdown-item" href="javascript:void(0)">English</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)">বাংলা</a></li>
+                    </ul>
+                </div>
+                <span class="top-header__divider"></span>
+                <div class="dropdown">
+                    <button type="button" class="top-header__link d-flex align-items-center tw-gap-105 text-heading hover-text-main-600" data-bs-toggle="dropdown" aria-expanded="false">
+                        USD
+                        <i class="ph ph-caret-down tw-text-sm tw-leading-none"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end tw-text-sm">
+                        <li><a class="dropdown-item" href="javascript:void(0)">USD</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)">BDT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================ Top header End ============================ -->
+
+
+    <!-- ==================== Header Start Here ==================== -->
+<header class="header tw-transition-all tw-z-99">
+  <!-- Header Middle Start -->
+  <div class="header-middle bg-slate-50">
+    <div class="container container-two">
+      <div class="header-middle__inner d-flex align-items-center tw-gap-6">
+        <!-- Logo Start -->
+        <div class="logo flex-shrink-0">
+          <a href="index.html" class="link d-flex">
+            <img src="assets/images/logo/logo.png" alt="eCommex">
+          </a>
+        </div>
+        <!-- Logo End  -->
+
+        <!-- Search Start -->
+        <form action="#" class="header-search max-w-806-px w-100 bg-white border border-slate-100 rounded-pill d-lg-flex d-none align-items-center">
+          <div class="dropdown flex-shrink-0">
+            <button type="button" class="d-flex align-items-center tw-gap-2 text-slate-800 tw-text-sm hover-text-main-600" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+              <i class="ph ph-caret-down tw-text-sm tw-leading-none"></i>
+            </button>
+            <ul class="dropdown-menu tw-text-sm">
+              <li><a class="dropdown-item" href="javascript:void(0)">Electronics</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Fashion</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Accessories</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Footwear</a></li>
+            </ul>
+          </div>
+          <span class="header-search__divider flex-shrink-0"></span>
+          <input type="text" class="header-search__input flex-grow-1 bg-transparent border-0 focus-outline-0 text-slate-800 tw-text-sm" placeholder="Search hare...">
+          <button type="submit" class="btn btn-main-two hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center rounded-pill flex-shrink-0 tw-h-705 tw-px-405 py-0 font-heading fw-semibold tw-text-13-px" data-block="button">
+            <span class="button__flair"></span>
+            <span class="button__label">Search</span>
+          </button>
+        </form>
+        <!-- Search End -->
+
+        <!-- Header Right Start -->
+        <div class="d-flex align-items-center tw-gap-205 flex-shrink-0 ms-auto">
+          <div class="header-actions d-flex align-items-center">
+            <button type="button" class="header-action tw-w-11 tw-h-11 bg-white border border-slate-100 rounded-circle d-flex justify-content-center align-items-center text-heading tw-text-xl position-relative hover-bg-main-600 hover-text-white" aria-label="Search">
+              <i class="ph ph-magnifying-glass"></i>
+            </button>
+            <a href="javascript:void(0)" class="header-action tw-w-11 tw-h-11 bg-white border border-slate-100 rounded-circle d-flex justify-content-center align-items-center text-heading tw-text-xl position-relative hover-bg-main-600 hover-text-white" aria-label="Wishlist">
+              <i class="ph ph-heart"></i>
+              <span class="header-action__badge tw-w-6 tw-h-6 rounded-circle bg-green-600 text-white d-flex justify-content-center align-items-center position-absolute font-heading fw-semibold tw-text-sm">5</span>
+            </a>
+            <a href="javascript:void(0)" class="header-action tw-w-11 tw-h-11 bg-white border border-slate-100 rounded-circle d-flex justify-content-center align-items-center text-heading tw-text-xl position-relative hover-bg-main-600 hover-text-white" aria-label="Cart">
+              <i class="ph ph-shopping-cart-simple"></i>
+              <span class="header-action__badge tw-w-6 tw-h-6 rounded-circle bg-orange-600 text-white d-flex justify-content-center align-items-center position-absolute font-heading fw-semibold tw-text-sm">1</span>
+            </a>
+          </div>
+          <a href="register.html" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-sm-inline-flex d-none align-items-center justify-content-center tw-gap-105 rounded-pill tw-h-11 tw-px-7 py-0 font-heading fw-semibold tw-text-13-px" data-block="button">
+            <span class="button__flair"></span>
+            <span class="button__label">Register</span>
+            <i class="ph ph-arrow-up-right tw-text-base position-relative"></i>
+          </a>
+          <button type="button" class="toggle-mobileMenu d-lg-none tw-leading-none text-heading tw-text-9 tw-ms-2" aria-label="Open menu">
+            <i class="ph ph-list"></i>
+          </button>
+        </div>
+        <!-- Header Right End -->
+      </div>
+    </div>
+  </div>
+  <!-- Header Middle End -->
+
+  <!-- Header Nav Start -->
+  <div class="header-nav bg-white border-bottom border-slate-100 d-lg-block d-none">
+    <div class="container container-two">
+      <div class="header-nav__inner d-flex align-items-center justify-content-between tw-gap-6">
+        <div class="d-flex align-items-center h-100">
+          <div class="dropdown h-100">
+            <button type="button" class="header-nav__categories h-100 d-flex align-items-center tw-gap-105 tw-px-6 border-start border-end border-slate-100 text-heading tw-text-sm fw-medium hover-text-main-600" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="ph ph-squares-four tw-text-lg tw-leading-none"></i>
+              Categories
+              <i class="ph ph-caret-down tw-text-sm tw-leading-none"></i>
+            </button>
+            <ul class="dropdown-menu tw-text-sm">
+              <li><a class="dropdown-item" href="javascript:void(0)">Electronics</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Fashion</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Accessories</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Footwear</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Industrial</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Kitchen</a></li>
+            </ul>
+          </div>
+          <div class="header-menu tw-ps-6">
+            <!-- Nav menu Start -->
+<ul class="nav-menu d-lg-flex align-items-center tw-gap-5">
+  <li class="nav-menu__item activePage">
+    <a href="index.html" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100">Home</a>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Browsed Products</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Recently Viewed</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Best Sellers</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          New Arrivals</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Pages</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          About Us</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="register.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Register</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          FAQ</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Shops</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Shop Grid</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Product Details</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Cart</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100">Contact Us</a>
+  </li>
+</ul>
+<!-- Nav menu End  -->
+
+          </div>
+        </div>
+        <ul class="d-flex align-items-center tw-gap-505">
+          <li><a href="javascript:void(0)" class="text-slate-600 tw-text-sm hover-text-main-600">Refund Policy</a></li>
+          <li><a href="javascript:void(0)" class="text-slate-600 tw-text-sm hover-text-main-600">Support &amp; FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Header Nav End -->
+</header>
+<!-- ==================== Header End Here ==================== -->
+
+
+    <!-- ======================================== Category slider start =================================== -->
+<section class="category-slider tw-pt-5 overflow-hidden">
+    <div class="category-slider__track d-flex">
+        <ul class="category-slider__list d-flex flex-shrink-0">
+            <li>
+                <a href="javascript:void(0)" class="category-pill bg-main-50 d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <i class="ph-light ph-car-profile tw-text-9 tw-leading-none"></i>
+                    Automotive
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="category-pill bg-orange-50 d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/electronics.png" alt="" class="tw-w-9 tw-h-9">
+                    Electronics
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="category-pill category-pill--green d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/fashion.png" alt="" class="tw-w-9 tw-h-9">
+                    Fashion
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="category-pill category-pill--gray d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/accessories.png" alt="" class="tw-w-9 tw-h-9">
+                    Accessories
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="category-pill bg-orange-50 d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/footwear.png" alt="" class="tw-w-9 tw-h-9">
+                    Footwear
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="category-pill bg-main-50 d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/industrial.png" alt="" class="tw-w-9 tw-h-9">
+                    Industrial
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="category-pill category-pill--green d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/kitchen.png" alt="" class="tw-w-9 tw-h-9">
+                    Kitchen
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="category-pill category-pill--gray d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/beauty.png" alt="" class="tw-w-9 tw-h-9">
+                    Beauty
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="category-pill bg-orange-50 d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/healthcare.png" alt="" class="tw-w-9 tw-h-9">
+                    Healthcare
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="category-pill bg-main-50 d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/furniture.png" alt="" class="tw-w-9 tw-h-9">
+                    Furniture
+                </a>
+            </li>
+        </ul>
+        <!-- Duplicate list: lets the marquee loop seamlessly -->
+        <ul class="category-slider__list d-flex flex-shrink-0" aria-hidden="true">
+            <li>
+                <a href="javascript:void(0)" tabindex="-1" class="category-pill bg-main-50 d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <i class="ph-light ph-car-profile tw-text-9 tw-leading-none"></i>
+                    Automotive
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" tabindex="-1" class="category-pill bg-orange-50 d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/electronics.png" alt="" class="tw-w-9 tw-h-9">
+                    Electronics
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" tabindex="-1" class="category-pill category-pill--green d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/fashion.png" alt="" class="tw-w-9 tw-h-9">
+                    Fashion
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" tabindex="-1" class="category-pill category-pill--gray d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/accessories.png" alt="" class="tw-w-9 tw-h-9">
+                    Accessories
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" tabindex="-1" class="category-pill bg-orange-50 d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/footwear.png" alt="" class="tw-w-9 tw-h-9">
+                    Footwear
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" tabindex="-1" class="category-pill bg-main-50 d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/industrial.png" alt="" class="tw-w-9 tw-h-9">
+                    Industrial
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" tabindex="-1" class="category-pill category-pill--green d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/kitchen.png" alt="" class="tw-w-9 tw-h-9">
+                    Kitchen
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" tabindex="-1" class="category-pill category-pill--gray d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/beauty.png" alt="" class="tw-w-9 tw-h-9">
+                    Beauty
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" tabindex="-1" class="category-pill bg-orange-50 d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/healthcare.png" alt="" class="tw-w-9 tw-h-9">
+                    Healthcare
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" tabindex="-1" class="category-pill bg-main-50 d-flex align-items-center tw-gap-205 tw-h-14 tw-px-5 rounded-pill text-slate-800 tw-text-17-px fw-medium hover-text-main-600">
+                    <img src="assets/images/icons/category/furniture.png" alt="" class="tw-w-9 tw-h-9">
+                    Furniture
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- ======================================== Category slider end =================================== -->
+
+
+    <!-- ======================================== Banner section start =================================== -->
+<section class="banner tw-pt-5">
+    <div class="container container-two">
+        <div class="banner__grid">
+            <!-- Hero card Start -->
+            <div class="banner-card banner-card--hero tw-rounded-xl position-relative overflow-hidden d-flex flex-column justify-content-center tw-ps-17 tw-pe-6">
+                <div class="banner-card__content position-relative">
+                    <span class="banner-badge banner-badge--lg bg-white border border-main-100 text-main-600 rounded-pill d-inline-flex align-items-center tw-gap-105 tw-mb-2">
+                        <i class="ph ph-lightning tw-text-base tw-leading-none"></i>
+                        New Collection
+                    </span>
+                    <h1 class="banner-card__title fw-semibold tw-mb-5">Elevate Your <br><span class="text-main-600">Shopping</span> <br>Experience</h1>
+                    <p class="banner-card__desc text-slate-800 tw-text-xs tw-mb-7">Experience premium quality, modern design, and reliable performance for everyday use exceptional value.</p>
+                    <div class="d-flex align-items-baseline flex-wrap tw-gap-2 tw-mb-7">
+                        <span class="text-slate-600 tw-text-17-px">From</span>
+                        <span class="banner-card__price text-main-600 fw-extrabold tw-text-705">$79.00</span>
+                        <del class="text-slate-500 tw-text-17-px">$99.00</del>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-105 rounded-pill tw-h-11 tw-ps-605 tw-pe-7 py-0 font-heading fw-semibold tw-text-sm" data-block="button">
+                        <span class="button__flair"></span>
+                        <i class="ph ph-shopping-cart-simple tw-text-lg position-relative"></i>
+                        <span class="button__label">Add To Cart</span>
+                    </a>
+                </div>
+                <span class="banner-offer banner-offer--lg bg-main-600">35% <span class="banner-offer__sub">OFF</span></span>
+            </div>
+            <!-- Hero card End -->
+
+            <div class="banner__side d-flex flex-column tw-gap-5">
+                <!-- Headphones card Start -->
+                <div class="banner-card banner-card--headphones tw-rounded-xl position-relative overflow-hidden d-flex flex-column justify-content-center flex-grow-1 tw-ps-7 tw-pe-6">
+                    <div class="banner-card__content position-relative">
+                        <span class="banner-badge bg-white border border-purple-100 text-purple-600 rounded-pill d-inline-flex align-items-center tw-gap-1 tw-mb-105">
+                            <i class="ph ph-lightning tw-text-base tw-leading-none"></i>
+                            Weekend Special
+                        </span>
+                        <h2 class="banner-card__title banner-card__title--sm fw-semibold tw-mb-405">Wireless <br>Headphones</h2>
+                        <div class="d-flex align-items-baseline flex-wrap tw-gap-105 tw-mb-6">
+                            <span class="text-slate-600 tw-text-sm">From</span>
+                            <span class="banner-card__price text-purple-600 fw-extrabold tw-text-2xl">$79.00</span>
+                            <del class="text-slate-500 tw-text-sm">$99.00</del>
+                        </div>
+                        <a href="javascript:void(0)" class="btn btn-purple hover-style-one button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-105 rounded-pill tw-h-10 tw-ps-605 tw-pe-7 py-0 font-heading fw-semibold tw-text-sm" data-block="button">
+                            <span class="button__flair"></span>
+                            <i class="ph ph-shopping-cart-simple tw-text-lg position-relative"></i>
+                            <span class="button__label">Add To Cart</span>
+                        </a>
+                    </div>
+                    <span class="banner-offer banner-offer--sm bg-purple-600">25% <span class="banner-offer__sub">OFF</span></span>
+                </div>
+                <!-- Headphones card End -->
+
+                <!-- Watch card Start -->
+                <div class="banner-card banner-card--watch tw-rounded-xl position-relative overflow-hidden d-flex flex-column justify-content-center flex-grow-1 tw-ps-7 tw-pe-6">
+                    <div class="banner-card__content position-relative">
+                        <span class="banner-badge bg-white border border-green-100 text-green-600 rounded-pill d-inline-flex align-items-center tw-gap-1 tw-mb-105">
+                            <i class="ph ph-lightning tw-text-base tw-leading-none"></i>
+                            Today’s Deal
+                        </span>
+                        <h2 class="banner-card__title banner-card__title--sm fw-semibold tw-mb-405">Smart Watch <br>Collection</h2>
+                        <div class="d-flex align-items-baseline flex-wrap tw-gap-105 tw-mb-6">
+                            <span class="text-slate-600 tw-text-sm">From</span>
+                            <span class="banner-card__price text-green-600 fw-extrabold tw-text-2xl">$79.00</span>
+                            <del class="text-slate-500 tw-text-sm">$99.00</del>
+                        </div>
+                        <a href="javascript:void(0)" class="btn btn-green hover-style-one button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-105 rounded-pill tw-h-10 tw-ps-605 tw-pe-7 py-0 font-heading fw-semibold tw-text-sm" data-block="button">
+                            <span class="button__flair"></span>
+                            <i class="ph ph-shopping-cart-simple tw-text-lg position-relative"></i>
+                            <span class="button__label">Add To Cart</span>
+                        </a>
+                    </div>
+                    <span class="banner-offer banner-offer--md bg-green-600">New <span class="banner-offer__sub">Arrival</span></span>
+                </div>
+                <!-- Watch card End -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======================================== Banner section end =================================== -->
+
+
+    <div class="py-120"></div>
+    <div class="py-120"></div>
+
+
+
+
+    <!-- <div class="container my-5">
+        <div class="">
+            <a href="#" class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2" data-block="button">
+                <span class="button__flair"></span>
+                <span class="button__label">View services</span>
+                <span class="tw-w-7 tw-h-7 bg-white text-main-600 tw-text-sm tw-rounded d-flex justify-content-center align-items-center position-relative group-hover-bg-main-600 group-hover-text-white tw-duration-500">
+                    <i class="ph-bold ph-check"></i>
+                </span>
+            </a>
+        </div>
+        <div class="">
+            <h2 class="cursor-big splitTextStyleOne my-5 fw-semibold">This starter pack created by <br> Front End Developer Md. Robiul Hasan</h2>
+        </div>        
+
+        <div class="row justify-content-center tw-mb-10">
+            <div class="col-xl-7 pe-lg-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <div class="bg-neutral-100 py-60 tw-px-13">
+                    <h3 class="tw-mb-4 cursor-big">Fill Up The Form</h3>
+                    <p class="text-neutral-1000 max-w-444-px">Your email address will not be published. Required fields are marked *</p>
+                    <form action="#" class="tw-mt-14 d-flex flex-column tw-gap-15 form-submit">
+                        <div class="position-relative">
+                            <input type="text" class="focus-outline-0 bg-transparent border-0 tw-pb-5 tw-ps-9 w-100 border-bottom border-neutral-300 focus-border-main-600" placeholder="Your Name*" required="">
+                            <span class="tw-text-xl d-flex text-main-two-600 position-absolute top-0 tw-start-0">
+                                <i class="ph-bold ph-user"></i>
+                            </span>
+                        </div>
+                        <div class="position-relative">
+                            <input type="email" class="focus-outline-0 bg-transparent border-0 tw-pb-5 tw-ps-9 w-100 border-bottom border-neutral-300 focus-border-main-600" placeholder="Email Address*" required="">
+                            <span class="tw-text-xl d-flex text-main-two-600 position-absolute top-0 tw-start-0">
+                                <i class="ph-bold ph-envelope"></i>
+                            </span>
+                        </div>
+                        <div class="position-relative">
+                            <textarea class="focus-outline-0 bg-transparent border-0 tw-pb-5 tw-ps-9 w-100 border-bottom border-neutral-300 focus-border-main-600 tw-h-108-px" placeholder="Enter Your Message here"></textarea>
+                            <span class="tw-text-xl d-flex text-main-two-600 position-absolute top-0 tw-start-0">
+                                <i class="ph-bold ph-note-pencil"></i>
+                            </span>
+                        </div>
+                        <div class="">
+                            <button type="submit" class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 rounded-0" data-block="button">
+                                <span class="button__flair"></span>
+                                <span class="text-white tw-text-2xl group-hover-text-white tw-duration-500 position-relative">
+                                    <i class="ph-bold ph-paper-plane-tilt"></i>
+                                </span>
+                                <span class="button__label">Get In Touch</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xl-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                <div class="d-flex flex-column tw-gap-5">
+                    <div class="delete-item tw-p-4 tw-rounded-md bg-neutral-100 border-neutral-200 d-flex align-items-center justify-content-between">
+                        <h6 class="">Todo Item 1</h6>
+                        <button type="button" class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 delete-button" data-block="button">
+                            <span class="button__flair"></span>
+                            <span class="button__label">Delete</span>
+                        </button>
+                    </div>
+                    <div class="delete-item tw-p-4 tw-rounded-md bg-neutral-100 border-neutral-200 d-flex align-items-center justify-content-between">
+                        <h6 class="">Todo Item 2</h6>
+                        <button type="button" class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 delete-button" data-block="button">
+                            <span class="button__flair"></span>
+                            <span class="button__label">Delete</span>
+                        </button>
+                    </div>
+                    <div class="delete-item tw-p-4 tw-rounded-md bg-neutral-100 border-neutral-200 d-flex align-items-center justify-content-between">
+                        <h6 class="">Todo Item 3</h6>
+                        <button type="button" class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-5 group active--translate-y-2 delete-button" data-block="button">
+                            <span class="button__flair"></span>
+                            <span class="button__label">Delete</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ================================= Image Animation Start ================================== -->
+    <!-- <div class="about pb-120 tw-mt-10">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <figure class="hover-animation-white split-reveal position-relative overflow-hidden">
+                        <img src="https://html.awaikenthemes.com/artistic/freelancer/images/intro-video-bg.jpg" alt="Thumb" class="split-reveal-element tw-rounded-2xl w-100 h-100 object-fit-cover origin-left">
+                    </figure>
+                    <figure class="hover-animation-white split-reveal position-relative overflow-hidden">
+                        <img src="https://html.awaikenthemes.com/artistic/freelancer/images/about-img-3.jpg" alt="Thumb" class="split-reveal-element tw-rounded-2xl w-100 h-100 object-fit-cover origin-left">
+                    </figure>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <figure class="hover-animation-white split-reveal position-relative overflow-hidden h-100">
+                        <img src="https://html.awaikenthemes.com/artistic/images/why-choose-image.jpg" alt="Thumb" class="split-reveal-element tw-rounded-2xl w-100 h-100 object-fit-cover origin-left">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- ================================= Image Animation End ================================== -->
+
+    <!-- ==================== Footer Start Here ==================== -->
+<footer class="footer bg-neutral-900 position-relative z-1 mt-auto">
+  <div class="py-120">
+    <div class="container container-two">
+      <div class="row gy-5">
+        <div
+          class="col-lg-3 col-sm-6 col-xs-6 aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="400"
+        >
+          <div class="">
+            <h4 class="cursor-big fw-medium text--white tw-mb-8">Quick Link</h4>
+            <ul class="d-flex flex-column tw-gap-4">
+              <li>
+                <a
+                  href="about.html"
+                  class="text--white hover-text-white hover-underline"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="courses.html"
+                  class="text--white hover-text-white hover-underline"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a
+                  href="instructor.html"
+                  class="text--white hover-text-white hover-underline"
+                  >Instructor</a
+                >
+              </li>
+              <li>
+                <a
+                  href="faq.html"
+                  class="text--white hover-text-white hover-underline"
+                  >FAQs</a
+                >
+              </li>
+              <li class="mb-0">
+                <a
+                  href="blog.html"
+                  class="text--white hover-text-white hover-underline"
+                  >Blogs</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-sm-6 col-xs-6 aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
+          <div class="">
+            <h4 class="cursor-big fw-medium text--white tw-mb-8">Category</h4>
+            <ul class="d-flex flex-column tw-gap-4">
+              <li>
+                <a
+                  href="courses.html"
+                  class="text--white hover-text-white hover-underline"
+                  >UI/UX Design</a
+                >
+              </li>
+              <li>
+                <a
+                  href="courses.html"
+                  class="text--white hover-text-white hover-underline"
+                  >Web Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="courses.html"
+                  class="text--white hover-text-white hover-underline"
+                  >Python Development</a
+                >
+              </li>
+              <li>
+                <a
+                  href="courses.html"
+                  class="text--white hover-text-white hover-underline"
+                  >Digital Marketing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="courses.html"
+                  class="text--white hover-text-white hover-underline"
+                  >Graphic Design</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-sm-6 col-xs-6 aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+          <div class="">
+            <h4 class="cursor-big fw-medium text--white tw-mb-8">Contact Us</h4>
+            <div class="d-flex flex-column tw-gap-6">
+              <div class="d-flex align-items-center tw-gap-5">
+                <span class="d-flex tw-text-3xl text-main-600"
+                  ><i class="ph ph-phone"></i
+                ></span>
+                <div class="">
+                  <a href="tel:(207)555-0119" class="text--white d-block mb-1"
+                    >(207) 555-0119</a
+                  >
+                  <a href="tel:(704)555-0127" class="text--white d-block mb-0"
+                    >(704) 555-0127</a
+                  >
+                </div>
+              </div>
+              <div class="d-flex align-items-center tw-gap-5">
+                <span class="d-flex tw-text-3xl text-main-600"
+                  ><i class="ph ph-envelope-open"></i
+                ></span>
+                <div class="">
+                  <a
+                    href="mailto:dwallo@gmail.com"
+                    class="text--white d-block mb-1"
+                    >dwallo@gmail.com</a
+                  >
+                  <a
+                    href="mailto:eduAll@gmail.com"
+                    class="text--white d-block mb-0"
+                    >eduAll@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="d-flex align-items-center tw-gap-5 mb-0">
+                <span class="d-flex tw-text-3xl text-main-600"
+                  ><i class="ph ph-map-trifold"></i
+                ></span>
+                <div class="">
+                  <span class="text--white d-block mb-1">5488 srker Rd .</span>
+                  <span class="text--white d-block mb-0">8745 doer Dr.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-sm-6 col-xs-6 aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          <div class="">
+            <h4 class="cursor-big fw-medium text--white tw-mb-8">
+              Subscribe Here
+            </h4>
+            <p class="text--white">
+              Enter your email address to register to our newsletter
+              subscription
+            </p>
+            <form action="#" class="tw-mt-6 position-relative form-submit">
+              <input
+                type="email"
+                class="form-control bg-neutral-800 shadow-none border border-neutral-700 text--white rounded-pill tw-ps-6 tw-pe-13 focus-border-main-600 tw-h-12 text-white tw-placeholder-text-neutral-300 focus-tw-placeholder-text-hidden tw-placeholder-transition-2"
+                placeholder="Email..."
+                required
+              >
+
+              <button
+                type="submit"
+                class="tw-w-9 tw-h-9 flex-center rounded-circle bg-main-600 text--white hover-bg-main-800 position-absolute top-50 tw--translate-y-50 tw-end-0 tw-me-2 transition-all"
+              >
+                <i class="ph ph-paper-plane-tilt"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- bottom Footer -->
+    <div class="border-top border-dashed border-neutral-600 border-0 tw-py-8">
+      <div class="container container-two">
+        <div
+          class="d-flex align-items-center justify-content-between tw-gap-4 flex-wrap"
+        >
+          <div class="mb-0 aos-init">
+            <a href="index.html" class="">
+              <img src="assets/images/logo/logo-white.png" alt="Logo">
+            </a>
+          </div>
+          <p class="text--white text-line-1 fw-normal aos-init">
+            Copyright &copy; 2025
+            <a
+              href="index.html"
+              class="fw-semibold text-main-600 hover-underline hover-text-white"
+              >EduAll</a
+            >
+            All Rights Reserved.
+          </p>
+          <ul class="d-flex align-items-center tw-gap-6 aos-init">
+            <li>
+              <a href="https://www.facebook.com" class="text--white tw-text-2xl"
+                ><i class="ph-bold ph-facebook-logo"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" class="text--white tw-text-2xl">
+                <i class="ph-bold ph-twitter-logo"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com" class="text--white tw-text-2xl"
+                ><i class="ph-bold ph-instagram-logo"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.pinterest.com"
+                class="text--white tw-text-2xl"
+                ><i class="ph-bold ph-pinterest-logo"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ==================== Footer End Here ==================== -->
+
+
+    <!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- phosphor Js -->
+<script src="assets/js/phosphor-icon.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- aos -->
+<script src="assets/js/aos.js"></script>
+
+<!-- GSAP js -->
+<script src="assets/js/gsap.min.js"></script>
+<!-- SplitText -->
+<script src="assets/js/SplitText.min.js"></script>
+<!-- Scroll Trigger -->
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<!-- custom GSAP -->
+<script src="assets/js/custom-gsap.js"></script>
+
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+
+
+    </body>
+</html>

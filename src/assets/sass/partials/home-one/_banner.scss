@@ -1,0 +1,159 @@
+/* whole banner section start */
+.banner {
+  &__grid {
+    display: grid;
+    gap: 20px;
+
+    @media (min-width: 1400px) {
+      grid-template-columns: minmax(0, 1fr) 428px;
+    }
+  }
+
+  &__side {
+    @media (min-width: 992px) and (max-width: 1399px) {
+      flex-direction: row !important;
+
+      > * {
+        flex: 1 1 0;
+      }
+    }
+  }
+}
+
+/* The artwork (products, podiums, dots) is the card background, anchored top-right at its natural size
+   so the offer circles below always sit on the same spot of the image. Physical `right` on purpose:
+   the image does not mirror in RTL. */
+.banner-card {
+  --card-bg: #ecf1fd;
+  background-color: var(--card-bg);
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  &--hero {
+    min-height: 562px;
+    background-image: url(../images/thumbs/banner/hero-bg.png);
+
+    @media (max-width: 575px) {
+      padding-inline-start: 24px;
+    }
+  }
+
+  &--headphones {
+    --card-bg: #f0ebfd;
+    min-height: 271px;
+    background-image: url(../images/thumbs/banner/headphones-bg.png);
+  }
+
+  &--watch {
+    --card-bg: #e4f6f5;
+    min-height: 271px;
+    background-image: url(../images/thumbs/banner/watch-bg.png);
+  }
+
+  // keeps the copy readable once the card gets narrower than its artwork
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--card-bg) 35%, transparent 80%);
+    opacity: 0;
+    pointer-events: none;
+
+    @media (max-width: 575px) {
+      background: linear-gradient(90deg, var(--card-bg) 55%, transparent 100%);
+      opacity: 0.92;
+    }
+  }
+
+  &--hero::before {
+    @media (max-width: 991px) {
+      opacity: 0.9;
+    }
+  }
+
+  &__title {
+    font-size: clamp(2rem, 0.9rem + 2.8vw, 3rem);
+    line-height: 1.104;
+
+    &--sm {
+      font-size: clamp(1.625rem, 0.95rem + 1.35vw, 2.125rem);
+      line-height: 1.2;
+    }
+  }
+
+  &__desc {
+    max-width: 310px;
+    line-height: 1.5;
+  }
+
+  &__price {
+    line-height: 1;
+  }
+}
+
+.banner-badge {
+  height: 33px;
+  padding-inline: 8px;
+  font-family: var(--heading-font);
+  font-size: rem(14px);
+  font-weight: 600;
+  line-height: 1;
+
+  &--lg {
+    height: 38px;
+    padding-inline: 16px;
+  }
+}
+
+.banner-offer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: hsl(var(--white));
+  font-family: var(--heading-font);
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+
+  &--lg {
+    width: 85px;
+    height: 85px;
+    top: 30px;
+    right: 157px;
+    font-size: rem(24px);
+
+    .banner-offer__sub {
+      margin-block-start: 2px;
+      font-size: rem(16px);
+    }
+  }
+
+  &--sm {
+    width: 56px;
+    height: 56px;
+    top: 15px;
+    right: 32px;
+    font-size: rem(14px);
+
+    .banner-offer__sub {
+      margin-block-start: 1px;
+      font-size: rem(11px);
+    }
+  }
+
+  &--md {
+    width: 68px;
+    height: 68px;
+    top: 20px;
+    right: 36px;
+    font-size: rem(14px);
+  }
+
+  &__sub {
+    display: block;
+  }
+}
+/* whole banner section end */
