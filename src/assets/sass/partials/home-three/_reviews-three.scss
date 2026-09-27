@@ -1,0 +1,68 @@
+/* client reviews (photo review cards, 2 per view) start */
+.reviews-three {
+  padding-block: 3px 60px;
+
+  &__slider .snap-slider__track {
+    grid-auto-columns: 100%;
+
+    @media (min-width: 992px) {
+      grid-auto-columns: calc((100% - 20px) / 2);
+    }
+  }
+}
+
+// white review card with a photo on the left (review-card from home-two for the inner parts)
+.review-card--photo {
+  border-color: var(--slate-100);
+  background-color: hsl(var(--white));
+
+  .review-card__photo {
+    width: 237px;
+    min-height: 287px;
+  }
+
+  .review-card__top {
+    padding: 28px 27px 14px;
+  }
+
+  .review-card__stars {
+    gap: 3px;
+    margin-block: 0 20px;
+    font-size: rem(18px);
+  }
+
+  .review-card__quote {
+    max-width: 330px;
+    margin-block-start: 11px;
+  }
+
+  .review-card__bottom {
+    padding: 19px 27px 19px 26px;
+    border-top-color: var(--slate-100);
+  }
+
+  .review-card__product {
+    width: 54px;
+    height: 54px;
+    margin-inline-end: 16px;
+  }
+
+  .review-card__icon {
+    color: var(--main-600);
+    font-size: rem(62px);
+    margin-block: -4px;
+    margin-inline-end: -6px;
+  }
+
+  @media (max-width: 575px) {
+    flex-direction: column;
+
+    .review-card__photo {
+      width: 100%;
+      min-height: 0;
+      height: 240px;
+      object-position: center 15%;
+    }
+  }
+}
+/* client reviews (photo review cards, 2 per view) end */

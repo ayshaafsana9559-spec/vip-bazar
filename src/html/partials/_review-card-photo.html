@@ -1,0 +1,36 @@
+<!-- Review card with photo start -->
+<div class="review-card review-card--photo tw-rounded-xl overflow-hidden h-100 d-flex">
+    <img src="assets/images/thumbs/reviews/@@photo.png" alt="@@name" class="review-card__photo flex-shrink-0 object-fit-cover">
+    <div class="d-flex flex-column flex-grow-1">
+        <div class="review-card__top">
+            <div class="review-card__stars d-flex align-items-center text-yellow-600 tw-leading-none" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </div>
+            <div class="d-flex align-items-center flex-wrap tw-gap-2">
+                <h3 class="review-card__name fw-normal text-slate-800 mb-0">@@name</h3>
+                <span class="d-inline-flex align-items-center tw-gap-1 text-slate-600 tw-text-xs">
+                    <i class="ph-fill ph-seal-check text-green-600 tw-text-base tw-leading-none"></i>
+                    Verified Buyer
+                </span>
+            </div>
+            <p class="review-card__quote text-slate-600 mb-0">“@@quote”</p>
+        </div>
+        <div class="review-card__bottom d-flex align-items-center justify-content-between tw-gap-4 mt-auto">
+            <div class="d-flex align-items-center">
+                <span class="review-card__product d-flex align-items-center justify-content-center bg-white rounded-circle flex-shrink-0 overflow-hidden">
+                    <img src="assets/images/thumbs/reviews/@@image.png" alt="@@product" class="w-100 h-100 object-fit-contain">
+                </span>
+                <div>
+                    <span class="d-block text-slate-600 tw-text-xs">Item purchased: <span class="fw-bold text-slate-800">@@product</span></span>
+                    <span class="review-card__price d-block fw-extrabold text-slate-800">@@price</span>
+                </div>
+            </div>
+            <i class="review-card__icon ph-light ph-quotes tw-leading-none flex-shrink-0" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+<!-- Review card with photo end -->

@@ -1,0 +1,27 @@
+/* offer strip (gradient + chairs) start */
+// .offer-strip / .offer-slide from home-two/_offer-strip.scss with other art and white arrows
+.offer-slide--chairs {
+  background-color: var(--main-two-600);
+
+  .offer-slide__model {
+    left: max(64px, calc(50% - 475px));
+  }
+
+  .offer-slide__tag {
+    left: min(calc(100% - 204px), calc(50% + 332px));
+  }
+}
+
+.offer-strip--light-arrows {
+  .offer-strip__arrow--next {
+    background-color: hsl(var(--white));
+    color: var(--main-600);
+  }
+
+  .offer-strip__arrow:hover,
+  .offer-strip__arrow:focus-visible {
+    background-color: var(--main-600);
+    color: hsl(var(--white));
+  }
+}
+/* offer strip (gradient + chairs) end */

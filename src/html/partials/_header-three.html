@@ -1,0 +1,258 @@
+<!-- ==================== Header Three Start Here ==================== -->
+<header class="header header-three tw-transition-all tw-z-99">
+  <!-- Top row: menu, logo, utilities -->
+  <div class="header-three__top bg-white">
+    <div class="container container-two">
+      <div class="header-three__top-inner d-flex align-items-center justify-content-between tw-gap-6">
+        <div class="header-menu d-lg-block d-none">
+          @@include('../partials/_nav-menu.html', { "class" : "header-three__menu" })
+        </div>
+
+        <div class="logo flex-shrink-0">
+          <a href="index.html" class="link d-flex">
+            <img src="assets/images/logo/logo.png" alt="eCommex">
+          </a>
+        </div>
+
+        <div class="header-three__utils d-flex align-items-center">
+          <a href="javascript:void(0)" class="header-three__link d-xxl-flex d-none align-items-center tw-gap-2">
+            <i class="ph ph-truck tw-text-lg tw-leading-none"></i>
+            Tracking Orders
+          </a>
+          <span class="header-three__divider d-xxl-block d-none"></span>
+                <!-- Language select -->
+                <div class="custom-select dropdown">
+                    <select name="language" class="custom-select__native visually-hidden" tabindex="-1" aria-hidden="true">
+                        <option value="en" selected>English</option>
+                        <option value="bn">বাংলা</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="es">Español</option>
+                    </select>
+                    <button type="button" class="custom-select__toggle header-three__link d-flex align-items-center tw-gap-105" data-bs-toggle="dropdown" data-bs-offset="0,20" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+                        <img src="assets/images/icons/flag-uk.png" alt="English" class="custom-select__image tw-w-505 tw-h-505 rounded-circle">
+                        <span class="custom-select__value">EN</span>
+                        <i class="custom-select__caret ph ph-caret-down tw-text-sm tw-leading-none"></i>
+                    </button>
+                    <ul class="custom-select__menu dropdown-menu dropdown-menu-end" role="listbox" aria-label="Language">
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item active" role="option" aria-selected="true" data-value="en" data-label="EN" data-image="assets/images/icons/flag-uk.png" data-alt="English">
+                                <img src="assets/images/icons/flag-uk.png" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">English</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="bn" data-label="BN" data-image="assets/images/icons/flag-bd.svg" data-alt="বাংলা">
+                                <img src="assets/images/icons/flag-bd.svg" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">বাংলা</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="fr" data-label="FR" data-image="assets/images/icons/flag-fr.svg" data-alt="Français">
+                                <img src="assets/images/icons/flag-fr.svg" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">Français</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="de" data-label="DE" data-image="assets/images/icons/flag-de.svg" data-alt="Deutsch">
+                                <img src="assets/images/icons/flag-de.svg" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">Deutsch</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="es" data-label="ES" data-image="assets/images/icons/flag-es.svg" data-alt="Español">
+                                <img src="assets/images/icons/flag-es.svg" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">Español</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+          <span class="header-three__divider"></span>
+                <!-- Currency select -->
+                <div class="custom-select dropdown">
+                    <select name="currency" class="custom-select__native visually-hidden" tabindex="-1" aria-hidden="true">
+                        <option value="usd" selected>USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="gbp">GBP</option>
+                        <option value="bdt">BDT</option>
+                    </select>
+                    <button type="button" class="custom-select__toggle header-three__link d-flex align-items-center tw-gap-105" data-bs-toggle="dropdown" data-bs-offset="0,20" aria-haspopup="listbox" aria-expanded="false" aria-label="Select currency">
+                        <span class="custom-select__value">USD</span>
+                        <i class="custom-select__caret ph ph-caret-down tw-text-sm tw-leading-none"></i>
+                    </button>
+                    <ul class="custom-select__menu dropdown-menu dropdown-menu-end" role="listbox" aria-label="Currency">
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item active" role="option" aria-selected="true" data-value="usd" data-label="USD">
+                                <span class="custom-select__symbol">$</span>
+                                <span class="flex-grow-1">USD <span class="custom-select__hint">US Dollar</span></span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="eur" data-label="EUR">
+                                <span class="custom-select__symbol">€</span>
+                                <span class="flex-grow-1">EUR <span class="custom-select__hint">Euro</span></span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="gbp" data-label="GBP">
+                                <span class="custom-select__symbol">£</span>
+                                <span class="flex-grow-1">GBP <span class="custom-select__hint">British Pound</span></span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="bdt" data-label="BDT">
+                                <span class="custom-select__symbol">৳</span>
+                                <span class="flex-grow-1">BDT <span class="custom-select__hint">Taka</span></span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+          <span class="header-three__divider d-xxl-block d-none"></span>
+          <a href="tel:2085550112" class="header-three__link d-xxl-flex d-none align-items-center tw-gap-2">
+            <i class="ph ph-phone-call tw-text-base tw-leading-none"></i>
+            (208) 555-0112
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom row: search, wishlist, cart, register -->
+  <div class="header-three__bottom bg-slate-50 border-bottom border-slate-100">
+    <div class="container container-two">
+      <div class="header-three__bottom-inner d-flex align-items-center">
+        <form action="#" class="header-search header-three__search flex-grow-1 bg-white border border-slate-100 rounded-pill d-lg-flex d-none align-items-center">
+          <!-- Category select -->
+          <div class="custom-select dropdown flex-shrink-0">
+            <select name="category" class="custom-select__native visually-hidden" tabindex="-1" aria-hidden="true">
+              <option value="" selected>All Categories</option>
+              <option value="electronics">Electronics</option>
+              <option value="fashion">Fashion</option>
+              <option value="accessories">Accessories</option>
+              <option value="footwear">Footwear</option>
+              <option value="industrial">Industrial</option>
+              <option value="kitchen">Kitchen</option>
+              <option value="beauty">Beauty</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="furniture">Furniture</option>
+            </select>
+            <button type="button" class="custom-select__toggle d-flex align-items-center tw-gap-2 text-slate-800 tw-text-sm hover-text-main-600" data-bs-toggle="dropdown" data-bs-offset="-21,16" aria-haspopup="listbox" aria-expanded="false" aria-label="Select category">
+              <span class="custom-select__value custom-select__value--truncate">Category</span>
+              <i class="custom-select__caret ph ph-caret-down tw-text-sm tw-leading-none"></i>
+            </button>
+            <ul class="custom-select__menu custom-select__menu--lg dropdown-menu scroll-sm" role="listbox" aria-label="Category">
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item active" role="option" aria-selected="true" data-value="" data-label="Category">
+                  <i class="custom-select__icon ph ph-squares-four"></i>
+                  <span class="flex-grow-1">All Categories</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="electronics" data-label="Electronics">
+                  <img src="assets/images/icons/category/electronics.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Electronics</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="fashion" data-label="Fashion">
+                  <img src="assets/images/icons/category/fashion.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Fashion</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="accessories" data-label="Accessories">
+                  <img src="assets/images/icons/category/accessories.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Accessories</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="footwear" data-label="Footwear">
+                  <img src="assets/images/icons/category/footwear.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Footwear</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="industrial" data-label="Industrial">
+                  <img src="assets/images/icons/category/industrial.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Industrial</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="kitchen" data-label="Kitchen">
+                  <img src="assets/images/icons/category/kitchen.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Kitchen</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="beauty" data-label="Beauty">
+                  <img src="assets/images/icons/category/beauty.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Beauty</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="healthcare" data-label="Healthcare">
+                  <img src="assets/images/icons/category/healthcare.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Healthcare</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="furniture" data-label="Furniture">
+                  <img src="assets/images/icons/category/furniture.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Furniture</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <span class="header-search__divider flex-shrink-0"></span>
+          <input type="text" class="header-search__input flex-grow-1 bg-transparent border-0 focus-outline-0 text-slate-800 tw-text-sm" placeholder="Search hare...">
+          <button type="submit" class="btn btn-main-two hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center rounded-pill flex-shrink-0 tw-h-705 tw-px-405 py-0 font-heading fw-semibold tw-text-13-px" data-block="button">
+            <span class="button__flair"></span>
+            <span class="button__label">Search</span>
+          </button>
+        </form>
+
+        <div class="d-flex align-items-center tw-gap-305 flex-shrink-0 ms-auto">
+          <div class="header-actions d-flex align-items-center">
+            <a href="javascript:void(0)" class="header-action header-three__action bg-white border border-slate-100 rounded-circle d-flex justify-content-center align-items-center text-heading tw-text-xl position-relative hover-bg-main-600 hover-text-white" aria-label="Wishlist">
+              <i class="ph ph-heart"></i>
+              <span class="header-action__badge tw-w-6 tw-h-6 rounded-circle bg-green-600 text-white d-flex justify-content-center align-items-center position-absolute font-heading fw-semibold tw-text-sm">5</span>
+            </a>
+            <a href="javascript:void(0)" class="header-action header-three__action bg-white border border-slate-100 rounded-circle d-flex justify-content-center align-items-center text-heading tw-text-xl position-relative hover-bg-main-600 hover-text-white" aria-label="Cart">
+              <i class="ph ph-shopping-cart-simple"></i>
+              <span class="header-action__badge tw-w-6 tw-h-6 rounded-circle bg-orange-600 text-white d-flex justify-content-center align-items-center position-absolute font-heading fw-semibold tw-text-sm">1</span>
+            </a>
+          </div>
+          <a href="register.html" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-sm-inline-flex d-none align-items-center justify-content-center tw-gap-105 rounded-pill tw-h-11 tw-px-7 py-0 font-heading fw-semibold tw-text-13-px" data-block="button">
+            <span class="button__flair"></span>
+            <span class="button__label">Register</span>
+            <i class="ph ph-arrow-up-right tw-text-base position-relative"></i>
+          </a>
+          <button type="button" class="toggle-mobileMenu d-lg-none tw-leading-none text-heading tw-text-9 tw-ms-2" aria-label="Open menu">
+            <i class="ph ph-list"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ==================== Header Three End Here ==================== -->

@@ -1,0 +1,198 @@
+/* hero two (centre-mode offer carousel) start */
+.hero-two {
+  &__slider {
+    --slide-w: min(561px, calc(100% - 48px));
+    --slide-gap: 17px;
+    position: relative;
+
+    // like the folder frame: 40px wider than the container when there's room
+    @media (min-width: 1400px) {
+      margin-inline: -40px;
+    }
+  }
+
+  &__viewport {
+    overflow: hidden;
+  }
+
+  &__track {
+    display: flex;
+    gap: var(--slide-gap);
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    will-change: transform;
+
+    &.is-jumping {
+      transition: none;
+    }
+  }
+
+  &__slide {
+    flex: 0 0 var(--slide-w);
+  }
+
+  // arrows sit on the edges of the centred card
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: rem(16px);
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s linear, color 0.2s linear;
+
+    &--prev {
+      left: calc(50% - var(--slide-w) / 2);
+      background-color: hsl(var(--white));
+      color: var(--main-300);
+      box-shadow: 0 4px 14px rgba(14, 19, 5, 0.08);
+    }
+
+    &--next {
+      left: calc(50% + var(--slide-w) / 2);
+      background-color: var(--main-600);
+      color: hsl(var(--white));
+    }
+
+    &:hover {
+      background-color: var(--main-600);
+      color: hsl(var(--white));
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__track {
+      transition: none;
+    }
+  }
+}
+
+.hero-card {
+  --tone: var(--main-600);
+  --tone-100: var(--main-100);
+  --btn-bg: var(--main-600);
+  --btn-color: hsl(var(--white));
+  --offer-bg: var(--main-600);
+  --offer-color: hsl(var(--white));
+  --offer-x: 264.5px;
+  --offer-y: 145.5px;
+  height: 290px;
+  padding-inline: 35px;
+
+  &--purple {
+    --tone: var(--purple-600);
+    --tone-100: var(--purple-100);
+    --btn-bg: var(--purple-600);
+    --offer-bg: var(--purple-600);
+    --offer-x: 292.5px;
+  }
+
+  &--gold {
+    --tone: var(--gold-600);
+    --tone-100: var(--gold-100);
+    --btn-bg: var(--main-two-600);
+    --btn-color: var(--yellow-600);
+    --offer-bg: var(--yellow-600);
+    --offer-color: hsl(var(--heading-color));
+    --offer-x: 251.5px;
+    --offer-y: 169.5px;
+  }
+
+  // artwork: products, podium, sale tag and decorations
+  &__art {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+  }
+
+  &__badge {
+    height: 33px;
+    margin-block-end: 8px;
+    padding-inline: 11px 12px;
+    border: 1px solid var(--tone-100);
+    color: var(--tone);
+    font-family: var(--heading-font);
+    font-size: rem(12px);
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  &__title {
+    margin-block-end: 28px;
+    font-size: clamp(1.75rem, 1rem + 1.6vw, 2.625rem);
+    line-height: 1.08;
+  }
+
+  &__price {
+    margin-block-end: 23px;
+  }
+
+  &__amount {
+    color: var(--tone);
+    font-size: rem(26px);
+  }
+
+  &__btn {
+    align-self: flex-start;
+    background-color: var(--btn-bg) !important;
+    color: var(--btn-color) !important;
+
+    &.button--stroke::after {
+      border-color: transparent;
+    }
+  }
+
+  // "35% OFF" circle, placed over the circle drawn in the artwork
+  &__offer {
+    position: absolute;
+    left: var(--offer-x);
+    top: var(--offer-y);
+    width: 72px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--offer-bg);
+    color: var(--offer-color);
+    font-family: var(--heading-font);
+    font-size: rem(20px);
+    font-weight: 600;
+    line-height: 1;
+
+    span {
+      margin-block-start: 2px;
+      font-size: rem(14px);
+    }
+  }
+
+  // phones: the copy needs the full width, so drop the offer circle and fade the art behind the text
+  @media (max-width: 575px) {
+    padding-inline: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(90deg, hsl(var(--white) / 0.85) 40%, transparent 85%);
+    }
+
+    &__content {
+      z-index: 2;
+    }
+
+    &__offer {
+      display: none;
+    }
+  }
+}
+/* hero two (centre-mode offer carousel) end */

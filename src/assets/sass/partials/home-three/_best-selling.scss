@@ -1,0 +1,251 @@
+/* today's best selling (fashion cards) start */
+.best-selling {
+  padding-block: 29px 60px;
+
+  &__sub {
+    margin-block-start: 9px;
+    font-size: rem(13.5px);
+    line-height: 1.5;
+  }
+
+  &__head {
+    margin-block-end: 36px;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 34px 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    @media (max-width: 424px) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  &__more {
+    margin-block-start: 44px;
+  }
+}
+
+.fashion-card {
+  &__thumb {
+    aspect-ratio: 315 / 357;
+    border: 1px solid var(--slate-100);
+
+    img {
+      transition: transform 0.4s ease;
+    }
+  }
+
+  &__badge {
+    top: 13px;
+    left: 13px;
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+    padding-inline: 10px;
+    font-size: rem(11px);
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  // hover: side actions slide in, "Add To Cart" rises from the bottom
+  &__actions {
+    top: 16px;
+    right: 16px;
+    gap: 11px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(12px);
+    transition: 0.25s ease;
+  }
+
+  &__action {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: hsl(var(--white));
+    color: var(--slate-800);
+    font-size: rem(16px);
+    box-shadow: 0 2px 8px rgba(14, 19, 5, 0.06);
+    transition: 0.2s linear;
+
+    &:hover,
+    &:focus-visible {
+      border-color: var(--main-600);
+      color: var(--main-600);
+    }
+  }
+
+  &__cart {
+    left: 50%;
+    bottom: 17px;
+    width: 131px;
+    height: 37px;
+    border: 1px solid var(--main-600);
+    font-size: rem(12px);
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 12px);
+    transition: 0.25s ease;
+
+    &:hover {
+      background-color: var(--main-600) !important;
+      color: hsl(var(--white)) !important;
+    }
+  }
+
+  &:hover,
+  &:focus-within {
+    .fashion-card__actions,
+    .fashion-card__cart {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .fashion-card__actions {
+      transform: none;
+    }
+
+    .fashion-card__cart {
+      transform: translate(-50%, 0);
+    }
+
+    .fashion-card__thumb img {
+      transform: scale(1.04);
+    }
+
+    .fashion-card__timer {
+      opacity: 0;
+    }
+  }
+
+  // countdown pill in the cart button's spot; the cart takes over on hover
+  &__timer {
+    left: 50%;
+    bottom: 17px;
+    min-width: 161px;
+    height: 37px;
+    padding-inline: 14px;
+    border: 1px solid var(--orange-600);
+    font-size: rem(12px);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    transform: translateX(-50%);
+    transition: opacity 0.25s ease;
+  }
+
+  &__body {
+    padding-block-start: 23px;
+  }
+
+  &__stars {
+    gap: 3px;
+    font-size: rem(14px);
+  }
+
+  &__count {
+    font-size: rem(11px);
+  }
+
+  &__name {
+    margin-block: 5px 9px;
+    font-size: rem(27px);
+    line-height: 1.25;
+  }
+
+  &__meta {
+    gap: 10px;
+    font-size: rem(12.5px);
+    line-height: 1.5;
+  }
+
+  &__stock {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+
+  &__dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--slate-800);
+  }
+
+  &__swatches {
+    gap: 6px;
+    margin-block-start: 12px;
+  }
+
+  &__swatch {
+    width: 36px;
+    height: 36px;
+    padding: 2px;
+    border: 1px solid var(--slate-100);
+    border-radius: 50%;
+    background-color: hsl(var(--white));
+    transition: border-color 0.2s linear;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 15%;
+    }
+
+    &.active,
+    &:hover {
+      border-color: var(--main-600);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__thumb img,
+    &__actions,
+    &__cart {
+      transition: none;
+    }
+  }
+}
+
+// touch screens have no hover: keep the quick actions reachable
+@media (hover: none) {
+  .fashion-card__actions,
+  .fashion-card__cart {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .fashion-card__cart {
+    transform: translateX(-50%);
+  }
+
+  // both pills share one spot: lift the timer above the cart button
+  .fashion-card__timer {
+    bottom: 62px;
+  }
+}
+// trending outfits: the same head and cards in a slider
+.trending-outfits {
+  padding-block: 3px 60px;
+
+  .snap-slider__dots {
+    margin-block-start: 39px;
+  }
+}
+/* today's best selling (fashion cards) end */

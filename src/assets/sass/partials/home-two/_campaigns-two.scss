@@ -1,0 +1,48 @@
+/* shop by campaign two (stacked campaign card) start */
+// the frame, countdown and slider are shared with home-one "Shop By Campaign"
+.campaign-card--stack {
+  .campaign-card__media {
+    height: auto;
+    gap: 7px;
+  }
+
+  // tints match the backgrounds baked into the product images, so contain-fit leaves no seams
+  .campaign-card__main {
+    height: 238px;
+    background-color: #fffbef;
+  }
+
+  .campaign-card__thumbs {
+    width: auto;
+    height: 75px;
+    gap: 7px;
+  }
+
+  .campaign-card__thumb {
+    flex: 1 1 0;
+    min-width: 0;
+    background-color: #f1f9f6;
+
+    &:nth-child(2) {
+      background-color: #f5f3fe;
+    }
+
+    &:nth-child(3) {
+      background-color: #fff2ef;
+    }
+  }
+
+  .campaign-card__footer {
+    padding: 13px 3px 3px;
+  }
+
+  .campaign-card__shop {
+    height: 38px;
+  }
+}
+
+// this design uses slightly shorter countdown boxes
+.campaigns--two .flash-countdown__box {
+  height: 33px;
+}
+/* shop by campaign two (stacked campaign card) end */

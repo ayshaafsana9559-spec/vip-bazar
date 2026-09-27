@@ -1,0 +1,194 @@
+/* ================================= Footer Css Start =========================== */
+.footer {
+  --footer-line: hsl(var(--white) / 0.08);
+
+  &__cta {
+    padding-block: 39px;
+    border-bottom: 1px solid var(--footer-line);
+  }
+
+  &__cta-title {
+    margin-block-end: 10px;
+    font-size: clamp(1.5rem, 1rem + 1vw, 1.75rem);
+    line-height: 1.2;
+  }
+
+  &__main {
+    padding-block: 66px;
+
+    @media (max-width: 991px) {
+      padding-block: 48px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px 30px;
+
+    // phones: the two short link lists sit side by side, the rest span the full width
+    @media (max-width: 575px) {
+      > :nth-child(1),
+      > :nth-child(4),
+      > :nth-child(5) {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: minmax(0, 345fr) minmax(0, 202fr) minmax(0, 174fr) minmax(0, 320fr) minmax(0, 281fr);
+      gap: 0;
+    }
+  }
+
+  &__title {
+    margin-block-end: 18px;
+    color: hsl(var(--white));
+    font-size: rem(17px);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  &__text {
+    font-size: rem(14px);
+    line-height: 1.5;
+  }
+
+  &__about-text {
+    max-width: 256px;
+  }
+
+  &__logo {
+    margin-block-start: -5px; // the image has a little transparent space above the mark
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    a {
+      position: relative;
+      color: hsl(var(--white));
+      font-size: rem(14px);
+      line-height: 1.5;
+      transition: 0.2s linear;
+
+      // hover: yellow with a leading dot
+      &::before {
+        content: "";
+        position: absolute;
+        inset-inline-start: 0;
+        top: 50%;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: var(--yellow-600);
+        opacity: 0;
+        transform: translateY(-50%);
+        transition: inherit;
+      }
+
+      &:hover {
+        padding-inline-start: 10px;
+        color: var(--yellow-600);
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__social {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsl(var(--white) / 0.15);
+    border-radius: 50%;
+    color: hsl(var(--white));
+    font-size: rem(16px);
+    transition: 0.2s linear;
+
+    &:hover {
+      border-color: var(--main-600);
+      background-color: var(--main-600);
+      color: hsl(var(--white));
+    }
+  }
+
+  &__contact-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid hsl(var(--white) / 0.12);
+    border-radius: 50%;
+    background-color: hsl(var(--white) / 0.05);
+    color: var(--green-600);
+    font-size: rem(20px);
+  }
+
+  &__newsletter {
+    position: relative;
+    height: 50px;
+    margin-block-start: 28px;
+    border: 1px solid hsl(var(--white) / 0.14);
+    border-radius: 50rem;
+    background-color: hsl(var(--white) / 0.05);
+  }
+
+  &__newsletter-input {
+    width: 100%;
+    height: 100%;
+    padding-inline: 20px 74px;
+    border: 0;
+    background: transparent;
+    color: hsl(var(--white));
+    font-size: rem(14px);
+    outline: 0;
+
+    &::placeholder {
+      color: hsl(var(--white) / 0.75);
+    }
+  }
+
+  &__newsletter-btn {
+    position: absolute;
+    inset-inline-end: 3px;
+    top: 50%;
+    width: 62px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50rem;
+    background-color: var(--main-600);
+    color: hsl(var(--white));
+    font-size: rem(18px);
+    transform: translateY(-50%);
+    transition: 0.2s linear;
+
+    &:hover {
+      background-color: var(--main-800);
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid var(--footer-line);
+  }
+
+  &__bottom-inner {
+    min-height: 60px;
+    padding-block: 12px;
+  }
+}
+/* ================================= Footer Css End =========================== */

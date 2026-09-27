@@ -1,0 +1,81 @@
+/* best selling four (furniture cards) start */
+// .fashion-card from home-three/_best-selling.scss, reordered: colours, name, rating, price
+.best-selling--four {
+  padding-block: 0 60px;
+
+  .best-selling__grid {
+    row-gap: 40px;
+  }
+}
+
+.fashion-card--furniture {
+  .fashion-card__thumb {
+    aspect-ratio: 316 / 289;
+    transition: border-color 0.2s linear;
+  }
+
+  .fashion-card__cart {
+    border-color: var(--main-600);
+    background-color: var(--main-600) !important;
+    color: hsl(var(--white)) !important;
+
+    &:hover {
+      border-color: var(--main-800);
+      background-color: var(--main-800) !important;
+    }
+  }
+
+  &:hover .fashion-card__thumb {
+    border-color: var(--main-600);
+  }
+
+  .fashion-card__body {
+    padding-block-start: 20px;
+  }
+
+  .fashion-card__name {
+    margin-block: 5px 10px;
+  }
+
+  .fashion-card__meta {
+    margin-block-start: 13px;
+  }
+}
+
+.fashion-card {
+  &__colors {
+    gap: 2px;
+  }
+
+  &__color {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--main-50);
+    border-radius: 50%;
+    background-color: hsl(var(--white));
+    transition: border-color 0.2s linear;
+
+    > span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+    }
+
+    &.active,
+    &:hover {
+      border-color: var(--main-600);
+    }
+  }
+}
+// Enjoy Our Best Seller: the same cards in a slider
+.best-seller-slider {
+  padding-block: 0 60px;
+
+  .snap-slider__dots {
+    margin-block-start: 34px;
+  }
+}
+/* best selling four (furniture cards) end */

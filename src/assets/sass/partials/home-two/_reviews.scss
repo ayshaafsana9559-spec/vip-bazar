@@ -1,0 +1,111 @@
+/* reviews (2-up testimonial slider with side peeks) start */
+.reviews {
+  &__head {
+    margin-block-end: 30px;
+  }
+
+  // the track bleeds to the viewport edges so the neighbouring cards peek in; the padding
+  // puts the first visible card back on the container edge (main.js copies it into scroll-padding)
+  &__slider .snap-slider__track {
+    margin-inline: calc(50% - 50vw);
+    padding-inline: calc(50vw - 50%);
+    grid-auto-columns: 100%;
+
+    @media (min-width: 992px) {
+      grid-auto-columns: calc((100% - 20px) / 2);
+    }
+  }
+}
+
+.review-card {
+  --tone-25: var(--main-25);
+  --tone-100: var(--main-100);
+  --tone-600: var(--main-600);
+  border: 1px solid var(--tone-100);
+  background-color: var(--tone-25);
+  transition: border-color 0.2s linear;
+
+  &--green {
+    --tone-25: var(--green-25);
+    --tone-100: var(--green-100);
+    --tone-600: var(--green-600);
+  }
+
+  &--orange {
+    --tone-25: var(--orange-25);
+    --tone-100: var(--orange-100);
+    --tone-600: var(--orange-600);
+  }
+
+  &--purple {
+    --tone-25: var(--purple-25);
+    --tone-100: var(--purple-100);
+    --tone-600: var(--purple-600);
+  }
+
+  // the first visible card is highlighted, as is any hovered card
+  &:hover,
+  .snap-slider__slide.is-start & {
+    border-color: var(--tone-600);
+  }
+
+  &__top {
+    padding: 27px 26px 24px;
+  }
+
+  &__name {
+    font-family: var(--body-font);
+    font-size: rem(17px);
+    line-height: 1.2;
+  }
+
+  &__stars {
+    gap: 4px;
+    margin-block: 23px 12px;
+  }
+
+  &__quote {
+    font-size: rem(15px);
+    line-height: 23.2px;
+  }
+
+  &__bottom {
+    padding: 18px 27px 16px 24px;
+    border-top: 1px solid var(--tone-100);
+  }
+
+  &__product {
+    width: 52px;
+    height: 52px;
+    margin-inline-end: 21px;
+    border: 1px solid var(--slate-100);
+  }
+
+  &__price {
+    margin-block-start: 4px;
+    font-size: rem(16px);
+    line-height: 1.2;
+  }
+
+  &__icon {
+    color: var(--tone-600);
+    font-size: rem(56px);
+    margin-inline-end: -5px;
+    transform: rotate(180deg); // Phosphor draws closing quotes; the design uses opening ones
+  }
+
+  @media (max-width: 575px) {
+    &__top {
+      padding: 20px 18px 18px;
+    }
+
+    &__bottom {
+      padding: 16px 18px;
+    }
+
+    &__icon {
+      font-size: rem(44px);
+    }
+  }
+}
+/* reviews (2-up testimonial slider with side peeks) end */

@@ -1,0 +1,15 @@
+/* support strip (trust note + contact cards) start */
+// the cards reuse .support-grid / .support-card from home-two/_footer-two.scss
+.support-strip {
+  padding-block: 42px 30px;
+
+  &__note {
+    font-size: rem(13.5px);
+    line-height: 1.5;
+  }
+
+  .support-grid {
+    margin-block-start: 19px;
+  }
+}
+/* support strip (trust note + contact cards) end */

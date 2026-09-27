@@ -1,0 +1,77 @@
+/* room categories (furniture category slider) start */
+// 6 per view comes from .snap-slider--6 (home-two/_category-slides.scss)
+.room-categories {
+  padding-block-end: 60px;
+
+  .snap-slider__dots {
+    margin-block-start: 20px;
+  }
+}
+
+.room-card {
+  padding: 9px 9px 17px;
+  border: 1px solid var(--slate-100);
+  transition: border-color 0.2s linear;
+
+  &__thumb {
+    height: 153px;
+
+    img {
+      max-width: 100%;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__body {
+    padding: 16px 5px 0;
+  }
+
+  &__text {
+    min-width: 0;
+  }
+
+  &__title {
+    font-size: rem(16px);
+    line-height: 1.3;
+  }
+
+  &__units {
+    margin-block-start: 2px;
+    font-size: rem(12px);
+    line-height: 1.4;
+  }
+
+  &__arrow {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--slate-200);
+    border-radius: 50%;
+    color: var(--slate-600);
+    font-size: rem(13px);
+    transition: 0.2s linear;
+  }
+
+  &:hover {
+    border-color: var(--main-600);
+
+    .room-card__thumb img {
+      transform: scale(1.05);
+    }
+
+    .room-card__arrow {
+      border-color: var(--main-600);
+      background-color: var(--main-600);
+      color: hsl(var(--white));
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__thumb img {
+      transition: none;
+    }
+  }
+}
+/* room categories (furniture category slider) end */

@@ -90,6 +90,45 @@
             }
         }
     }
+    &-white {
+        background-color: hsl(var(--white)) !important;
+        color: var(--purple-600) !important;
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
+    }
+    &-orange {
+        background-color: var(--orange-600) !important;
+        color: hsl(var(--white)) !important;
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
+    }
+    &-light-main {
+        background-color: hsl(var(--white)) !important;
+        color: var(--main-600) !important;
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
+    }
+    &-outline-main {
+        --bs-btn-hover-border-color: var(--main-600);
+        --bs-btn-active-border-color: var(--main-600);
+        background-color: transparent;
+        border: 1px solid var(--main-600);
+        color: var(--main-600);
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
+    }
     &-green {
         background-color: var(--green-600) !important;
         color: hsl(var(--white)) !important;

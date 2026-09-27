@@ -1,0 +1,148 @@
+/* hero four (furniture bento) start */
+.hero-four {
+  --wine: #81172a;
+  padding-block: 24px 60px;
+
+  &__grid {
+    display: grid;
+    gap: 19px 20px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      .hero-four__card--main {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: minmax(0, 652fr) minmax(0, 315fr) minmax(0, 315fr);
+      grid-template-rows: repeat(2, 245px);
+
+      .hero-four__card--main {
+        grid-column: auto;
+        grid-row: span 2;
+      }
+
+      .hero-four__card--tall {
+        grid-row: span 2;
+      }
+    }
+  }
+
+  &__card {
+    min-height: 245px;
+    padding: 28px 27px;
+    background-color: #efe9e1;
+
+    &--main {
+      min-height: 509px;
+      padding: 34px 37px;
+    }
+
+    &--tall {
+      min-height: 509px;
+    }
+
+    &--top .hero-four__title {
+      max-width: 230px;
+    }
+
+    &--dark {
+      padding-block-start: 23px;
+      background-color: #2e2721;
+
+      .hero-four__eyebrow {
+        color: var(--yellow-600);
+      }
+
+      .hero-four__title {
+        color: hsl(var(--white));
+      }
+
+      .hero-four__btn {
+        color: var(--main-two-600) !important;
+      }
+    }
+  }
+
+  &__art {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  &__card:hover &__art {
+    transform: scale(1.04);
+  }
+
+  &__badge {
+    height: 37px;
+    padding-inline: 14px 16px;
+    font-size: rem(13px);
+    line-height: 1;
+  }
+
+  &__eyebrow {
+    color: var(--wine);
+    font-size: rem(14px);
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-block: 6px 21px;
+    color: var(--main-two-600);
+    font-size: rem(33px);
+    line-height: 1.12;
+
+    &--lg {
+      max-width: 420px;
+      margin-block: 10px 14px;
+      font-size: rem(46px);
+      line-height: 1.18;
+    }
+  }
+
+  &__price {
+    margin-block-end: 20px;
+  }
+
+  &__amount {
+    font-size: rem(30px);
+  }
+
+  &__btn {
+    height: 37px;
+    min-height: 37px;
+    padding-inline: 20px;
+    font-size: rem(12px);
+  }
+
+  &__card--main &__btn {
+    height: 45px;
+    padding-inline: 29px;
+    font-size: rem(13px);
+  }
+
+  @media (max-width: 575px) {
+    &__card--main {
+      padding: 28px 22px;
+    }
+
+    &__title--lg {
+      font-size: rem(34px);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__art {
+      transition: none;
+    }
+  }
+}
+/* hero four (furniture bento) end */

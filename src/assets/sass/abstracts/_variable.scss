@@ -3,6 +3,7 @@
 
 $colors: (
   "main": (
+    "25": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.95)),
     "50": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9)),
     "100": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.8)),
     "200": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.7)),
@@ -15,6 +16,7 @@ $colors: (
     "900": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.3))
   ),
   "main-two": (
+    "25": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.95)),
     "50": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.9)),
     "100": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.8)),
     "200": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.7)),
@@ -27,6 +29,7 @@ $colors: (
     "900": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.3))
   ),
   "purple": (
+    "25": hsl(var(--purple-h), var(--purple-s), calc(var(--purple-l) + (100% - var(--purple-l)) * 0.95)),
     "50": hsl(var(--purple-h), var(--purple-s), calc(var(--purple-l) + (100% - var(--purple-l)) * 0.9)),
     "100": hsl(var(--purple-h), var(--purple-s), calc(var(--purple-l) + (100% - var(--purple-l)) * 0.8)),
     "200": hsl(var(--purple-h), var(--purple-s), calc(var(--purple-l) + (100% - var(--purple-l)) * 0.7)),
@@ -39,6 +42,7 @@ $colors: (
     "900": hsl(var(--purple-h), var(--purple-s), calc(var(--purple-l) - var(--purple-l) * 0.3))
   ),
   "green": (
+    "25": hsl(var(--green-h), var(--green-s), calc(var(--green-l) + (100% - var(--green-l)) * 0.95)),
     "50": hsl(var(--green-h), var(--green-s), calc(var(--green-l) + (100% - var(--green-l)) * 0.9)),
     "100": hsl(var(--green-h), var(--green-s), calc(var(--green-l) + (100% - var(--green-l)) * 0.8)),
     "200": hsl(var(--green-h), var(--green-s), calc(var(--green-l) + (100% - var(--green-l)) * 0.7)),
@@ -51,6 +55,7 @@ $colors: (
     "900": hsl(var(--green-h), var(--green-s), calc(var(--green-l) - var(--green-l) * 0.3))
   ),
   "orange": (
+    "25": hsl(var(--orange-h), var(--orange-s), calc(var(--orange-l) + (100% - var(--orange-l)) * 0.95)),
     "50": hsl(var(--orange-h), var(--orange-s), calc(var(--orange-l) + (100% - var(--orange-l)) * 0.9)),
     "100": hsl(var(--orange-h), var(--orange-s), calc(var(--orange-l) + (100% - var(--orange-l)) * 0.8)),
     "200": hsl(var(--orange-h), var(--orange-s), calc(var(--orange-l) + (100% - var(--orange-l)) * 0.7)),
@@ -62,8 +67,35 @@ $colors: (
     "800": hsl(var(--orange-h), var(--orange-s), calc(var(--orange-l) - var(--orange-l) * 0.2)),
     "900": hsl(var(--orange-h), var(--orange-s), calc(var(--orange-l) - var(--orange-l) * 0.3))
   ),
+  "yellow": (
+    "25": hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) + (100% - var(--yellow-l)) * 0.95)),
+    "50": hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) + (100% - var(--yellow-l)) * 0.9)),
+    "100": hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) + (100% - var(--yellow-l)) * 0.8)),
+    "200": hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) + (100% - var(--yellow-l)) * 0.7)),
+    "300": hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) + (100% - var(--yellow-l)) * 0.6)),
+    "400": hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) + (100% - var(--yellow-l)) * 0.5)),
+    "500": hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) + (100% - var(--yellow-l)) * 0.4)),
+    "600": hsl(var(--yellow-h), var(--yellow-s), var(--yellow-l)),
+    "700": hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) - var(--yellow-l) * 0.1)),
+    "800": hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) - var(--yellow-l) * 0.2)),
+    "900": hsl(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) - var(--yellow-l) * 0.3))
+  ),
+  "gold": (
+    "25": hsl(var(--gold-h), var(--gold-s), calc(var(--gold-l) + (100% - var(--gold-l)) * 0.95)),
+    "50": hsl(var(--gold-h), var(--gold-s), calc(var(--gold-l) + (100% - var(--gold-l)) * 0.9)),
+    "100": hsl(var(--gold-h), var(--gold-s), calc(var(--gold-l) + (100% - var(--gold-l)) * 0.8)),
+    "200": hsl(var(--gold-h), var(--gold-s), calc(var(--gold-l) + (100% - var(--gold-l)) * 0.7)),
+    "300": hsl(var(--gold-h), var(--gold-s), calc(var(--gold-l) + (100% - var(--gold-l)) * 0.6)),
+    "400": hsl(var(--gold-h), var(--gold-s), calc(var(--gold-l) + (100% - var(--gold-l)) * 0.5)),
+    "500": hsl(var(--gold-h), var(--gold-s), calc(var(--gold-l) + (100% - var(--gold-l)) * 0.4)),
+    "600": hsl(var(--gold-h), var(--gold-s), var(--gold-l)),
+    "700": hsl(var(--gold-h), var(--gold-s), calc(var(--gold-l) - var(--gold-l) * 0.1)),
+    "800": hsl(var(--gold-h), var(--gold-s), calc(var(--gold-l) - var(--gold-l) * 0.2)),
+    "900": hsl(var(--gold-h), var(--gold-s), calc(var(--gold-l) - var(--gold-l) * 0.3))
+  ),
   // design greys (all share hue 221)
   "slate": (
+    "25": #f9f9f9,
     "50": #f3f3f3,
     "100": #f0f0f3,
     "200": #e3e4e7,
@@ -163,6 +195,14 @@ $font-sizes: (
   --orange-h: 13.1; // #FF4C1A
   --orange-s: 100%;
   --orange-l: 55.1%;
+
+  --yellow-h: 45.3; // #FCC418
+  --yellow-s: 97.4%;
+  --yellow-l: 54.1%;
+
+  --gold-h: 45.2; // #9C7602
+  --gold-s: 97.4%;
+  --gold-l: 31%;
 
    /* White Color */
   --white: 0 0% 100%;

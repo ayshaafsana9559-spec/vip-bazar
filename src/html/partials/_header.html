@@ -14,16 +14,95 @@
 
         <!-- Search Start -->
         <form action="#" class="header-search max-w-806-px w-100 bg-white border border-slate-100 rounded-pill d-lg-flex d-none align-items-center">
-          <div class="dropdown flex-shrink-0">
-            <button type="button" class="d-flex align-items-center tw-gap-2 text-slate-800 tw-text-sm hover-text-main-600" data-bs-toggle="dropdown" aria-expanded="false">
-              Category
-              <i class="ph ph-caret-down tw-text-sm tw-leading-none"></i>
+          <!-- Category select -->
+          <div class="custom-select dropdown flex-shrink-0">
+            <select name="category" class="custom-select__native visually-hidden" tabindex="-1" aria-hidden="true">
+              <option value="" selected>All Categories</option>
+              <option value="electronics">Electronics</option>
+              <option value="fashion">Fashion</option>
+              <option value="accessories">Accessories</option>
+              <option value="footwear">Footwear</option>
+              <option value="industrial">Industrial</option>
+              <option value="kitchen">Kitchen</option>
+              <option value="beauty">Beauty</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="furniture">Furniture</option>
+            </select>
+            <button type="button" class="custom-select__toggle d-flex align-items-center tw-gap-2 text-slate-800 tw-text-sm hover-text-main-600" data-bs-toggle="dropdown" data-bs-offset="-21,16" aria-haspopup="listbox" aria-expanded="false" aria-label="Select category">
+              <span class="custom-select__value custom-select__value--truncate">Category</span>
+              <i class="custom-select__caret ph ph-caret-down tw-text-sm tw-leading-none"></i>
             </button>
-            <ul class="dropdown-menu tw-text-sm">
-              <li><a class="dropdown-item" href="javascript:void(0)">Electronics</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">Fashion</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">Accessories</a></li>
-              <li><a class="dropdown-item" href="javascript:void(0)">Footwear</a></li>
+            <ul class="custom-select__menu custom-select__menu--lg dropdown-menu scroll-sm" role="listbox" aria-label="Category">
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item active" role="option" aria-selected="true" data-value="" data-label="Category">
+                  <i class="custom-select__icon ph ph-squares-four"></i>
+                  <span class="flex-grow-1">All Categories</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="electronics" data-label="Electronics">
+                  <img src="assets/images/icons/category/electronics.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Electronics</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="fashion" data-label="Fashion">
+                  <img src="assets/images/icons/category/fashion.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Fashion</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="accessories" data-label="Accessories">
+                  <img src="assets/images/icons/category/accessories.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Accessories</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="footwear" data-label="Footwear">
+                  <img src="assets/images/icons/category/footwear.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Footwear</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="industrial" data-label="Industrial">
+                  <img src="assets/images/icons/category/industrial.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Industrial</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="kitchen" data-label="Kitchen">
+                  <img src="assets/images/icons/category/kitchen.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Kitchen</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="beauty" data-label="Beauty">
+                  <img src="assets/images/icons/category/beauty.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Beauty</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="healthcare" data-label="Healthcare">
+                  <img src="assets/images/icons/category/healthcare.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Healthcare</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="furniture" data-label="Furniture">
+                  <img src="assets/images/icons/category/furniture.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Furniture</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
             </ul>
           </div>
           <span class="header-search__divider flex-shrink-0"></span>

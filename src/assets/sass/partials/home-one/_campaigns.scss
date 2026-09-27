@@ -1,0 +1,144 @@
+/* shop by campaign section start */
+.campaign-card {
+  padding: 9px; // + 1px border = 10px frame
+  transition: border-color 0.2s linear;
+
+  &:hover {
+    border-color: var(--main-600) !important;
+
+    .campaign-card__shop {
+      background-color: var(--main-600) !important;
+      color: hsl(var(--white)) !important;
+    }
+  }
+
+  &__media {
+    height: 236px;
+  }
+
+  &__thumbs {
+    width: 83px;
+  }
+
+  &__thumb {
+    flex: 1 1 0;
+    min-height: 0;
+  }
+
+  &__footer {
+    padding: 16px 3px 6px;
+
+    h3 {
+      line-height: 1.2;
+
+      a {
+        display: inline; // the global inline-block adds strut space here
+      }
+    }
+
+    span {
+      display: block;
+      line-height: 1.5;
+      margin-block-start: 3px;
+    }
+  }
+}
+/* shop by campaign section end */
+
+/* faq section start */
+.faq {
+  &__title {
+    margin-block-start: -6px;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 40px;
+
+    @media (min-width: 992px) {
+      grid-template-columns: minmax(0, 538fr) minmax(0, 651fr);
+      column-gap: 133px;
+    }
+  }
+
+  &__intro {
+    max-width: 560px;
+
+    // the design lets this copy run slightly into the column gap
+    @media (min-width: 992px) {
+      margin-inline-end: -30px;
+    }
+    line-height: 1.5;
+  }
+}
+
+.help-card {
+  padding: 26px;
+  padding-inline-end: 16px; // lets the copy wrap where the design does
+
+  &__text {
+    margin-block: 13px 32px;
+    line-height: 1.5;
+  }
+}
+
+.faq-accordion {
+  gap: 18px;
+}
+
+.faq-item {
+  border: 1px solid var(--slate-100);
+  border-radius: 25px;
+  background-color: var(--slate-25);
+  transition: background-color 0.2s linear, border-color 0.2s linear;
+
+  // open item: white with a blue outline
+  &:has(> .faq-item__button:not(.collapsed)) {
+    border-color: var(--main-600);
+    background-color: hsl(var(--white));
+  }
+
+  &__button {
+    width: 100%;
+    min-height: 47px;
+    padding-block: 12px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-inline: 27px;
+    color: var(--slate-800);
+    font-family: var(--heading-font);
+    font-size: rem(17px);
+    font-weight: 500;
+    text-align: start;
+
+    &:hover {
+      color: var(--main-600);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--main-300);
+      outline-offset: 2px;
+      border-radius: 25px;
+    }
+
+    &:not(.collapsed) .faq-item__caret {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__caret {
+    flex-shrink: 0;
+    color: var(--slate-600);
+    font-size: rem(18px);
+    transition: transform 0.25s ease;
+  }
+
+  &__answer {
+    padding: 2px 27px 14px;
+    line-height: 1.4;
+  }
+}
+/* faq section end */

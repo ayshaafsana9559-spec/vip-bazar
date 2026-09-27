@@ -1,0 +1,81 @@
+/* ================================= Category Card Css Start =========================== */
+.category-card {
+    padding: 19px; // + 1px border = 20px
+    transition: border-color 0.2s linear;
+
+    &:hover {
+        border-color: var(--main-600) !important;
+
+        .category-card__arrow {
+            background-color: var(--main-600);
+            color: hsl(var(--white));
+        }
+    }
+
+    &__img {
+        height: 153px;
+    }
+
+    // round icon badge centred on the image's bottom edge
+    &__icon {
+        width: 60px;
+        height: 60px;
+        inset-inline-end: 10px;
+        inset-block-end: -30px;
+        box-shadow: 0 8px 24px rgba(14, 19, 5, 0.06);
+
+        img {
+            width: 44px;
+            height: 44px;
+        }
+    }
+
+    &__title {
+        margin-block-start: 18px;
+        line-height: 1.2;
+    }
+
+    &__desc {
+        margin-block-start: 9px;
+        margin-block-end: 1px;
+        line-height: 1.2;
+    }
+
+    &__tag {
+        display: inline-flex;
+        align-items: center;
+        height: 24px;
+        padding-inline: 10px;
+        border: 1px solid var(--slate-100);
+        border-radius: 50rem;
+        background-color: var(--slate-25);
+        color: var(--slate-800);
+        font-size: rem(11px);
+        line-height: 1;
+        transition: 0.2s linear;
+
+        &:hover {
+            border-color: var(--main-600);
+            color: var(--main-600);
+        }
+    }
+
+    &__arrow {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--main-600);
+        border-radius: 50%;
+        color: var(--main-600);
+        font-size: rem(16px);
+        transition: 0.2s linear;
+
+        &:hover {
+            background-color: var(--main-600);
+            color: hsl(var(--white));
+        }
+    }
+}
+/* ================================= Category Card Css End =========================== */

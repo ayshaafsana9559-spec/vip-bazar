@@ -1,0 +1,73 @@
+<!-- Product card (list / horizontal) start -->
+<div class="product-card product-card--list bg-white border border-slate-200 tw-rounded-xl h-100 d-flex">
+    <div class="product-card__thumb position-relative bg-slate-25 tw-rounded-lg overflow-hidden flex-shrink-0">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/products/@@image.png" alt="@@name" class="w-100 h-100 object-fit-cover">
+        </a>
+        <div class="product-card__badges position-absolute tw-start-0 d-flex flex-column align-items-start tw-gap-2">
+            @@if (labelOne) {
+            <span class="product-card__badge @@toneOne">@@labelOne</span>
+            }
+            @@if (labelTwo) {
+            <span class="product-card__badge @@toneTwo">@@labelTwo</span>
+            }
+        </div>
+        <div class="product-card__actions position-absolute d-flex flex-column tw-gap-105">
+            <button type="button" class="product-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="product-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="product-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+    </div>
+
+    <div class="product-card__body d-flex flex-column flex-grow-1">
+        <div class="d-flex align-items-start justify-content-between tw-gap-2">
+            <a href="javascript:void(0)" class="product-card__category text-main-600 tw-text-base hover-underline">@@category</a>
+            <div class="d-flex align-items-center tw-gap-05">
+                <span class="product-card__color" title="Blue"><span class="bg-main-600"></span></span>
+                <span class="product-card__color" title="Green"><span class="bg-green-600"></span></span>
+            </div>
+        </div>
+        <h3 class="product-card__title fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">@@name</a>
+        </h3>
+        <div class="product-card__meta d-flex align-items-center flex-wrap tw-gap-205 tw-text-xs text-slate-600 tw-mb-3">
+            <span>SKU: @@sku</span>
+            <span class="product-card__off bg-orange-50 border border-orange-100 text-orange-600 rounded-pill">-34%</span>
+        </div>
+
+        <div class="product-card__meta d-flex align-items-center flex-wrap tw-gap-305 tw-text-xs text-slate-600 tw-mb-2">
+            <span class="d-flex align-items-center tw-gap-105">
+                <i class="ph-fill ph-star text-yellow-600 tw-text-base tw-leading-none"></i>
+                <span><span class="fw-bold text-slate-800">4.8</span> (32.5K Reviews)</span>
+            </span>
+            <span class="product-card__dot"></span>
+            <span class="d-flex align-items-center tw-gap-105">
+                <i class="ph ph-package text-purple-600 tw-text-base tw-leading-none"></i>
+                Free Shipping
+            </span>
+        </div>
+        <div class="product-card__meta d-flex align-items-center flex-wrap tw-gap-205 tw-text-xs text-slate-600 tw-mb-4">
+            <span class="d-flex align-items-center tw-gap-3 fw-semibold text-slate-800">
+                <span class="product-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="product-card__dot"></span>
+            <span class="d-flex align-items-center tw-gap-105">
+                <i class="ph ph-tag text-main-600 tw-text-base tw-leading-none"></i>
+                35.2K Sold
+            </span>
+        </div>
+
+        <div class="product-card__footer d-flex align-items-center justify-content-between flex-wrap tw-gap-2 border-top border-slate-100 mt-auto">
+            <div class="d-flex align-items-baseline tw-gap-2 tw-leading-none">
+                <span class="text-orange-600 fw-extrabold tw-text-2xl">$59.00</span>
+                <del class="text-slate-500 tw-text-base">$89.00</del>
+            </div>
+            <a href="javascript:void(0)" class="product-card__cart btn btn-outline-main hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center rounded-pill tw-h-9 tw-px-5 py-0 font-heading fw-semibold tw-text-sm" data-block="button">
+                <span class="button__flair"></span>
+                <span class="button__label">Add Cart</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Product card (list / horizontal) end -->

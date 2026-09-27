@@ -1,0 +1,67 @@
+/* category slides section start */
+.category-tile {
+  min-height: 171px;
+  padding: 16px 15px 16px 16px; // + 1px border
+  color: inherit;
+  transition: border-color 0.2s linear;
+
+  &:hover {
+    border-color: var(--main-600) !important;
+
+    .category-tile__arrow {
+      background-color: var(--main-600);
+      color: hsl(var(--white));
+    }
+  }
+
+  &__icon {
+    width: 74px;
+    height: 74px;
+    margin-block-end: 16px;
+
+    img {
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+  &__title {
+    font-size: rem(20px);
+    line-height: 1.2;
+    margin-block-end: 1px;
+  }
+
+  &__arrow {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid var(--main-600);
+    border-radius: 50%;
+    color: var(--main-600);
+    font-size: rem(14px);
+    transition: 0.2s linear;
+  }
+}
+
+.category-slides {
+  .snap-slider__dots {
+    margin-block-start: 27px;
+  }
+}
+
+// 6 slides per view (up from the 4 in components/_snap-slider.scss)
+.snap-slider--6 {
+  .snap-slider__track {
+    @media (min-width: 992px) {
+      grid-auto-columns: calc((100% - 60px) / 4);
+    }
+
+    @media (min-width: 1200px) {
+      grid-auto-columns: calc((100% - 100px) / 6);
+    }
+  }
+}
+/* category slides section end */

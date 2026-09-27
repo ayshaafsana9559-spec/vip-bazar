@@ -1,0 +1,179 @@
+/* ================================= Custom Select Css Start =========================== */
+.custom-select {
+    &__toggle {
+        &.show {
+            color: var(--main-600) !important;
+
+            .custom-select__caret {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__caret {
+        transition: transform 0.2s ease;
+    }
+
+    &__value--truncate {
+        max-width: 110px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__menu {
+        // Bootstrap dropdown tokens
+        --bs-dropdown-min-width: 190px;
+        --bs-dropdown-padding-x: 6px;
+        --bs-dropdown-padding-y: 6px;
+        --bs-dropdown-font-size: #{rem(14px)};
+        --bs-dropdown-color: var(--slate-800);
+        --bs-dropdown-border-color: var(--slate-100);
+        --bs-dropdown-border-radius: 12px;
+        --bs-dropdown-item-padding-x: 12px;
+        --bs-dropdown-item-padding-y: 8px;
+        --bs-dropdown-item-border-radius: 8px;
+        --bs-dropdown-link-color: var(--slate-800);
+        --bs-dropdown-link-hover-color: hsl(var(--heading-color));
+        --bs-dropdown-link-hover-bg: var(--slate-50);
+        --bs-dropdown-link-active-color: var(--main-600);
+        --bs-dropdown-link-active-bg: var(--main-50);
+        box-shadow: 0 16px 40px -8px rgba(14, 19, 5, 0.14), 0 4px 10px -4px rgba(14, 19, 5, 0.06);
+        z-index: 1001;
+
+        li + li {
+            margin-block-start: 2px;
+        }
+
+        &.show {
+            // `translate` (not `transform`), because Popper positions the menu with transform
+            animation: customSelectIn 0.18s ease-out;
+        }
+
+        &--lg {
+            --bs-dropdown-min-width: 240px;
+            max-height: 360px;
+            overflow-y: auto;
+        }
+    }
+
+    &__option {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--body-font);
+        font-weight: 500;
+        line-height: 1.4;
+        transition: background-color 0.15s ease, color 0.15s ease;
+
+        &:focus-visible {
+            outline: 2px solid var(--main-200);
+            outline-offset: -2px;
+        }
+
+        &.active {
+            font-weight: 600;
+
+            .custom-select__check {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            .custom-select__symbol,
+            .custom-select__icon {
+                background-color: var(--main-600);
+                color: hsl(var(--white));
+            }
+
+            .custom-select__thumb {
+                background-color: hsl(var(--white));
+            }
+
+            .custom-select__hint {
+                color: var(--main-400);
+            }
+        }
+    }
+
+    &__flag {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 0 0 1px var(--slate-200);
+        flex-shrink: 0;
+    }
+
+    &__symbol,
+    &__icon {
+        width: 26px;
+        height: 26px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: var(--slate-50);
+        color: hsl(var(--heading-color));
+        font-family: var(--heading-font);
+        font-size: rem(14px);
+        font-weight: 600;
+        flex-shrink: 0;
+        transition: inherit;
+    }
+
+    &__icon {
+        font-size: rem(16px);
+        border-radius: 8px;
+    }
+
+    &__thumb {
+        width: 26px;
+        height: 26px;
+        padding: 3px;
+        border-radius: 8px;
+        background-color: var(--slate-50);
+        object-fit: contain;
+        flex-shrink: 0;
+        transition: inherit;
+    }
+
+    &__hint {
+        margin-inline-start: 4px;
+        color: var(--slate-500);
+        font-size: rem(12px);
+        font-weight: 400;
+    }
+
+    &__check {
+        margin-inline-start: auto;
+        color: var(--main-600);
+        font-size: rem(14px);
+        opacity: 0;
+        transform: scale(0.6);
+        transition: opacity 0.15s ease, transform 0.15s ease;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        &__menu.show {
+            animation: none;
+        }
+
+        &__caret,
+        &__check {
+            transition: none;
+        }
+    }
+}
+
+@keyframes customSelectIn {
+    from {
+        opacity: 0;
+        translate: 0 6px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+/* ================================= Custom Select Css End =========================== */

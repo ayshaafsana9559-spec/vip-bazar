@@ -1,0 +1,82 @@
+/* latest shopping insights (blog slider in a folder frame) start */
+// a longer title needs a wider, slightly taller tab
+.folder-frame--wide {
+  @media (min-width: 576px) {
+    --tab-width: 443px;
+    --tab-height: 78px;
+    padding-block-start: 33px;
+  }
+}
+
+.blog-insights {
+  .snap-slider__dots {
+    margin-block-start: 31px;
+  }
+}
+
+.blog-card {
+  &__thumb {
+    height: 260px;
+
+    img {
+      transition: transform 0.4s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  &__tag {
+    top: 15px;
+    left: 15px;
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+    padding-inline: 12px;
+    font-size: rem(11px);
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  &__body {
+    margin-block-start: 20px;
+    padding: 6px 0 11px 20px;
+    border-inline-start: 1px solid var(--slate-200);
+  }
+
+  &__meta {
+    gap: 12px;
+    min-height: 20px;
+    font-size: rem(14px);
+    line-height: 1.5;
+  }
+
+  &__dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--slate-800);
+  }
+
+  &__title {
+    margin-block-start: 7px;
+    font-size: rem(20px);
+    line-height: 1.25;
+    min-height: calc(2 * 1.25em);
+  }
+
+  &__more {
+    align-self: flex-start;
+    margin-block-start: 15px;
+    font-size: rem(13px);
+    line-height: 1.5;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__thumb img {
+      transition: none;
+    }
+  }
+}
+/* latest shopping insights (blog slider in a folder frame) end */

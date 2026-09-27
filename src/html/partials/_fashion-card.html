@@ -1,0 +1,55 @@
+<!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/@@image.png" alt="@@name" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill @@tone">@@label</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        @@if (timer) {
+        <div class="fashion-card__timer position-absolute d-inline-flex align-items-center justify-content-center bg-white rounded-pill text-orange-600 font-heading fw-semibold" data-countdown data-duration="@@timer" role="timer" aria-label="Offer ends in">
+            <span data-countdown-days>00</span>&nbsp;d&nbsp;:&nbsp;<span data-countdown-hours>00</span>&nbsp;h&nbsp;:&nbsp;<span data-countdown-minutes>00</span>&nbsp;m&nbsp;:&nbsp;<span data-countdown-seconds>00</span>&nbsp;s
+        </div>
+        }
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">@@name</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/@@swatchOne.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/@@image.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/@@swatchThree.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->

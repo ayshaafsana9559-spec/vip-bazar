@@ -1,0 +1,42 @@
+<!-- ======================================== Featured products two start =================================== -->
+<section class="featured-two bg-slate-25">
+    <div class="container container-two">
+        <div class="featured-two__grid">
+            <div class="featured-two__banner position-relative overflow-hidden tw-rounded-xl">
+                <img src="assets/images/thumbs/featured-two/weekend-special.png" alt="" class="featured-two__art">
+                <div class="featured-two__content position-relative">
+                    <span class="featured-two__badge d-inline-flex align-items-center tw-gap-1 bg-white rounded-pill text-purple-600 font-heading fw-semibold">
+                        <i class="ph ph-lightning tw-text-base tw-leading-none"></i>
+                        Weekend Special
+                    </span>
+                    <h2 class="featured-two__title fw-semibold text-white">Discover, Click &amp; Deliver</h2>
+                    <a href="javascript:void(0)" class="featured-two__btn btn btn-main-two hover-style-one button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-2 rounded-pill py-0 font-heading fw-semibold tw-text-sm" data-block="button">
+                        <span class="button__flair"></span>
+                        <i class="ph ph-basket tw-text-lg position-relative"></i>
+                        <span class="button__label">Shop Now</span>
+                    </a>
+                </div>
+                <span class="featured-two__offer position-absolute rounded-circle bg-orange-600 text-white d-flex flex-column align-items-center justify-content-center">
+                    <span class="featured-two__offer-up">UP TO</span>
+                    <span class="featured-two__offer-value fw-bold">-30%</span>
+                </span>
+            </div>
+
+            <div class="d-flex flex-column">
+                <div class="featured-two__head d-flex align-items-center justify-content-between flex-wrap tw-gap-3">
+                    <h2 class="featured-two__heading fw-semibold text-slate-800 mb-0">Featured Products</h2>
+                    <a href="javascript:void(0)" class="featured-two__all d-inline-flex align-items-center tw-gap-2 text-main-600 font-heading fw-semibold hover-underline">
+                        See All Products
+                        <i class="ph ph-arrow-right tw-text-base"></i>
+                    </a>
+                </div>
+                <div class="featured-two__list d-flex flex-column flex-grow-1">
+                    @@include('../partials/_product-card-row.html', { "image": "wireless-headphones", "name": "Wireless Headphones", "category": "Electronics", "label": "Mega Save", "tone": "bg-main-600 text-white" })
+                    @@include('../partials/_product-card-row.html', { "image": "cricket-helmet", "name": "Cricket Helmet", "category": "Sports", "label": "Hot Deal", "tone": "bg-yellow-600 text-heading" })
+                    @@include('../partials/_product-card-row.html', { "image": "special-money-bag", "name": "Special Money Bag", "category": "Accessories", "label": "Limited Offer", "tone": "bg-green-600 text-white" })
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======================================== Featured products two end =================================== -->

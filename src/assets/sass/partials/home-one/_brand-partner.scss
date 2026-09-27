@@ -1,0 +1,118 @@
+/* brand partner section start */
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid var(--slate-200);
+  border-radius: 12px;
+  // hairlines between cells: the grid gap shows this colour through
+  gap: 1px;
+  background-color: var(--slate-100);
+
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(var(--white));
+
+    &:hover {
+      .brand-grid__logo img {
+        transform: scale(1.06);
+      }
+
+      .brand-grid__offer {
+        background-color: var(--main-600);
+        color: hsl(var(--white));
+      }
+    }
+  }
+
+  &__logo {
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 12px;
+
+    img {
+      max-width: 100%;
+      transition: transform 0.25s ease;
+    }
+  }
+
+  &__offer {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--slate-25);
+    color: var(--slate-800);
+    font-size: rem(16px);
+    transition: 0.2s linear;
+  }
+}
+
+.deal-strip {
+  &__text {
+    font-size: rem(20.5px); // measured: Figma sets this line wider than the other Nunito text
+  }
+
+  &__inner {
+    min-height: 126px;
+    padding-block: 20px;
+  }
+
+  &__pill {
+    height: 38px;
+    padding-inline: 16px 8px;
+  }
+
+  &__divider {
+    width: 1px;
+    height: 18px;
+    margin-inline: 8px;
+    background-color: var(--slate-200);
+  }
+
+  &__arrow {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: hsl(var(--white));
+    color: var(--main-600);
+    font-size: rem(20px);
+    transition: 0.2s linear;
+
+    &:hover {
+      background-color: var(--main-two-600);
+      color: hsl(var(--white));
+    }
+  }
+}
+
+// countdown on a blue background
+.flash-countdown--light {
+  .flash-countdown__label {
+    color: hsl(var(--white));
+    font-weight: 600;
+  }
+
+  .flash-countdown__box {
+    width: 42px;
+    height: 40px;
+    background-color: hsl(var(--white));
+    color: var(--main-600);
+  }
+}
+/* brand partner section end */

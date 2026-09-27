@@ -1,0 +1,21 @@
+/* promo trio (three photo offer banners) start */
+// .promo-tile from home-three/_promo-pair.scss, three across, copy at the bottom
+.promo-pair--trio {
+  .promo-pair__grid {
+    gap: 19px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}
+
+.promo-tile--bottom {
+  min-height: 375px;
+  padding-block-end: 30px;
+}
+/* promo trio (three photo offer banners) end */

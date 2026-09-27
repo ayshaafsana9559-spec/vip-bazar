@@ -1,0 +1,89 @@
+/* popular categories section start */
+.popular-categories {
+  &__grid {
+    display: grid;
+    gap: 20px;
+
+    @media (min-width: 576px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    // promo banner on the left spanning both rows, 2 × 2 category cards on the right
+    @media (min-width: 1200px) {
+      grid-template-columns: minmax(0, 653fr) minmax(0, 316fr) minmax(0, 316fr);
+    }
+  }
+}
+
+/* The artwork (products, podium, sale sticker) is the background; the copy is live text. */
+.promo-banner {
+  min-height: 600px;
+  padding: 53px 24px 48px 52px;
+  background: url(../images/thumbs/categories/mega-deals-banner.png) no-repeat right top / auto 100%,
+    linear-gradient(180deg, #0b0d48 0%, #0d0e4e 50%, #121053 100%);
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  // keeps the copy readable on phones, where the products slide under the text
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(11, 13, 72, 0.92) 45%, transparent 85%);
+    opacity: 0;
+    pointer-events: none;
+
+    @media (max-width: 575px) {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 576px) {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: 1200px) {
+    grid-column: auto;
+    grid-row: span 2;
+    margin-block: 2px;
+  }
+
+  @media (max-width: 575px) {
+    min-height: 520px;
+    padding-inline-start: 24px;
+    background-size: auto 100%;
+    background-position: 70% top;
+  }
+
+  &__badge {
+    height: 33px;
+    padding-inline: 10px;
+    border: 1px solid hsl(var(--white) / 0.2);
+    background-color: hsl(var(--white) / 0.1);
+  }
+
+  &__title {
+    margin-block-start: 9px;
+    font-size: clamp(2.5rem, 1.5rem + 2.5vw, 3.5rem);
+    line-height: 1.054;
+  }
+
+  &__lead {
+    margin-block-start: 14px;
+    line-height: 1.5;
+  }
+
+  &__off {
+    font-size: clamp(2rem, 1.5rem + 1.2vw, 2.625rem);
+    line-height: 1.05;
+  }
+
+  &__old {
+    line-height: 1.5;
+    margin-block-end: 35px;
+  }
+}
+/* popular categories section end */

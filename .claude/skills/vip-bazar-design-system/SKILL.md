@@ -19,18 +19,20 @@ Palette set from the eCommex home design (2026-09-24):
 | `--main-two-600` | `hsl(81.4 58.3% 4.7%)` | `#0E1305` near-black | headings, top bar text, Search button |
 | `--purple-600` | `hsl(251.4 91.3% 63.9%)` | `#6F4FF7` | promo card accent |
 | `--green-600` | `hsl(158.9 51.6% 42.2%)` | `#34A37C` | promo card accent, wishlist badge |
-| `--orange-600` | `hsl(13.1 100% 55.1%)` | `#FF4C1A` | cart badge |
+| `--orange-600` | `hsl(13.1 100% 55.1%)` | `#FF4C1A` | cart badge, sale prices |
+| `--yellow-600` | `hsl(45.3 97.4% 54.1%)` | `#FCC418` | rating stars, "Hot Deal" badges (use dark `text-heading` on it) |
+| `--gold-600` | `hsl(45.2 97.4% 31%)` | `#9C7602` | bags / accessories accent; `gold-50` is the beige panel |
 | `--heading-color` | `var(--main-two)` | `#0E1305` | headings, `.text-heading` |
 | `--body-color` (`--body`) | `221 35.8% 20.8%` | `#222E48` | body text |
 | `--white` | `0 0% 100%` | `#FFFFFF` | `.text--white` (note the double dash) |
-| `--slate-*` (hex map) | 50 `#f3f3f3`, 100 `#f0f0f3`, 200 `#e3e4e7`, 500 `#6a7283`, 600 `#404a60`, 800 `#222e48` | | 50 = header band bg; 100/200 = light borders/dividers; 500 = struck price; 600 = nav links, "From"; 800 = body copy |
+| `--slate-*` (hex map) | 25 `#f9f9f9` (product image box), 50 `#f3f3f3`, 100 `#f0f0f3`, 200 `#e3e4e7`, 500 `#6a7283`, 600 `#404a60`, 800 `#222e48` | | 50 = header band bg; 100/200 = light borders/dividers; 500 = struck price; 600 = nav links, "From"; 800 = body copy |
 | `--neutral-50…950` | Tailwind gray | `#f9fafb … #030712` | legacy |
 
 Handy tints that match the design exactly: `main-50` `#E9EFFB` (blue pill), `orange-50` `#FFEDE8` (peach pill), `main-100` / `purple-100` / `green-100` (badge borders).
 
-`main`, `main-two`, `purple`, `green`, `orange` have generated shades `50 100 200 300 400 500 600 700 800 900`: 50–500 are lighter mixes toward white (90%…40%), 600 is the base, and 700–900 are 10–30% darker.
+`main`, `main-two`, `purple`, `green`, `orange`, `yellow`, `gold` have generated shades `50 100 200 300 400 500 600 700 800 900`: 50–500 are lighter mixes toward white (90%…40%), 600 is the base, and 700–900 are 10–30% darker.
 
-Class families generated for each `{main, main-two, purple, green, orange, slate, neutral}-{shade}`:
+Class families generated for each `{main, main-two, purple, green, orange, yellow, gold, slate, neutral}-{shade}`:
 `text-*`, `bg-*` (!important), `border-*` (!important), `hover-text-*`, `hover-bg-*`, `hover-border-*`, `focus-border-*`.
 Extras: `text-heading`, `text-main`, `text--white`, `hover-text-white|heading|body`, `hover-bg-white`, `bg-white-08|13|7|06` (white at 8/13/70/6% alpha).
 

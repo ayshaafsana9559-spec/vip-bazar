@@ -1,0 +1,234 @@
+/* promo bento (4 offer cards) start */
+.promo-bento {
+  &__grid {
+    display: grid;
+    gap: 20px;
+
+    // phones: one column
+    @media (max-width: 767px) {
+      .bento-card {
+        height: 300px;
+      }
+
+      .bento-card--tall {
+        height: 540px;
+      }
+
+      .bento-card--wide {
+        height: 420px;
+      }
+    }
+
+    // tablets / small laptops: tall card on the left, two small cards on the right, wide card below
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: 300px 300px 390px;
+
+      .bento-card--tall {
+        grid-row: span 2;
+      }
+
+      .bento-card--wide {
+        grid-column: span 2;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: 300px 390px;
+    }
+  }
+}
+
+.bento-card {
+  padding: 20px;
+
+  &__art {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  &__badge {
+    height: 32px;
+    padding-inline: 12px 14px;
+    font-size: rem(13px);
+    line-height: 1;
+  }
+
+  &__title {
+    margin-block: 11px 26px;
+    color: var(--main-two-600);
+    font-size: rem(48px);
+    line-height: 1.1;
+
+    // dark letters with a thin white outline (reads on the photo and on the wall)
+    &--stroke {
+      -webkit-text-stroke: 2px hsl(var(--white));
+      paint-order: stroke fill;
+    }
+  }
+
+  &__btn {
+    height: 42px;
+    padding-inline: 24px;
+  }
+
+  &__price {
+    margin-block-end: 31px;
+  }
+
+  &__amount {
+    font-size: rem(31px);
+  }
+
+  // "UP TO -30%" circle
+  &__offer {
+    width: 101px;
+    height: 101px;
+    line-height: 1;
+
+    &--sm {
+      width: 72px;
+      height: 72px;
+
+      .bento-card__offer-up {
+        margin-block-end: 4px;
+        font-size: rem(11px);
+      }
+
+      .bento-card__offer-value {
+        font-size: rem(20px);
+      }
+    }
+  }
+
+  &__offer-up {
+    margin-block-end: 6px;
+    font-size: rem(16px);
+  }
+
+  &__offer-value {
+    font-size: rem(27px);
+  }
+
+  // ---- individual cards ----
+  &--tall {
+    padding: 28px;
+
+    .bento-card__offer {
+      top: 411px;
+      right: 27px;
+    }
+  }
+
+  &--couple {
+    padding-bottom: 26px;
+
+    .bento-card__badge {
+      margin-block-end: 3px;
+    }
+
+    .bento-card__title {
+      margin: 0;
+      line-height: 1;
+    }
+
+    .bento-card__offer {
+      top: 30px;
+      right: 27px;
+    }
+  }
+
+  &--music {
+    .bento-card__title {
+      margin: 0;
+      font-size: rem(34px);
+      line-height: 1.1;
+    }
+
+    .bento-card__offer {
+      top: 84px;
+      right: 34px;
+    }
+
+    .bento-card__btn {
+      right: 22px;
+      bottom: 20px;
+    }
+  }
+
+  &--wide {
+    padding: 35px 34px;
+
+    .bento-card__title {
+      max-width: 380px;
+    }
+
+    .bento-card__offer {
+      top: 211px;
+      left: 280px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    &__title {
+      font-size: rem(38px);
+    }
+
+    &--music .bento-card__title {
+      font-size: rem(28px);
+    }
+
+    &--wide .bento-card__offer {
+      top: auto;
+      bottom: 28px;
+      left: 210px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    &--tall,
+    &--wide {
+      padding: 24px 20px;
+    }
+
+    &__title {
+      font-size: rem(32px);
+    }
+
+    &--music .bento-card__title {
+      max-width: 240px;
+      font-size: rem(26px);
+    }
+
+    &--tall .bento-card__offer {
+      top: auto;
+      bottom: 24px;
+    }
+
+    &--wide .bento-card__offer {
+      left: auto;
+      right: 20px;
+      bottom: 20px;
+    }
+
+    // the photo sits behind the copy here: fade it out on the left
+    &--wide::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(90deg, hsl(var(--white) / 0.8) 45%, transparent 90%);
+    }
+
+    &--wide .bento-card__content,
+    &--wide .bento-card__offer {
+      z-index: 2;
+    }
+  }
+}
+/* promo bento (4 offer cards) end */

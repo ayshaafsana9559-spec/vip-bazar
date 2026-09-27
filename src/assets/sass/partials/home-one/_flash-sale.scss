@@ -1,0 +1,47 @@
+/* flash sale section start */
+.flash-countdown {
+  row-gap: 8px;
+
+  // phones: "Deal ends in" gets its own row so the three boxes stay on one line
+  @media (max-width: 575px) {
+    .flash-countdown__label:first-child {
+      flex-basis: 100%;
+    }
+
+    .flash-countdown__label:not(:first-child) {
+      margin-inline: 4px 8px !important;
+    }
+
+    .flash-countdown__box {
+      width: 36px;
+      height: 34px;
+      font-size: rem(18px);
+    }
+  }
+
+  &__label {
+    color: var(--slate-600);
+    font-size: rem(12px);
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__box {
+    width: 42px;
+    height: 37px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: var(--main-two-600);
+    color: hsl(var(--white));
+    font-family: var(--heading-font);
+    font-size: rem(20px);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+}
+
+/* flash sale section end */

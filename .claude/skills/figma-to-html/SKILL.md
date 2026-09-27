@@ -13,7 +13,8 @@ Before writing code, load the companion skills:
 
 ## 1. Analyze the screenshot (do this first, in your head, not as chat output)
 
-1. **Frame width and scale.** The desktop layouts use `.container.max-w-1752-px`, which implies a **1920px** artboard (84px side gutters). If the screenshot is 3840 wide it is @2x; halve every measurement. If the width is unclear and it changes the numbers, ask once.
+1. **Scale check first.** The page content is **1322px** wide (`container container-two`). Measure the content width in the screenshot and scale every measurement by `1322 / measured`. For example, the Deal of the Day export was ×0.725, so values are multiplied by 1.38. Sizes should land on sensible values (14/16/24/28…) after scaling.
+   **Frame width and scale.** The desktop layouts use `.container.max-w-1752-px`, which implies a **1920px** artboard (84px side gutters). If the screenshot is 3840 wide it is @2x; halve every measurement. If the width is unclear and it changes the numbers, ask once.
 2. **Break it into sections** (top-to-bottom), then each section into rows, then into columns/flex groups. Decide flex or grid for each group.
 3. **Measure everything** from the pixels: outer paddings, gaps between items, element widths/heights, border widths, radii, icon sizes, font sizes, and line-heights. Estimate font size from cap height (cap height ≈ 0.7 × font-size for Poppins).
 4. **Sample colors** and compare them against the tokens (see the design system). Use an existing token when the difference is imperceptible (ΔE < ~2). Otherwise add a new token; do not hardcode hex values inside the HTML.

@@ -1,0 +1,39 @@
+<!-- ======================================== Popular categories start =================================== -->
+<section class="popular-categories bg-slate-25 py-60">
+    <div class="container container-two">
+        <div class="d-flex align-items-center justify-content-between flex-wrap tw-gap-4 tw-mb-705">
+            <h2 class="section-title fw-semibold text-slate-800">Popular Categories</h2>
+            <a href="javascript:void(0)" class="btn btn-outline-main hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-2 rounded-pill tw-h-11 tw-px-6 py-0 font-heading fw-semibold tw-text-sm" data-block="button">
+                <span class="button__flair"></span>
+                <span class="button__label">See All Categories</span>
+                <i class="ph ph-arrow-right tw-text-base position-relative"></i>
+            </a>
+        </div>
+
+        <div class="popular-categories__grid">
+            <!-- Promo banner Start -->
+            <div class="promo-banner tw-rounded-xl position-relative overflow-hidden d-flex flex-column align-items-start">
+                <span class="promo-banner__badge d-inline-flex align-items-center tw-gap-1 rounded-pill text-white font-heading fw-semibold tw-text-sm">
+                    <i class="ph ph-lightning tw-text-base tw-leading-none"></i>
+                    Special Offers
+                </span>
+                <h3 class="promo-banner__title text-white fw-semibold">Mega Deals, <br>Daily Sale</h3>
+                <span class="promo-banner__lead text-white tw-text-xl">Up To</span>
+                <span class="promo-banner__off text-yellow-600 font-heading fw-semibold">40% OFF</span>
+                <del class="promo-banner__old text-white tw-text-xl">$99.00</del>
+                <a href="javascript:void(0)" class="btn btn-white hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-2 rounded-pill tw-h-11 tw-px-7 py-0 font-heading fw-semibold tw-text-sm" data-block="button">
+                    <span class="button__flair"></span>
+                    <i class="ph ph-basket tw-text-base position-relative"></i>
+                    <span class="button__label">Shop Now</span>
+                </a>
+            </div>
+            <!-- Promo banner End -->
+
+            @@include('../partials/_category-card.html', { "image": "electronics", "icon": "electronics", "tone": "border-main-100", "title": "Electronics", "desc": "Smart tech for smarter living.", "tagOne": "Smartwatch", "tagTwo": "Wearables", "tagThree": "Gadgets" })
+            @@include('../partials/_category-card.html', { "image": "tv-displays", "icon": "tv-displays", "tone": "border-purple-100", "title": "TV &amp; Displays", "desc": "See everything in stunning clarity.", "tagOne": "Television", "tagTwo": "Smart TV", "tagThree": "Displays" })
+            @@include('../partials/_category-card.html', { "image": "fashion-apparel", "icon": "fashion-apparel", "tone": "border-green-200", "title": "Fashion &amp; Apparel", "desc": "Style that speaks for itself.", "tagOne": "Clothing", "tagTwo": "Men’s Wear", "tagThree": "Casual" })
+            @@include('../partials/_category-card.html', { "image": "bags-accessories", "icon": "bags-accessories", "tone": "border-gold-200", "title": "Bags &amp; Accessories", "desc": "Carry style wherever you go.", "tagOne": "Handbags", "tagTwo": "Ladies Bag", "tagThree": "Accessories" })
+        </div>
+    </div>
+</section>
+<!-- ======================================== Popular categories end =================================== -->

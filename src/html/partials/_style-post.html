@@ -1,0 +1,38 @@
+<!-- Style post card start -->
+<article class="style-post h-100 d-flex flex-column">
+    <a href="javascript:void(0)" class="style-post__thumb position-relative d-block">
+        <span class="d-block w-100 h-100 overflow-hidden tw-rounded-lg">
+            <img src="assets/images/thumbs/blog/@@image.png" alt="@@title" class="w-100 h-100 object-fit-cover">
+        </span>
+        <span class="style-post__date position-absolute d-inline-flex align-items-center bg-white rounded-pill font-heading">
+            <span class="style-post__day bg-green-600 text-white fw-semibold">@@day</span>
+            <span class="style-post__month text-slate-800">@@month</span>
+        </span>
+        <span class="style-post__tag position-absolute bg-yellow-600 text-heading font-heading fw-semibold">@@tag</span>
+    </a>
+    <div class="style-post__body d-flex flex-column flex-grow-1">
+        <h3 class="style-post__title fw-semibold text-slate-800 line-clamp-2">
+            <a href="javascript:void(0)" class="hover-text-main-600">@@title</a>
+        </h3>
+        <div class="style-post__footer d-flex align-items-center justify-content-between tw-gap-2 border-top border-slate-100 mt-auto">
+            <div class="d-flex align-items-center tw-gap-2" style="min-width: 0">
+                <img src="assets/images/thumbs/avatars/@@avatar.png" alt="@@author" class="style-post__avatar rounded-circle object-fit-cover flex-shrink-0">
+                <div class="min-w-0">
+                    <span class="style-post__author d-block text-slate-800 text-truncate">@@author</span>
+                    <span class="style-post__role d-block text-slate-500">Admin</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center tw-gap-4 flex-shrink-0">
+                <span class="style-post__comments d-inline-flex align-items-center tw-gap-2 text-slate-600">
+                    <i class="ph ph-chat-centered-text text-main-600"></i>
+                    @@comments
+                </span>
+                <a href="javascript:void(0)" class="style-post__read d-inline-flex align-items-center tw-gap-1 text-orange-600 font-heading fw-semibold">
+                    Read
+                    <i class="ph ph-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- Style post card end -->

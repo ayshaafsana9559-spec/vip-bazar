@@ -1,0 +1,53 @@
+/* deal of the day section start */
+.deal-products {
+  // one swipeable row on small screens instead of wrapping
+  &__tabs {
+    @media (max-width: 767px) {
+      width: 100%;
+      overflow-x: auto;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  &__tab {
+    white-space: nowrap;
+    color: var(--slate-600);
+    font-size: rem(17px);
+    line-height: 1.5;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: var(--main-600);
+    }
+
+    &.active {
+      color: var(--main-600);
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    gap: 20px;
+
+    @media (min-width: 576px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+}
+/* deal of the day section end */

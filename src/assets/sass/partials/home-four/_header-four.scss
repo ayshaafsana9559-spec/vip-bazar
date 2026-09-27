@@ -1,0 +1,31 @@
+/* top header four + header four start */
+// top header two's content on the index-3 offer-bar gradient
+.top-header--gradient {
+  background: linear-gradient(90deg, var(--yellow-600) 0%, var(--orange-600) 4%, var(--main-two-600) 40.4%, var(--main-600) 79%, var(--purple-600) 100%);
+}
+
+.header-four {
+  &__inner {
+    min-height: 69px;
+  }
+
+  &__menu {
+    margin-inline-start: 48px;
+  }
+
+  &__nav {
+    gap: 22px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 1199px) {
+    &__menu {
+      margin-inline-start: 28px;
+    }
+
+    &__nav {
+      gap: 16px;
+    }
+  }
+}
+/* top header four + header four end */

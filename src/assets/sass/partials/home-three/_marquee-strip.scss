@@ -1,0 +1,77 @@
+/* marquee strip (scrolling outline words) start */
+.marquee-strip {
+  &__track {
+    width: max-content;
+    animation: marqueeStrip 40s linear infinite;
+  }
+
+  &:hover &__track {
+    animation-play-state: paused;
+  }
+
+  &__list {
+    min-height: 86px;
+    gap: 45px;
+    padding-inline-end: 45px;
+  }
+
+  // outlined words; one solid word for emphasis
+  &__word {
+    // fill with the band colour and paint the stroke underneath: only the outer 1px of the 2px stroke shows,
+    // and Signika's overlapping contours stay hidden
+    color: var(--slate-25);
+    font-family: var(--heading-font);
+    font-size: rem(40px);
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+    -webkit-text-stroke: 2px var(--slate-600);
+    paint-order: stroke fill;
+
+    &--solid {
+      color: var(--main-two-600);
+      font-weight: 700;
+    }
+  }
+
+  &__star {
+    color: var(--slate-600);
+    font-size: rem(28px);
+    line-height: 1;
+  }
+
+  @media (max-width: 575px) {
+    &__list {
+      min-height: 64px;
+      gap: 28px;
+      padding-inline-end: 28px;
+    }
+
+    &__word {
+      font-size: rem(28px);
+    }
+
+    &__star {
+      font-size: rem(20px);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &__track {
+      animation: none;
+    }
+  }
+}
+
+// the track holds two copies of the list, so moving it by half loops seamlessly
+@keyframes marqueeStrip {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+/* marquee strip (scrolling outline words) end */

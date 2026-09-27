@@ -1,0 +1,88 @@
+/* ================================= Folder Frame Css Start =========================== */
+// folder-shaped panel: a tab on the top-left joined to the panel with an inward (concave) curve.
+// Optional __aside sits in the tab row on the right (e.g. a countdown).
+.folder-frame {
+    --tab-width: 357px;
+    --tab-height: 76px;
+    --fillet: 10px;
+    --line: var(--main-400);
+    position: relative;
+    margin-block-start: var(--tab-height);
+    padding: 39px;
+    border: 1px solid var(--line);
+    border-radius: 0 12px 12px 12px;
+    background-color: var(--slate-25);
+
+    // the frame is 40px wider than the container on each side when there's room for it
+    @media (min-width: 1400px) {
+        margin-inline: -40px;
+    }
+
+    @media (max-width: 575px) {
+        --tab-width: calc(100% + 2px);
+        padding: 19px;
+        border-start-end-radius: 0;
+    }
+
+    &__tab {
+        position: absolute;
+        inset-inline-start: -1px;
+        inset-block-end: calc(100% - 1px); // sits on the frame's top border and hides it
+        width: var(--tab-width);
+        height: calc(var(--tab-height) + 1px);
+        padding-block-start: 33px;
+        padding-inline-start: 39px;
+        border: 1px solid var(--line);
+        border-block-end: 0;
+        border-radius: 14px 14px 0 0;
+        background-color: var(--slate-25);
+
+        @media (max-width: 575px) {
+            padding-block-start: 20px;
+            padding-inline-start: 19px;
+            border-start-end-radius: 14px;
+        }
+
+        // concave fillet between the tab's right edge and the frame's top edge
+        &::after {
+            content: "";
+            position: absolute;
+            inset-inline-start: 100%;
+            inset-block-end: 0;
+            width: calc(var(--fillet) + 1px);
+            height: calc(var(--fillet) + 1px);
+            background: radial-gradient(circle at 100% 0, transparent var(--fillet), var(--line) var(--fillet), var(--line) calc(var(--fillet) + 1px), var(--slate-25) calc(var(--fillet) + 1px));
+
+            @media (max-width: 575px) {
+                display: none;
+            }
+        }
+    }
+
+    &__aside {
+        position: absolute;
+        inset-inline-end: 39px;
+        inset-block-end: 100%;
+        height: var(--tab-height);
+        display: flex;
+        align-items: center;
+        padding-block-end: 6px;
+
+        // not enough room beside the tab: move inside the frame
+        @media (max-width: 991px) {
+            position: static;
+            height: auto;
+            margin-block-end: 20px;
+            padding-block-end: 0;
+        }
+    }
+
+    &__body {
+        position: relative;
+    }
+}
+
+[dir="rtl"] .folder-frame__tab::after {
+    transform: scaleX(-1);
+}
+/* ================================= Folder Frame Css End =========================== */

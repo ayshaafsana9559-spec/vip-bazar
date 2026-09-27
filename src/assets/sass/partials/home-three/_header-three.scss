@@ -1,0 +1,63 @@
+/* header three (menu | logo | utilities, then search row) start */
+.header-three {
+  &__top-inner {
+    min-height: 63px;
+
+    // the design sits the logo a little right of the halfway point between menu and utilities
+    .logo {
+      @media (min-width: 992px) {
+        margin-inline-start: 20px;
+      }
+    }
+  }
+
+  // menu and utilities sit an equal distance either side of the logo (space-between)
+  &__menu {
+    gap: 19px;
+    white-space: nowrap;
+  }
+
+  &__utils {
+    gap: 22px;
+    white-space: nowrap;
+  }
+
+  &__link {
+    color: var(--slate-600);
+    font-size: rem(14px);
+    line-height: 1.5;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: var(--main-600);
+    }
+  }
+
+  &__divider {
+    width: 1px;
+    height: 20px;
+    background-color: var(--slate-200);
+  }
+
+  &__bottom-inner {
+    min-height: 69px;
+    gap: 24px;
+  }
+
+  &__search {
+    height: 40px;
+    padding-inline-start: 17px;
+  }
+
+  &__action {
+    width: 42px;
+    height: 42px;
+  }
+
+  @media (max-width: 1199px) {
+    &__utils {
+      gap: 16px;
+    }
+  }
+}
+/* header three (menu | logo | utilities, then search row) end */

@@ -1,0 +1,54 @@
+/* flash sale two (ticket countdown + card two slider) start */
+.flash-sale-two {
+  &__head {
+    margin-block-end: 33px;
+  }
+}
+
+// dark "ticket" countdown with a half-circle notch on each side
+.ticket-countdown {
+  --notch: 8px;
+  width: 204px;
+  height: 48px;
+  gap: 14px;
+  padding-inline: 14px;
+  border-radius: 6px;
+  background-color: var(--main-two-600);
+  color: hsl(var(--white));
+  line-height: 1;
+  -webkit-mask:
+    radial-gradient(circle var(--notch) at 0 50%, transparent 97%, #000) left / 51% 100% no-repeat,
+    radial-gradient(circle var(--notch) at 100% 50%, transparent 97%, #000) right / 51% 100% no-repeat;
+  mask:
+    radial-gradient(circle var(--notch) at 0 50%, transparent 97%, #000) left / 51% 100% no-repeat,
+    radial-gradient(circle var(--notch) at 100% 50%, transparent 97%, #000) right / 51% 100% no-repeat;
+
+  &__label {
+    color: var(--slate-600);
+    font-family: var(--heading-font);
+    font-size: rem(13px);
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__value {
+    font-family: var(--heading-font);
+    font-size: rem(20px);
+    font-weight: 600;
+  }
+
+  &__name {
+    margin-block-start: 4px;
+    font-size: rem(8px);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__sep {
+    font-family: var(--heading-font);
+    font-size: rem(14px);
+    font-weight: 600;
+    transform: translateY(1px);
+  }
+}
+/* flash sale two (ticket countdown + card two slider) end */

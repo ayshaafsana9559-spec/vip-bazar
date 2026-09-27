@@ -1,0 +1,131 @@
+/* footer three (dark, help row on top, gradient bottom bar) start */
+// built on layout/_footer.scss (dark colours, links, socials, newsletter)
+.footer--three {
+  .footer__top {
+    padding-block: 70px 29px;
+    row-gap: 20px;
+    border-bottom: 1px solid var(--footer-line);
+  }
+
+  .footer__help-label {
+    margin-inline-end: 16px;
+    font-size: rem(13px);
+  }
+
+  .footer__help-phone {
+    font-size: rem(22px);
+    line-height: 1.2;
+  }
+
+  .footer__logo {
+    margin: 0;
+
+    img {
+      width: 155px;
+    }
+  }
+
+  .footer__socials {
+    gap: 6px;
+  }
+
+  .footer__social {
+    width: 29px;
+    height: 29px;
+    font-size: rem(14px);
+  }
+
+  .footer__main {
+    padding-block: 62px 60px;
+  }
+
+  .footer__title {
+    margin-block-end: 22px;
+    font-size: rem(20px);
+  }
+
+  .footer__text {
+    max-width: 250px;
+    font-size: rem(13.5px);
+    line-height: 1.5;
+
+    & + .footer__text {
+      margin-block-start: 20px;
+    }
+  }
+
+  .footer__links {
+    gap: 3px;
+
+    a {
+      font-size: rem(13.5px);
+    }
+  }
+
+  .footer__contact {
+    .footer__text {
+      margin: 0;
+    }
+
+    .footer__contact-value {
+      margin-block: 3px 22px;
+      font-size: rem(21px);
+      font-style: normal;
+      line-height: 1.4;
+    }
+  }
+
+  .footer__newsletter {
+    margin-block-start: 22px;
+  }
+
+  // bottom bar: the top-bar gradient, reversed
+  .footer__bottom {
+    border-top: 0;
+    background: linear-gradient(90deg, var(--purple-600) 0%, var(--main-600) 21%, var(--main-two-600) 59.6%, var(--orange-600) 96%, var(--yellow-600) 100%);
+  }
+
+  .footer__bottom-inner {
+    min-height: 59px;
+  }
+
+  .footer__payments li {
+    width: 29px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: hsl(var(--white));
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+// about, three link lists, contact, newsletter
+.footer__grid--three {
+  @media (min-width: 1200px) {
+    grid-template-columns: minmax(0, 303fr) minmax(0, 176fr) minmax(0, 175fr) minmax(0, 190fr) minmax(0, 250fr) minmax(0, 228fr);
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @media (max-width: 575px) {
+    > :nth-child(n) {
+      grid-column: auto;
+    }
+
+    > :first-child,
+    > :nth-child(5),
+    > :last-child {
+      grid-column: 1 / -1;
+    }
+  }
+}
+/* footer three (dark, help row on top, gradient bottom bar) end */

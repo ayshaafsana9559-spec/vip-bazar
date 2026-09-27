@@ -1,0 +1,382 @@
+/* ================================= Product Card Css Start =========================== */
+.product-card {
+    padding: 9px; // + 1px border = 10px frame around the image
+    transition: border-color 0.2s linear;
+
+    &:hover {
+        border-color: var(--main-600) !important;
+
+        .product-card__actions {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .product-card__cart {
+            background-color: var(--main-600) !important;
+            color: hsl(var(--white)) !important;
+        }
+    }
+
+    &__thumb {
+        height: 237px;
+    }
+
+    &__badges {
+        inset-block-start: 16px;
+    }
+
+    &__badge {
+        display: inline-flex;
+        align-items: center;
+        height: 28px;
+        padding-inline: 14px;
+        border-start-end-radius: 50rem;
+        border-end-end-radius: 50rem;
+        font-size: rem(12px);
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    &__actions {
+        inset-block-start: 16px;
+        inset-inline-end: 16px;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(12px);
+        transition: 0.25s ease;
+    }
+
+    &__action {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--main-600);
+        border-radius: 50%;
+        background-color: hsl(var(--white));
+        color: var(--main-600);
+        font-size: rem(16px);
+        transition: 0.2s linear;
+
+        &:hover,
+        &:focus-visible {
+            background-color: var(--main-600);
+            color: hsl(var(--white));
+        }
+    }
+
+    &__body {
+        padding: 22px 16px 12px;
+    }
+
+    &__category {
+        line-height: 1.5;
+    }
+
+    &__color {
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--main-100);
+        border-radius: 50%;
+        background-color: hsl(var(--white));
+
+        > span {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+    }
+
+    &__title {
+        font-size: clamp(1.375rem, 0.5rem + 1.5vw, 1.75rem);
+        line-height: 1.2;
+    }
+
+    &__meta {
+        min-height: 20px;
+        line-height: 1.5;
+    }
+
+    &__dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: hsl(var(--heading-color));
+    }
+
+    &__stock {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+
+    &__off {
+        display: inline-flex;
+        align-items: center;
+        height: 20px;
+        padding-inline: 8px;
+        font-size: rem(10px);
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    &__footer {
+        padding-block-start: 16px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        &__actions {
+            transform: none;
+        }
+    }
+
+    // horizontal variant: image on the left, details on the right (Featured Products)
+    &--list {
+        flex-direction: column;
+
+        @media (min-width: 576px) {
+            flex-direction: row;
+
+            .product-card__thumb {
+                width: 299px;
+            }
+
+            .product-card__body {
+                padding: 14px 11px 15px 24px;
+            }
+
+            .product-card__footer {
+                padding-block-start: 17px;
+            }
+        }
+    }
+}
+
+// card two (index-2 "Today's Special Offer"): label + sold pills on the image, actions slide up
+// in a white pill at the bottom of the image, description, rating row and a full-width cart button
+.product-card--two {
+    .product-card__thumb {
+        height: 236px;
+    }
+
+    .product-card__pill {
+        top: 14px;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        height: 26px;
+        padding-inline: 11px;
+        font-size: rem(12px);
+        font-weight: 700;
+        line-height: 1;
+
+        &--start {
+            left: 13px;
+        }
+
+        &--end {
+            right: 13px;
+        }
+    }
+
+    .product-card__actions {
+        top: auto;
+        right: auto;
+        bottom: 11px;
+        left: 50%;
+        padding: 7px;
+        border: 1px solid var(--slate-200);
+        box-shadow: 0 4px 14px rgba(14, 19, 5, 0.06);
+        transform: translate(-50%, 12px);
+    }
+
+    &:hover .product-card__actions {
+        transform: translate(-50%, 0);
+    }
+
+    .product-card__action {
+        width: 38px;
+        height: 38px;
+        font-size: rem(18px);
+    }
+
+    .product-card__body {
+        padding: 24px 16px 8px;
+    }
+
+    .product-card__category {
+        font-size: rem(16px);
+        line-height: 1.5;
+    }
+
+    .product-card__off {
+        height: 20px;
+        padding-inline: 8px;
+        font-size: rem(11px);
+    }
+
+    .product-card__title {
+        margin-block: 1px 8px;
+        font-size: rem(27px);
+    }
+
+    .product-card__desc {
+        margin-block-end: 16px;
+        font-size: rem(12px);
+        line-height: 1.5;
+    }
+
+    .product-card__meta {
+        gap: 6px;
+        margin-block-end: 9px;
+        font-size: rem(12px);
+    }
+
+    .product-card__stars {
+        gap: 2px;
+        font-size: rem(16px);
+        line-height: 1;
+    }
+
+    .product-card__dot {
+        margin-inline: 4px;
+        background-color: var(--slate-500);
+    }
+
+    .product-card__price {
+        gap: 4px;
+        margin-block-end: 19px;
+        line-height: 1;
+    }
+
+    .product-card__old {
+        color: var(--slate-500);
+        opacity: 0.6;
+        font-size: rem(23px);
+    }
+
+    .product-card__new {
+        font-size: rem(23px);
+    }
+
+    .product-card__in-stock {
+        height: 29px;
+        margin-inline-start: 4px;
+        padding-inline: 12px 13px;
+        font-size: rem(12px);
+        font-weight: 600;
+
+        .product-card__stock {
+            width: 6px;
+            height: 6px;
+        }
+    }
+
+    .product-card__footer {
+        padding-block-start: 15px;
+    }
+
+    .product-card__cart {
+        height: 42px;
+    }
+}
+
+// card row (index-2 "Featured Products"): wide horizontal card, image on the left,
+// one meta line and the quick actions next to the cart button
+.product-card--row {
+    padding: 8px; // + 1px border
+
+    .product-card__thumb {
+        width: 242px;
+        height: 182px;
+    }
+
+    .product-card__pill {
+        top: 11px;
+        left: 11px;
+        display: inline-flex;
+        align-items: center;
+        height: 26px;
+        padding-inline: 11px;
+        font-size: rem(12px);
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .product-card__body {
+        padding: 11px 11px 10px 25px;
+    }
+
+    .product-card__category {
+        font-size: rem(15px);
+        line-height: 1.5;
+    }
+
+    .product-card__title {
+        margin-block: 2px 8px;
+        font-size: rem(27px);
+    }
+
+    .product-card__meta {
+        gap: 10px;
+        font-size: rem(12px);
+    }
+
+    .product-card__footer {
+        margin-block-start: 12px;
+        padding-block-start: 16px;
+    }
+
+    .product-card__new {
+        font-size: rem(25px);
+    }
+
+    .product-card__action {
+        width: 38px;
+        height: 38px;
+        font-size: rem(18px);
+    }
+
+    .product-card__cart {
+        height: 38px;
+        padding-inline: 20px;
+        font-size: rem(13px);
+    }
+
+    // phones: image on top
+    @media (max-width: 575px) {
+        flex-direction: column;
+
+        .product-card__thumb {
+            width: 100%;
+            height: 220px;
+        }
+
+        .product-card__body {
+            padding: 18px 8px 8px;
+        }
+
+        .product-card__title {
+            font-size: rem(22px);
+        }
+    }
+}
+
+// touch screens have no hover: keep the quick actions reachable
+@media (hover: none) {
+    .product-card__actions {
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+    }
+
+    .product-card--two .product-card__actions {
+        transform: translate(-50%, 0);
+    }
+}
+/* ================================= Product Card Css End =========================== */

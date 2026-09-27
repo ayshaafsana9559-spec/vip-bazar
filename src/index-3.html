@@ -1,0 +1,2455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="EduAll, Social Media, and Digital Marketing Agency HTML Template. Fully responsive, creative design, and easy to customize. Ideal for EduAll agencies, marketing firms, and startups.">
+  <meta name="keywords"
+    content="EduAll HTML Template, Digital Marketing, Social Media Agency, Marketing Template, Advertising Agency, Creative Agency, Bootstrap, Responsive">
+  <meta name="robots" content="INDEX,FOLLOW">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>EduAll HTML Template</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo/favicon.png" type="image/png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!--==================== Preloader End ====================-->
+
+  <!-- ========================== Settings Panel start ==================================== -->
+<div class="settings-panel position-fixed top-50 translate-middle-y tw-z-999 d-flex align-items-center">
+  <button type="button"
+    class="settings-button tw-w-12 tw-h-12 bg-main-600 text-white hover-bg-main-800 tw-duration-100 d-flex justify-content-center align-items-center">
+    <i class="ph-fill ph-gear-six setting-icon tw-text-2xl tw-leading-none animation-rotate tw-w-6 tw-h-6"></i>
+    <i class="ph-bold ph-x close-icon tw-text-2xl tw-leading-none tw-w-6 tw-h-6"></i>
+  </button>
+
+  <div class="settings-panel__content bg-white tw-px-6 tw-py-13 d-flex flex-column tw-gap-10 scroll-sm overflow-y-auto">
+    <div class="d-flex flex-column tw-gap-10">
+      <div class="">
+        <h6 class="settings-panel__title text-center tw-mb-6 text-uppercase">
+          Cursor
+        </h6>
+        <div class="settings-panel__buttons cursor__buttons d-flex tw-gap-4">
+          <button type="button"
+            class="settings-panel__button cursor-animate bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active">
+            Animate
+          </button>
+          <button type="button"
+            class="settings-panel__button cursor-default bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1">
+            Default
+          </button>
+        </div>
+      </div>
+      <div class="">
+        <h6 class="settings-panel__title text-center tw-mb-6 text-uppercase">
+          Direction
+        </h6>
+        <div class="settings-panel__buttons d-flex tw-gap-4">
+          <button type="button"
+            class="settings-panel__button direction-ltr bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active">
+            LTR
+          </button>
+          <button type="button"
+            class="settings-panel__button direction-rtl bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1">
+            RTL
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ========================== Settings Panel end ==================================== -->
+
+  <!--==================== Overlay Start ====================-->
+  <div class="overlay"></div>
+  <!--==================== Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="side-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!-- Custom Toast Message start -->
+  <div id="toast-container"></div>
+  <!-- Custom Toast Message End -->
+
+  <!-- ==================== Scroll to Top End Here ==================== -->
+  <div class="progress-wrap cursor-big">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- ==================== Scroll to Top End Here ==================== -->
+
+  <!-- Custom Cursor Start -->
+  <div class="cursor"></div>
+  <span class="dot"></span>
+  <!-- Custom Cursor End -->
+
+  <!-- ==================== Mobile Menu Start Here ==================== -->
+<div class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ">
+
+    <button type="button" class="close-button position-absolute tw-end-0 top-0 tw-me-2 tw-mt-2 tw-w-605 tw-h-605 rounded-circle d-flex justify-content-center align-items-center text-neutral-900 bg-neutral-200 hover-bg-neutral-900 hover-text-white"> 
+        <i class="ph ph-x"></i>
+    </button>
+
+    <div class="mobile-menu__inner">
+        <a href="index.html" class="mobile-menu__logo">
+            <img src="assets/images/logo/logo.png" alt="Logo">
+        </a>
+        <div class="mobile-menu__menu">
+            <!-- Nav menu Start -->
+<ul class="nav-menu d-lg-flex align-items-center nav-menu--mobile d-block tw-mt-8">
+  <li class="nav-menu__item activePage">
+    <a href="index.html" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100">Home</a>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Browsed Products</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Recently Viewed</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Best Sellers</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          New Arrivals</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Pages</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          About Us</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="register.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Register</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          FAQ</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Shops</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Shop Grid</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Product Details</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Cart</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100">Contact Us</a>
+  </li>
+</ul>
+<!-- Nav menu End  -->
+
+        </div>
+    </div>
+</div>
+<!-- ==================== Mobile Menu End Here ==================== -->
+
+    <!-- ============================ Top header three Start ============================ -->
+<div class="top-header-three">
+    <div class="container container-two">
+        <div class="top-header-three__inner d-flex align-items-center justify-content-center flex-wrap">
+            <a href="javascript:void(0)" class="top-header-three__offer d-inline-flex align-items-center text-white">
+                <i class="ph ph-arrow-up-left tw-text-base tw-leading-none"></i>
+                Free delivery &amp; 40% Discount for next 3 orders!
+            </a>
+            <div class="top-header-three__timer d-flex align-items-center" data-countdown data-duration="74216" role="timer" aria-label="Offer ends in">
+                <span class="top-header-three__box" data-countdown-hours>20</span>
+                <span class="top-header-three__unit">Hours</span>
+                <span class="top-header-three__box" data-countdown-minutes>36</span>
+                <span class="top-header-three__unit">Minutes</span>
+                <span class="top-header-three__box" data-countdown-seconds>56</span>
+                <span class="top-header-three__unit">Seconds</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================ Top header three End ============================ -->
+
+    <!-- ==================== Header Three Start Here ==================== -->
+<header class="header header-three tw-transition-all tw-z-99">
+  <!-- Top row: menu, logo, utilities -->
+  <div class="header-three__top bg-white">
+    <div class="container container-two">
+      <div class="header-three__top-inner d-flex align-items-center justify-content-between tw-gap-6">
+        <div class="header-menu d-lg-block d-none">
+          <!-- Nav menu Start -->
+<ul class="nav-menu d-lg-flex align-items-center header-three__menu">
+  <li class="nav-menu__item activePage">
+    <a href="index.html" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100">Home</a>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Browsed Products</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Recently Viewed</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Best Sellers</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          New Arrivals</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Pages</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          About Us</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="register.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Register</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          FAQ</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Shops</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Shop Grid</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Product Details</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Cart</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100">Contact Us</a>
+  </li>
+</ul>
+<!-- Nav menu End  -->
+
+        </div>
+
+        <div class="logo flex-shrink-0">
+          <a href="index.html" class="link d-flex">
+            <img src="assets/images/logo/logo.png" alt="eCommex">
+          </a>
+        </div>
+
+        <div class="header-three__utils d-flex align-items-center">
+          <a href="javascript:void(0)" class="header-three__link d-xxl-flex d-none align-items-center tw-gap-2">
+            <i class="ph ph-truck tw-text-lg tw-leading-none"></i>
+            Tracking Orders
+          </a>
+          <span class="header-three__divider d-xxl-block d-none"></span>
+                <!-- Language select -->
+                <div class="custom-select dropdown">
+                    <select name="language" class="custom-select__native visually-hidden" tabindex="-1" aria-hidden="true">
+                        <option value="en" selected>English</option>
+                        <option value="bn">বাংলা</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="es">Español</option>
+                    </select>
+                    <button type="button" class="custom-select__toggle header-three__link d-flex align-items-center tw-gap-105" data-bs-toggle="dropdown" data-bs-offset="0,20" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+                        <img src="assets/images/icons/flag-uk.png" alt="English" class="custom-select__image tw-w-505 tw-h-505 rounded-circle">
+                        <span class="custom-select__value">EN</span>
+                        <i class="custom-select__caret ph ph-caret-down tw-text-sm tw-leading-none"></i>
+                    </button>
+                    <ul class="custom-select__menu dropdown-menu dropdown-menu-end" role="listbox" aria-label="Language">
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item active" role="option" aria-selected="true" data-value="en" data-label="EN" data-image="assets/images/icons/flag-uk.png" data-alt="English">
+                                <img src="assets/images/icons/flag-uk.png" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">English</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="bn" data-label="BN" data-image="assets/images/icons/flag-bd.svg" data-alt="বাংলা">
+                                <img src="assets/images/icons/flag-bd.svg" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">বাংলা</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="fr" data-label="FR" data-image="assets/images/icons/flag-fr.svg" data-alt="Français">
+                                <img src="assets/images/icons/flag-fr.svg" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">Français</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="de" data-label="DE" data-image="assets/images/icons/flag-de.svg" data-alt="Deutsch">
+                                <img src="assets/images/icons/flag-de.svg" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">Deutsch</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="es" data-label="ES" data-image="assets/images/icons/flag-es.svg" data-alt="Español">
+                                <img src="assets/images/icons/flag-es.svg" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">Español</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+          <span class="header-three__divider"></span>
+                <!-- Currency select -->
+                <div class="custom-select dropdown">
+                    <select name="currency" class="custom-select__native visually-hidden" tabindex="-1" aria-hidden="true">
+                        <option value="usd" selected>USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="gbp">GBP</option>
+                        <option value="bdt">BDT</option>
+                    </select>
+                    <button type="button" class="custom-select__toggle header-three__link d-flex align-items-center tw-gap-105" data-bs-toggle="dropdown" data-bs-offset="0,20" aria-haspopup="listbox" aria-expanded="false" aria-label="Select currency">
+                        <span class="custom-select__value">USD</span>
+                        <i class="custom-select__caret ph ph-caret-down tw-text-sm tw-leading-none"></i>
+                    </button>
+                    <ul class="custom-select__menu dropdown-menu dropdown-menu-end" role="listbox" aria-label="Currency">
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item active" role="option" aria-selected="true" data-value="usd" data-label="USD">
+                                <span class="custom-select__symbol">$</span>
+                                <span class="flex-grow-1">USD <span class="custom-select__hint">US Dollar</span></span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="eur" data-label="EUR">
+                                <span class="custom-select__symbol">€</span>
+                                <span class="flex-grow-1">EUR <span class="custom-select__hint">Euro</span></span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="gbp" data-label="GBP">
+                                <span class="custom-select__symbol">£</span>
+                                <span class="flex-grow-1">GBP <span class="custom-select__hint">British Pound</span></span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="bdt" data-label="BDT">
+                                <span class="custom-select__symbol">৳</span>
+                                <span class="flex-grow-1">BDT <span class="custom-select__hint">Taka</span></span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+          <span class="header-three__divider d-xxl-block d-none"></span>
+          <a href="tel:2085550112" class="header-three__link d-xxl-flex d-none align-items-center tw-gap-2">
+            <i class="ph ph-phone-call tw-text-base tw-leading-none"></i>
+            (208) 555-0112
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom row: search, wishlist, cart, register -->
+  <div class="header-three__bottom bg-slate-50 border-bottom border-slate-100">
+    <div class="container container-two">
+      <div class="header-three__bottom-inner d-flex align-items-center">
+        <form action="#" class="header-search header-three__search flex-grow-1 bg-white border border-slate-100 rounded-pill d-lg-flex d-none align-items-center">
+          <!-- Category select -->
+          <div class="custom-select dropdown flex-shrink-0">
+            <select name="category" class="custom-select__native visually-hidden" tabindex="-1" aria-hidden="true">
+              <option value="" selected>All Categories</option>
+              <option value="electronics">Electronics</option>
+              <option value="fashion">Fashion</option>
+              <option value="accessories">Accessories</option>
+              <option value="footwear">Footwear</option>
+              <option value="industrial">Industrial</option>
+              <option value="kitchen">Kitchen</option>
+              <option value="beauty">Beauty</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="furniture">Furniture</option>
+            </select>
+            <button type="button" class="custom-select__toggle d-flex align-items-center tw-gap-2 text-slate-800 tw-text-sm hover-text-main-600" data-bs-toggle="dropdown" data-bs-offset="-21,16" aria-haspopup="listbox" aria-expanded="false" aria-label="Select category">
+              <span class="custom-select__value custom-select__value--truncate">Category</span>
+              <i class="custom-select__caret ph ph-caret-down tw-text-sm tw-leading-none"></i>
+            </button>
+            <ul class="custom-select__menu custom-select__menu--lg dropdown-menu scroll-sm" role="listbox" aria-label="Category">
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item active" role="option" aria-selected="true" data-value="" data-label="Category">
+                  <i class="custom-select__icon ph ph-squares-four"></i>
+                  <span class="flex-grow-1">All Categories</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="electronics" data-label="Electronics">
+                  <img src="assets/images/icons/category/electronics.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Electronics</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="fashion" data-label="Fashion">
+                  <img src="assets/images/icons/category/fashion.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Fashion</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="accessories" data-label="Accessories">
+                  <img src="assets/images/icons/category/accessories.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Accessories</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="footwear" data-label="Footwear">
+                  <img src="assets/images/icons/category/footwear.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Footwear</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="industrial" data-label="Industrial">
+                  <img src="assets/images/icons/category/industrial.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Industrial</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="kitchen" data-label="Kitchen">
+                  <img src="assets/images/icons/category/kitchen.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Kitchen</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="beauty" data-label="Beauty">
+                  <img src="assets/images/icons/category/beauty.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Beauty</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="healthcare" data-label="Healthcare">
+                  <img src="assets/images/icons/category/healthcare.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Healthcare</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="furniture" data-label="Furniture">
+                  <img src="assets/images/icons/category/furniture.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Furniture</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <span class="header-search__divider flex-shrink-0"></span>
+          <input type="text" class="header-search__input flex-grow-1 bg-transparent border-0 focus-outline-0 text-slate-800 tw-text-sm" placeholder="Search hare...">
+          <button type="submit" class="btn btn-main-two hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center rounded-pill flex-shrink-0 tw-h-705 tw-px-405 py-0 font-heading fw-semibold tw-text-13-px" data-block="button">
+            <span class="button__flair"></span>
+            <span class="button__label">Search</span>
+          </button>
+        </form>
+
+        <div class="d-flex align-items-center tw-gap-305 flex-shrink-0 ms-auto">
+          <div class="header-actions d-flex align-items-center">
+            <a href="javascript:void(0)" class="header-action header-three__action bg-white border border-slate-100 rounded-circle d-flex justify-content-center align-items-center text-heading tw-text-xl position-relative hover-bg-main-600 hover-text-white" aria-label="Wishlist">
+              <i class="ph ph-heart"></i>
+              <span class="header-action__badge tw-w-6 tw-h-6 rounded-circle bg-green-600 text-white d-flex justify-content-center align-items-center position-absolute font-heading fw-semibold tw-text-sm">5</span>
+            </a>
+            <a href="javascript:void(0)" class="header-action header-three__action bg-white border border-slate-100 rounded-circle d-flex justify-content-center align-items-center text-heading tw-text-xl position-relative hover-bg-main-600 hover-text-white" aria-label="Cart">
+              <i class="ph ph-shopping-cart-simple"></i>
+              <span class="header-action__badge tw-w-6 tw-h-6 rounded-circle bg-orange-600 text-white d-flex justify-content-center align-items-center position-absolute font-heading fw-semibold tw-text-sm">1</span>
+            </a>
+          </div>
+          <a href="register.html" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-sm-inline-flex d-none align-items-center justify-content-center tw-gap-105 rounded-pill tw-h-11 tw-px-7 py-0 font-heading fw-semibold tw-text-13-px" data-block="button">
+            <span class="button__flair"></span>
+            <span class="button__label">Register</span>
+            <i class="ph ph-arrow-up-right tw-text-base position-relative"></i>
+          </a>
+          <button type="button" class="toggle-mobileMenu d-lg-none tw-leading-none text-heading tw-text-9 tw-ms-2" aria-label="Open menu">
+            <i class="ph ph-list"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ==================== Header Three End Here ==================== -->
+
+    <!-- ======================================== Hero three start =================================== -->
+<section class="hero-three">
+    <div class="container container-two">
+        <div class="hero-three__slider snap-slider position-relative">
+            <div class="snap-slider__track">
+                <div class="snap-slider__slide">
+                    <div class="hero-banner position-relative overflow-hidden tw-rounded-xl h-100">
+                        <img src="assets/images/thumbs/hero-three/hero-three-1.png" alt="" class="hero-banner__art">
+                        <div class="hero-banner__content position-relative">
+                            <span class="hero-banner__eyebrow d-block">New Arrivals</span>
+                            <h1 class="hero-banner__title fw-bold">Style That Speaks Loud</h1>
+                            <span class="hero-banner__upto d-block">Up To</span>
+                            <div class="hero-banner__deal d-flex align-items-baseline">
+                                <span class="hero-banner__percent font-heading fw-bold">45%</span>
+                                <span class="hero-banner__off">OFF</span>
+                            </div>
+                            <span class="hero-banner__note d-block">Limited Time Only</span>
+                            <a href="javascript:void(0)" class="hero-banner__btn btn hover-style-one button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-2 rounded-pill py-0 font-heading fw-semibold tw-text-sm" data-block="button">
+                                <span class="button__flair"></span>
+                                <i class="ph ph-basket tw-text-lg position-relative"></i>
+                                <span class="button__label">Shop Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>                <div class="snap-slider__slide">
+                    <div class="hero-banner position-relative overflow-hidden tw-rounded-xl h-100">
+                        <img src="assets/images/thumbs/hero-three/hero-three-1.png" alt="" class="hero-banner__art">
+                        <div class="hero-banner__content position-relative">
+                            <span class="hero-banner__eyebrow d-block">Summer Edit</span>
+                            <h2 class="hero-banner__title fw-bold">Fresh Looks Every Day</h2>
+                            <span class="hero-banner__upto d-block">Up To</span>
+                            <div class="hero-banner__deal d-flex align-items-baseline">
+                                <span class="hero-banner__percent font-heading fw-bold">30%</span>
+                                <span class="hero-banner__off">OFF</span>
+                            </div>
+                            <span class="hero-banner__note d-block">Limited Time Only</span>
+                            <a href="javascript:void(0)" class="hero-banner__btn btn hover-style-one button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-2 rounded-pill py-0 font-heading fw-semibold tw-text-sm" data-block="button">
+                                <span class="button__flair"></span>
+                                <i class="ph ph-basket tw-text-lg position-relative"></i>
+                                <span class="button__label">Shop Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>            </div>
+            <button type="button" class="snap-slider__prev hero-three__arrow hero-three__arrow--prev" aria-label="Previous slide"><i class="ph ph-caret-left"></i></button>
+            <button type="button" class="snap-slider__next hero-three__arrow hero-three__arrow--next" aria-label="Next slide"><i class="ph ph-caret-right"></i></button>
+        </div>
+    </div>
+</section>
+<!-- ======================================== Hero three end =================================== -->
+
+<!-- ======================================== Features row start =================================== -->
+<section class="features-bar features-bar--plain">
+    <div class="container container-two">
+        <div class="features-bar__grid">
+            <div class="d-flex align-items-start tw-gap-5">
+                <img src="assets/images/icons/features/free-shipping.png" alt="" class="features-bar__icon">
+                <div>
+                    <h3 class="features-bar__title fw-semibold text-heading tw-text-xl">Free Shipping</h3>
+                    <p class="features-bar__desc text-slate-600 tw-text-xs">Get your orders delivered quickly through trusted partners.</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-start tw-gap-5">
+                <img src="assets/images/icons/features/free-returns.png" alt="" class="features-bar__icon">
+                <div>
+                    <h3 class="features-bar__title fw-semibold text-heading tw-text-xl">30-Days Free Returns</h3>
+                    <p class="features-bar__desc text-slate-600 tw-text-xs">Enjoy a hassle-free return within 30 days for eligible products.</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-start tw-gap-5">
+                <img src="assets/images/icons/features/order-tracking.png" alt="" class="features-bar__icon">
+                <div>
+                    <h3 class="features-bar__title fw-semibold text-heading tw-text-xl">Order Tracking</h3>
+                    <p class="features-bar__desc text-slate-600 tw-text-xs">Track your shipment status anytime &amp; stay updated from dispatch.</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-start tw-gap-5">
+                <img src="assets/images/icons/features/secure-payment.png" alt="" class="features-bar__icon">
+                <div>
+                    <h3 class="features-bar__title fw-semibold text-heading tw-text-xl">Secure Payment</h3>
+                    <p class="features-bar__desc text-slate-600 tw-text-xs">All transactions are protected with advanced encryption.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======================================== Features row end =================================== -->
+
+
+    <!-- ======================================== Best selling start =================================== -->
+<section class="best-selling">
+    <div class="container container-two">
+        <div class="best-selling__head text-center">
+            <h2 class="section-title fw-semibold text-slate-800">Today’s Best Selling</h2>
+            <p class="best-selling__sub text-slate-600">Unmatched design-superior performance and customer satisfaction in one.</p>
+        </div>
+        <div class="best-selling__grid">
+            <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/grey-striped-tshirt.png" alt="Grey Striped T-Shirt" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-orange-600 text-white">-20%</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Grey Striped T-Shirt</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/steel-blue-top.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/grey-striped-tshirt.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/black-crop-tee.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+            <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/beige-crop-tshirt.png" alt="Beige Crop T-Shirt" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-green-600 text-white">Limited Stock</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Beige Crop T-Shirt</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/grey-striped-tshirt.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/beige-crop-tshirt.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/sage-crop-tee.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+            <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/mauve-plaid-set.png" alt="Mauve Plaid Skirt Set" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-orange-600 text-white">-20%</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Mauve Plaid Skirt Set</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/white-basic-tee.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/mauve-plaid-set.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/beige-crop-tshirt.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+            <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/steel-blue-top.png" alt="Steel Blue Ribbed Top" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-purple-600 text-white">Flash Sale</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Steel Blue Ribbed Top</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/black-crop-tee.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/steel-blue-top.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/grey-sleeveless-top.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+            <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/sage-crop-tee.png" alt="Sage Green Crop Tee" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-green-600 text-white">Limited Stock</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Sage Green Crop Tee</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/steel-blue-top.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/sage-crop-tee.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/mauve-plaid-set.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+            <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/white-basic-tee.png" alt="White Basic Tee" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-purple-600 text-white">Flash Sale</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">White Basic Tee</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/beige-crop-tshirt.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/white-basic-tee.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/black-crop-tee.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+            <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/black-crop-tee.png" alt="Black Fitted Crop Tee" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-orange-600 text-white">-20%</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Black Fitted Crop Tee</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/grey-sleeveless-top.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/black-crop-tee.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/white-basic-tee.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+            <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/grey-sleeveless-top.png" alt="Grey Sleeveless Top" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-green-600 text-white">Limited Stock</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Grey Sleeveless Top</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/sage-crop-tee.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/grey-sleeveless-top.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/grey-striped-tshirt.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+        </div>
+        <div class="text-center best-selling__more">
+            <a href="javascript:void(0)" class="btn btn-outline-main hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-2 rounded-pill tw-h-11 tw-px-6 py-0 font-heading fw-semibold tw-text-sm" data-block="button">
+                <span class="button__flair"></span>
+                <span class="button__label">See All Products</span>
+                <i class="ph ph-arrow-right tw-text-base position-relative"></i>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- ======================================== Best selling end =================================== -->
+
+
+    <!-- ======================================== Top collections start =================================== -->
+<section class="top-collections">
+    <div class="container container-two">
+        <div class="top-collections__panel bg-slate-25 border border-slate-100">
+            <div class="top-collections__head text-center">
+                <h2 class="section-title fw-semibold text-slate-800">Top Collections</h2>
+                <p class="top-collections__sub text-slate-600">Discover new fashion styles that fit your unique personality.</p>
+            </div>
+            <div class="top-collections__grid">
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/crop-top.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Crop-Top</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/t-shirts.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">T-Shirts</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/blazers.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Blazers</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/coats.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Coats</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/sweaters.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Sweaters</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/hoodies.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Hoodies</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/denim-jackets.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Denim Jackets</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/maxi-dresses.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Maxi Dresses</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/mini-skirts.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Mini Skirts</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/cargo-pants.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Cargo Pants</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/jogger-pants.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Jogger Pants</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/tank-tops.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Tank Tops</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/polo-shirts.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Polo Shirts</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/trench-coats.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Trench Coats</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/leather-jackets.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Leather Jackets</span>
+                </a>
+                <a href="javascript:void(0)" class="collection-item d-flex flex-column align-items-center text-center">
+                    <span class="collection-item__thumb d-block bg-white rounded-circle overflow-hidden"><img src="assets/images/thumbs/collections/knit-cardigans.png" alt="" class="w-100 h-100 object-fit-cover"></span>
+                    <span class="collection-item__name font-heading fw-semibold text-slate-800">Knit Cardigans</span>
+                </a>
+            </div>
+            <div class="text-center top-collections__more">
+                <a href="javascript:void(0)" class="btn btn-outline-main hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-2 rounded-pill tw-h-11 tw-px-6 py-0 font-heading fw-semibold tw-text-sm" data-block="button">
+                    <span class="button__flair"></span>
+                    <span class="button__label">See All Collections</span>
+                    <i class="ph ph-arrow-right tw-text-base position-relative"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======================================== Top collections end =================================== -->
+
+
+    <!-- ======================================== Trending outfits start =================================== -->
+<section class="trending-outfits">
+    <div class="container container-two">
+        <div class="best-selling__head text-center">
+            <h2 class="section-title fw-semibold text-slate-800">Trending Outfits</h2>
+            <p class="best-selling__sub text-slate-600">Check out the latest trending outfits to refresh your style.</p>
+        </div>
+        <div class="snap-slider" data-start="2">
+            <div class="snap-slider__track">
+                <div class="snap-slider__slide">
+                    <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/sage-crop-tee.png" alt="Sage Green Crop Tee" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-green-600 text-white">Limited Stock</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <div class="fashion-card__timer position-absolute d-inline-flex align-items-center justify-content-center bg-white rounded-pill text-orange-600 font-heading fw-semibold" data-countdown data-duration="289205" role="timer" aria-label="Offer ends in">
+            <span data-countdown-days>00</span>&nbsp;d&nbsp;:&nbsp;<span data-countdown-hours>00</span>&nbsp;h&nbsp;:&nbsp;<span data-countdown-minutes>00</span>&nbsp;m&nbsp;:&nbsp;<span data-countdown-seconds>00</span>&nbsp;s
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Sage Green Crop Tee</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/steel-blue-top.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/sage-crop-tee.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/mauve-plaid-set.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/white-basic-tee.png" alt="White Basic Tee" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-purple-600 text-white">Flash Sale</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <div class="fashion-card__timer position-absolute d-inline-flex align-items-center justify-content-center bg-white rounded-pill text-orange-600 font-heading fw-semibold" data-countdown data-duration="787293" role="timer" aria-label="Offer ends in">
+            <span data-countdown-days>00</span>&nbsp;d&nbsp;:&nbsp;<span data-countdown-hours>00</span>&nbsp;h&nbsp;:&nbsp;<span data-countdown-minutes>00</span>&nbsp;m&nbsp;:&nbsp;<span data-countdown-seconds>00</span>&nbsp;s
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">White Basic Tee</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/beige-crop-tshirt.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/white-basic-tee.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/black-crop-tee.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/grey-striped-tshirt-back.png" alt="Grey Striped T-Shirt" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-orange-600 text-white">-20%</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <div class="fashion-card__timer position-absolute d-inline-flex align-items-center justify-content-center bg-white rounded-pill text-orange-600 font-heading fw-semibold" data-countdown data-duration="658071" role="timer" aria-label="Offer ends in">
+            <span data-countdown-days>00</span>&nbsp;d&nbsp;:&nbsp;<span data-countdown-hours>00</span>&nbsp;h&nbsp;:&nbsp;<span data-countdown-minutes>00</span>&nbsp;m&nbsp;:&nbsp;<span data-countdown-seconds>00</span>&nbsp;s
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Grey Striped T-Shirt</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/steel-blue-top.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/grey-striped-tshirt-back.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/black-crop-tee.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/beige-crop-tshirt-back.png" alt="Beige Crop T-Shirt" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-green-600 text-white">Limited Stock</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <div class="fashion-card__timer position-absolute d-inline-flex align-items-center justify-content-center bg-white rounded-pill text-orange-600 font-heading fw-semibold" data-countdown data-duration="383400" role="timer" aria-label="Offer ends in">
+            <span data-countdown-days>00</span>&nbsp;d&nbsp;:&nbsp;<span data-countdown-hours>00</span>&nbsp;h&nbsp;:&nbsp;<span data-countdown-minutes>00</span>&nbsp;m&nbsp;:&nbsp;<span data-countdown-seconds>00</span>&nbsp;s
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Beige Crop T-Shirt</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/grey-striped-tshirt.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/beige-crop-tshirt-back.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/sage-crop-tee.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/mauve-plaid-set-back.png" alt="Mauve Plaid Skirt Set" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-orange-600 text-white">-20%</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <div class="fashion-card__timer position-absolute d-inline-flex align-items-center justify-content-center bg-white rounded-pill text-orange-600 font-heading fw-semibold" data-countdown data-duration="1098552" role="timer" aria-label="Offer ends in">
+            <span data-countdown-days>00</span>&nbsp;d&nbsp;:&nbsp;<span data-countdown-hours>00</span>&nbsp;h&nbsp;:&nbsp;<span data-countdown-minutes>00</span>&nbsp;m&nbsp;:&nbsp;<span data-countdown-seconds>00</span>&nbsp;s
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Mauve Plaid Skirt Set</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/white-basic-tee.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/mauve-plaid-set-back.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/beige-crop-tshirt.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/steel-blue-top-back.png" alt="Steel Blue Ribbed Top" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-purple-600 text-white">Flash Sale</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <div class="fashion-card__timer position-absolute d-inline-flex align-items-center justify-content-center bg-white rounded-pill text-orange-600 font-heading fw-semibold" data-countdown data-duration="509097" role="timer" aria-label="Offer ends in">
+            <span data-countdown-days>00</span>&nbsp;d&nbsp;:&nbsp;<span data-countdown-hours>00</span>&nbsp;h&nbsp;:&nbsp;<span data-countdown-minutes>00</span>&nbsp;m&nbsp;:&nbsp;<span data-countdown-seconds>00</span>&nbsp;s
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Steel Blue Ribbed Top</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/black-crop-tee.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/steel-blue-top-back.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/grey-sleeveless-top.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/black-crop-tee.png" alt="Black Fitted Crop Tee" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-orange-600 text-white">-20%</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <div class="fashion-card__timer position-absolute d-inline-flex align-items-center justify-content-center bg-white rounded-pill text-orange-600 font-heading fw-semibold" data-countdown data-duration="537160" role="timer" aria-label="Offer ends in">
+            <span data-countdown-days>00</span>&nbsp;d&nbsp;:&nbsp;<span data-countdown-hours>00</span>&nbsp;h&nbsp;:&nbsp;<span data-countdown-minutes>00</span>&nbsp;m&nbsp;:&nbsp;<span data-countdown-seconds>00</span>&nbsp;s
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Black Fitted Crop Tee</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/grey-sleeveless-top.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/black-crop-tee.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/white-basic-tee.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Fashion card start -->
+<div class="fashion-card">
+    <div class="fashion-card__thumb position-relative overflow-hidden tw-rounded-xl bg-slate-25">
+        <a href="javascript:void(0)" class="d-block w-100 h-100">
+            <img src="assets/images/thumbs/fashion/grey-sleeveless-top.png" alt="Grey Sleeveless Top" class="w-100 h-100 object-fit-cover">
+        </a>
+        <span class="fashion-card__badge position-absolute rounded-pill bg-green-600 text-white">Limited Stock</span>
+        <div class="fashion-card__actions position-absolute d-flex flex-column">
+            <button type="button" class="fashion-card__action" aria-label="Add to wishlist"><i class="ph ph-heart"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Quick view"><i class="ph ph-eye"></i></button>
+            <button type="button" class="fashion-card__action" aria-label="Compare"><i class="ph ph-arrows-left-right"></i></button>
+        </div>
+        
+        <div class="fashion-card__timer position-absolute d-inline-flex align-items-center justify-content-center bg-white rounded-pill text-orange-600 font-heading fw-semibold" data-countdown data-duration="259150" role="timer" aria-label="Offer ends in">
+            <span data-countdown-days>00</span>&nbsp;d&nbsp;:&nbsp;<span data-countdown-hours>00</span>&nbsp;h&nbsp;:&nbsp;<span data-countdown-minutes>00</span>&nbsp;m&nbsp;:&nbsp;<span data-countdown-seconds>00</span>&nbsp;s
+        </div>
+        
+        <a href="javascript:void(0)" class="fashion-card__cart position-absolute d-inline-flex align-items-center justify-content-center tw-gap-2 bg-white rounded-pill text-main-600 font-heading fw-semibold">
+            <i class="ph ph-shopping-cart-simple tw-text-base"></i>
+            Add To Cart
+        </a>
+    </div>
+    <div class="fashion-card__body text-center">
+        <div class="d-flex align-items-center justify-content-center tw-gap-1">
+            <span class="fashion-card__stars d-flex align-items-center text-yellow-600" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </span>
+            <span class="fashion-card__count text-slate-600">(32.5K)</span>
+        </div>
+        <h3 class="fashion-card__name fw-semibold text-slate-800 line-clamp-1">
+            <a href="javascript:void(0)" class="hover-text-main-600">Grey Sleeveless Top</a>
+        </h3>
+        <div class="fashion-card__meta d-flex align-items-center justify-content-center">
+            <span class="d-inline-flex align-items-center tw-gap-2 text-slate-800">
+                <span class="fashion-card__stock bg-green-600"></span>
+                In Stock
+            </span>
+            <span class="fashion-card__dot"></span>
+            <span class="d-inline-flex align-items-baseline tw-gap-1">
+                <del class="text-slate-500">$89.00</del>
+                <span class="text-orange-600 fw-bold">$59.00</span>
+            </span>
+        </div>
+        <div class="fashion-card__swatches d-flex align-items-center justify-content-center" role="radiogroup" aria-label="Choose a colour">
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 1"><img src="assets/images/thumbs/fashion/sage-crop-tee.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch active" role="radio" aria-checked="true" aria-label="Colour 2"><img src="assets/images/thumbs/fashion/grey-sleeveless-top.png" alt=""></button>
+            <button type="button" class="fashion-card__swatch" role="radio" aria-checked="false" aria-label="Colour 3"><img src="assets/images/thumbs/fashion/grey-striped-tshirt.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- Fashion card end -->
+                </div>
+            </div>
+            <div class="snap-slider__dots d-flex align-items-center justify-content-center" role="tablist" aria-label="Trending outfit slides"></div>
+        </div>
+    </div>
+</section>
+<!-- ======================================== Trending outfits end =================================== -->
+
+
+
+    <!-- ======================================== Promo pair start =================================== -->
+<section class="promo-pair pb-60">
+    <div class="container container-two">
+        <div class="promo-pair__grid">
+            <div class="promo-tile position-relative overflow-hidden tw-rounded-xl d-flex flex-column align-items-center justify-content-center text-center">
+                <img src="assets/images/thumbs/promo-pair/black-friday.png" alt="" class="promo-tile__art">
+                <span class="promo-tile__eyebrow position-relative text-yellow-600 fw-semibold">Today-Black Friday</span>
+                <h2 class="promo-tile__title position-relative fw-semibold text-white">Save! 35%-55% OFF</h2>
+                <a href="javascript:void(0)" class="promo-tile__btn position-relative btn btn-white hover-style-one button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-2 rounded-pill py-0 font-heading fw-semibold tw-text-13-px" data-block="button">
+                    <span class="button__flair"></span>
+                    <i class="ph ph-basket tw-text-base position-relative"></i>
+                    <span class="button__label">Shop Now</span>
+                </a>
+            </div>            <div class="promo-tile position-relative overflow-hidden tw-rounded-xl d-flex flex-column align-items-center justify-content-center text-center">
+                <img src="assets/images/thumbs/promo-pair/crazy-deal.png" alt="" class="promo-tile__art">
+                <span class="promo-tile__eyebrow position-relative text-yellow-600 fw-semibold">Limited Offer &amp; Crazy Deal</span>
+                <h2 class="promo-tile__title position-relative fw-semibold text-white">Save! 20%-40% OFF</h2>
+                <a href="javascript:void(0)" class="promo-tile__btn position-relative btn btn-white hover-style-one button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-2 rounded-pill py-0 font-heading fw-semibold tw-text-13-px" data-block="button">
+                    <span class="button__flair"></span>
+                    <i class="ph ph-basket tw-text-base position-relative"></i>
+                    <span class="button__label">Shop Now</span>
+                </a>
+            </div>        </div>
+    </div>
+</section>
+<!-- ======================================== Promo pair end =================================== -->
+
+
+
+    <!-- ======================================== Client reviews start =================================== -->
+<section class="reviews-three">
+    <div class="container container-two">
+        <div class="best-selling__head text-center">
+            <h2 class="section-title fw-semibold text-slate-800">What Our Clients Say</h2>
+            <p class="best-selling__sub text-slate-600">Customer love our products and we always strive to please them all.</p>
+        </div>
+        <div class="snap-slider reviews-three__slider" data-start="2">
+            <div class="snap-slider__track">
+                <div class="snap-slider__slide">
+                    <!-- Review card with photo start -->
+<div class="review-card review-card--photo tw-rounded-xl overflow-hidden h-100 d-flex">
+    <img src="assets/images/thumbs/reviews/annette-black.png" alt="Annette Black" class="review-card__photo flex-shrink-0 object-fit-cover">
+    <div class="d-flex flex-column flex-grow-1">
+        <div class="review-card__top">
+            <div class="review-card__stars d-flex align-items-center text-yellow-600 tw-leading-none" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </div>
+            <div class="d-flex align-items-center flex-wrap tw-gap-2">
+                <h3 class="review-card__name fw-normal text-slate-800 mb-0">Annette Black</h3>
+                <span class="d-inline-flex align-items-center tw-gap-1 text-slate-600 tw-text-xs">
+                    <i class="ph-fill ph-seal-check text-green-600 tw-text-base tw-leading-none"></i>
+                    Verified Buyer
+                </span>
+            </div>
+            <p class="review-card__quote text-slate-600 mb-0">“Incredible bass and crystal-clear audio. This speaker has become my favorite for any event, offering exceptional quality and deep.”</p>
+        </div>
+        <div class="review-card__bottom d-flex align-items-center justify-content-between tw-gap-4 mt-auto">
+            <div class="d-flex align-items-center">
+                <span class="review-card__product d-flex align-items-center justify-content-center bg-white rounded-circle flex-shrink-0 overflow-hidden">
+                    <img src="assets/images/thumbs/reviews/polo-shirt.png" alt="Polo Shirts" class="w-100 h-100 object-fit-contain">
+                </span>
+                <div>
+                    <span class="d-block text-slate-600 tw-text-xs">Item purchased: <span class="fw-bold text-slate-800">Polo Shirts</span></span>
+                    <span class="review-card__price d-block fw-extrabold text-slate-800">$245.54</span>
+                </div>
+            </div>
+            <i class="review-card__icon ph-light ph-quotes tw-leading-none flex-shrink-0" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+<!-- Review card with photo end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Review card with photo start -->
+<div class="review-card review-card--photo tw-rounded-xl overflow-hidden h-100 d-flex">
+    <img src="assets/images/thumbs/reviews/theresa-webb.png" alt="Theresa Webb" class="review-card__photo flex-shrink-0 object-fit-cover">
+    <div class="d-flex flex-column flex-grow-1">
+        <div class="review-card__top">
+            <div class="review-card__stars d-flex align-items-center text-yellow-600 tw-leading-none" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </div>
+            <div class="d-flex align-items-center flex-wrap tw-gap-2">
+                <h3 class="review-card__name fw-normal text-slate-800 mb-0">Theresa Webb</h3>
+                <span class="d-inline-flex align-items-center tw-gap-1 text-slate-600 tw-text-xs">
+                    <i class="ph-fill ph-seal-check text-green-600 tw-text-base tw-leading-none"></i>
+                    Verified Buyer
+                </span>
+            </div>
+            <p class="review-card__quote text-slate-600 mb-0">“Incredible bass and crystal-clear audio. This speaker has become my favorite for any event, offering exceptional quality and deep.”</p>
+        </div>
+        <div class="review-card__bottom d-flex align-items-center justify-content-between tw-gap-4 mt-auto">
+            <div class="d-flex align-items-center">
+                <span class="review-card__product d-flex align-items-center justify-content-center bg-white rounded-circle flex-shrink-0 overflow-hidden">
+                    <img src="assets/images/thumbs/reviews/denim-blazer.png" alt="Denim Blazer" class="w-100 h-100 object-fit-contain">
+                </span>
+                <div>
+                    <span class="d-block text-slate-600 tw-text-xs">Item purchased: <span class="fw-bold text-slate-800">Denim Blazer</span></span>
+                    <span class="review-card__price d-block fw-extrabold text-slate-800">$245.54</span>
+                </div>
+            </div>
+            <i class="review-card__icon ph-light ph-quotes tw-leading-none flex-shrink-0" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+<!-- Review card with photo end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Review card with photo start -->
+<div class="review-card review-card--photo tw-rounded-xl overflow-hidden h-100 d-flex">
+    <img src="assets/images/thumbs/reviews/theresa-webb.png" alt="Theresa Webb" class="review-card__photo flex-shrink-0 object-fit-cover">
+    <div class="d-flex flex-column flex-grow-1">
+        <div class="review-card__top">
+            <div class="review-card__stars d-flex align-items-center text-yellow-600 tw-leading-none" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </div>
+            <div class="d-flex align-items-center flex-wrap tw-gap-2">
+                <h3 class="review-card__name fw-normal text-slate-800 mb-0">Theresa Webb</h3>
+                <span class="d-inline-flex align-items-center tw-gap-1 text-slate-600 tw-text-xs">
+                    <i class="ph-fill ph-seal-check text-green-600 tw-text-base tw-leading-none"></i>
+                    Verified Buyer
+                </span>
+            </div>
+            <p class="review-card__quote text-slate-600 mb-0">“Incredible bass and crystal-clear audio. This speaker has become my favorite for any event, offering exceptional quality and deep.”</p>
+        </div>
+        <div class="review-card__bottom d-flex align-items-center justify-content-between tw-gap-4 mt-auto">
+            <div class="d-flex align-items-center">
+                <span class="review-card__product d-flex align-items-center justify-content-center bg-white rounded-circle flex-shrink-0 overflow-hidden">
+                    <img src="assets/images/thumbs/reviews/denim-blazer.png" alt="Denim Blazer" class="w-100 h-100 object-fit-contain">
+                </span>
+                <div>
+                    <span class="d-block text-slate-600 tw-text-xs">Item purchased: <span class="fw-bold text-slate-800">Denim Blazer</span></span>
+                    <span class="review-card__price d-block fw-extrabold text-slate-800">$245.54</span>
+                </div>
+            </div>
+            <i class="review-card__icon ph-light ph-quotes tw-leading-none flex-shrink-0" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+<!-- Review card with photo end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Review card with photo start -->
+<div class="review-card review-card--photo tw-rounded-xl overflow-hidden h-100 d-flex">
+    <img src="assets/images/thumbs/reviews/annette-black.png" alt="Annette Black" class="review-card__photo flex-shrink-0 object-fit-cover">
+    <div class="d-flex flex-column flex-grow-1">
+        <div class="review-card__top">
+            <div class="review-card__stars d-flex align-items-center text-yellow-600 tw-leading-none" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </div>
+            <div class="d-flex align-items-center flex-wrap tw-gap-2">
+                <h3 class="review-card__name fw-normal text-slate-800 mb-0">Annette Black</h3>
+                <span class="d-inline-flex align-items-center tw-gap-1 text-slate-600 tw-text-xs">
+                    <i class="ph-fill ph-seal-check text-green-600 tw-text-base tw-leading-none"></i>
+                    Verified Buyer
+                </span>
+            </div>
+            <p class="review-card__quote text-slate-600 mb-0">“Incredible bass and crystal-clear audio. This speaker has become my favorite for any event, offering exceptional quality and deep.”</p>
+        </div>
+        <div class="review-card__bottom d-flex align-items-center justify-content-between tw-gap-4 mt-auto">
+            <div class="d-flex align-items-center">
+                <span class="review-card__product d-flex align-items-center justify-content-center bg-white rounded-circle flex-shrink-0 overflow-hidden">
+                    <img src="assets/images/thumbs/reviews/polo-shirt.png" alt="Polo Shirts" class="w-100 h-100 object-fit-contain">
+                </span>
+                <div>
+                    <span class="d-block text-slate-600 tw-text-xs">Item purchased: <span class="fw-bold text-slate-800">Polo Shirts</span></span>
+                    <span class="review-card__price d-block fw-extrabold text-slate-800">$245.54</span>
+                </div>
+            </div>
+            <i class="review-card__icon ph-light ph-quotes tw-leading-none flex-shrink-0" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+<!-- Review card with photo end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Review card with photo start -->
+<div class="review-card review-card--photo tw-rounded-xl overflow-hidden h-100 d-flex">
+    <img src="assets/images/thumbs/reviews/theresa-webb.png" alt="Kristin Watson" class="review-card__photo flex-shrink-0 object-fit-cover">
+    <div class="d-flex flex-column flex-grow-1">
+        <div class="review-card__top">
+            <div class="review-card__stars d-flex align-items-center text-yellow-600 tw-leading-none" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </div>
+            <div class="d-flex align-items-center flex-wrap tw-gap-2">
+                <h3 class="review-card__name fw-normal text-slate-800 mb-0">Kristin Watson</h3>
+                <span class="d-inline-flex align-items-center tw-gap-1 text-slate-600 tw-text-xs">
+                    <i class="ph-fill ph-seal-check text-green-600 tw-text-base tw-leading-none"></i>
+                    Verified Buyer
+                </span>
+            </div>
+            <p class="review-card__quote text-slate-600 mb-0">“Incredible bass and crystal-clear audio. This speaker has become my favorite for any event, offering exceptional quality and deep.”</p>
+        </div>
+        <div class="review-card__bottom d-flex align-items-center justify-content-between tw-gap-4 mt-auto">
+            <div class="d-flex align-items-center">
+                <span class="review-card__product d-flex align-items-center justify-content-center bg-white rounded-circle flex-shrink-0 overflow-hidden">
+                    <img src="assets/images/thumbs/reviews/denim-blazer.png" alt="Denim Blazer" class="w-100 h-100 object-fit-contain">
+                </span>
+                <div>
+                    <span class="d-block text-slate-600 tw-text-xs">Item purchased: <span class="fw-bold text-slate-800">Denim Blazer</span></span>
+                    <span class="review-card__price d-block fw-extrabold text-slate-800">$245.54</span>
+                </div>
+            </div>
+            <i class="review-card__icon ph-light ph-quotes tw-leading-none flex-shrink-0" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+<!-- Review card with photo end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Review card with photo start -->
+<div class="review-card review-card--photo tw-rounded-xl overflow-hidden h-100 d-flex">
+    <img src="assets/images/thumbs/reviews/annette-black.png" alt="Jenny Wilson" class="review-card__photo flex-shrink-0 object-fit-cover">
+    <div class="d-flex flex-column flex-grow-1">
+        <div class="review-card__top">
+            <div class="review-card__stars d-flex align-items-center text-yellow-600 tw-leading-none" aria-label="Rated 4.5 out of 5">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star-half"></i>
+            </div>
+            <div class="d-flex align-items-center flex-wrap tw-gap-2">
+                <h3 class="review-card__name fw-normal text-slate-800 mb-0">Jenny Wilson</h3>
+                <span class="d-inline-flex align-items-center tw-gap-1 text-slate-600 tw-text-xs">
+                    <i class="ph-fill ph-seal-check text-green-600 tw-text-base tw-leading-none"></i>
+                    Verified Buyer
+                </span>
+            </div>
+            <p class="review-card__quote text-slate-600 mb-0">“Incredible bass and crystal-clear audio. This speaker has become my favorite for any event, offering exceptional quality and deep.”</p>
+        </div>
+        <div class="review-card__bottom d-flex align-items-center justify-content-between tw-gap-4 mt-auto">
+            <div class="d-flex align-items-center">
+                <span class="review-card__product d-flex align-items-center justify-content-center bg-white rounded-circle flex-shrink-0 overflow-hidden">
+                    <img src="assets/images/thumbs/reviews/polo-shirt.png" alt="Polo Shirts" class="w-100 h-100 object-fit-contain">
+                </span>
+                <div>
+                    <span class="d-block text-slate-600 tw-text-xs">Item purchased: <span class="fw-bold text-slate-800">Polo Shirts</span></span>
+                    <span class="review-card__price d-block fw-extrabold text-slate-800">$245.54</span>
+                </div>
+            </div>
+            <i class="review-card__icon ph-light ph-quotes tw-leading-none flex-shrink-0" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+<!-- Review card with photo end -->
+                </div>
+            </div>
+            <div class="snap-slider__dots d-flex align-items-center justify-content-center" role="tablist" aria-label="Review slides"></div>
+        </div>
+    </div>
+</section>
+<!-- ======================================== Client reviews end =================================== -->
+
+
+
+    <!-- ======================================== Marquee strip start =================================== -->
+<section class="marquee-strip bg-slate-25 border-top border-bottom border-slate-100 overflow-hidden">
+        <div class="marquee-strip__track d-flex">
+            <ul class="marquee-strip__list d-flex align-items-center flex-shrink-0">
+                <li class="marquee-strip__word">Exclusive</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+                <li class="marquee-strip__word">Trendy</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+                <li class="marquee-strip__word marquee-strip__word--solid">Discount</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+                <li class="marquee-strip__word">Limited</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+                <li class="marquee-strip__word">Iconic</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+                <li class="marquee-strip__word">Seasonal</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+                <li class="marquee-strip__word">Savings</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+            </ul>
+            <ul class="marquee-strip__list d-flex align-items-center flex-shrink-0" aria-hidden="true">
+                <li class="marquee-strip__word">Exclusive</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+                <li class="marquee-strip__word">Trendy</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+                <li class="marquee-strip__word marquee-strip__word--solid">Discount</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+                <li class="marquee-strip__word">Limited</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+                <li class="marquee-strip__word">Iconic</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+                <li class="marquee-strip__word">Seasonal</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+                <li class="marquee-strip__word">Savings</li>
+                <li class="marquee-strip__star" aria-hidden="true"><i class="ph-light ph-star"></i></li>
+            </ul>
+        </div>
+</section>
+<!-- ======================================== Marquee strip end =================================== -->
+
+
+
+    <!-- ======================================== Style tips start =================================== -->
+<section class="style-tips">
+    <div class="container container-two">
+        <div class="best-selling__head text-center">
+            <h2 class="section-title fw-semibold text-slate-800">Trend Reports &amp; Style Tips</h2>
+            <p class="best-selling__sub text-slate-600">Stay trendy with our weekly fashion blog featuring outfit ideas, styling tips, &amp; expert-picked looks.</p>
+        </div>
+        <div class="snap-slider" data-start="2">
+            <div class="snap-slider__track">
+                <div class="snap-slider__slide">
+                    <!-- Style post card start -->
+<article class="style-post h-100 d-flex flex-column">
+    <a href="javascript:void(0)" class="style-post__thumb position-relative d-block">
+        <span class="d-block w-100 h-100 overflow-hidden tw-rounded-lg">
+            <img src="assets/images/thumbs/blog/style-3.png" alt="Best Summer Looks That Will Turn Every Head" class="w-100 h-100 object-fit-cover">
+        </span>
+        <span class="style-post__date position-absolute d-inline-flex align-items-center bg-white rounded-pill font-heading">
+            <span class="style-post__day bg-green-600 text-white fw-semibold">26</span>
+            <span class="style-post__month text-slate-800">Dec, 2026</span>
+        </span>
+        <span class="style-post__tag position-absolute bg-yellow-600 text-heading font-heading fw-semibold">Exclusive</span>
+    </a>
+    <div class="style-post__body d-flex flex-column flex-grow-1">
+        <h3 class="style-post__title fw-semibold text-slate-800 line-clamp-2">
+            <a href="javascript:void(0)" class="hover-text-main-600">Best Summer Looks That Will Turn Every Head</a>
+        </h3>
+        <div class="style-post__footer d-flex align-items-center justify-content-between tw-gap-2 border-top border-slate-100 mt-auto">
+            <div class="d-flex align-items-center tw-gap-2" style="min-width: 0">
+                <img src="assets/images/thumbs/avatars/devon-lane.png" alt="Devon Lane" class="style-post__avatar rounded-circle object-fit-cover flex-shrink-0">
+                <div class="min-w-0">
+                    <span class="style-post__author d-block text-slate-800 text-truncate">Devon Lane</span>
+                    <span class="style-post__role d-block text-slate-500">Admin</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center tw-gap-4 flex-shrink-0">
+                <span class="style-post__comments d-inline-flex align-items-center tw-gap-2 text-slate-600">
+                    <i class="ph ph-chat-centered-text text-main-600"></i>
+                    216
+                </span>
+                <a href="javascript:void(0)" class="style-post__read d-inline-flex align-items-center tw-gap-1 text-orange-600 font-heading fw-semibold">
+                    Read
+                    <i class="ph ph-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- Style post card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Style post card start -->
+<article class="style-post h-100 d-flex flex-column">
+    <a href="javascript:void(0)" class="style-post__thumb position-relative d-block">
+        <span class="d-block w-100 h-100 overflow-hidden tw-rounded-lg">
+            <img src="assets/images/thumbs/blog/style-4.png" alt="Build the Perfect Wardrobe With These Simple Tips" class="w-100 h-100 object-fit-cover">
+        </span>
+        <span class="style-post__date position-absolute d-inline-flex align-items-center bg-white rounded-pill font-heading">
+            <span class="style-post__day bg-green-600 text-white fw-semibold">26</span>
+            <span class="style-post__month text-slate-800">Dec, 2026</span>
+        </span>
+        <span class="style-post__tag position-absolute bg-yellow-600 text-heading font-heading fw-semibold">Exclusive</span>
+    </a>
+    <div class="style-post__body d-flex flex-column flex-grow-1">
+        <h3 class="style-post__title fw-semibold text-slate-800 line-clamp-2">
+            <a href="javascript:void(0)" class="hover-text-main-600">Build the Perfect Wardrobe With These Simple Tips</a>
+        </h3>
+        <div class="style-post__footer d-flex align-items-center justify-content-between tw-gap-2 border-top border-slate-100 mt-auto">
+            <div class="d-flex align-items-center tw-gap-2" style="min-width: 0">
+                <img src="assets/images/thumbs/avatars/guy-hawkins.png" alt="Guy Hawkins" class="style-post__avatar rounded-circle object-fit-cover flex-shrink-0">
+                <div class="min-w-0">
+                    <span class="style-post__author d-block text-slate-800 text-truncate">Guy Hawkins</span>
+                    <span class="style-post__role d-block text-slate-500">Admin</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center tw-gap-4 flex-shrink-0">
+                <span class="style-post__comments d-inline-flex align-items-center tw-gap-2 text-slate-600">
+                    <i class="ph ph-chat-centered-text text-main-600"></i>
+                    216
+                </span>
+                <a href="javascript:void(0)" class="style-post__read d-inline-flex align-items-center tw-gap-1 text-orange-600 font-heading fw-semibold">
+                    Read
+                    <i class="ph ph-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- Style post card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Style post card start -->
+<article class="style-post h-100 d-flex flex-column">
+    <a href="javascript:void(0)" class="style-post__thumb position-relative d-block">
+        <span class="d-block w-100 h-100 overflow-hidden tw-rounded-lg">
+            <img src="assets/images/thumbs/blog/style-1.png" alt="Top Fashion Trends You Need to Try This Season" class="w-100 h-100 object-fit-cover">
+        </span>
+        <span class="style-post__date position-absolute d-inline-flex align-items-center bg-white rounded-pill font-heading">
+            <span class="style-post__day bg-green-600 text-white fw-semibold">26</span>
+            <span class="style-post__month text-slate-800">Dec, 2026</span>
+        </span>
+        <span class="style-post__tag position-absolute bg-yellow-600 text-heading font-heading fw-semibold">Exclusive</span>
+    </a>
+    <div class="style-post__body d-flex flex-column flex-grow-1">
+        <h3 class="style-post__title fw-semibold text-slate-800 line-clamp-2">
+            <a href="javascript:void(0)" class="hover-text-main-600">Top Fashion Trends You Need to Try This Season</a>
+        </h3>
+        <div class="style-post__footer d-flex align-items-center justify-content-between tw-gap-2 border-top border-slate-100 mt-auto">
+            <div class="d-flex align-items-center tw-gap-2" style="min-width: 0">
+                <img src="assets/images/thumbs/avatars/annette-black.png" alt="Annette Black" class="style-post__avatar rounded-circle object-fit-cover flex-shrink-0">
+                <div class="min-w-0">
+                    <span class="style-post__author d-block text-slate-800 text-truncate">Annette Black</span>
+                    <span class="style-post__role d-block text-slate-500">Admin</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center tw-gap-4 flex-shrink-0">
+                <span class="style-post__comments d-inline-flex align-items-center tw-gap-2 text-slate-600">
+                    <i class="ph ph-chat-centered-text text-main-600"></i>
+                    216
+                </span>
+                <a href="javascript:void(0)" class="style-post__read d-inline-flex align-items-center tw-gap-1 text-orange-600 font-heading fw-semibold">
+                    Read
+                    <i class="ph ph-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- Style post card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Style post card start -->
+<article class="style-post h-100 d-flex flex-column">
+    <a href="javascript:void(0)" class="style-post__thumb position-relative d-block">
+        <span class="d-block w-100 h-100 overflow-hidden tw-rounded-lg">
+            <img src="assets/images/thumbs/blog/style-2.png" alt="How to Style Your Outfits for Every Occasion" class="w-100 h-100 object-fit-cover">
+        </span>
+        <span class="style-post__date position-absolute d-inline-flex align-items-center bg-white rounded-pill font-heading">
+            <span class="style-post__day bg-green-600 text-white fw-semibold">26</span>
+            <span class="style-post__month text-slate-800">Dec, 2026</span>
+        </span>
+        <span class="style-post__tag position-absolute bg-yellow-600 text-heading font-heading fw-semibold">Exclusive</span>
+    </a>
+    <div class="style-post__body d-flex flex-column flex-grow-1">
+        <h3 class="style-post__title fw-semibold text-slate-800 line-clamp-2">
+            <a href="javascript:void(0)" class="hover-text-main-600">How to Style Your Outfits for Every Occasion</a>
+        </h3>
+        <div class="style-post__footer d-flex align-items-center justify-content-between tw-gap-2 border-top border-slate-100 mt-auto">
+            <div class="d-flex align-items-center tw-gap-2" style="min-width: 0">
+                <img src="assets/images/thumbs/avatars/theresa-webb.png" alt="Theresa Webb" class="style-post__avatar rounded-circle object-fit-cover flex-shrink-0">
+                <div class="min-w-0">
+                    <span class="style-post__author d-block text-slate-800 text-truncate">Theresa Webb</span>
+                    <span class="style-post__role d-block text-slate-500">Admin</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center tw-gap-4 flex-shrink-0">
+                <span class="style-post__comments d-inline-flex align-items-center tw-gap-2 text-slate-600">
+                    <i class="ph ph-chat-centered-text text-main-600"></i>
+                    216
+                </span>
+                <a href="javascript:void(0)" class="style-post__read d-inline-flex align-items-center tw-gap-1 text-orange-600 font-heading fw-semibold">
+                    Read
+                    <i class="ph ph-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- Style post card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Style post card start -->
+<article class="style-post h-100 d-flex flex-column">
+    <a href="javascript:void(0)" class="style-post__thumb position-relative d-block">
+        <span class="d-block w-100 h-100 overflow-hidden tw-rounded-lg">
+            <img src="assets/images/thumbs/blog/style-3.png" alt="Best Summer Looks That Will Turn Every Head" class="w-100 h-100 object-fit-cover">
+        </span>
+        <span class="style-post__date position-absolute d-inline-flex align-items-center bg-white rounded-pill font-heading">
+            <span class="style-post__day bg-green-600 text-white fw-semibold">26</span>
+            <span class="style-post__month text-slate-800">Dec, 2026</span>
+        </span>
+        <span class="style-post__tag position-absolute bg-yellow-600 text-heading font-heading fw-semibold">Exclusive</span>
+    </a>
+    <div class="style-post__body d-flex flex-column flex-grow-1">
+        <h3 class="style-post__title fw-semibold text-slate-800 line-clamp-2">
+            <a href="javascript:void(0)" class="hover-text-main-600">Best Summer Looks That Will Turn Every Head</a>
+        </h3>
+        <div class="style-post__footer d-flex align-items-center justify-content-between tw-gap-2 border-top border-slate-100 mt-auto">
+            <div class="d-flex align-items-center tw-gap-2" style="min-width: 0">
+                <img src="assets/images/thumbs/avatars/devon-lane.png" alt="Devon Lane" class="style-post__avatar rounded-circle object-fit-cover flex-shrink-0">
+                <div class="min-w-0">
+                    <span class="style-post__author d-block text-slate-800 text-truncate">Devon Lane</span>
+                    <span class="style-post__role d-block text-slate-500">Admin</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center tw-gap-4 flex-shrink-0">
+                <span class="style-post__comments d-inline-flex align-items-center tw-gap-2 text-slate-600">
+                    <i class="ph ph-chat-centered-text text-main-600"></i>
+                    216
+                </span>
+                <a href="javascript:void(0)" class="style-post__read d-inline-flex align-items-center tw-gap-1 text-orange-600 font-heading fw-semibold">
+                    Read
+                    <i class="ph ph-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- Style post card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Style post card start -->
+<article class="style-post h-100 d-flex flex-column">
+    <a href="javascript:void(0)" class="style-post__thumb position-relative d-block">
+        <span class="d-block w-100 h-100 overflow-hidden tw-rounded-lg">
+            <img src="assets/images/thumbs/blog/style-4.png" alt="Build the Perfect Wardrobe With These Simple Tips" class="w-100 h-100 object-fit-cover">
+        </span>
+        <span class="style-post__date position-absolute d-inline-flex align-items-center bg-white rounded-pill font-heading">
+            <span class="style-post__day bg-green-600 text-white fw-semibold">26</span>
+            <span class="style-post__month text-slate-800">Dec, 2026</span>
+        </span>
+        <span class="style-post__tag position-absolute bg-yellow-600 text-heading font-heading fw-semibold">Exclusive</span>
+    </a>
+    <div class="style-post__body d-flex flex-column flex-grow-1">
+        <h3 class="style-post__title fw-semibold text-slate-800 line-clamp-2">
+            <a href="javascript:void(0)" class="hover-text-main-600">Build the Perfect Wardrobe With These Simple Tips</a>
+        </h3>
+        <div class="style-post__footer d-flex align-items-center justify-content-between tw-gap-2 border-top border-slate-100 mt-auto">
+            <div class="d-flex align-items-center tw-gap-2" style="min-width: 0">
+                <img src="assets/images/thumbs/avatars/guy-hawkins.png" alt="Guy Hawkins" class="style-post__avatar rounded-circle object-fit-cover flex-shrink-0">
+                <div class="min-w-0">
+                    <span class="style-post__author d-block text-slate-800 text-truncate">Guy Hawkins</span>
+                    <span class="style-post__role d-block text-slate-500">Admin</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center tw-gap-4 flex-shrink-0">
+                <span class="style-post__comments d-inline-flex align-items-center tw-gap-2 text-slate-600">
+                    <i class="ph ph-chat-centered-text text-main-600"></i>
+                    216
+                </span>
+                <a href="javascript:void(0)" class="style-post__read d-inline-flex align-items-center tw-gap-1 text-orange-600 font-heading fw-semibold">
+                    Read
+                    <i class="ph ph-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- Style post card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Style post card start -->
+<article class="style-post h-100 d-flex flex-column">
+    <a href="javascript:void(0)" class="style-post__thumb position-relative d-block">
+        <span class="d-block w-100 h-100 overflow-hidden tw-rounded-lg">
+            <img src="assets/images/thumbs/blog/style-1.png" alt="Easy Layering Ideas for Cooler Evenings" class="w-100 h-100 object-fit-cover">
+        </span>
+        <span class="style-post__date position-absolute d-inline-flex align-items-center bg-white rounded-pill font-heading">
+            <span class="style-post__day bg-green-600 text-white fw-semibold">26</span>
+            <span class="style-post__month text-slate-800">Dec, 2026</span>
+        </span>
+        <span class="style-post__tag position-absolute bg-yellow-600 text-heading font-heading fw-semibold">Exclusive</span>
+    </a>
+    <div class="style-post__body d-flex flex-column flex-grow-1">
+        <h3 class="style-post__title fw-semibold text-slate-800 line-clamp-2">
+            <a href="javascript:void(0)" class="hover-text-main-600">Easy Layering Ideas for Cooler Evenings</a>
+        </h3>
+        <div class="style-post__footer d-flex align-items-center justify-content-between tw-gap-2 border-top border-slate-100 mt-auto">
+            <div class="d-flex align-items-center tw-gap-2" style="min-width: 0">
+                <img src="assets/images/thumbs/avatars/annette-black.png" alt="Annette Black" class="style-post__avatar rounded-circle object-fit-cover flex-shrink-0">
+                <div class="min-w-0">
+                    <span class="style-post__author d-block text-slate-800 text-truncate">Annette Black</span>
+                    <span class="style-post__role d-block text-slate-500">Admin</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center tw-gap-4 flex-shrink-0">
+                <span class="style-post__comments d-inline-flex align-items-center tw-gap-2 text-slate-600">
+                    <i class="ph ph-chat-centered-text text-main-600"></i>
+                    216
+                </span>
+                <a href="javascript:void(0)" class="style-post__read d-inline-flex align-items-center tw-gap-1 text-orange-600 font-heading fw-semibold">
+                    Read
+                    <i class="ph ph-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- Style post card end -->
+                </div>
+                <div class="snap-slider__slide">
+                    <!-- Style post card start -->
+<article class="style-post h-100 d-flex flex-column">
+    <a href="javascript:void(0)" class="style-post__thumb position-relative d-block">
+        <span class="d-block w-100 h-100 overflow-hidden tw-rounded-lg">
+            <img src="assets/images/thumbs/blog/style-2.png" alt="Accessories That Instantly Lift Any Look" class="w-100 h-100 object-fit-cover">
+        </span>
+        <span class="style-post__date position-absolute d-inline-flex align-items-center bg-white rounded-pill font-heading">
+            <span class="style-post__day bg-green-600 text-white fw-semibold">26</span>
+            <span class="style-post__month text-slate-800">Dec, 2026</span>
+        </span>
+        <span class="style-post__tag position-absolute bg-yellow-600 text-heading font-heading fw-semibold">Exclusive</span>
+    </a>
+    <div class="style-post__body d-flex flex-column flex-grow-1">
+        <h3 class="style-post__title fw-semibold text-slate-800 line-clamp-2">
+            <a href="javascript:void(0)" class="hover-text-main-600">Accessories That Instantly Lift Any Look</a>
+        </h3>
+        <div class="style-post__footer d-flex align-items-center justify-content-between tw-gap-2 border-top border-slate-100 mt-auto">
+            <div class="d-flex align-items-center tw-gap-2" style="min-width: 0">
+                <img src="assets/images/thumbs/avatars/theresa-webb.png" alt="Theresa Webb" class="style-post__avatar rounded-circle object-fit-cover flex-shrink-0">
+                <div class="min-w-0">
+                    <span class="style-post__author d-block text-slate-800 text-truncate">Theresa Webb</span>
+                    <span class="style-post__role d-block text-slate-500">Admin</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center tw-gap-4 flex-shrink-0">
+                <span class="style-post__comments d-inline-flex align-items-center tw-gap-2 text-slate-600">
+                    <i class="ph ph-chat-centered-text text-main-600"></i>
+                    216
+                </span>
+                <a href="javascript:void(0)" class="style-post__read d-inline-flex align-items-center tw-gap-1 text-orange-600 font-heading fw-semibold">
+                    Read
+                    <i class="ph ph-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- Style post card end -->
+                </div>
+            </div>
+            <div class="snap-slider__dots d-flex align-items-center justify-content-center" role="tablist" aria-label="Article slides"></div>
+        </div>
+    </div>
+</section>
+<!-- ======================================== Style tips end =================================== -->
+
+
+
+    <!-- ======================================== Support strip start =================================== -->
+<section class="support-strip bg-slate-25">
+    <div class="container container-two text-center">
+      <p class="support-strip__note text-slate-600">Trusted by 5.9 Million American**. We always try to bring the best experience to customers when shopping at eCommex.</p>
+      <div class="support-grid text-start">
+        <a href="tel:3165550116" class="support-card support-card--main d-flex align-items-center bg-white rounded-pill">
+          <span class="support-card__icon"><i class="ph ph-phone-call"></i></span>
+          <span class="support-card__body">
+            <span class="support-card__title d-block font-heading fw-semibold text-slate-800">Call Us</span>
+            <span class="support-card__text d-block text-slate-600">(316) 555-0116, (316) 555-0116</span>
+          </span>
+        </a>
+        <a href="mailto:info@demo.com" class="support-card support-card--yellow d-flex align-items-center bg-white rounded-pill">
+          <span class="support-card__icon"><i class="ph ph-envelope-simple-open"></i></span>
+          <span class="support-card__body">
+            <span class="support-card__title d-block font-heading fw-semibold text-slate-800">Mail Us</span>
+            <span class="support-card__text d-block text-slate-600">info@demo.com, demo@info.com</span>
+          </span>
+        </a>
+        <a href="https://maps.google.com/?q=2118+Thornridge+Cir.+Syracuse" class="support-card support-card--orange d-flex align-items-center bg-white rounded-pill" target="_blank" rel="noopener">
+          <span class="support-card__icon"><i class="ph ph-map-pin"></i></span>
+          <span class="support-card__body">
+            <span class="support-card__title d-block font-heading fw-semibold text-slate-800">Location</span>
+            <span class="support-card__text d-block text-slate-600">2118 Thornridge Cir. Syracuse, 35624</span>
+          </span>
+        </a>
+        <a href="javascript:void(0)" class="support-card support-card--green d-flex align-items-center bg-white rounded-pill">
+          <span class="support-card__icon"><i class="ph ph-chat-centered-dots"></i></span>
+          <span class="support-card__body">
+            <span class="support-card__title d-block font-heading fw-semibold text-slate-800">Chat with Us</span>
+            <span class="support-card__text d-block text-slate-600">Chat now with an experts</span>
+          </span>
+        </a>
+      </div>
+    </div>
+</section>
+<!-- ======================================== Support strip end =================================== -->
+
+
+
+    <!-- ==================== Footer Three Start Here ==================== -->
+<footer class="footer footer--three bg-main-two-600 mt-auto">
+  <!-- Top row: help line, logo, socials -->
+  <div class="container container-two">
+    <div class="footer__top d-flex align-items-center justify-content-between flex-wrap">
+      <a href="tel:3025550107" class="footer__help d-flex align-items-center text-white">
+        <span class="footer__help-label">Need Any Help? :</span>
+        <span class="footer__help-phone">(302) 555-0107</span>
+      </a>
+      <a href="index.html" class="footer__logo d-inline-flex">
+        <img src="assets/images/logo/logo-white.png" alt="eCommex">
+      </a>
+      <div class="d-flex align-items-center">
+        <span class="footer__help-label text-white">Follow Us On :</span>
+        <ul class="footer__socials d-flex align-items-center">
+          <li><a href="https://www.facebook.com" class="footer__social" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a></li>
+          <li><a href="https://www.instagram.com" class="footer__social" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a></li>
+          <li><a href="https://www.pinterest.com" class="footer__social" aria-label="Pinterest"><i class="ph ph-pinterest-logo"></i></a></li>
+          <li><a href="https://www.twitch.tv" class="footer__social" aria-label="Twitch"><i class="ph ph-twitch-logo"></i></a></li>
+          <li><a href="https://www.linkedin.com" class="footer__social" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main footer -->
+  <div class="footer__main">
+    <div class="container container-two">
+      <div class="footer__grid footer__grid--three">
+        <div>
+          <h4 class="footer__title">About Us</h4>
+          <p class="footer__text text-slate-200">We provide a reliable online platform where users can discover products.</p>
+          <p class="footer__text text-slate-200">Shop with confidence, and enjoy seamless customer support.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Quick Link</h4>
+          <ul class="footer__links">
+            <li><a href="javascript:void(0)">Home</a></li>
+            <li><a href="javascript:void(0)">About Us</a></li>
+            <li><a href="javascript:void(0)">Browse Deals</a></li>
+            <li><a href="javascript:void(0)">Stores</a></li>
+            <li><a href="javascript:void(0)">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Shop Link</h4>
+          <ul class="footer__links">
+            <li><a href="javascript:void(0)">Product</a></li>
+            <li><a href="javascript:void(0)">Single Product</a></li>
+            <li><a href="javascript:void(0)">Cart</a></li>
+            <li><a href="javascript:void(0)">Billing &amp; Address</a></li>
+            <li><a href="javascript:void(0)">Payment</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Authentication</h4>
+          <ul class="footer__links">
+            <li><a href="javascript:void(0)">Sign Up</a></li>
+            <li><a href="javascript:void(0)">Sign In</a></li>
+            <li><a href="javascript:void(0)">Forgot Password</a></li>
+            <li><a href="javascript:void(0)">Verified Mail</a></li>
+            <li><a href="javascript:void(0)">New Password</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <span class="footer__text d-block text-slate-200">Send Us Email</span>
+          <a href="mailto:demo@gmail.com" class="footer__contact-value d-inline-block text-white hover-text-main-600">demo@gmail.com</a>
+          <span class="footer__text d-block text-slate-200">Visit Our Location</span>
+          <address class="footer__contact-value text-white mb-0">1901 Thornridge Cir.<br>Hawaii 54126</address>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Newsletter</h4>
+          <p class="footer__text text-slate-200">Subscribe our newsletter to get our latest update &amp; news</p>
+          <form action="#" class="footer__newsletter form-submit">
+            <input type="email" class="footer__newsletter-input" placeholder="Email address" aria-label="Email address" required>
+            <button type="submit" class="footer__newsletter-btn" aria-label="Subscribe"><i class="ph-fill ph-paper-plane-tilt"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar (gradient) -->
+  <div class="footer__bottom">
+    <div class="container container-two">
+      <div class="footer__bottom-inner d-flex align-items-center justify-content-between flex-wrap tw-gap-4">
+        <p class="text-white tw-text-sm">Copyright &copy; 2026 <a href="index.html" class="text-yellow-600 hover-underline">eCommex.</a> All rights reserved.</p>
+        <ul class="footer__payments d-flex align-items-center flex-wrap tw-gap-2">
+          <li><img src="assets/images/icons/payments-light/discover.png" alt="Discover"></li>
+          <li><img src="assets/images/icons/payments-light/visa.png" alt="Visa"></li>
+          <li><img src="assets/images/icons/payments-light/mastercard.png" alt="Mastercard"></li>
+          <li><img src="assets/images/icons/payments-light/diners.png" alt="Diners Club"></li>
+          <li><img src="assets/images/icons/payments-light/amex.png" alt="American Express"></li>
+          <li><img src="assets/images/icons/payments-light/stripe.png" alt="Stripe"></li>
+          <li><img src="assets/images/icons/payments-light/maestro.png" alt="Maestro"></li>
+          <li><img src="assets/images/icons/payments-light/paypal.png" alt="PayPal"></li>
+          <li><img src="assets/images/icons/payments-light/gpay.png" alt="Google Pay"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ==================== Footer Three End Here ==================== -->
+
+
+    <!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- phosphor Js -->
+<script src="assets/js/phosphor-icon.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- aos -->
+<script src="assets/js/aos.js"></script>
+
+<!-- GSAP js -->
+<script src="assets/js/gsap.min.js"></script>
+<!-- SplitText -->
+<script src="assets/js/SplitText.min.js"></script>
+<!-- Scroll Trigger -->
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<!-- custom GSAP -->
+<script src="assets/js/custom-gsap.js"></script>
+
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+
+
+    </body>
+</html>

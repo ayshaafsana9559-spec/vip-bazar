@@ -1,0 +1,23 @@
+/* brand slider (one sliding row of brand-grid cells) start */
+// cells reuse .brand-grid__item / __logo / __offer from home-one; the 1px gap shows the
+// track colour through as the hairline between cells, like the brand grid
+.brand-slider {
+  overflow: hidden;
+  border: 1px solid var(--slate-200);
+  border-radius: 12px;
+
+  &__track {
+    gap: 1px;
+    background-color: var(--slate-100);
+    grid-auto-columns: calc((100% - 1px) / 2);
+
+    @media (min-width: 576px) {
+      grid-auto-columns: calc((100% - 2px) / 3);
+    }
+
+    @media (min-width: 992px) {
+      grid-auto-columns: calc((100% - 5px) / 6);
+    }
+  }
+}
+/* brand slider (one sliding row of brand-grid cells) end */
