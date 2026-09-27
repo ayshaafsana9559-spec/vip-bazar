@@ -1,0 +1,78 @@
+<!-- ======================================== New address modal start =================================== -->
+<div class="modal fade review-modal address-modal" id="addressModal" tabindex="-1" aria-labelledby="addressModalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content border-0">
+            <div class="review-modal__head d-flex align-items-center justify-content-between">
+                <h2 class="review-modal__title fw-semibold text-slate-800 mb-0" id="addressModalTitle">New Address</h2>
+                <button type="button" class="review-modal__close" data-bs-dismiss="modal" aria-label="Close"><i class="ph ph-x"></i></button>
+            </div>
+            <form action="#" class="review-modal__form form-submit">
+                <div class="address-modal__types d-flex align-items-center flex-wrap" role="radiogroup" aria-label="Address type">
+                    <div class="choice-radio">
+                        <input type="radio" name="address-type" id="address-type-home" value="home" class="visually-hidden" checked>
+                        <label for="address-type-home">Home</label>
+                    </div>
+                    <div class="choice-radio">
+                        <input type="radio" name="address-type" id="address-type-office" value="office" class="visually-hidden">
+                        <label for="address-type-office">Office</label>
+                    </div>
+                </div>
+
+                <div class="review-modal__fields">
+                    <div class="float-field review-modal__full">
+                        <label for="address-name" class="float-field__label">Name</label>
+                        <input type="text" id="address-name" class="float-field__input" placeholder="Enter name..." required>
+                    </div>
+                    <div class="float-field">
+                        <label for="address-email" class="float-field__label">Gmail</label>
+                        <input type="email" id="address-email" class="float-field__input" placeholder="Enter gmail..." required>
+                    </div>
+                    <div class="float-field">
+                        <label for="address-phone" class="float-field__label">Phone</label>
+                        <input type="tel" id="address-phone" class="float-field__input" placeholder="Enter number..." required>
+                    </div>
+                    <div class="float-field">
+                        <label for="address-country" class="float-field__label">Country</label>
+                        <select id="address-country" class="float-field__input float-field__input--select" required>
+                            <option value="" selected>Select country</option>
+                            <option value="bd">Bangladesh</option>
+                            <option value="ca">Canada</option>
+                            <option value="in">India</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="us">United States</option>
+                        </select>
+                        <i class="ph ph-caret-down float-field__caret" aria-hidden="true"></i>
+                    </div>
+                    <div class="float-field">
+                        <label for="address-city" class="float-field__label">Town/City</label>
+                        <input type="text" id="address-city" class="float-field__input" placeholder="Enter town/city..." required>
+                    </div>
+                    <div class="float-field review-modal__full">
+                        <label for="address-line" class="float-field__label">Address</label>
+                        <textarea id="address-line" class="float-field__input float-field__input--area" placeholder="Enter your address..." required></textarea>
+                    </div>
+                    <div class="float-field">
+                        <label for="address-state" class="float-field__label">State</label>
+                        <input type="text" id="address-state" class="float-field__input" placeholder="Enter state...">
+                    </div>
+                    <div class="float-field">
+                        <label for="address-zip" class="float-field__label">Zip/Code</label>
+                        <input type="text" id="address-zip" class="float-field__input" placeholder="Enter code..." required>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center flex-wrap tw-gap-2">
+                    <button type="submit" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center rounded-pill review-modal__btn py-0 font-heading fw-semibold" data-block="button">
+                        <span class="button__flair"></span>
+                        <span class="button__label">Deliver to this Address</span>
+                    </button>
+                    <button type="button" class="btn btn-outline-main hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center rounded-pill review-modal__btn py-0 font-heading fw-semibold" data-bs-dismiss="modal" data-block="button">
+                        <span class="button__flair"></span>
+                        <span class="button__label">Cancel</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- ======================================== New address modal end =================================== -->

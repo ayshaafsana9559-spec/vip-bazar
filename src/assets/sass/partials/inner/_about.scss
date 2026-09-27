@@ -1,0 +1,148 @@
+/* about us page start */
+.about-intro {
+  padding-block: 80px 100px;
+
+  &__wrap {
+    display: grid;
+
+    @media (min-width: 992px) {
+      grid-template-columns: 540px minmax(0, 1fr);
+    }
+  }
+
+  // photo is rounded only on its outer (left) side; the panel continues it on the right
+  &__thumb {
+    height: 691px;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+
+    @media (min-width: 992px) {
+      border-radius: 12px 0 0 12px;
+    }
+
+    @media (max-width: 991px) {
+      height: 420px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    padding-block: 101px 60px;
+
+    @media (min-width: 992px) {
+      padding-inline-start: 132px;
+    }
+
+    @media (max-width: 991px) {
+      padding-block: 40px;
+    }
+  }
+
+  &__tagline {
+    margin-block-end: 11px;
+    font-size: rem(15px);
+  }
+
+  &__title {
+    margin-block-end: 20px;
+    font-size: clamp(2rem, 1.1rem + 2vw, 3rem);
+    line-height: 1.08;
+  }
+
+  &__text {
+    margin-block-end: 35px;
+    font-size: rem(13.5px);
+    line-height: 1.45;
+  }
+
+  &__btn {
+    height: 44px;
+    padding-inline: 27px;
+    font-size: rem(14px);
+  }
+
+  &__support {
+    gap: 11px;
+  }
+
+  &__support-icon {
+    width: 44px;
+    height: 44px;
+    font-size: rem(22px);
+  }
+
+  &__support-label {
+    margin-block-end: 3px;
+    font-size: rem(12px);
+  }
+
+  &__support-phone {
+    font-size: rem(14px);
+    transition: color 0.2s linear;
+  }
+
+  &__support:hover &__support-phone {
+    color: var(--main-600) !important;
+  }
+
+  &__features {
+    display: grid;
+    gap: 30px;
+    margin-block-start: auto;
+    padding: 34px 24px 36px;
+    border-radius: 0 0 12px 12px;
+
+    @media (min-width: 576px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: 307px minmax(0, 1fr);
+      gap: 0;
+      padding-inline: 132px 24px;
+      border-radius: 0 12px 12px 0;
+    }
+  }
+}
+
+.about-feature {
+  @media (min-width: 992px) {
+    &:first-child {
+      border-inline-end: 1px solid var(--slate-200);
+    }
+
+    & + & {
+      padding-inline-start: 52px;
+    }
+  }
+
+  &__icon {
+    width: 54px;
+    height: 54px;
+    margin-block-end: 21px;
+    img {
+      width: 28px;
+    }
+  }
+
+  &__title {
+    margin-block-end: 6px;
+    font-family: var(--body-font);
+    font-size: rem(17px);
+  }
+
+  &__text {
+    max-width: 232px;
+    font-size: rem(12px);
+    line-height: 1.5;
+  }
+}
+
+// brand grid right under the offer strip: the strip's bottom padding already spaces it
+.offer-strip + .brand-partner {
+  padding-top: 8px !important;
+}
+/* about us page end */

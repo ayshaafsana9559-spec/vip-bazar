@@ -1,0 +1,140 @@
+/* add review modal start */
+.review-modal {
+  --bs-modal-width: 731px;
+  --bs-modal-border-radius: 12px;
+  --bs-backdrop-opacity: 0.55;
+
+  .modal-dialog {
+    margin-block-start: 100px;
+  }
+
+  .modal-content {
+    padding: 22px 28px 26px;
+  }
+
+  &__head {
+    padding-block-end: 16px;
+    border-bottom: 1px solid var(--slate-100);
+  }
+
+  &__title {
+    font-size: rem(21px);
+  }
+
+  &__close {
+    color: var(--slate-800);
+    font-size: rem(20px);
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: var(--main-600);
+    }
+  }
+
+  &__rating {
+    gap: 14px;
+    margin-block: 16px 22px;
+  }
+
+  &__label {
+    color: var(--slate-600);
+    font-size: rem(13px);
+  }
+
+  &__fields {
+    display: grid;
+    gap: 24px 8px;
+    margin-block-end: 26px;
+
+    @media (min-width: 576px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  &__full {
+    grid-column: 1 / -1;
+  }
+
+  &__btn {
+    height: 42px;
+    padding-inline: 26px;
+    font-size: rem(13px);
+  }
+}
+
+// star picker: filled stars up to the checked (or hovered) one
+.rate-input {
+  gap: 4px;
+
+  label {
+    color: var(--yellow-600);
+    font-size: rem(20px);
+    line-height: 1;
+    cursor: pointer;
+
+    .ph-fill {
+      display: none;
+    }
+  }
+
+  input:checked ~ label,
+  label:hover,
+  label:hover ~ label {
+    .ph {
+      display: none;
+    }
+
+    .ph-fill {
+      display: inline-block;
+    }
+  }
+
+  input:focus-visible + label {
+    outline: 2px solid var(--main-300);
+    border-radius: 3px;
+  }
+}
+
+// pill field with its label sitting on the top border
+.float-field {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    top: -8px;
+    left: 18px;
+    padding-inline: 4px;
+    background-color: hsl(var(--white));
+    color: var(--slate-800);
+    font-size: rem(11px);
+    line-height: 1.3;
+  }
+
+  &__input {
+    width: 100%;
+    height: 44px;
+    padding-inline: 20px;
+    border: 1px solid var(--slate-200);
+    border-radius: 50rem;
+    color: var(--slate-800);
+    font-size: rem(13px);
+    outline: 0;
+    transition: border-color 0.2s linear;
+
+    &::placeholder {
+      color: var(--slate-500);
+    }
+
+    &:focus {
+      border-color: var(--main-600);
+    }
+
+    &--area {
+      height: 98px;
+      padding-block: 14px;
+      border-radius: 22px;
+      resize: vertical;
+    }
+  }
+}
+/* add review modal end */

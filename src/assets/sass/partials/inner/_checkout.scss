@@ -1,0 +1,213 @@
+/* checkout page (delivery + payment + address summary; reuses the cart layout) start */
+.checkout-main,
+.checkout-side {
+  gap: 22px;
+  min-width: 0;
+}
+
+.checkout-box {
+  min-width: 0;
+  padding-block-end: 28px;
+
+  .cart-box__title {
+    margin-block-end: 22px;
+    line-height: 1.2;
+  }
+
+  &__foot {
+    margin-block: 19px -7px;
+    border-top: 1px solid var(--slate-200);
+
+    .cart-box__back {
+      margin-block-start: 20px;
+    }
+  }
+}
+
+// selectable delivery method cards
+.delivery-options {
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.delivery-option {
+  &__card {
+    gap: 12px;
+    min-height: 103px;
+    padding: 16px 26px 16px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s linear;
+
+    &:hover {
+      border-color: var(--main-300) !important;
+    }
+  }
+
+  input:checked + &__card {
+    border-color: var(--main-600) !important;
+  }
+
+  input:focus-visible + &__card {
+    outline: 2px solid var(--main-300);
+    outline-offset: 2px;
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__name {
+    font-size: rem(18px);
+  }
+
+  &__price {
+    font-size: rem(19px);
+  }
+
+  &__time {
+    margin-block-start: 6px;
+    font-size: rem(12px);
+  }
+}
+
+// payment methods: the checked one gets a blue frame and opens its body
+.pay-options {
+  gap: 22px;
+}
+
+.pay-option {
+  border-radius: 8px;
+  transition: border-color 0.2s linear;
+
+  &:hover {
+    border-color: var(--main-300) !important;
+  }
+
+  &:has(input:checked) {
+    border-color: var(--main-600) !important;
+  }
+
+  &:has(input:focus-visible) {
+    outline: 2px solid var(--main-300);
+    outline-offset: 2px;
+  }
+
+  &__head {
+    min-height: 103px;
+    padding: 16px 24px 16px 26px;
+    cursor: pointer;
+  }
+
+  &__name {
+    margin-block-end: 7px;
+    font-size: rem(17px);
+  }
+
+  &__text {
+    font-size: rem(12px);
+  }
+
+  &__logos {
+    gap: 16px;
+  }
+
+  &__paypal {
+    width: 24px;
+  }
+
+  &__payoneer {
+    width: 36px;
+  }
+
+  &__mastercard {
+    width: 30px;
+  }
+
+  &__visa {
+    width: 30px;
+  }
+
+  &__cash {
+    width: 26px;
+  }
+
+  &__body {
+    display: none;
+    margin-block-start: -9px;
+    padding: 0 26px 24px;
+
+    .cart-box__back {
+      margin-block-start: 18px;
+    }
+  }
+
+  input:checked ~ &__body {
+    display: block;
+  }
+
+  &__select {
+    color: var(--slate-800);
+    font-size: rem(12px);
+  }
+}
+
+// delivery address summary card
+.checkout-address {
+  padding: 26px 26px 26px 27px;
+
+  .cart-box__title {
+    margin-block-end: 22px;
+  }
+
+  &__title {
+    font-size: rem(21px);
+  }
+
+  &__edit {
+    font-size: rem(13px);
+
+    i {
+      font-size: rem(16px);
+    }
+
+    &:hover {
+      color: var(--orange-600) !important;
+    }
+  }
+
+  &__name {
+    margin-block-end: 12px;
+    font-size: rem(15px);
+  }
+
+  &__type {
+    font-family: var(--body-font);
+    font-size: rem(14px);
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: rem(12px);
+    font-style: normal;
+  }
+}
+
+// the checkout price card sits a little taller than the cart one
+.checkout-side .cart-summary {
+  &__from {
+    padding-block: 11px 29px;
+  }
+
+  &__btn {
+    margin-block-start: 34px;
+  }
+}
+/* checkout page end */

@@ -1,0 +1,231 @@
+<!-- ======================================== Shop listing start =================================== -->
+<section class="shop-listing">
+    <div class="container container-two">
+        <div class="shop-listing__layout">
+            <!-- Filter sidebar -->
+            <aside class="shop-filter bg-slate-25 border border-slate-100 tw-rounded-xl" aria-label="Product filters">
+                <h2 class="shop-filter__title fw-semibold text-slate-800">Filter</h2>
+                <form action="#" class="shop-filter__search position-relative">
+                    <input type="search" class="shop-filter__search-input w-100 rounded-pill border border-slate-100 bg-white" placeholder="Search" aria-label="Search products">
+                    <button type="submit" class="shop-filter__search-btn position-absolute" aria-label="Search"><i class="ph ph-magnifying-glass"></i></button>
+                </form>
+
+                <div class="shop-filter__group">
+                    <h3 class="shop-filter__heading fw-semibold text-slate-800">Types of Categories</h3>
+                <ul class="filter-list list-unstyled mb-0">
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="cat-0" class="filter-check__input visually-hidden" checked>
+                        <label for="cat-0" class="filter-check__label d-flex align-items-center flex-grow-1">Electronics &amp; Gadgets</label>
+                        <span class="filter-check__count">1563</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="cat-1" class="filter-check__input visually-hidden">
+                        <label for="cat-1" class="filter-check__label d-flex align-items-center flex-grow-1">Fashion &amp; Apparel</label>
+                        <span class="filter-check__count">1522</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="cat-2" class="filter-check__input visually-hidden" checked>
+                        <label for="cat-2" class="filter-check__label d-flex align-items-center flex-grow-1">Beauty &amp; Personal Care</label>
+                        <span class="filter-check__count">2545</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="cat-3" class="filter-check__input visually-hidden">
+                        <label for="cat-3" class="filter-check__label d-flex align-items-center flex-grow-1">Home &amp; Kitchen</label>
+                        <span class="filter-check__count">5526</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="cat-4" class="filter-check__input visually-hidden" checked>
+                        <label for="cat-4" class="filter-check__label d-flex align-items-center flex-grow-1">Grocery &amp; Food Supplies</label>
+                        <span class="filter-check__count">3215</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="cat-5" class="filter-check__input visually-hidden" checked>
+                        <label for="cat-5" class="filter-check__label d-flex align-items-center flex-grow-1">Sports &amp; Outdoor</label>
+                        <span class="filter-check__count">4154</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="cat-6" class="filter-check__input visually-hidden">
+                        <label for="cat-6" class="filter-check__label d-flex align-items-center flex-grow-1">Toys &amp; Games</label>
+                        <span class="filter-check__count">154</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="cat-7" class="filter-check__input visually-hidden">
+                        <label for="cat-7" class="filter-check__label d-flex align-items-center flex-grow-1">Furniture &amp; Decor</label>
+                        <span class="filter-check__count">745</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="cat-8" class="filter-check__input visually-hidden">
+                        <label for="cat-8" class="filter-check__label d-flex align-items-center flex-grow-1">Mobile Accessories</label>
+                        <span class="filter-check__count">254</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="cat-9" class="filter-check__input visually-hidden">
+                        <label for="cat-9" class="filter-check__label d-flex align-items-center flex-grow-1">Computer &amp; Networking</label>
+                        <span class="filter-check__count">354</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="cat-10" class="filter-check__input visually-hidden">
+                        <label for="cat-10" class="filter-check__label d-flex align-items-center flex-grow-1">Watches &amp; Accessories</label>
+                        <span class="filter-check__count">475</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="cat-11" class="filter-check__input visually-hidden">
+                        <label for="cat-11" class="filter-check__label d-flex align-items-center flex-grow-1">Books &amp; Media</label>
+                        <span class="filter-check__count">571</span>
+                    </li>
+                </ul>
+                    <a href="javascript:void(0)" class="shop-filter__more">See All</a>
+                </div>
+
+                <div class="shop-filter__group">
+                    <h3 class="shop-filter__heading fw-semibold text-slate-800">Pricing scale</h3>
+                    <div class="price-range" data-price-range>
+                        <div class="price-range__track position-relative">
+                            <span class="price-range__fill position-absolute"></span>
+                            <input type="range" class="price-range__input" min="0" max="2000" step="10" value="100" aria-label="Minimum price" data-price-min>
+                            <input type="range" class="price-range__input" min="0" max="2000" step="10" value="1000" aria-label="Maximum price" data-price-max>
+                        </div>
+                        <p class="price-range__value text-center text-slate-600 mb-0" data-price-value>$100 - $1000</p>
+                    </div>
+                </div>
+
+                <div class="shop-filter__group">
+                    <h3 class="shop-filter__heading fw-semibold text-slate-800">Types of Colors</h3>
+                <ul class="filter-list list-unstyled mb-0">
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="color-0" class="filter-check__input visually-hidden" checked>
+                        <label for="color-0" class="filter-check__label d-flex align-items-center flex-grow-1">Black</label>
+                        <span class="filter-check__count">1563</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="color-1" class="filter-check__input visually-hidden">
+                        <label for="color-1" class="filter-check__label d-flex align-items-center flex-grow-1">Blue</label>
+                        <span class="filter-check__count">1522</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="color-2" class="filter-check__input visually-hidden" checked>
+                        <label for="color-2" class="filter-check__label d-flex align-items-center flex-grow-1">Gray</label>
+                        <span class="filter-check__count">2545</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="color-3" class="filter-check__input visually-hidden">
+                        <label for="color-3" class="filter-check__label d-flex align-items-center flex-grow-1">Green</label>
+                        <span class="filter-check__count">5526</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="color-4" class="filter-check__input visually-hidden" checked>
+                        <label for="color-4" class="filter-check__label d-flex align-items-center flex-grow-1">Red</label>
+                        <span class="filter-check__count">3215</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="color-5" class="filter-check__input visually-hidden" checked>
+                        <label for="color-5" class="filter-check__label d-flex align-items-center flex-grow-1">Silver</label>
+                        <span class="filter-check__count">4154</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="color-6" class="filter-check__input visually-hidden">
+                        <label for="color-6" class="filter-check__label d-flex align-items-center flex-grow-1">White</label>
+                        <span class="filter-check__count">154</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="color-7" class="filter-check__input visually-hidden">
+                        <label for="color-7" class="filter-check__label d-flex align-items-center flex-grow-1">Yellow</label>
+                        <span class="filter-check__count">745</span>
+                    </li>
+                </ul>
+                    <a href="javascript:void(0)" class="shop-filter__more">See All</a>
+                </div>
+
+                <div class="shop-filter__group">
+                    <h3 class="shop-filter__heading fw-semibold text-slate-800">Review Category</h3>
+                <ul class="filter-list list-unstyled mb-0">
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="rating-0" class="filter-check__input visually-hidden" checked>
+                        <label for="rating-0" class="filter-check__label d-flex align-items-center flex-grow-1"><i class="ph-fill ph-star text-yellow-600 filter-check__star"></i>5 Star</label>
+                        <span class="filter-check__count">122</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="rating-1" class="filter-check__input visually-hidden">
+                        <label for="rating-1" class="filter-check__label d-flex align-items-center flex-grow-1"><i class="ph-fill ph-star text-yellow-600 filter-check__star"></i>4 Star</label>
+                        <span class="filter-check__count">356</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="rating-2" class="filter-check__input visually-hidden">
+                        <label for="rating-2" class="filter-check__label d-flex align-items-center flex-grow-1"><i class="ph-fill ph-star text-yellow-600 filter-check__star"></i>3 Star</label>
+                        <span class="filter-check__count">356</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="rating-3" class="filter-check__input visually-hidden">
+                        <label for="rating-3" class="filter-check__label d-flex align-items-center flex-grow-1"><i class="ph-fill ph-star text-yellow-600 filter-check__star"></i>2 Star</label>
+                        <span class="filter-check__count">356</span>
+                    </li>
+                    <li class="filter-check d-flex align-items-center justify-content-between">
+                        <input type="checkbox" id="rating-4" class="filter-check__input visually-hidden">
+                        <label for="rating-4" class="filter-check__label d-flex align-items-center flex-grow-1"><i class="ph-fill ph-star text-yellow-600 filter-check__star"></i>1 Star</label>
+                        <span class="filter-check__count">356</span>
+                    </li>
+                </ul>
+                </div>
+
+                <div class="shop-filter__group">
+                    <h3 class="shop-filter__heading fw-semibold text-slate-800">Popular Tags</h3>
+                    <div class="d-flex flex-wrap shop-filter__tags">
+                    <a href="javascript:void(0)" class="filter-tag rounded-pill">Shopping</a>
+                    <a href="javascript:void(0)" class="filter-tag rounded-pill">Dealership</a>
+                    <a href="javascript:void(0)" class="filter-tag rounded-pill">Discounts</a>
+                    <a href="javascript:void(0)" class="filter-tag rounded-pill">Products</a>
+                    <a href="javascript:void(0)" class="filter-tag rounded-pill">Ecommerce</a>
+                    <a href="javascript:void(0)" class="filter-tag rounded-pill">Delivery</a>
+                    <a href="javascript:void(0)" class="filter-tag rounded-pill">Checkout</a>
+                    <a href="javascript:void(0)" class="filter-tag rounded-pill">Orders</a>
+                    <a href="javascript:void(0)" class="filter-tag rounded-pill">Shipping</a>
+                    <a href="javascript:void(0)" class="filter-tag rounded-pill">OnlineStore</a>
+                    <a href="javascript:void(0)" class="filter-tag rounded-pill">Offer</a>
+                    </div>
+                    <a href="javascript:void(0)" class="shop-filter__more">See All</a>
+                </div>
+
+                <button type="reset" class="shop-filter__reset w-100 d-flex align-items-center justify-content-center tw-gap-2 rounded-pill border border-main-600 bg-white text-main-600 font-heading fw-semibold">
+                    <i class="ph ph-arrow-clockwise"></i>
+                    Reset Filters
+                </button>
+            </aside>
+
+            <!-- Results -->
+            <div>
+                <div class="shop-listing__bar d-flex align-items-center justify-content-between flex-wrap tw-gap-3">
+                    <p class="shop-listing__count text-slate-600 mb-0">Showing 12 of 600 Results</p>
+                    <select class="shop-listing__sort rounded-pill border border-slate-100 bg-white text-slate-800" aria-label="Sort products">
+                        <option selected>Newest</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Best Rated</option>
+                    </select>
+                </div>
+                <div class="shop-listing__grid">
+                @@include('../partials/_product-card.html', { "image": "smartphone-m84", "name": "Smartphone M84", "category": "Electronics", "labelOne": "Flash Sale", "toneOne": "bg-main-600 text-white", "labelTwo": "Top Rated", "toneTwo": "bg-orange-600 text-white" })
+                @@include('../partials/_product-card.html', { "image": "smart-watch-a10", "name": "Smart Watch A10", "category": "Electronics", "labelOne": "Hot Deal", "toneOne": "bg-yellow-600 text-heading", "labelTwo": "Best Seller", "toneTwo": "bg-green-600 text-white" })
+                @@include('../partials/_product-card.html', { "image": "armchair-w741", "name": "Armchair W741", "category": "Furniture", "labelOne": "Limited Offer", "toneOne": "bg-yellow-600 text-heading", "labelTwo": "Most Loved", "toneTwo": "bg-purple-600 text-white" })
+                @@include('../partials/_product-card.html', { "image": "running-shoe-a9", "name": "Running Shoe A9", "category": "Footwear", "labelOne": "Mega Save", "toneOne": "bg-main-600 text-white", "labelTwo": "Trending Now", "toneTwo": "bg-green-600 text-white" })
+                @@include('../partials/_product-card.html', { "image": "evening-dress-dj", "name": "Evening Dress DJ", "category": "Fashion", "labelOne": "Deal Alert", "toneOne": "bg-yellow-600 text-heading", "labelTwo": "Crowd Pleaser", "toneTwo": "bg-purple-600 text-white" })
+                @@include('../partials/_product-card.html', { "image": "grand-piano-s85", "name": "Grand Piano S-85", "category": "Music", "labelOne": "Must Grab", "toneOne": "bg-main-600 text-white", "labelTwo": "Hot Pick", "toneTwo": "bg-orange-600 text-white" })
+                @@include('../partials/_product-card.html', { "image": "table-fan-t50", "name": "Table Fan T50", "category": "Appliances", "labelOne": "Crazy Deal", "toneOne": "bg-yellow-600 text-heading", "labelTwo": "Top Rated", "toneTwo": "bg-green-600 text-white" })
+                @@include('../partials/_product-card.html', { "image": "wrist-watch-c8", "name": "Wrist Watch C-8", "category": "Accessories", "labelOne": "Top Pick", "toneOne": "bg-main-600 text-white", "labelTwo": "Flying Fast", "toneTwo": "bg-orange-600 text-white" })
+                @@include('../partials/_product-card-sku.html', { "image": "wireless-headphones", "name": "Wireless Headphones", "category": "Electronics", "labelOne": "Flash Sale", "toneOne": "bg-main-600 text-white", "labelTwo": "Top Rated", "toneTwo": "bg-orange-600 text-white" , "sku": "SW-FIT-2024-X1" })
+                @@include('../partials/_product-card-sku.html', { "image": "solar-mono-panel", "name": "Solar Mono Panel", "category": "Electronics", "labelOne": "Hot Deal", "toneOne": "bg-yellow-600 text-heading", "labelTwo": "Best Seller", "toneTwo": "bg-green-600 text-white" , "sku": "SW-FIT-2024-X1" })
+                @@include('../partials/_product-card-sku.html', { "image": "red-ball-gown", "name": "Red Ball Gown Dress", "category": "Fashion", "labelOne": "Limited Offer", "toneOne": "bg-yellow-600 text-heading", "labelTwo": "Most Loved", "toneTwo": "bg-purple-600 text-white" , "sku": "SW-FIT-2024-X1" })
+                @@include('../partials/_product-card-sku.html', { "image": "macbook-m83", "name": "MacBook M83", "category": "Electronics", "labelOne": "Mega Save", "toneOne": "bg-orange-600 text-white", "labelTwo": "Trending Now", "toneTwo": "bg-green-600 text-white" , "sku": "SW-FIT-2024-X1" })
+                </div>
+                <nav class="shop-pagination d-flex align-items-center justify-content-center" aria-label="Product pages">
+                    <a href="javascript:void(0)" class="shop-pagination__item" aria-label="Previous page"><i class="ph ph-caret-left"></i></a>
+                    <a href="javascript:void(0)" class="shop-pagination__item">1</a>
+                    <a href="javascript:void(0)" class="shop-pagination__item active" aria-current="page">2</a>
+                    <a href="javascript:void(0)" class="shop-pagination__item">3</a>
+                    <span class="shop-pagination__item">...</span>
+                    <a href="javascript:void(0)" class="shop-pagination__item shop-pagination__item--filled" aria-label="Next page"><i class="ph ph-caret-right"></i></a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======================================== Shop listing end =================================== -->

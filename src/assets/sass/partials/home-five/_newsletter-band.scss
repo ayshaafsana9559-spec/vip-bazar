@@ -1,0 +1,80 @@
+/* newsletter band (gradient strip with 3D icons) start */
+.newsletter-band {
+  padding-block: 52px 52px; // room for the bell above and the folder below
+
+  &__bar {
+    min-height: 165px;
+    background: var(--main-two-600) url("../images/thumbs/hero-five/newsletter-bg.png") center / cover no-repeat;
+  }
+
+  &__inner {
+    min-height: 165px;
+    gap: 20px;
+    padding: 24px 0;
+
+    @media (min-width: 1200px) {
+      padding-inline: 114px;
+    }
+  }
+
+  &__title {
+    max-width: 490px;
+    font-size: rem(23px);
+    line-height: 1.3;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 445px;
+    height: 49px;
+  }
+
+  &__input {
+    padding-inline: 20px 150px;
+    font-size: rem(13px);
+    outline: 0;
+
+    &::placeholder {
+      color: var(--slate-600);
+    }
+  }
+
+  &__btn {
+    top: 50%;
+    right: 7px;
+    height: 36px;
+    padding-inline: 20px;
+    font-size: rem(13px);
+    transform: translateY(-50%);
+    transition: background-color 0.2s linear;
+
+    &:hover {
+      background-color: var(--main-600) !important;
+    }
+  }
+
+  // decorative 3D icons hanging off the band, placed from the page centre
+  &__icon {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+
+    &--folder {
+      left: calc(50% - 755px);
+      top: 59px;
+      width: 173px;
+    }
+
+    &--bell {
+      left: calc(50% + 577px);
+      top: -52px;
+      width: 215px;
+    }
+  }
+}
+
+// the brand slider has no top padding of its own (faq page); keep it clear of the overhanging folder
+.newsletter-band + .brand-partner-two {
+  padding-top: 40px;
+}
+/* newsletter band end */

@@ -1,0 +1,169 @@
+/* hero five (jewellery slider with notched frame) start */
+.hero-five {
+  --notch-r: 16px;
+  padding-block: 20px 0; // the features row below brings its own top spacing
+
+  &__slider {
+    overflow: hidden;
+    border-radius: 16px;
+
+    .snap-slider__track {
+      grid-auto-columns: 100%;
+      gap: 0;
+    }
+  }
+
+  &__slide {
+    min-height: 509px;
+    padding: 95px 40px 40px 137px;
+    background-color: #2a1c14;
+  }
+
+  &__art {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% center;
+  }
+
+  &__badge {
+    height: 35px;
+    padding-inline: 14px 16px;
+    font-size: rem(13px);
+    line-height: 1;
+  }
+
+  &__title {
+    max-width: 420px;
+    margin-block: 14px 8px;
+    font-size: rem(48px);
+    line-height: 1.12;
+  }
+
+  &__desc {
+    max-width: 405px;
+    margin-block-end: 18px;
+    font-size: rem(13px);
+    line-height: 1.55;
+  }
+
+  &__price {
+    margin-block-end: 28px;
+  }
+
+  &__amount {
+    font-size: rem(30px);
+  }
+
+  &__btn {
+    height: 43px;
+    padding-inline: 26px;
+    color: var(--main-two-600) !important;
+  }
+
+  // white "bites" out of the frame; the pseudo elements round the photo's corners around them
+  &__notch {
+    position: absolute;
+    z-index: 2;
+    background-color: hsl(var(--white));
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: var(--notch-r);
+      height: var(--notch-r);
+    }
+
+    &--start {
+      left: 0;
+      top: 170px;
+      width: 55px;
+      height: 168px;
+      border-radius: 0 var(--notch-r) var(--notch-r) 0;
+
+      &::before {
+        left: 0;
+        bottom: 100%;
+        background: radial-gradient(circle at 100% 0, transparent var(--notch-r), hsl(var(--white)) calc(var(--notch-r) + 0.5px));
+      }
+
+      &::after {
+        left: 0;
+        top: 100%;
+        background: radial-gradient(circle at 100% 100%, transparent var(--notch-r), hsl(var(--white)) calc(var(--notch-r) + 0.5px));
+      }
+    }
+
+    &--end {
+      right: 0;
+      bottom: 0;
+      width: 160px;
+      height: 77px;
+      gap: 8px;
+      padding-block-start: 2px;
+      border-radius: var(--notch-r) 0 0 0;
+
+      &::before {
+        right: 0;
+        bottom: 100%;
+        background: radial-gradient(circle at 0 0, transparent var(--notch-r), hsl(var(--white)) calc(var(--notch-r) + 0.5px));
+      }
+
+      &::after {
+        right: 100%;
+        bottom: 0;
+        background: radial-gradient(circle at 0 0, transparent var(--notch-r), hsl(var(--white)) calc(var(--notch-r) + 0.5px));
+      }
+    }
+  }
+
+  .snap-slider__dots.hero-five__dots {
+    gap: 10px;
+    margin: 0;
+    min-height: 0;
+  }
+
+  &__arrow {
+    width: 44px;
+    height: 44px;
+    font-size: rem(18px);
+  }
+
+  @media (max-width: 991px) {
+    &__slide {
+      padding-inline-start: 90px;
+    }
+
+    &__title {
+      font-size: rem(38px);
+    }
+  }
+
+  // phones: the photo sits behind the copy, so darken it on the left
+  @media (max-width: 575px) {
+    &__slide {
+      min-height: 480px;
+      padding: 40px 20px 100px 72px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(90deg, rgba(14, 19, 5, 0.75) 40%, transparent 100%);
+      }
+    }
+
+    &__content {
+      z-index: 2;
+    }
+
+    &__title {
+      font-size: rem(32px);
+    }
+  }
+}
+/* hero five end */

@@ -1,0 +1,56 @@
+/* best selling five (jewellery cards) start */
+// .fashion-card--furniture (home-four) without colour dots, white outline cart
+.best-selling--jewel {
+  padding-block: 58px 60px;
+
+  .best-selling__grid {
+    row-gap: 36px;
+  }
+}
+
+.fashion-card--jewel {
+  .fashion-card__cart {
+    background-color: hsl(var(--white)) !important;
+    color: var(--main-600) !important;
+
+    &:hover {
+      background-color: var(--main-600) !important;
+      color: hsl(var(--white)) !important;
+    }
+  }
+
+  .fashion-card__body {
+    padding-block-start: 26px;
+  }
+
+  .fashion-card__name {
+    margin-block-start: 0;
+  }
+}
+// Flash Sale Offer's: jewellery cards with countdowns in a slider; the hover cart is solid blue here
+.flash-sale-five {
+  padding-block: 0 60px;
+
+  .fashion-card--jewel .fashion-card__cart {
+    background-color: var(--main-600) !important;
+    color: hsl(var(--white)) !important;
+  }
+
+  .snap-slider__dots {
+    margin-block-start: 22px;
+  }
+}
+// Mega Sale Event: left-aligned head with the home-one flash countdown, same cards as Flash Sale Offer's
+.mega-sale {
+  padding-block-start: 30px;
+
+  &__head {
+    margin-block-end: 36px;
+  }
+
+  &__sub {
+    margin-block-start: 10px;
+    font-size: rem(13.5px);
+  }
+}
+/* best selling five end */

@@ -65,4 +65,9 @@
     }
   }
 }
+
+// on inner pages (about, faq) the reviews follow the marquee band directly, so they need their own top spacing
+.marquee-strip + .reviews-three {
+  padding-top: 60px;
+}
 /* client reviews (photo review cards, 2 per view) end */

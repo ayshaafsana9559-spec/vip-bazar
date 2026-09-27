@@ -1,0 +1,25 @@
+/* breadcrumb bar (inner pages) start */
+.breadcrumb-bar {
+  &__list {
+    min-height: 51px;
+    gap: 8px;
+    font-size: rem(15px);
+    line-height: 1.4;
+
+    li + li::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      margin-inline-end: 8px;
+      border-radius: 50%;
+      background-color: var(--slate-800);
+      vertical-align: middle;
+    }
+  }
+}
+// inner-page header: the current section's caret points up
+.header--inner .nav-menu__item.has-submenu.activePage > a::before {
+  transform: translateY(-50%) rotate(180deg);
+}
+/* breadcrumb bar end */

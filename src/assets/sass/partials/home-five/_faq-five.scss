@@ -1,0 +1,54 @@
+/* faq five (support card, caret icons) start */
+// builds on .faq--video (home-four) and .help-card (home-one)
+.faq--caret {
+  .faq-item__caret {
+    font-size: rem(18px);
+  }
+
+  .faq-item__button:not(.collapsed) .faq-item__caret {
+    color: var(--slate-800);
+    transform: rotate(180deg);
+  }
+}
+
+.help-card--support {
+  padding: 26px;
+
+  .help-card__text {
+    margin-block: 14px 34px;
+  }
+}
+
+.help-card__avatars img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid hsl(var(--white));
+  object-fit: cover;
+
+  & + img {
+    margin-inline-start: -12px;
+  }
+}
+
+.help-card__label {
+  font-size: rem(16px);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.help-card__link {
+  margin-block-start: 4px;
+  padding-block-end: 2px;
+  border-bottom: 1px solid var(--orange-600);
+  font-size: rem(13px);
+
+  i {
+    font-size: rem(15px);
+    transition: transform 0.2s ease;
+  }
+
+  &:hover i {
+    transform: translateX(4px);
+  }
+}
+/* faq five end */

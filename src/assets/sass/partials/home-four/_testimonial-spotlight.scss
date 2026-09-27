@@ -1,0 +1,110 @@
+/* testimonial spotlight (one review at a time, floating avatars) start */
+.spotlight {
+  padding-block: 76px 70px;
+
+  // avatars float around the centre, placed from the middle of the page
+  &__avatar {
+    position: absolute;
+    left: 50%;
+    object-fit: cover;
+
+    &--1 { top: 70px;  width: 42px; height: 42px; margin-inline-start: -364px; }
+    &--2 { top: 70px;  width: 35px; height: 35px; margin-inline-start: 352px; }
+    &--3 { top: 236px; width: 52px; height: 52px; margin-inline-start: -639px; }
+    &--4 { top: 211px; width: 42px; height: 42px; margin-inline-start: 596px; }
+    &--5 { top: 389px; width: 35px; height: 35px; margin-inline-start: -367px; }
+    &--6 { top: 378px; width: 52px; height: 52px; margin-inline-start: 351px; }
+  }
+
+  &__slider {
+    max-width: 880px;
+    margin-inline: auto;
+
+    .snap-slider__track {
+      grid-auto-columns: 100%;
+    }
+  }
+
+  &__item {
+    padding-inline: 90px;
+
+    @media (max-width: 767px) {
+      padding-inline: 44px;
+    }
+  }
+
+  // outlined curly opening quote
+  &__quote {
+    height: 50px;
+    color: transparent;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: rem(150px);
+    line-height: 0.75;
+    -webkit-text-stroke: 1.5px #8d8da6;
+  }
+
+  &__stars {
+    gap: 4px;
+    margin-block: 20px 16px;
+    font-size: rem(22px);
+    line-height: 1;
+  }
+
+  &__text {
+    font-size: rem(17px);
+    line-height: 1.55;
+  }
+
+  &__photo {
+    width: 62px;
+    height: 62px;
+    margin-block: 25px 18px;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: rem(17px);
+    line-height: 1.2;
+  }
+
+  &__role {
+    margin-block-start: 8px;
+    font-size: rem(12px);
+    line-height: 1.3;
+  }
+
+  // arrows either side of the quote text
+  &__arrow {
+    position: absolute;
+    top: 140px;
+    z-index: 1;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--main-600);
+    border-radius: 50%;
+    background-color: hsl(var(--white));
+    color: var(--main-600);
+    font-size: rem(16px);
+    transition: 0.2s linear;
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+      background-color: var(--main-600);
+      color: hsl(var(--white));
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: var(--main-600);
+      color: hsl(var(--white));
+    }
+  }
+}
+/* testimonial spotlight (one review at a time, floating avatars) end */

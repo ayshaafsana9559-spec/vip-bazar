@@ -1,0 +1,74 @@
+/* marquee cross (two tilted marquee strips) start */
+// .marquee-strip comes from home-three/_marquee-strip.scss
+.marquee-cross {
+  height: 230px;
+  margin-block-end: 40px;
+
+  .marquee-strip {
+    left: -3%;
+    width: 106%;
+  }
+
+  // light strip behind, tilted down to the right, scrolling the other way
+  .marquee-strip--back {
+    top: 118px;
+    border-block: 1px solid var(--slate-100);
+    background-color: var(--slate-25);
+    transform: rotate(1.4deg);
+
+    .marquee-strip__list {
+      min-height: 66px;
+    }
+
+    .marquee-strip__track {
+      animation-direction: reverse;
+    }
+  }
+
+  // gradient strip in front, tilted up to the right, white outline words
+  .marquee-strip--gradient {
+    top: 30px;
+    z-index: 1;
+    background: linear-gradient(90deg, var(--yellow-600) 0%, var(--orange-600) 4%, var(--main-two-600) 40.4%, var(--main-600) 79%, var(--purple-600) 100%);
+    transform: rotate(-1.9deg);
+
+    .marquee-strip__list {
+      min-height: 88px;
+    }
+
+    .marquee-strip__word {
+      color: transparent;
+      -webkit-text-stroke: 1px hsl(var(--white));
+      paint-order: normal;
+
+      &--solid {
+        color: hsl(var(--white));
+      }
+    }
+
+    .marquee-strip__star {
+      color: hsl(var(--white));
+    }
+  }
+
+  @media (max-width: 575px) {
+    height: 170px;
+
+    .marquee-strip--gradient {
+      top: 20px;
+
+      .marquee-strip__list {
+        min-height: 64px;
+      }
+    }
+
+    .marquee-strip--back {
+      top: 86px;
+
+      .marquee-strip__list {
+        min-height: 52px;
+      }
+    }
+  }
+}
+/* marquee cross end */

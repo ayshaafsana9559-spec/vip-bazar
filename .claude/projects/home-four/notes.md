@@ -60,3 +60,46 @@ Source: 1645x131 screenshot (~1:1). Built 2026-09-27.
 
 - `_offer-strip-chairs.html` + `_offer-slide-chairs.html`: copies of the index-2 offer strip with `.offer-strip--light-arrows` (both arrows white with main-600 icons, filled on hover) and `.offer-slide--chairs` (green chair at `max(64px, 50% - 475px)`, pink chair at `min(100% - 204px, 50% + 332px)`). Styles in `partials/home-four/_offer-strip-chairs.scss`.
 - Art: `thumbs/offer-strip/offer-bg-gradient.png` (gradient + faint shapes, copy/arrows/chairs removed) and the `chair-green.png` / `chair-pink.png` cut-outs keyed against it (`scratchpad/extract40.ps1`). The text sizes are the index-2 ones (20px eyebrow, 41px title), which match.
+## Testimonial spotlight
+
+Source: 1651x482 screenshot (x0.992, ~1:1). Built 2026-09-27.
+
+- `_testimonial-spotlight.html` + `partials/home-four/_testimonial-spotlight.scss`: a snap-slider at 1 per view (3 reviews, autoplay, no dots), max-width 880, slides padded 90px on each side. The 34px arrows sit at top 140 on the slider's edges (prev outline, next filled).
+- Slide: an outlined curly quote (`&ldquo;` in Georgia 150px, transparent fill, 1.5px #8d8da6 text-stroke, 50px tall); 22px stars (20px above, 16px below); quote 17px/1.55 slate-600; 62px photo (25px above); name Signika 600 17px; role 12px.
+- Six decorative avatars (`thumbs/avatars/client-1..6.png`, 2x) are placed from the page centre with `left: 50%` + margin-inline-start (and a px top), shown only from 1200px up. The main photo is `thumbs/avatars/kende-attila.png`.
+- Section padding 76/70. Verified within 0-4px (anchored on the stars).
+## Deals, Decor & Design Tips (overlapping blog cards)
+
+Source: 1645x782 screenshot (x0.992, ~1:1). Built 2026-09-27.
+
+- `_decor-tips.html` (`section.decor-tips.bg-slate-25`, padding 60/70, head 33px above the cards) + `_decor-post.html` (`image`, `category`, `title`, `day`, `month`, `year`, `date`); styles in `partials/home-four/_decor-tips.scss`. Uses `.snap-slider--3` (3/3/2/1 per view), 7 slides, `data-start="2"`, dots 29px below; slides get 22px bottom padding for the hanging arrow.
+- Card:
+  - Photo 362px tall, radius 12, zooms on hover.
+  - White body overlaps the photo (margin -105/20/0), padding 20/20/45, radius 12, soft shadow, 1px transparent border that turns main-600 on hover.
+  - Date tag: top -52 / right 21, 58px wide, radius 6. Purple-600 top has "15" Signika 600 30px and "AUG" Nunito 16px; main-two bottom has "2026" 13px.
+  - Category pill: 34px, slate-25 with a slate-200 border, 14px. Title Signika 600 21px/1.22, 2 lines, 11px below.
+  - Meta line 16px with 19px icons (purple user, green calendar), 18px below the title.
+  - 44px arrow circle centred on the body's bottom edge (outline, shadow), filled on hover.
+- Photos `thumbs/blog/decor-1..3.png` (429x360) were cut at ~1:1; the tag and body areas were painted out (always covered).
+- Verified within 0-3px vertically.
+## FAQ with video (Need Help? Start Here)
+
+Source: 1643x577 screenshot (~1:1). Built 2026-09-27.
+
+- `_faq-video.html` = home-one `_faq.html` with the help card swapped for a video thumbnail (`.faq-video`, 203px tall, radius 12, zooms on hover; 37px orange-600 play circle with a pulse ring). Accordion ids are `helpAccordion` / `help-N` so both FAQs could share a page. Icons are `ph-arrow-down-right`, rotated -90deg (up-right, main-600) when open.
+- `.faq--video` (`partials/home-four/_faq-video.scss`): padding 70, gap 16, rows 49px + 2px border, questions Nunito 600 16px, answer 12px/1.45 with padding 0/16. The grid columns (538/651 fr, 133 gap) come from home-one `.faq__grid`.
+- Video still `thumbs/hero-four/help-video.png` (1084x402, 2x) was cut from the screenshot with the play button painted out.
+- Verified within 0-3px.
+## Features row (before the footer)
+
+- `_features-plain.html`: the index-3 plain features row (`features-bar features-bar--plain`, copied out of `_hero-three.html`) + `.features-bar--closing { padding-block: 51px 54px }` in `partials/home-four/_features-plain.scss`. White background, no links, no top border.
+## Footer four
+
+Source: 1643x501 screenshot (~1:1). Built 2026-09-27.
+
+- `_footer-four.html` = `footer.footer.footer--three.footer--four`, which reuses the index-3 gradient bottom bar and payment badges. Styles in `partials/home-four/_footer-four.scss`.
+- Newsletter row: 147px tall with a footer-line border. Title Signika 300 28px/1.17 (max-width 500); the 499x50 field has a text "Subscribe Now" button (36px, 20px padding).
+- Main area (padding 62/68): `.footer__split` is 2 equal columns from 992px.
+  - Left: 158px logo, 14px about text (max-width 600), inline links with 21px gaps (hover orange with a dot).
+  - Right `.footer__reach`: 1px line on the left, 68px padding, 318/279 fr columns. Email + phone column; the address is 20px nowrap on 2 lines, then 31px socials (10px gaps).
+- Verified: total height 503 vs 500; checked visually.

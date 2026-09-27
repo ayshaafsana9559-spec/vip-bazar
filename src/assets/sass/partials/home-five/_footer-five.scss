@@ -1,0 +1,113 @@
+/* footer five (logo row, four divided columns, gradient bar) start */
+// builds on layout/_footer.scss and .footer--three (gradient bottom bar, payments)
+.footer--five {
+  .footer__top-row {
+    padding-block: 36px 29px;
+    border-bottom: 1px solid var(--footer-line);
+  }
+
+  .footer__logo {
+    margin: 0;
+
+    img {
+      width: 158px;
+    }
+  }
+
+  .footer__socials {
+    gap: 10px;
+  }
+
+  .footer__social {
+    width: 31px;
+    height: 31px;
+  }
+
+  .footer__main {
+    padding-block: 68px;
+  }
+
+  // four equal columns separated by hairlines
+  .footer__cols {
+    display: grid;
+    gap: 40px;
+
+    @media (min-width: 576px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0;
+
+      > div {
+        padding-inline: 50px;
+
+        &:first-child {
+          padding-inline-start: 0;
+        }
+
+        &:last-child {
+          padding-inline-end: 0;
+        }
+
+        & + div {
+          border-inline-start: 1px solid var(--footer-line);
+        }
+      }
+    }
+  }
+
+  .footer__title {
+    margin-block-end: 30px;
+    font-size: rem(20px);
+  }
+
+  .footer__links {
+    gap: 7px;
+
+    a {
+      font-size: rem(14px);
+    }
+
+    &--two-col {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      gap: 7px 50px;
+    }
+  }
+
+  .footer__contact-list {
+    gap: 14px;
+    font-size: rem(14px);
+  }
+
+  .footer__contact-icon {
+    width: 34px;
+    height: 34px;
+    margin-inline-end: 14px;
+    border-color: var(--green-600);
+    background-color: transparent;
+    font-size: rem(14px);
+  }
+
+  .footer__text {
+    font-size: rem(14px);
+  }
+
+  .footer__newsletter {
+    max-width: 254px;
+    height: 51px;
+    margin-block-start: 26px;
+  }
+
+  .footer__newsletter-btn {
+    width: 56px;
+    height: 41px;
+  }
+
+  .footer__bottom-inner {
+    min-height: 62px;
+  }
+}
+/* footer five end */

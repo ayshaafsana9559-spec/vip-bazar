@@ -1,0 +1,140 @@
+/* billing & address page (saved addresses; reuses the cart box + summary) start */
+.cart-box--address {
+  padding-block-end: 25px;
+
+  .cart-box__back {
+    margin-block-start: 19px;
+  }
+}
+
+.cart-summary--address {
+  padding-block-end: 33px;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-block-start: 2px;
+
+  // the "+" link: icon grows instead of sliding like the back arrow
+  &__new:hover i {
+    transform: scale(1.15);
+  }
+}
+
+.address-card {
+  gap: 16px;
+  min-height: 101px;
+  padding: 16px 26px;
+  border-radius: 9px;
+
+  &__name {
+    gap: 4px 5px;
+    margin-block-end: 7px;
+    font-size: rem(16px);
+  }
+
+  &__type {
+    font-family: var(--body-font);
+    font-size: rem(13px);
+  }
+
+  &__badge {
+    margin-inline-start: 7px;
+    padding: 3px 14px 4px;
+    font-size: rem(12px);
+    line-height: 1.5;
+  }
+
+  &__text {
+    font-size: rem(12px);
+    font-style: normal;
+  }
+
+  &__actions {
+    gap: 13px;
+  }
+
+  &__delete {
+    font-size: rem(13px);
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: var(--orange-600) !important;
+    }
+  }
+
+  &__btn {
+    height: 36px;
+    padding-inline: 20px;
+    font-size: rem(13px);
+  }
+}
+/* billing & address page end */
+
+/* new address modal (reuses the review modal shell + float fields) start */
+.address-modal {
+  &__types {
+    gap: 12px 20px;
+    margin-block: 20px 18px;
+  }
+
+  .review-modal__fields {
+    row-gap: 20px;
+    margin-block-end: 28px;
+  }
+}
+
+// round radio: blue ring with a filled dot when checked
+.choice-radio {
+  label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--slate-800);
+    font-size: rem(13px);
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      border: 1.5px solid var(--main-600);
+      border-radius: 50%;
+      transition: background-color 0.2s linear, box-shadow 0.2s linear;
+    }
+  }
+
+  input:checked + label::before {
+    background-color: var(--main-600);
+    box-shadow: inset 0 0 0 3px hsl(var(--white));
+  }
+
+  input:focus-visible + label::before {
+    outline: 2px solid var(--main-300);
+    outline-offset: 2px;
+  }
+}
+
+// select version of the pill field (native arrow swapped for a caret icon)
+.float-field {
+  &__input--select {
+    padding-inline-end: 44px;
+    appearance: none;
+    background-color: hsl(var(--white));
+    cursor: pointer;
+  }
+
+  &__caret {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: var(--slate-800);
+    font-size: rem(16px);
+    pointer-events: none;
+  }
+}
+/* new address modal end */

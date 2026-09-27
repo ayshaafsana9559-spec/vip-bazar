@@ -1,0 +1,132 @@
+/* footer four (newsletter row, brand | contact split, gradient bar) start */
+// builds on layout/_footer.scss and .footer--three (home-three/_footer-three.scss) for the bottom bar
+.footer--four {
+  .footer__subscribe {
+    border-bottom: 1px solid var(--footer-line);
+  }
+
+  .footer__subscribe-inner {
+    min-height: 147px;
+    padding-block: 24px;
+    gap: 24px;
+  }
+
+  .footer__subscribe-title {
+    max-width: 500px;
+    font-family: var(--heading-font);
+    font-size: rem(28px);
+    line-height: 1.17;
+  }
+
+  .footer__newsletter--wide {
+    width: 100%;
+    max-width: 499px;
+    height: 50px;
+    margin: 0;
+  }
+
+  .footer__newsletter-input {
+    padding-inline-end: 150px;
+  }
+
+  .footer__newsletter-btn--text {
+    inset-inline-end: 7px;
+    width: auto;
+    height: 36px;
+    padding-inline: 20px;
+    font-size: rem(13px);
+  }
+
+  .footer__main {
+    padding-block: 62px 68px;
+  }
+
+  // brand on the left, contact on the right, a hairline between them
+  .footer__split {
+    display: grid;
+    gap: 40px;
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0;
+    }
+  }
+
+  .footer__logo {
+    margin: 0;
+
+    img {
+      width: 158px;
+    }
+  }
+
+  .footer__brand-text {
+    max-width: 600px;
+    margin-block: 16px 32px;
+  }
+
+  .footer__links--inline {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px 21px;
+
+    a {
+      font-size: rem(14px);
+
+      &::before {
+        background-color: var(--orange-600);
+      }
+
+      &:hover {
+        color: var(--orange-600);
+      }
+    }
+  }
+
+  .footer__reach {
+    display: grid;
+    gap: 32px;
+
+    @media (min-width: 576px) {
+      grid-template-columns: minmax(0, 318fr) minmax(0, 279fr);
+    }
+
+    @media (min-width: 992px) {
+      padding-inline-start: 68px;
+      border-inline-start: 1px solid var(--footer-line);
+    }
+
+    .footer__text {
+      max-width: none;
+      margin: 0;
+      font-size: rem(14px);
+    }
+
+    .footer__contact-value {
+      margin-block: 8px 30px;
+      font-size: rem(21px);
+      font-style: normal;
+      line-height: 1.45;
+    }
+
+    address.footer__contact-value {
+      margin-block-end: 26px;
+      font-size: rem(20px);
+      white-space: nowrap;
+    }
+  }
+
+  .footer__socials {
+    gap: 10px;
+  }
+
+  .footer__social {
+    width: 31px;
+    height: 31px;
+  }
+
+  .footer__bottom-inner {
+    min-height: 63px;
+  }
+}
+/* footer four end */

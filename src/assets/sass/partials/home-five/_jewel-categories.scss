@@ -1,0 +1,31 @@
+/* jewel categories (top collections grid without the panel) start */
+// .top-collections / .collection-item come from home-three/_top-collections.scss
+.top-collections--plain {
+  padding-block: 0 60px;
+
+  .top-collections__head {
+    margin-block-end: 36px;
+  }
+
+  .top-collections__grid {
+    row-gap: 32px;
+  }
+}
+
+.collection-item--units {
+  .collection-item__thumb {
+    border-color: var(--slate-100);
+    background-color: var(--slate-25);
+  }
+
+  .collection-item__name {
+    margin-block-start: 15px;
+  }
+
+  .collection-item__units {
+    margin-block-start: 6px;
+    font-size: rem(12px);
+    line-height: 1.3;
+  }
+}
+/* jewel categories end */

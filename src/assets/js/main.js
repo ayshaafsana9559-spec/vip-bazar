@@ -380,6 +380,63 @@
     });
     // ========================= Snap Slider Js End ===================
 
+    // ========================= Product Gallery Js Start ===================
+    // thumbnails swap the main image; the arrows step through them and the counter follows
+    $("[data-pd-gallery]").each(function () {
+      let $gallery = $(this);
+      let $thumbs = $gallery.find(".pd-gallery__thumb");
+
+      function show(i) {
+        i = (i + $thumbs.length) % $thumbs.length;
+        let $thumb = $thumbs.removeClass("active").eq(i).addClass("active");
+        $gallery.find("[data-pd-main]").attr("src", $thumb.data("image"));
+        $gallery.find("[data-pd-count]").text(i + 1 + "/" + $thumbs.length);
+      }
+
+      $thumbs.on("click", function () { show($thumbs.index(this)); });
+      $gallery.find("[data-pd-prev]").on("click", function () { show($thumbs.index($thumbs.filter(".active")) - 1); });
+      $gallery.find("[data-pd-next]").on("click", function () { show($thumbs.index($thumbs.filter(".active")) + 1); });
+    });
+
+    // quantity stepper (never below the input's min)
+    $("[data-pd-qty]").each(function () {
+      let $input = $(this).find("input");
+      let min = Number($input.attr("min") || 1);
+      $(this).find("[data-pd-minus]").on("click", function () { $input.val(Math.max(min, Number($input.val()) - 1)); });
+      $(this).find("[data-pd-plus]").on("click", function () { $input.val(Number($input.val()) + 1); });
+    });
+    // cart: removing a row updates the "(n item)" count
+    $("[data-cart-remove]").on("click", function () {
+      $(this).closest("[data-cart-row]").remove();
+      $("[data-cart-count]").text($("[data-cart-row]").length);
+    });
+    // ========================= Product Gallery Js End ===================
+
+    // ========================= Price Range Js Start ===================
+    // two stacked range inputs; the thumbs can't cross and the fill spans between them
+    $("[data-price-range]").each(function () {
+      let $range = $(this);
+      let min = $range.find("[data-price-min]")[0];
+      let max = $range.find("[data-price-max]")[0];
+      let gap = 50;
+
+      function update(e) {
+        if (Number(max.value) - Number(min.value) < gap) {
+          if (e && e.target === min) min.value = Number(max.value) - gap;
+          else max.value = Number(min.value) + gap;
+        }
+        let total = Number(min.max) - Number(min.min);
+        let from = ((min.value - min.min) / total) * 100;
+        let to = ((max.value - min.min) / total) * 100;
+        $range.find(".price-range__fill").css({ left: from + "%", width: to - from + "%" });
+        $range.find("[data-price-value]").text("$" + min.value + " - $" + max.value);
+      }
+
+      $(min).add(max).on("input", update);
+      update();
+    });
+    // ========================= Price Range Js End ===================
+
     // ========================= Fashion Card Swatches Js Start ===================
     // picking a colour swatch marks it active and shows its photo in the card
     $(".fashion-card__swatch").on("click", function () {

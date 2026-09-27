@@ -1,0 +1,38 @@
+/* jewel tiles (5 photo offer tiles, tall one in the middle) start */
+// .promo-tile / --bottom come from home-three and home-four
+.jewel-tiles {
+  &__grid {
+    display: grid;
+    gap: 21px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: repeat(2, 300px);
+
+      .jewel-tiles__tall {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+      }
+    }
+  }
+}
+
+.promo-tile--jewel {
+  min-height: 300px;
+  padding-block-end: 21px;
+
+  .promo-tile__title {
+    margin-block: 5px 21px;
+  }
+
+  .promo-tile__btn {
+    height: 43px;
+    padding-inline: 28px;
+    color: var(--main-600) !important;
+  }
+}
+/* jewel tiles end */

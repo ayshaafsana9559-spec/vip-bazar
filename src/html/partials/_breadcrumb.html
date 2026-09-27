@@ -1,18 +1,11 @@
-<!-- ==================== Breadcrumb Start Here ==================== -->
-<section class="breadcrumb py-120 bg-neutral-900">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div>
-                    <h2 class="text-center tw-mb-6 text-white"> @@breadcrumbText</h2>
-                    <ul class="d-flex align-items-center justify-content-center tw-gap-4">
-                        <li><a href="index.html" class="text-white hover--translate-y-1 hover-underline"> <i class="las la-home"></i> Home</a> </li>
-                        <li><i class="ph ph-caret-right text-white"></i></li>
-                        <li> <span class="text-white"> @@breadcrumbText </span> </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<!-- ======================================== Breadcrumb start =================================== -->
+<div class="breadcrumb-bar border-bottom border-slate-100">
+    <div class="container container-two">
+        <ol class="breadcrumb-bar__list d-flex align-items-center flex-wrap list-unstyled mb-0">
+            <li><a href="index.html" class="text-slate-800 hover-text-main-600">Home</a></li>
+            @@trail
+            <li class="text-orange-600" aria-current="page">@@title</li>
+        </ol>
     </div>
-</section>
-<!-- ==================== Breadcrumb End Here ==================== -->
+</div>
+<!-- ======================================== Breadcrumb end =================================== -->

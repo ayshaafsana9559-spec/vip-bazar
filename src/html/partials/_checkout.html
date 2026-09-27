@@ -1,0 +1,159 @@
+<!-- ======================================== Checkout start =================================== -->
+<section class="cart-page">
+    <div class="container container-two">
+        <form action="#" class="cart-page__layout form-submit">
+            <div class="checkout-main d-flex flex-column">
+                <!-- delivery method -->
+                <fieldset class="cart-box checkout-box bg-slate-25 border border-slate-100 tw-rounded-xl">
+                    <legend class="cart-box__title fw-semibold text-slate-800 font-heading">Delivery</legend>
+                    <div class="delivery-options">
+                        <div class="delivery-option">
+                            <input type="radio" name="delivery" id="delivery-free" value="free" class="visually-hidden" checked>
+                            <label for="delivery-free" class="delivery-option__card d-flex align-items-center h-100 bg-white border border-slate-100">
+                                <img src="assets/images/icons/checkout/free-delivery.svg" alt="" class="delivery-option__icon flex-shrink-0">
+                                <span class="flex-grow-1">
+                                    <span class="d-flex align-items-center justify-content-between tw-gap-2">
+                                        <span class="delivery-option__name text-slate-800 font-heading fw-semibold">Free</span>
+                                        <span class="delivery-option__price text-slate-800">$00</span>
+                                    </span>
+                                    <span class="delivery-option__time d-block text-slate-600">5-7 Days delivery</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="delivery-option">
+                            <input type="radio" name="delivery" id="delivery-standard" value="standard" class="visually-hidden">
+                            <label for="delivery-standard" class="delivery-option__card d-flex align-items-center h-100 bg-white border border-slate-100">
+                                <img src="assets/images/icons/checkout/standard-delivery.svg" alt="" class="delivery-option__icon flex-shrink-0">
+                                <span class="flex-grow-1">
+                                    <span class="d-flex align-items-center justify-content-between tw-gap-2">
+                                        <span class="delivery-option__name text-slate-800 font-heading fw-semibold">Standard</span>
+                                        <span class="delivery-option__price text-slate-800">$10</span>
+                                    </span>
+                                    <span class="delivery-option__time d-block text-slate-600">3-5 Days delivery</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="delivery-option">
+                            <input type="radio" name="delivery" id="delivery-express" value="express" class="visually-hidden">
+                            <label for="delivery-express" class="delivery-option__card d-flex align-items-center h-100 bg-white border border-slate-100">
+                                <img src="assets/images/icons/checkout/express-delivery.svg" alt="" class="delivery-option__icon flex-shrink-0">
+                                <span class="flex-grow-1">
+                                    <span class="d-flex align-items-center justify-content-between tw-gap-2">
+                                        <span class="delivery-option__name text-slate-800 font-heading fw-semibold">Express</span>
+                                        <span class="delivery-option__price text-slate-800">$20</span>
+                                    </span>
+                                    <span class="delivery-option__time d-block text-slate-600">2-3 Days delivery</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- payment method (the checked option opens its body) -->
+                <fieldset class="cart-box checkout-box bg-slate-25 border border-slate-100 tw-rounded-xl">
+                    <legend class="cart-box__title fw-semibold text-slate-800 font-heading">Payment</legend>
+                    <div class="pay-options d-flex flex-column">
+                        <div class="pay-option position-relative bg-white border border-slate-100">
+                            <input type="radio" name="payment" id="pay-paypal" value="paypal" class="visually-hidden">
+                            <label for="pay-paypal" class="pay-option__head d-flex align-items-center justify-content-between tw-gap-4">
+                                <span>
+                                    <span class="pay-option__name d-block text-slate-800">Pay with Paypal</span>
+                                    <span class="pay-option__text d-block text-slate-600">You will be redirected to PayPal website to complete your purchase securely.</span>
+                                </span>
+                                <span class="pay-option__logos d-flex align-items-center flex-shrink-0">
+                                    <img src="assets/images/icons/checkout/paypal.svg" alt="PayPal" class="pay-option__paypal">
+                                </span>
+                            </label>
+                        </div>
+                        <div class="pay-option position-relative bg-white border border-slate-100">
+                            <input type="radio" name="payment" id="pay-card" value="card" class="visually-hidden" checked>
+                            <label for="pay-card" class="pay-option__head d-flex align-items-center justify-content-between tw-gap-4">
+                                <span>
+                                    <span class="pay-option__name d-block text-slate-800">Credit / Debit Card</span>
+                                    <span class="pay-option__text d-block text-slate-600">We support Mastercard, Visa, Discover and Stripe.</span>
+                                </span>
+                                <span class="pay-option__logos d-flex align-items-center flex-shrink-0">
+                                    <img src="assets/images/icons/checkout/payoneer.svg" alt="Payoneer" class="pay-option__payoneer">
+                                    <img src="assets/images/icons/checkout/mastercard.svg" alt="Mastercard" class="pay-option__mastercard">
+                                    <img src="assets/images/icons/checkout/visa.svg" alt="Visa" class="pay-option__visa">
+                                </span>
+                            </label>
+                            <div class="pay-option__body">
+                                <div class="float-field">
+                                    <label for="pay-card-select" class="float-field__label">Cards</label>
+                                    <select id="pay-card-select" class="float-field__input float-field__input--select pay-option__select">
+                                        <option value="3652" selected>**** **** ****3652-gole layla</option>
+                                        <option value="8841">**** **** ****8841-gole layla</option>
+                                    </select>
+                                    <i class="ph ph-caret-down float-field__caret" aria-hidden="true"></i>
+                                </div>
+                                <div class="text-end">
+                                    <a href="#" class="cart-box__back address-list__new d-inline-flex align-items-center tw-gap-2 text-main-600 font-heading fw-semibold">
+                                        <i class="ph ph-plus-circle"></i>
+                                        New Address
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pay-option position-relative bg-white border border-slate-100">
+                            <input type="radio" name="payment" id="pay-cash" value="cash" class="visually-hidden">
+                            <label for="pay-cash" class="pay-option__head d-flex align-items-center justify-content-between tw-gap-4">
+                                <span>
+                                    <span class="pay-option__name d-block text-slate-800">Cash</span>
+                                    <span class="pay-option__text d-block text-slate-600">Pay with cash when your order is delivered.</span>
+                                </span>
+                                <span class="pay-option__logos d-flex align-items-center flex-shrink-0">
+                                    <img src="assets/images/icons/checkout/cash.svg" alt="" class="pay-option__cash">
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="checkout-box__foot">
+                        <a href="address.html" class="cart-box__back d-inline-flex align-items-center tw-gap-2 text-main-600 font-heading fw-semibold">
+                            <i class="ph ph-arrow-left"></i>
+                            Back
+                        </a>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="checkout-side d-flex flex-column">
+                <div class="checkout-address bg-slate-25 border border-slate-100 tw-rounded-xl">
+                    <div class="cart-box__title d-flex align-items-center justify-content-between">
+                        <h2 class="checkout-address__title fw-semibold text-slate-800 mb-0">Address</h2>
+                        <a href="address.html" class="checkout-address__edit d-inline-flex align-items-center tw-gap-1 text-main-600 font-heading fw-semibold"><i class="ph ph-pencil-simple-line"></i>Edit</a>
+                    </div>
+                    <h3 class="checkout-address__name text-slate-800 fw-semibold">Jayvion Simon <span class="checkout-address__type text-slate-500 fw-normal">(Home)</span></h3>
+                    <address class="checkout-address__text text-slate-800 mb-0">
+                        <span class="d-block">4517 Washington Ave. Manchester, Kentucky</span>
+                        <span class="d-block">(208) 555-0112, (319) 555-0115</span>
+                    </address>
+                </div>
+
+                <aside class="cart-summary bg-slate-25 border border-slate-100 tw-rounded-xl" aria-label="Order summary">
+                    <span class="cart-summary__label d-block text-slate-800">Price</span>
+                    <div class="cart-summary__from d-flex align-items-center">
+                        <i class="ph ph-tag cart-summary__tag"></i>
+                        <span class="text-slate-800">From</span>
+                        <span class="cart-summary__amount text-orange-600 fw-extrabold">$45.00</span>
+                        <i class="ph ph-info cart-summary__info" title="Price before tax and discounts"></i>
+                    </div>
+                    <dl class="cart-summary__list mb-0">
+                        <div><dt>Base Price</dt><dd>$45</dd></div>
+                        <div><dt>State Tax</dt><dd>$2.50</dd></div>
+                        <div><dt>Shipping</dt><dd>Free</dd></div>
+                        <div><dt>Discount</dt><dd>-$9</dd></div>
+                    </dl>
+                    <dl class="cart-summary__list cart-summary__list--total mb-0">
+                        <div><dt>Total</dt><dd class="text-orange-600 fw-bold">$39.50</dd></div>
+                    </dl>
+                    <button type="submit" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-flex align-items-center justify-content-center w-100 rounded-pill cart-summary__btn py-0 font-heading fw-semibold" data-block="button">
+                        <span class="button__flair"></span>
+                        <span class="button__label">Complete Order</span>
+                    </button>
+                </aside>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- ======================================== Checkout end =================================== -->
