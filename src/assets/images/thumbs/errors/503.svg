@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="538" height="529" viewBox="0 0 400 393">
+  <defs>
+    <linearGradient id="g503" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#FA4616"/>
+      <stop offset="0.4" stop-color="#0E1305"/>
+      <stop offset="0.72" stop-color="#215ADA"/>
+      <stop offset="1" stop-color="#6F4FF7"/>
+    </linearGradient>
+    <linearGradient id="gH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FA4616"/>
+      <stop offset="0.5" stop-color="#0E1305"/>
+      <stop offset="1" stop-color="#215ADA"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDC20A"/>
+      <stop offset="1" stop-color="#FA4616"/>
+    </linearGradient>
+  </defs>
+
+  <!-- browser windows -->
+  <g fill="#fff" stroke="#C9CDD6" stroke-width="1">
+    <rect x="1" y="1" width="195" height="268" rx="6"/>
+    <rect x="207" y="1" width="193" height="268" rx="6"/>
+  </g>
+  <rect x="12" y="27" width="368" height="226" rx="8" fill="#F4F4F6"/>
+  <path d="M110 27 L150 27 L90 253 L50 253 Z M300 27 L330 27 L270 253 L240 253 Z" fill="#fff" opacity=".55"/>
+  <rect x="10" y="27" width="6" height="226" rx="3" fill="url(#edge)"/>
+  <g>
+    <circle cx="41" cy="47" r="4.5" fill="url(#gH)"/>
+    <circle cx="60" cy="47" r="4.5" fill="url(#gH)"/>
+    <circle cx="78" cy="47" r="4.5" fill="url(#gH)"/>
+  </g>
+  <path d="M325 251 H340 M350 251 H367" stroke="#0E1305" stroke-width="1.4"/>
+
+  <!-- floor -->
+  <ellipse cx="200" cy="341" rx="182" ry="12" fill="#F4F4F6"/>
+  <line x1="0" y1="311" x2="400" y2="311" stroke="#C9CDD6" stroke-width="1"/>
+  <path d="M14 320 H38 M40 329 H96 M102 318 H152 M210 323 H280 M312 327 H364 M372 327 H392" stroke="#C9CDD6" stroke-width="1"/>
+
+  <!-- legs -->
+  <g fill="none" stroke="#0E1305" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M162 272 C 160 300, 156 318, 152 336 L 146 338"/>
+    <path d="M228 272 C 230 300, 232 318, 232 336 L 240 338"/>
+    <!-- arms -->
+    <path d="M110 138 C 90 150, 64 162, 60 150 C 58 130, 70 116, 78 96"/>
+    <path d="M272 184 C 290 196, 306 198, 314 186 C 320 172, 322 160, 324 148"/>
+  </g>
+  <path d="M76 100 C 72 94, 76 88, 82 92" fill="#0E1305"/>
+
+
+  <!-- paper sheet with folded corner -->
+  <path d="M160 53 L272 53 L272 275 L108 275 L108 104 Z" fill="#fff" stroke="#0E1305" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M108 104 L160 53 C 160 72, 158 90, 156 104 Z" fill="#fff" stroke="#0E1305" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- sad face -->
+  <g fill="none" stroke-width="2.5" stroke-linecap="round">
+    <path d="M140 132 C 144 124, 152 122, 160 120" stroke="url(#gH)"/>
+    <path d="M216 118 C 224 120, 230 124, 236 126" stroke="url(#gH)"/>
+    <path d="M178 176 C 186 170, 200 170, 208 176" stroke="url(#gH)"/>
+  </g>
+  <ellipse cx="163" cy="156" rx="4.5" ry="6.5" fill="url(#gH)"/>
+  <ellipse cx="221" cy="156" rx="4.5" ry="6.5" fill="url(#gH)"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="19.5" fill="#0E1305" text-anchor="middle">
+    <text x="189" y="226">Service</text>
+    <text x="189" y="246">unavailable</text>
+  </g>
+  <rect x="138" y="250" width="104" height="2" rx="1" fill="url(#gH)"/>
+  <!-- sign on a stick -->
+  <line x1="322" y1="150" x2="312" y2="118" stroke="#0E1305" stroke-width="3" stroke-linecap="round"/>
+  <g transform="rotate(-15 308 98)">
+    <rect x="252" y="60" width="112" height="72" rx="6" fill="#DADDE6" transform="translate(-6 6)"/>
+    <rect x="252" y="60" width="112" height="72" rx="6" fill="url(#g503)"/>
+    <text x="308" y="106" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="40" fill="#fff" text-anchor="middle" stroke="#0E1305" stroke-width="1.5" paint-order="stroke">503</text>
+    <rect x="276" y="112" width="64" height="20" rx="3" fill="#FA4616"/>
+    <text x="308" y="128" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="15" fill="#fff" text-anchor="middle">ERROR</text>
+  </g>
+</svg>

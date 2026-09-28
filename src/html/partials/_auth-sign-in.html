@@ -1,0 +1,44 @@
+<!-- ======================================== Sign in start =================================== -->
+<!-- same split layout as sign up (.auth) -->
+<main class="auth d-flex">
+    <div class="auth__panel d-flex flex-column">
+        <a href="index.html" class="auth__logo d-inline-flex align-self-start"><img src="assets/images/logo/logo.png" alt="eCommex"></a>
+
+        <div class="auth__body">
+            <a href="javascript:history.back()" class="auth__back d-inline-flex align-items-center tw-gap-2 text-main-600 font-heading fw-semibold"><i class="ph ph-arrow-left"></i>Back Now</a>
+            <h1 class="auth__title fw-semibold text-slate-800">Welcome Back!</h1>
+            <p class="auth__text text-slate-600">Sign in to your account and join us</p>
+
+            <form action="#" class="auth__form form-submit">
+                <div class="auth__fields auth__fields--stack">
+                    <div>
+                        <label for="signin-email" class="contact-form__label d-block text-slate-800">Enter Your Email ID</label>
+                        <input type="email" id="signin-email" class="contact-form__input auth__input" placeholder="Enter Your Email..." autocomplete="email" required>
+                    </div>
+                    <div>
+                        <label for="signin-password" class="contact-form__label d-block text-slate-800">Enter Your Password</label>
+                        <div class="position-relative">
+                            <input type="password" id="signin-password" class="contact-form__input auth__input auth__input--password" placeholder="Enter Your Password..." autocomplete="current-password" required>
+                            <button type="button" class="auth__eye" data-password-toggle="#signin-password" aria-label="Show password" aria-pressed="false"><i class="ph ph-eye-slash"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <a href="forget-password.html" class="auth__forgot text-main-600 hover-text-main-two-600">Forget password</a>
+                </div>
+                <p class="auth__switch text-slate-600">Don’t have an account? <a href="sing-up.html" class="text-orange-600 hover-text-main-600">Sign Up</a></p>
+                <button type="submit" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-flex align-items-center justify-content-center w-100 rounded-pill auth__btn py-0 font-heading fw-semibold" data-block="button">
+                    <span class="button__flair"></span>
+                    <span class="button__label">Sign In</span>
+                </button>
+            </form>
+        </div>
+
+        <p class="auth__copy text-slate-600 mb-0">Copyright © 2026 <a href="index.html" class="text-orange-600">eCommex</a>. All rights reserved.</p>
+    </div>
+
+    <div class="auth__media d-none d-lg-block">
+        <img src="assets/images/thumbs/auth/sign-in.jpg" alt="Woman in a green coat holding shopping bags" class="w-100 h-100">
+    </div>
+</main>
+<!-- ======================================== Sign in end =================================== -->

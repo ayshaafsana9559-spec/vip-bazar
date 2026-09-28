@@ -129,6 +129,18 @@
             }
         }
     }
+    &-outline-orange {
+        --bs-btn-hover-border-color: var(--orange-600);
+        --bs-btn-active-border-color: var(--orange-600);
+        background-color: transparent;
+        border: 1px solid var(--orange-600);
+        color: var(--orange-600);
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
+    }
     &-green {
         background-color: var(--green-600) !important;
         color: hsl(var(--white)) !important;
@@ -168,6 +180,22 @@
         .button__flair {
             &::before {
                 background-color: var(--main-600);
+            }
+        }
+    }
+    // like style two, but the hover fill is orange (pairs with .btn-outline-orange)
+    &-three {
+        &:hover, &:active {
+            color: hsl(var(--white)) !important;
+            &.button--stroke {
+                &::after {
+                    border-color: transparent;
+                }
+            }
+        }
+        .button__flair {
+            &::before {
+                background-color: var(--orange-600);
             }
         }
     }

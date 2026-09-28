@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="726" height="596" viewBox="0 0 512 420">
+  <defs>
+    <linearGradient id="g500" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FA4616"/>
+      <stop offset="0.4" stop-color="#0E1305"/>
+      <stop offset="0.72" stop-color="#215ADA"/>
+      <stop offset="1" stop-color="#6F4FF7"/>
+    </linearGradient>
+    <linearGradient id="gTri" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#FA4616"/>
+      <stop offset="0.45" stop-color="#0E1305"/>
+      <stop offset="1" stop-color="#6F4FF7"/>
+    </linearGradient>
+    <linearGradient id="gWrench" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#6F4FF7"/>
+      <stop offset="0.3" stop-color="#FA4616"/>
+      <stop offset="0.6" stop-color="#0E1305"/>
+      <stop offset="1" stop-color="#215ADA"/>
+    </linearGradient>
+  </defs>
+
+  <!-- lavender blob -->
+  <path d="M28 330 C 2 262, 40 190, 66 130 C 96 60, 170 14, 262 8 C 352 2, 420 34, 462 96 C 500 152, 506 240, 490 312 C 482 348, 470 362, 452 368 L 44 368 C 36 356, 32 344, 28 330 Z" fill="#EFEBFE"/>
+
+  <!-- big warning triangle (half hidden behind the screen) -->
+  <path d="M62 4 L6 100 L118 100 Z" fill="#fff" stroke="url(#gTri)" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M64 36 L64 72" stroke="#0E1305" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="64" cy="85" r="4" fill="#0E1305"/>
+
+  <!-- small top-right triangle -->
+  <path d="M425 32 L399 76 L452 76 Z" fill="#fff" stroke="url(#gTri)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M425 47 L425 62" stroke="#0E1305" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="425" cy="69" r="2.3" fill="#0E1305"/>
+
+  <!-- laptop screen -->
+  <rect x="66" y="74" width="386" height="236" rx="10" fill="#fff" stroke="#2B3150" stroke-width="3.5"/>
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+    <text x="178" y="237" font-family="'Times New Roman', Times, serif" font-size="174" fill="url(#g500)">5</text>
+    <text x="256" y="237" font-family="'Times New Roman', Times, serif" font-size="174" fill="url(#g500)">0</text>
+    <text x="334" y="237" font-family="'Times New Roman', Times, serif" font-size="174" fill="url(#g500)">0</text>
+    <text x="256" y="288" font-size="31" fill="#2B3150" textLength="277" lengthAdjust="spacingAndGlyphs">Internal Server Error</text>
+  </g>
+
+  <!-- laptop base, keys, trackpad -->
+  <path d="M66 310 L452 310 L497 370 L19 370 Z" fill="#F4F4F6"/>
+  <rect x="19" y="368" width="478" height="8" rx="3" fill="#2B3150"/>
+  <g fill="#2B3150">
+    <rect x="96" y="315" width="330" height="5" rx="2"/>
+    <rect x="90" y="322" width="342" height="5" rx="2"/>
+    <rect x="84" y="329" width="354" height="5" rx="2"/>
+    <rect x="78" y="336" width="366" height="5" rx="2"/>
+    <rect x="197" y="348" width="123" height="18" rx="2"/>
+  </g>
+  <!-- key gaps: white slits turn the bars into individual keys -->
+  <g stroke="#F4F4F6" stroke-width="3">
+    <path d="M112 314 V342 M132 314 V342 M152 314 V342 M172 314 V342 M192 314 V342 M212 314 V342 M232 314 V342 M252 314 V342 M272 314 V342 M292 314 V342 M312 314 V342 M332 314 V342 M352 314 V342 M372 314 V342 M392 314 V342 M412 314 V342 M430 314 V342"/>
+  </g>
+
+  <!-- person holding the wrench -->
+  <g>
+    <path d="M416 290 L452 290 L450 332 L436 332 L434 306 L432 332 L418 332 Z" fill="#2B3150"/>
+    <path d="M418 326 L416 355 L424 355 L428 326 Z M438 326 L442 355 L450 355 L446 326 Z" fill="#2B3150"/>
+    <ellipse cx="419" cy="357" rx="7" ry="3.5" fill="#2B3150"/>
+    <ellipse cx="447" cy="357" rx="7" ry="3.5" fill="#2B3150"/>
+    <path d="M416 252 C 418 242, 448 240, 452 252 L 454 292 L 414 292 Z" fill="#fff" stroke="#DADDE3" stroke-width="1.5"/>
+    <path d="M450 252 C 462 240, 470 224, 474 208" stroke="#fff" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <rect x="431" y="236" width="9" height="10" rx="3" fill="#F4C7B4"/>
+    <ellipse cx="436" cy="228" rx="10" ry="11" fill="#F4C7B4"/>
+    <path d="M424 232 C 416 212, 434 202, 446 210 C 456 206, 460 220, 454 228 C 450 220, 442 216, 434 218 C 430 224, 428 236, 424 232 Z" fill="#1D1D2B"/>
+    <circle cx="424" cy="222" r="9.5" fill="#1D1D2B"/>
+    <circle cx="447" cy="212" r="7" fill="#1D1D2B"/>
+    <circle cx="474" cy="208" r="4.5" fill="#F4C7B4"/>
+  </g>
+  <!-- wrench -->
+  <g fill="none" stroke="url(#gWrench)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M407 300 L481 204" stroke-width="12"/>
+    <path d="M466 204 C 462 188, 472 178, 484 176 L 478 194 L 492 200 L 502 186 C 510 196, 506 212, 494 216" stroke-width="7"/>
+    <circle cx="400" cy="308" r="11" stroke-width="6"/>
+  </g>
+
+  <!-- bottom warning triangle -->
+  <path d="M364 336 L335 382 L392 382 Z" fill="#fff" stroke="url(#gTri)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M364 351 L364 367" stroke="#0E1305" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="364" cy="374" r="2.3" fill="#0E1305"/>
+</svg>

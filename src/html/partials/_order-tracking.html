@@ -1,0 +1,35 @@
+<!-- ======================================== Order tracking start =================================== -->
+<section class="order-tracking">
+    <div class="container container-two">
+        <div class="order-tracking__box bg-slate-25 border border-slate-100">
+            <div class="order-tracking__head text-center">
+                <h1 class="order-tracking__title fw-semibold text-main-two-600">Order Tracking</h1>
+                <p class="order-tracking__text text-slate-600 mb-0">To track your order please enter your Order ID in the box below and press the "Tracking Now" button. This was given to you on your receipt &amp; in the confirmation email you should have received.</p>
+            </div>
+            <!-- labels + pill inputs reuse the contact form's field styles -->
+            <form action="view-tracking.html" method="get">
+                <div class="order-tracking__fields">
+                    <div>
+                        <label for="tracking-order-id" class="contact-form__label d-block text-slate-800 fw-medium">Order ID</label>
+                        <input type="text" id="tracking-order-id" name="order" class="contact-form__input order-tracking__input" placeholder="Found in your order confirmation email." required>
+                    </div>
+                    <div>
+                        <label for="tracking-email" class="contact-form__label d-block text-slate-800 fw-medium">Billing Email</label>
+                        <input type="email" id="tracking-email" name="email" class="contact-form__input order-tracking__input" placeholder="Email you used during checkout." required>
+                    </div>
+                </div>
+                <div class="order-tracking__actions">
+                    <button type="submit" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-flex align-items-center justify-content-center w-100 rounded-pill order-tracking__btn py-0 font-heading fw-semibold" data-block="button">
+                        <span class="button__flair"></span>
+                        <span class="button__label">Tracking Now</span>
+                    </button>
+                    <button type="reset" class="btn btn-outline-main hover-style-two button--stroke tw-duration-100 d-flex align-items-center justify-content-center w-100 rounded-pill order-tracking__btn py-0 font-heading fw-semibold" data-block="button">
+                        <span class="button__flair"></span>
+                        <span class="button__label">Cancel Now</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- ======================================== Order tracking end =================================== -->

@@ -1,0 +1,59 @@
+/* order tracking page start */
+.order-tracking {
+  padding-block: 72px;
+
+  &__box {
+    padding: 50px 51px 49px;
+    border-radius: 12px;
+
+    @media (max-width: 575px) {
+      padding: 32px 20px;
+    }
+  }
+
+  &__head {
+    padding-block-end: 41px;
+    margin-block-end: 41px;
+    border-bottom: 1px solid var(--slate-200);
+  }
+
+  &__title {
+    margin-block-end: 17px;
+    font-size: clamp(1.625rem, 1.2rem + 1vw, 2.0625rem);
+    line-height: 1.2;
+  }
+
+  &__text {
+    font-size: rem(13.5px);
+  }
+
+  &__fields,
+  &__actions {
+    display: grid;
+    gap: 14px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  &__fields {
+    margin-block-end: 33px;
+  }
+
+  &__actions {
+    column-gap: 8px;
+  }
+
+  &__input {
+    height: 38px;
+    padding-inline: 25px;
+    background-color: hsl(var(--white));
+  }
+
+  &__btn {
+    height: 44px;
+    font-size: rem(13px);
+  }
+}
+/* order tracking page end */

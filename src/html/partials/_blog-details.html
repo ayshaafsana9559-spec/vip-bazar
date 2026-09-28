@@ -1,0 +1,178 @@
+<!-- ======================================== Blog details start =================================== -->
+<section class="blog-details">
+    <div class="container container-two">
+        <div class="blog-details__layout">
+            <div class="blog-details__main d-flex flex-column">
+                <article class="bd-article bg-slate-25 border border-slate-100">
+                    <img src="assets/images/thumbs/blog/details-hero.jpg" alt="Woman in sunglasses by the sea at sunset" class="bd-article__hero w-100">
+                    <div class="bd-article__body">
+                        <ul class="bd-article__meta d-flex align-items-center flex-wrap list-unstyled text-slate-600">
+                            <li class="d-flex align-items-center"><i class="ph ph-user text-slate-800"></i>By Admin</li>
+                            <li class="d-flex align-items-center"><i class="ph ph-calendar-dots text-slate-800"></i><time datetime="2026-08-05">5th Aug, 2026</time></li>
+                            <li class="d-flex align-items-center"><i class="ph ph-clock text-slate-800"></i><time datetime="10:21">10:21 AM</time></li>
+                        </ul>
+                        <h1 class="bd-article__title fw-semibold text-slate-800">How to Style Your Outfits for Every Occasion</h1>
+                        <div class="bd-article__content">
+                            <p>Unlock incredible savings now. Shop your favorite categories and enjoy up to 75% cashback on select products and services. Whether you're shopping fashion, gadgets, or groceries, this limited-time deal helps you save more on every purchase.</p>
+                            <h2>Overview Section</h2>
+                            <p>Discover amazing savings today! Browse through your favorite categories and take advantage of up to 75% cashback on selected products and services. Whether you're looking for the latest fashion, tech gadgets, or everyday groceries, this exclusive offer lets you save big on every purchase.</p>
+                            <h3>How to Claim</h3>
+                            <ol>
+                                <li>Register/Login to your account</li>
+                                <li>Choose your favorite deal from eligible stores</li>
+                                <li>Apply the code CASH75NOW at checkout</li>
+                                <li>Submit your order ID to request cashback</li>
+                                <li>Receive cashback in your account within 24 hours</li>
+                            </ol>
+                        </div>
+                    </div>
+    
+                    <!-- two photos run edge to edge inside the card -->
+                    <div class="bd-article__gallery">
+                        <img src="assets/images/thumbs/blog/blog-4.png" alt="Smiling woman carrying shopping bags" class="w-100">
+                        <img src="assets/images/thumbs/blog/blog-3.png" alt="Man holding a delivered parcel" class="w-100">
+                    </div>
+    
+                    <div class="bd-article__body bd-article__body--rest">
+                        <div class="bd-article__content">
+                            <h3>How to Claim</h3>
+                            <ol>
+                                <li>Register/Login to your account</li>
+                                <li>Choose your favorite deal from eligible stores</li>
+                                <li>Apply the code CASH75NOW at checkout</li>
+                                <li>Submit your order ID to request cashback</li>
+                                <li>Receive cashback in your account within 24 hours</li>
+                            </ol>
+                        </div>
+    
+                        <div class="bd-article__review">
+                            @@include('../partials/_review-card.html', { "tone": "green", "name": "Alex R", "image": "stylish-bag", "product": "Stylish Bag", "price": "$245.54", "quote": "Incredible bass and crystal-clear audio. This speaker has become my favorite for any event, offering exceptional quality and deep, vibrant tones that fill the room with rich sound. Its sleek design and durable build make it perfect for both indoor." })
+                        </div>
+    
+                        <div class="bd-article__content bd-article__content--small">
+                            <h4>Terms &amp; Conditions</h4>
+                            <ul>
+                                <li>Cashback offer valid for registered users only</li>
+                                <li>Only one coupon code can be used per order</li>
+                                <li>Cashback will be canceled if the product is returned or refunded</li>
+                                <li>Offer not valid with other promotions or discounts</li>
+                            </ul>
+                            <h4>Why Users Love This Deal:</h4>
+                            <ul>
+                                <li>Huge savings on everyday purchases</li>
+                                <li>Quick cashback process</li>
+                                <li>Trusted partner brands and stores</li>
+                                <li>Seamless experience with easy deal tracking</li>
+                            </ul>
+                        </div>
+    
+                        <div class="bd-article__foot d-flex align-items-center justify-content-between flex-wrap">
+                            <div class="d-flex align-items-center flex-wrap tw-gap-2">
+                                <span class="bd-article__foot-label text-slate-800">Share -</span>
+                                <ul class="bd-socials bd-socials--sm d-flex align-items-center list-unstyled mb-0">
+                                    <li><a href="https://www.facebook.com" class="bd-social" aria-label="Share on Facebook"><i class="ph ph-facebook-logo"></i></a></li>
+                                    <li><a href="https://www.instagram.com" class="bd-social" aria-label="Share on Instagram"><i class="ph ph-instagram-logo"></i></a></li>
+                                    <li><a href="https://www.pinterest.com" class="bd-social bd-social--active" aria-label="Share on Pinterest"><i class="ph ph-pinterest-logo"></i></a></li>
+                                    <li><a href="https://www.twitch.tv" class="bd-social" aria-label="Share on Twitch"><i class="ph ph-twitch-logo"></i></a></li>
+                                    <li><a href="https://www.linkedin.com" class="bd-social" aria-label="Share on LinkedIn"><i class="ph ph-linkedin-logo"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex align-items-center flex-wrap tw-gap-2">
+                                <span class="bd-article__foot-label text-slate-800">Tag -</span>
+                                <a href="blog.html" class="bd-tag">Flash Sale</a>
+                                <a href="blog.html" class="bd-tag">Trending</a>
+                                <a href="blog.html" class="bd-tag">Hot Deal</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                @@include('../partials/_blog-comments.html')
+            </div>
+
+            <aside class="blog-details__side d-flex flex-column">
+                <div class="bd-widget bg-slate-25 border border-slate-100">
+                    <h2 class="bd-widget__title fw-semibold text-slate-800">Search</h2>
+                    <form action="#" class="bd-search position-relative form-submit" role="search">
+                        <input type="search" class="bd-search__input w-100 bg-white rounded-pill" placeholder="Search" aria-label="Search articles">
+                        <button type="submit" class="bd-search__btn position-absolute text-slate-800" aria-label="Search"><i class="ph ph-magnifying-glass"></i></button>
+                    </form>
+                </div>
+
+                <div class="bd-widget bg-slate-25 border border-slate-100">
+                    <h2 class="bd-widget__title fw-semibold text-slate-800">More News</h2>
+                    <ul class="bd-news-list list-unstyled">
+                        <li class="bd-news d-flex align-items-center">
+                            <a href="blog-details.html" class="bd-news__thumb flex-shrink-0 overflow-hidden"><img src="assets/images/thumbs/blog/style-3.png" alt="Best Summer Looks That Will Turn Every Head" class="w-100 h-100 object-fit-cover"></a>
+                            <div>
+                                <h3 class="bd-news__title fw-normal text-slate-800"><a href="blog-details.html" class="hover-text-main-600">Best Summer Looks That Will Turn Every Head</a></h3>
+                                <a href="blog-details.html" class="bd-news__more d-inline-flex align-items-center tw-gap-2 text-main-600 font-heading fw-semibold">Read More <i class="ph ph-arrow-right"></i></a>
+                            </div>
+                        </li>
+                        <li class="bd-news d-flex align-items-center">
+                            <a href="blog-details.html" class="bd-news__thumb flex-shrink-0 overflow-hidden"><img src="assets/images/thumbs/blog/style-1.png" alt="Top Fashion Trends You Need to Try This Season" class="w-100 h-100 object-fit-cover"></a>
+                            <div>
+                                <h3 class="bd-news__title fw-normal text-slate-800"><a href="blog-details.html" class="hover-text-main-600">Top Fashion Trends You Need to Try This Season</a></h3>
+                                <a href="blog-details.html" class="bd-news__more d-inline-flex align-items-center tw-gap-2 text-main-600 font-heading fw-semibold">Read More <i class="ph ph-arrow-right"></i></a>
+                            </div>
+                        </li>
+                        <li class="bd-news d-flex align-items-center">
+                            <a href="blog-details.html" class="bd-news__thumb flex-shrink-0 overflow-hidden"><img src="assets/images/thumbs/blog/style-4.png" alt="Build the Perfect Wardrobe With These Simple Tips" class="w-100 h-100 object-fit-cover"></a>
+                            <div>
+                                <h3 class="bd-news__title fw-normal text-slate-800"><a href="blog-details.html" class="hover-text-main-600">Build the Perfect Wardrobe With These Simple Tips</a></h3>
+                                <a href="blog-details.html" class="bd-news__more d-inline-flex align-items-center tw-gap-2 text-main-600 font-heading fw-semibold">Read More <i class="ph ph-arrow-right"></i></a>
+                            </div>
+                        </li>
+                        <li class="bd-news d-flex align-items-center">
+                            <a href="blog-details.html" class="bd-news__thumb flex-shrink-0 overflow-hidden"><img src="assets/images/thumbs/blog/blog-1.png" alt="Top Smart Gadgets Worth Buying This Season" class="w-100 h-100 object-fit-cover"></a>
+                            <div>
+                                <h3 class="bd-news__title fw-normal text-slate-800"><a href="blog-details.html" class="hover-text-main-600">Top Smart Gadgets Worth Buying This Season</a></h3>
+                                <a href="blog-details.html" class="bd-news__more d-inline-flex align-items-center tw-gap-2 text-main-600 font-heading fw-semibold">Read More <i class="ph ph-arrow-right"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="blog.html" class="bd-news__more d-inline-flex align-items-center tw-gap-2 text-main-600 font-heading fw-semibold">See All <i class="ph ph-arrow-right"></i></a>
+                </div>
+
+                <div class="bd-widget bg-slate-25 border border-slate-100">
+                    <h2 class="bd-widget__title fw-semibold text-slate-800">Popular Tags</h2>
+                    <div class="bd-tags d-flex flex-wrap">
+                        <a href="blog.html" class="bd-tag">Coupons</a>
+                        <a href="blog.html" class="bd-tag">Flash Sale</a>
+                        <a href="blog.html" class="bd-tag">Exclusive</a>
+                        <a href="blog.html" class="bd-tag">Best offer</a>
+                        <a href="blog.html" class="bd-tag">Trending</a>
+                        <a href="blog.html" class="bd-tag">Hot Deal</a>
+                        <a href="blog.html" class="bd-tag">New</a>
+                        <a href="blog.html" class="bd-tag">Discount</a>
+                    </div>
+                    <a href="blog.html" class="bd-news__more d-inline-flex align-items-center tw-gap-2 text-main-600 font-heading fw-semibold">See All <i class="ph ph-arrow-right"></i></a>
+                </div>
+
+                <div class="bd-widget bg-slate-25 border border-slate-100">
+                    <h2 class="bd-widget__title fw-semibold text-slate-800">Subscribe to our list</h2>
+                    <form action="#" class="bd-subscribe form-submit">
+                        <input type="email" class="bd-search__input bd-subscribe__input w-100 bg-white rounded-pill" placeholder="Email Address..." aria-label="Email address" required>
+                        <button type="submit" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-flex align-items-center justify-content-center w-100 rounded-pill bd-subscribe__btn py-0 font-heading fw-semibold" data-block="button">
+                            <span class="button__flair"></span>
+                            <span class="button__label">Subscribe</span>
+                        </button>
+                    </form>
+                    <p class="bd-subscribe__note text-center text-slate-600 mb-0">Don’t worry, we don't spam</p>
+                </div>
+
+                <div class="bd-widget bg-slate-25 border border-slate-100">
+                    <h2 class="bd-widget__title fw-semibold text-slate-800">Follow Us</h2>
+                    <ul class="bd-socials d-flex align-items-center list-unstyled mb-0">
+                        <li><a href="https://www.facebook.com" class="bd-social" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a></li>
+                        <li><a href="https://www.instagram.com" class="bd-social" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a></li>
+                        <li><a href="https://www.pinterest.com" class="bd-social bd-social--active" aria-label="Pinterest"><i class="ph ph-pinterest-logo"></i></a></li>
+                        <li><a href="https://www.twitch.tv" class="bd-social" aria-label="Twitch"><i class="ph ph-twitch-logo"></i></a></li>
+                        <li><a href="https://www.linkedin.com" class="bd-social" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+<!-- ======================================== Blog details end =================================== -->

@@ -1,0 +1,806 @@
+/* view tracking page start */
+.view-tracking {
+  padding-block: 68px 0;
+}
+
+// order header card: title, id/date/delivery meta, contact + invoice buttons
+.vt-header {
+  gap: 24px;
+  padding: 34px;
+  border-radius: 12px;
+
+  &__title {
+    margin-block-end: 11px;
+    font-size: rem(18px);
+    line-height: 1.2;
+  }
+
+  &__text {
+    margin-block-end: 17px;
+    font-size: rem(13px);
+    line-height: 1.5;
+  }
+
+  &__meta {
+    gap: 8px 27px;
+    font-size: rem(15px);
+    line-height: 1.5;
+
+    li {
+      gap: 6px;
+    }
+
+    i {
+      margin-inline-end: 3px;
+      font-size: rem(20px);
+    }
+  }
+
+  &__actions {
+    gap: 8px;
+  }
+
+  &__btn {
+    height: 44px;
+
+    &--contact {
+      min-width: 194px;
+      padding-inline: 24px;
+      font-size: rem(15px);
+    }
+
+    &--invoice {
+      min-width: 181px;
+      padding-inline: 20px;
+      font-size: rem(13.5px);
+    }
+  }
+}
+
+// main column + sidebar
+.vt-layout {
+  display: grid;
+  gap: 21px;
+  align-items: start;
+  margin-block-start: 21px;
+
+  @media (min-width: 1200px) {
+    grid-template-columns: minmax(0, 1fr) 427px;
+  }
+}
+
+.vt-main,
+.vt-side {
+  gap: 21px;
+  min-width: 0;
+}
+
+.vt-card {
+  padding: 32px 34px 35px;
+  border-radius: 12px;
+
+  @media (max-width: 575px) {
+    padding: 24px 18px;
+  }
+
+  &--side {
+    padding: 26px 27px 28px;
+  }
+
+  &__title {
+    margin-block-end: 14px;
+    font-size: rem(18px);
+    line-height: 1.2;
+  }
+
+  &__note {
+    font-size: rem(13.5px);
+  }
+
+  &__btn {
+    height: 36px;
+    font-size: rem(13px);
+  }
+}
+
+// 5-step journey: dots joined by a line; done/current/next steps light their incoming segment
+.vt-steps {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-block: 36px 43px;
+  overflow-x: auto;
+}
+
+.vt-step {
+  position: relative;
+  min-width: 110px;
+  text-align: center;
+
+  // segment from the previous dot to this one
+  &:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 50%;
+    left: -50%;
+    height: 2px;
+    background-color: var(--slate-200);
+  }
+
+  &.is-done::before,
+  &.is-current::before,
+  &.is-next::before {
+    background-color: var(--main-300);
+  }
+
+  &__dot {
+    position: relative;
+    z-index: 1;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 19px;
+    border-radius: 50%;
+    background-color: var(--slate-500);
+    color: hsl(var(--white));
+    font-size: rem(22px);
+  }
+
+  &.is-done &__dot,
+  &.is-current &__dot {
+    background-color: var(--main-600);
+  }
+
+  &__name {
+    margin-block-end: 5px;
+    font-size: rem(15.5px);
+    line-height: 1.3;
+  }
+
+  &__time {
+    font-size: rem(12px);
+  }
+}
+
+// current status callout with a yellow edge
+.vt-status {
+  gap: 17px;
+  margin-inline-start: -2px;
+  padding: 32px 30px 34px 37px;
+  border-left: 3px solid var(--yellow-600);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(14, 19, 5, 0.04);
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    font-size: rem(24px);
+  }
+
+  &__title {
+    margin-block: 3px 12px;
+    font-size: rem(15.5px);
+    line-height: 1.3;
+  }
+
+  &__text {
+    margin-block-end: 18px;
+    font-size: rem(12px);
+    line-height: 1.5;
+  }
+
+  &__eta {
+    gap: 6px;
+    font-size: rem(15px);
+
+    i {
+      margin-inline-end: 4px;
+      font-size: rem(20px);
+    }
+  }
+}
+
+// label / value rows split by hairlines
+.vt-summary {
+  margin-block-end: 19px;
+  color: var(--slate-800);
+  font-size: rem(13.5px);
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 55px;
+    border-bottom: 1px solid var(--slate-100);
+
+    &:first-child {
+      min-height: 62px;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  dt {
+    font-weight: 400;
+  }
+
+  dd {
+    margin: 0;
+  }
+
+  &__badge {
+    display: inline-block;
+    padding: 5px 13px;
+    border: 1px solid var(--slate-200);
+    font-size: rem(12px);
+  }
+
+  &__paid {
+    font-size: rem(17px);
+  }
+
+  &__date {
+    font-size: rem(17px);
+  }
+}
+
+.vt-card__title {
+  &--log {
+    margin-block-end: 37px;
+  }
+
+  &--spaced {
+    margin-block-end: 36px;
+  }
+
+  &--list {
+    margin-block-end: 31px;
+  }
+}
+
+// activity log timeline
+.vt-log {
+  margin-inline-start: 6px;
+
+  &__item {
+    position: relative;
+    padding-inline-start: 65px;
+    padding-block-end: 40px;
+
+    // dashed link down to the next dot
+    &:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      top: 38px;
+      bottom: -4px;
+      left: 20px;
+      border-left: 1px dashed var(--main-300);
+    }
+
+    &:last-child {
+      padding-block-end: 0;
+    }
+  }
+
+  &__dot {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    z-index: 1;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--main-600);
+    border-radius: 50%;
+    background-color: var(--main-600);
+    color: hsl(var(--white));
+    font-size: rem(18px);
+  }
+
+  // the first event (order placed) is drawn as an outline
+  &__item--first &__dot {
+    background-color: hsl(var(--white));
+    color: var(--main-600);
+  }
+
+  &__head {
+    gap: 4px 16px;
+    margin-block-end: 9px;
+  }
+
+  &__title {
+    font-size: rem(16.5px);
+    line-height: 1.35;
+  }
+
+  &__time {
+    font-size: rem(14.5px);
+  }
+
+  &__text {
+    font-size: rem(12px);
+    line-height: 1.55;
+  }
+
+  &__tags {
+    gap: 8px;
+    margin-block-start: 20px;
+  }
+
+  &__tag {
+    padding: 6px 13px;
+    box-shadow: 0 2px 10px rgba(14, 19, 5, 0.06);
+    font-size: rem(11px);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-block-start: 19px;
+    color: var(--slate-600);
+    font-size: rem(12px);
+    line-height: 1.5;
+
+    strong {
+      color: var(--slate-800);
+      font-weight: 500;
+    }
+
+    &--icon {
+      flex-direction: row;
+      gap: 0;
+      margin-block-start: 21px;
+
+      i {
+        margin-inline-end: 8px;
+        font-size: rem(17px);
+      }
+    }
+  }
+
+  &__progress {
+    height: 5px;
+    margin-block-start: 20px;
+    overflow: hidden;
+    border-radius: 50rem;
+    background-color: var(--main-100);
+
+    span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background-color: var(--main-600);
+    }
+  }
+}
+
+// shipping + supplier address cards, carrier strip
+.vt-address-grid {
+  display: grid;
+  gap: 14px;
+  margin-block-end: 14px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.vt-address {
+  gap: 21px;
+  padding: 26px 24px 26px 29px;
+  border-radius: 10px;
+
+  &__icon {
+    width: 39px;
+    height: 39px;
+    font-size: rem(19px);
+  }
+
+  &__title {
+    margin-block-end: 8px;
+    font-size: rem(16px);
+    line-height: 1.3;
+  }
+
+  &__company {
+    margin-block-end: 17px;
+    font-size: rem(12px);
+  }
+
+  &__lines {
+    margin-block-end: 19px;
+    font-size: rem(12px);
+    font-style: normal;
+    line-height: 1.5;
+  }
+
+  .vt-log__meta {
+    margin-block-start: 0;
+  }
+}
+
+.vt-carrier {
+  padding: 26px 26px 26px 27px;
+  border-radius: 10px;
+
+  &__head {
+    margin-block-end: 26px;
+  }
+
+  &__badge {
+    gap: 6px;
+    height: 29px;
+    padding-inline: 12px;
+    font-size: rem(11.5px);
+
+    i {
+      font-size: rem(15px);
+    }
+  }
+
+  &__row {
+    gap: 16px;
+
+    dt {
+      margin-block-end: 5px;
+      color: var(--slate-600);
+      font-size: rem(12px);
+      font-weight: 400;
+    }
+
+    dd {
+      margin: 0;
+      color: var(--slate-800);
+      font-size: rem(13.5px);
+    }
+  }
+
+  &__divider {
+    width: 1px;
+    align-self: stretch;
+    background-color: var(--slate-200);
+
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+}
+
+// supplier card
+.vt-supplier {
+  gap: 16px;
+  margin-block-end: 28px;
+
+  &__avatar {
+    width: 52px;
+    height: 52px;
+    object-fit: cover;
+  }
+
+  &__name {
+    margin-block-end: 4px;
+    font-size: rem(17px);
+    line-height: 1.3;
+  }
+
+  &__rating {
+    gap: 8px;
+    font-size: rem(12px);
+
+    .d-inline-flex {
+      gap: 2px;
+      font-size: rem(18px);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-block-end: 30px;
+    color: var(--slate-600);
+    font-size: rem(13px);
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    i {
+      color: var(--main-600);
+      font-size: rem(17px);
+    }
+  }
+}
+
+// help / quick action rows with a toned round icon
+.vt-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.vt-link {
+  --tone-25: var(--main-25);
+  --tone-100: var(--main-100);
+  --tone-600: var(--main-600);
+  gap: 19px;
+  min-height: 68px;
+  padding: 12px 22px 12px 13px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: start;
+  transition: border-color 0.2s linear;
+
+  &--orange {
+    --tone-25: var(--orange-25);
+    --tone-100: var(--orange-100);
+    --tone-600: var(--orange-600);
+  }
+
+  &--green {
+    --tone-25: var(--green-25);
+    --tone-100: var(--green-100);
+    --tone-600: var(--green-600);
+  }
+
+  &--yellow {
+    --tone-25: var(--yellow-25);
+    --tone-100: var(--yellow-100);
+    --tone-600: var(--gold-600);
+  }
+
+  &--action {
+    min-height: 65px;
+    padding-block: 11px;
+  }
+
+  &:hover {
+    border-color: var(--tone-600);
+  }
+
+  &__icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid var(--tone-100);
+    border-radius: 50%;
+    background-color: var(--tone-25);
+    color: var(--tone-600);
+    font-size: rem(18px);
+  }
+
+  &__title {
+    font-size: rem(14.5px);
+    line-height: 1.4;
+  }
+
+  &__text {
+    margin-block-start: 2px;
+    font-size: rem(11.5px);
+  }
+
+  &__arrow {
+    color: var(--slate-800);
+    font-size: rem(17px);
+    transition: transform 0.2s ease;
+  }
+
+  &:hover &__arrow {
+    transform: translateX(3px);
+  }
+}
+
+// order items list + white totals box
+.vt-items {
+  margin-block-end: 34px;
+}
+
+.vt-item {
+  gap: 19px;
+  padding-block: 24px 31px;
+  border-bottom: 1px solid var(--slate-200);
+
+  &:first-child {
+    padding-block-start: 0;
+  }
+
+  &:last-child {
+    padding-block-end: 0;
+    border-bottom: 0;
+  }
+
+  &__thumb {
+    width: 69px;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 8px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__name {
+    margin-block: 4px 5px;
+    font-size: rem(14.5px);
+    line-height: 1.45;
+  }
+
+  &__sku {
+    margin-block-end: 10px;
+    font-size: rem(11.5px);
+    line-height: 1.5;
+  }
+
+  &__meta {
+    gap: 4px 28px;
+    color: var(--slate-600);
+    font-size: rem(11px);
+    line-height: 1.5;
+
+    strong {
+      color: var(--slate-800);
+      font-weight: 600;
+    }
+  }
+
+  &__price {
+    margin-block: 13px 8px;
+    font-size: rem(17px);
+    line-height: 1.4;
+  }
+
+  &__stock {
+    gap: 6px;
+    font-size: rem(12px);
+
+    i {
+      font-size: rem(16px);
+    }
+  }
+}
+
+.vt-totals {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 20px 22px;
+  border-radius: 10px;
+  font-size: rem(12px);
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+  }
+
+  dt {
+    color: var(--slate-600);
+    font-weight: 400;
+  }
+
+  dd {
+    margin: 0;
+    color: var(--slate-800);
+  }
+
+  &__total {
+    align-items: center;
+    margin-block-start: -2px;
+    padding-block-start: 13px;
+    border-top: 1px solid var(--slate-200);
+
+    dt {
+      color: var(--slate-800);
+      font-weight: 600;
+    }
+
+    dd {
+      color: var(--main-600);
+      font-size: rem(16px);
+      font-weight: 600;
+    }
+  }
+}
+
+// recent orders: three order cards across the full width
+.vt-recent {
+  margin-block-start: 21px;
+
+  &__grid {
+    display: grid;
+    gap: 15px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}
+
+.vt-order {
+  padding: 20px 19px 22px;
+  border-radius: 10px;
+
+  &__sku {
+    font-size: rem(12px);
+  }
+
+  &__badge {
+    padding: 3px 12px;
+    border: 1px solid var(--main-100);
+    background-color: var(--main-25);
+    color: var(--main-600);
+    font-size: rem(11px);
+    line-height: 1.5;
+
+    &--transit {
+      border-color: var(--yellow-100);
+      background-color: var(--yellow-25);
+      color: var(--gold-600);
+    }
+  }
+
+  &__product {
+    gap: 19px;
+    padding-block: 14px 19px;
+    border-bottom: 1px solid var(--slate-200);
+  }
+
+  &__thumb {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 8px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__name {
+    margin-block-end: 4px;
+    font-size: rem(14.5px);
+    line-height: 1.3;
+  }
+
+  &__units {
+    font-size: rem(11px);
+  }
+
+  &__foot {
+    padding-block-start: 20px;
+    font-size: rem(12px);
+
+    strong {
+      font-size: rem(12.5px);
+    }
+  }
+}
+/* view tracking page end */

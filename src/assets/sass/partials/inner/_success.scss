@@ -1,0 +1,86 @@
+/* order success page start */
+.success-page {
+  min-height: 100vh;
+  padding-block: 21px 24px;
+
+  &__logo img {
+    height: 36px;
+  }
+
+  // message block sits centred between the logo and the copyright
+  &__body {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding-block: 31px 49px;
+  }
+
+  &__art {
+    width: 410px;
+    max-width: 100%;
+    height: auto;
+    margin-block-end: 52px;
+  }
+
+  &__title {
+    margin-block-end: 21px;
+    font-size: clamp(1.75rem, 1rem + 2.3vw, 3rem);
+    line-height: 1.2;
+  }
+
+  &__lead {
+    margin-block-end: 8px;
+    font-size: rem(14px);
+    line-height: 20px;
+  }
+
+  &__id {
+    margin-block-end: 12px;
+    font-size: rem(15.5px);
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    word-break: break-all;
+  }
+
+  &__text {
+    max-width: 720px;
+    margin-block-end: 32px;
+    font-size: rem(11.8px);
+    line-height: 1.55;
+  }
+
+  &__btn {
+    height: 44px;
+    min-width: 163px;
+    padding-inline: 24px;
+    font-size: rem(13.5px);
+
+    &--wide {
+      min-width: 189px;
+    }
+  }
+
+  &__copy {
+    font-size: rem(13px);
+  }
+}
+
+// payment failed: vector art, two-line title, tighter lead-in to the text
+.success-page {
+  &__art--failed {
+    width: 407px;
+    margin-block-end: 51px;
+  }
+
+  &__title--failed {
+    max-width: 640px;
+    margin-block-end: 19px;
+    line-height: 1.1;
+  }
+
+  &__text--failed {
+    max-width: 700px;
+    margin-block-end: 34px;
+  }
+}
+/* order success page end */

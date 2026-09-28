@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="637" height="567" viewBox="0 0 450 400">
+  <defs>
+    <linearGradient id="digit" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FA4616"/>
+      <stop offset="0.38" stop-color="#0E1305"/>
+      <stop offset="0.7" stop-color="#215ADA"/>
+      <stop offset="1" stop-color="#6F4FF7"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDD771" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#FDD771" stop-opacity=".12"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FA4616"/>
+      <stop offset="0.5" stop-color="#215ADA"/>
+      <stop offset="1" stop-color="#6F4FF7"/>
+    </linearGradient>
+  </defs>
+  <!-- light beam -->
+  <polygon points="165,80 192,72 348,298 212,396" fill="url(#beam)"/>
+  <!-- digits -->
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="170" text-anchor="middle">
+    <text x="215" y="297" fill="url(#digit)">4</text>
+    <text x="305" y="297" fill="url(#digit)">0</text>
+    <text x="392" y="297" fill="url(#digit)">3</text>
+  </g>
+  <text x="232" y="348" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="40" fill="#6F4FF7" text-anchor="middle" textLength="283" lengthAdjust="spacingAndGlyphs">403 FORBIDDEN</text>
+  <!-- lamp -->
+  <g fill="none" stroke="#0E1305" stroke-width="3" stroke-linecap="round">
+    <line x1="0" y1="294" x2="449" y2="294"/>
+    <line x1="86" y1="62" x2="86" y2="294"/>
+    <path d="M35 294 A51.5 41 0 0 1 138 294" fill="#fff"/>
+    <line x1="25" y1="187" x2="185" y2="6"/>
+  </g>
+  <line x1="159" y1="36" x2="171" y2="59" stroke="url(#shade)" stroke-width="3" stroke-linecap="round"/>
+  <g transform="rotate(-24 174 69)">
+    <path d="M160 73 A14 10 0 0 1 188 73 Z" fill="#fff" stroke="url(#shade)" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+  <g fill="#FDC20A" stroke="#0E1305" stroke-width="2.5">
+    <circle cx="86" cy="116" r="9.5"/>
+    <circle cx="159" cy="36" r="9.5"/>
+  </g>
+</svg>

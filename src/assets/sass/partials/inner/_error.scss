@@ -1,0 +1,39 @@
+/* error pages start */
+.error-page {
+  padding-block: 78px 90px;
+
+  // each illustration keeps its own intrinsic width (403: 637px, 500: 726px)
+  &__art {
+    max-width: 100%;
+    height: auto;
+    margin-block-end: 2px;
+  }
+
+  &__title {
+    margin-block-end: 20px;
+    font-size: clamp(1.5rem, 1.1rem + 1vw, 1.875rem);
+    line-height: 1.25;
+  }
+
+  &__text {
+    max-width: 540px;
+    margin-block-end: 34px;
+    font-size: rem(13px);
+    line-height: 1.6;
+  }
+
+  &__text--narrow {
+    max-width: 485px;
+  }
+
+  &__text--mid {
+    max-width: 515px;
+  }
+
+  &__btn {
+    height: 44px;
+    padding-inline: 28px;
+    font-size: rem(13px);
+  }
+}
+/* error pages end */

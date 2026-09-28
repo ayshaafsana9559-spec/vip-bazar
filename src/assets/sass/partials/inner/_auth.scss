@@ -1,0 +1,190 @@
+/* auth pages (sign up) start */
+.auth {
+  min-height: 100vh;
+
+  &__panel {
+    width: 100%;
+    padding: 21px 24px 26px;
+
+    @media (min-width: 992px) {
+      width: 50.6%;
+      padding-inline: 16.35vw 40px;
+    }
+  }
+
+  &__logo img {
+    height: 35px;
+  }
+
+  &__body {
+    max-width: 444px;
+    padding-block: 98px 40px;
+  }
+
+  &__back {
+    font-size: rem(13px);
+    line-height: 20px;
+
+    i {
+      font-size: rem(16px);
+      transition: transform 0.2s ease;
+    }
+
+    &:hover i {
+      transform: translateX(-4px);
+    }
+  }
+
+  &__title {
+    margin-block: 47px 17px;
+    font-size: clamp(1.75rem, 1.3rem + 1vw, 2.125rem);
+    line-height: 1.2;
+  }
+
+  &__text {
+    margin-block-end: 34px;
+    font-size: rem(13px);
+    line-height: 20px;
+  }
+
+  &__fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 21px;
+    margin-block-end: 27px;
+
+    .contact-form__label {
+      margin-block-end: 15px;
+    }
+  }
+
+  &__full {
+    grid-column: 1 / -1;
+  }
+
+  &__input {
+    height: 38px;
+    font-size: rem(11px);
+  }
+
+  &__switch {
+    margin-block-end: 34px;
+    font-size: rem(13px);
+    line-height: 20px;
+  }
+
+  &__btn {
+    height: 36px;
+    font-size: rem(13px);
+  }
+
+  &__copy {
+    margin-block-start: auto;
+    font-size: rem(13px);
+  }
+
+  // photo fills the right half edge to edge
+  &__media {
+    flex: 1;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+// sign in: single-column fields, eye toggle, forgot link
+.auth {
+  &__fields--stack {
+    grid-template-columns: minmax(0, 1fr);
+    margin-block-end: 8px;
+  }
+
+  &__input--password {
+    padding-inline-end: 52px;
+  }
+
+  &__eye {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: var(--slate-800);
+    font-size: rem(18px);
+    line-height: 1;
+  }
+
+  &__forgot {
+    font-size: rem(12px);
+    line-height: 18px;
+  }
+
+  &__fields--stack + div + &__switch {
+    margin-block-start: 24px;
+  }
+}
+
+// forget password: title drops lower, one field straight into the switch line
+.auth {
+  &__title--low {
+    margin-block-start: 98px;
+  }
+
+  &__fields--single {
+    margin-block-end: 27px;
+  }
+}
+
+// verify email: six single-digit pills, resend line under the button
+.auth {
+  &__title--mid {
+    margin-block-start: 77px;
+  }
+
+  &__fields--otp {
+    margin-block-end: 28px;
+  }
+
+  &__otp {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  &__otp-box {
+    width: 100%;
+    height: 37px;
+    border: 1px solid var(--slate-100);
+    border-radius: 50rem;
+    background-color: var(--slate-25);
+    color: var(--slate-800);
+    font-size: rem(12px);
+    text-align: center;
+    outline: 0;
+    transition: border-color 0.2s linear, background-color 0.2s linear;
+
+    &::placeholder {
+      color: var(--slate-500);
+    }
+
+    &:focus {
+      border-color: var(--main-600);
+      background-color: hsl(var(--white));
+    }
+  }
+
+  &__switch--after {
+    margin-block-start: 33px;
+  }
+}
+
+// new password: title a little closer under Back Now
+.auth__title--near {
+  margin-block-start: 64px;
+}
+
+// keeps the design's line break in the longer intro copy
+.auth__text--narrow {
+  max-width: 430px;
+}
+/* auth pages end */

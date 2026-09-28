@@ -1,0 +1,46 @@
+<!-- ======================================== Verify email start =================================== -->
+<!-- same split layout as the other auth pages (.auth) -->
+<main class="auth d-flex">
+    <div class="auth__panel d-flex flex-column">
+        <a href="index.html" class="auth__logo d-inline-flex align-self-start"><img src="assets/images/logo/logo.png" alt="eCommex"></a>
+
+        <div class="auth__body">
+            <a href="javascript:history.back()" class="auth__back d-inline-flex align-items-center tw-gap-2 text-main-600 font-heading fw-semibold"><i class="ph ph-arrow-left"></i>Back Now</a>
+            <h1 class="auth__title auth__title--mid fw-semibold text-slate-800">Please check your email!</h1>
+            <p class="auth__text text-slate-600">We have emailed a 6-digit confirmation code to example@gmail, please enter the code in below box to verify your email.</p>
+
+            <form action="#" class="auth__form form-submit">
+                <div class="auth__fields auth__fields--stack auth__fields--otp">
+                    <div>
+                        <label for="verify-email" class="contact-form__label d-block text-slate-800">Email Address</label>
+                        <input type="email" id="verify-email" class="contact-form__input auth__input" value="example@gmail.com" autocomplete="email" required>
+                    </div>
+                    <div>
+                        <span class="contact-form__label d-block text-slate-800" id="verify-otp-label">Enter OTP</span>
+                        <!-- one digit per box; main.js moves focus along and spreads a pasted code -->
+                        <div class="auth__otp" role="group" aria-labelledby="verify-otp-label" data-otp>
+                        <input type="text" class="auth__otp-box" inputmode="numeric" pattern="[0-9]" maxlength="1" placeholder="-" aria-label="Digit 1" autocomplete="one-time-code" required>
+                        <input type="text" class="auth__otp-box" inputmode="numeric" pattern="[0-9]" maxlength="1" placeholder="-" aria-label="Digit 2" autocomplete="one-time-code" required>
+                        <input type="text" class="auth__otp-box" inputmode="numeric" pattern="[0-9]" maxlength="1" placeholder="-" aria-label="Digit 3" autocomplete="one-time-code" required>
+                        <input type="text" class="auth__otp-box" inputmode="numeric" pattern="[0-9]" maxlength="1" placeholder="-" aria-label="Digit 4" autocomplete="one-time-code" required>
+                        <input type="text" class="auth__otp-box" inputmode="numeric" pattern="[0-9]" maxlength="1" placeholder="-" aria-label="Digit 5" autocomplete="one-time-code" required>
+                        <input type="text" class="auth__otp-box" inputmode="numeric" pattern="[0-9]" maxlength="1" placeholder="-" aria-label="Digit 6" autocomplete="one-time-code" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-flex align-items-center justify-content-center w-100 rounded-pill auth__btn py-0 font-heading fw-semibold" data-block="button">
+                    <span class="button__flair"></span>
+                    <span class="button__label">Verify Email</span>
+                </button>
+                <p class="auth__switch auth__switch--after text-slate-600 mb-0">Don’t have a code? <button type="button" class="text-orange-600 hover-text-main-600">Resend Code</button></p>
+            </form>
+        </div>
+
+        <p class="auth__copy text-slate-600 mb-0">Copyright © 2026 <a href="index.html" class="text-orange-600">eCommex</a>. All rights reserved.</p>
+    </div>
+
+    <div class="auth__media d-none d-lg-block">
+        <img src="assets/images/thumbs/auth/verify-email.jpg" alt="Woman in a black hat carrying shopping bags" class="w-100 h-100">
+    </div>
+</main>
+<!-- ======================================== Verify email end =================================== -->

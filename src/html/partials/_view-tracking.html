@@ -1,0 +1,407 @@
+<!-- ======================================== View tracking start =================================== -->
+<section class="view-tracking">
+    <div class="container container-two">
+        <!-- order header -->
+        <div class="vt-header bg-slate-25 border border-slate-100 d-flex align-items-center justify-content-between flex-wrap">
+            <div>
+                <h1 class="vt-header__title fw-semibold text-main-two-600">Order Tracking</h1>
+                <p class="vt-header__text text-slate-800">Track your Food’s order journey from production to delivery</p>
+                <ul class="vt-header__meta d-flex align-items-center flex-wrap list-unstyled mb-0">
+                    <li class="d-flex align-items-center"><i class="ph ph-package text-main-600"></i><span class="text-slate-600">Order ID :</span> <strong class="fw-semibold text-slate-800">WH-2024-785632</strong></li>
+                    <li class="d-flex align-items-center"><i class="ph-fill ph-calendar-check text-main-600"></i><span class="text-slate-600">Order Date :</span> <strong class="fw-semibold text-slate-800">March 15, 2026</strong></li>
+                    <li class="d-flex align-items-center"><i class="ph ph-package text-main-600"></i><span class="text-slate-600">Est. Delivery :</span> <strong class="fw-semibold text-slate-800">April 22, 2026</strong></li>
+                </ul>
+            </div>
+            <div class="vt-header__actions d-flex align-items-center flex-wrap">
+                <a href="contact-us.html" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-2 rounded-pill vt-header__btn vt-header__btn--contact py-0 fw-semibold" data-block="button">
+                    <span class="button__flair"></span>
+                    <i class="ph ph-messenger-logo tw-text-base position-relative"></i>
+                    <span class="button__label">Contact Supplier</span>
+                </a>
+                <a href="javascript:void(0)" class="btn btn-outline-main hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-2 rounded-pill vt-header__btn vt-header__btn--invoice py-0 font-heading fw-semibold" data-block="button">
+                    <span class="button__flair"></span>
+                    <i class="ph ph-download-simple tw-text-base position-relative"></i>
+                    <span class="button__label">Download Invoice</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="vt-layout">
+            <div class="vt-main d-flex flex-column">
+                <!-- order journey: 5-step progress + current status -->
+                <div class="vt-card bg-slate-25 border border-slate-100">
+                    <div class="vt-card__head d-flex align-items-center justify-content-between flex-wrap tw-gap-2">
+                        <h2 class="vt-card__title fw-semibold text-main-two-600 mb-0">Order Journey</h2>
+                        <span class="vt-card__note text-slate-800">Last updated: 2 hours ago</span>
+                    </div>
+                    <ol class="vt-steps list-unstyled">
+                        <li class="vt-step is-done">
+                            <span class="vt-step__dot"><i class="ph-bold ph-check"></i></span>
+                            <span class="vt-step__name d-block text-slate-800">Order Placed</span>
+                            <span class="vt-step__time d-block text-slate-600">Mar 15, 10:35 AM</span>
+                        </li>
+                        <li class="vt-step is-done">
+                            <span class="vt-step__dot"><i class="ph-bold ph-check"></i></span>
+                            <span class="vt-step__name d-block text-slate-800">Payment Confirmed</span>
+                            <span class="vt-step__time d-block text-slate-600">Mar 15, 02:14 PM</span>
+                        </li>
+                        <li class="vt-step is-current" aria-current="step">
+                            <span class="vt-step__dot"><i class="ph ph-package"></i></span>
+                            <span class="vt-step__name d-block text-slate-800">Packaging</span>
+                            <span class="vt-step__time d-block text-slate-600">In Progress</span>
+                        </li>
+                        <!-- the line into the next step is already lit while it's on its way -->
+                        <li class="vt-step is-next">
+                            <span class="vt-step__dot"><i class="ph ph-truck"></i></span>
+                            <span class="vt-step__name d-block text-slate-800">Shipped</span>
+                            <span class="vt-step__time d-block text-slate-600">Pending</span>
+                        </li>
+                        <li class="vt-step">
+                            <span class="vt-step__dot"><i class="ph ph-house-simple"></i></span>
+                            <span class="vt-step__name d-block text-slate-800">Delivered</span>
+                            <span class="vt-step__time d-block text-slate-600">Pending</span>
+                        </li>
+                    </ol>
+                    <div class="vt-status d-flex align-items-start bg-white">
+                        <span class="vt-status__icon flex-shrink-0 rounded-circle bg-yellow-600 text-main-two-600 d-flex align-items-center justify-content-center"><i class="ph ph-info"></i></span>
+                        <div>
+                            <h3 class="vt-status__title fw-semibold text-main-two-600">Current Status: Packaging Phase</h3>
+                            <p class="vt-status__text text-slate-600">Your order has successfully passed our rigorous quality check! Our team is now carefully packaging your products to ensure they arrive in perfect condition. This process typically takes 1-2 business days.</p>
+                            <p class="vt-status__eta d-flex align-items-center mb-0 text-slate-600"><i class="ph-fill ph-clock text-main-600"></i>Expected to ship within : <strong class="fw-semibold text-slate-800">24-48 hours</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- detailed activity log: newest first, dashed line between dots -->
+                <div class="vt-card bg-slate-25 border border-slate-100">
+                    <h2 class="vt-card__title vt-card__title--log fw-semibold text-main-two-600">Detailed Activity Log</h2>
+                    <ol class="vt-log list-unstyled mb-0">
+                        <li class="vt-log__item">
+                            <span class="vt-log__dot"><i class="ph-bold ph-check"></i></span>
+                            <div class="vt-log__head d-flex justify-content-between flex-wrap">
+                                <h3 class="vt-log__title fw-semibold text-main-two-600 mb-0">Quality Check Completed</h3>
+                                <time class="vt-log__time text-slate-800" datetime="2026-03-28T14:30">Mar 28, 2:30 PM</time>
+                            </div>
+                            <p class="vt-log__text text-slate-600 mb-0">All 500 units have been inspected and approved by our quality assurance team. Products meet all specified standards and requirements.</p>
+                            <div class="vt-log__tags d-flex flex-wrap">
+                                <span class="vt-log__tag bg-white rounded-pill text-slate-800">Approved</span>
+                                <span class="vt-log__tag bg-white rounded-pill text-slate-800">500 Unit</span>
+                            </div>
+                        </li>
+                        <li class="vt-log__item">
+                            <span class="vt-log__dot"><i class="ph-bold ph-check"></i></span>
+                            <div class="vt-log__head d-flex justify-content-between flex-wrap">
+                                <h3 class="vt-log__title fw-semibold text-main-two-600 mb-0">Production Completed</h3>
+                                <time class="vt-log__time text-slate-800" datetime="2026-03-27T17:45">Mar 27, 5:45 PM</time>
+                            </div>
+                            <p class="vt-log__text text-slate-600 mb-0">Manufacturing process finished successfully. All items produced according to specifications and moved to quality control department.</p>
+                            <ul class="vt-log__meta list-unstyled mb-0">
+                                <li><strong>Production Manager :</strong> Sarah Chen</li>
+                                <li><strong>Factory Location :</strong> Guangzhou, China</li>
+                            </ul>
+                        </li>
+                        <li class="vt-log__item">
+                            <span class="vt-log__dot"><i class="ph-bold ph-check"></i></span>
+                            <div class="vt-log__head d-flex justify-content-between flex-wrap">
+                                <h3 class="vt-log__title fw-semibold text-main-two-600 mb-0">Production Update</h3>
+                                <time class="vt-log__time text-slate-800" datetime="2026-03-22T11:20">Mar 22, 11:20 AM</time>
+                            </div>
+                            <p class="vt-log__text text-slate-600 mb-0">Production is 75% complete. Estimated completion within 5 days. All materials are in stock and production is on schedule.</p>
+                            <div class="vt-log__progress" role="progressbar" aria-label="Production progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span style="width: 50%"></span></div>
+                        </li>
+                        <li class="vt-log__item">
+                            <span class="vt-log__dot"><i class="ph-bold ph-check"></i></span>
+                            <div class="vt-log__head d-flex justify-content-between flex-wrap">
+                                <h3 class="vt-log__title fw-semibold text-main-two-600 mb-0">Production Started</h3>
+                                <time class="vt-log__time text-slate-800" datetime="2026-03-16T09:00">Mar 16, 9:00 AM</time>
+                            </div>
+                            <p class="vt-log__text text-slate-600 mb-0">The manufacturing process has officially begun. Raw materials have been allocated, and the production line is now fully set up for your order, ensuring timely delivery to meet your needs.</p>
+                        </li>
+                        <li class="vt-log__item">
+                            <span class="vt-log__dot"><i class="ph-bold ph-check"></i></span>
+                            <div class="vt-log__head d-flex justify-content-between flex-wrap">
+                                <h3 class="vt-log__title fw-semibold text-main-two-600 mb-0">Payment Confirmed</h3>
+                                <time class="vt-log__time text-slate-800" datetime="2026-03-15T11:15">Mar 15, 11:15 AM</time>
+                            </div>
+                            <p class="vt-log__text text-slate-600 mb-0">Payment of $12,450.00 received and verified. Order moved to production queue.</p>
+                            <p class="vt-log__meta vt-log__meta--icon d-flex align-items-center mb-0"><i class="ph ph-checks text-main-600"></i><strong>Payment Method :</strong>&nbsp;Wire Transfer</p>
+                        </li>
+                        <li class="vt-log__item vt-log__item--first">
+                            <span class="vt-log__dot"><i class="ph-bold ph-check"></i></span>
+                            <div class="vt-log__head d-flex justify-content-between flex-wrap">
+                                <h3 class="vt-log__title fw-semibold text-main-two-600 mb-0">Order Placed</h3>
+                                <time class="vt-log__time text-slate-800" datetime="2026-03-15T10:30">Mar 15, 10:30 AM</time>
+                            </div>
+                            <p class="vt-log__text text-slate-600 mb-0">Order successfully placed and confirmed by supplier. Order details sent to your email.</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- shipping information -->
+                <div class="vt-card bg-slate-25 border border-slate-100">
+                    <h2 class="vt-card__title vt-card__title--spaced fw-semibold text-main-two-600">Shipping Information</h2>
+                    <div class="vt-address-grid">
+                        <div class="vt-address d-flex align-items-start bg-white border border-slate-100">
+                            <span class="vt-address__icon flex-shrink-0 rounded-circle bg-main-600 text-white d-flex align-items-center justify-content-center"><i class="ph ph-map-pin"></i></span>
+                            <div>
+                                <h3 class="vt-address__title fw-semibold text-slate-800">Shipping Address</h3>
+                                <p class="vt-address__company text-slate-800">Anderson Wholesale Inc.</p>
+                                <address class="vt-address__lines text-slate-600">1234 Commerce Street, Suite 500,<br>New York, NY 10012,<br>United States</address>
+                                <ul class="vt-log__meta list-unstyled mb-0">
+                                    <li><strong>Contact :</strong> +1 (555) 123-4567</li>
+                                    <li><strong>Email :</strong> demo@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="vt-address d-flex align-items-start bg-white border border-slate-100">
+                            <span class="vt-address__icon flex-shrink-0 rounded-circle bg-main-600 text-white d-flex align-items-center justify-content-center"><i class="ph ph-buildings"></i></span>
+                            <div>
+                                <h3 class="vt-address__title fw-semibold text-slate-800">Supplier Information</h3>
+                                <p class="vt-address__company text-slate-800">Global Food’s Manufacturing Co.</p>
+                                <address class="vt-address__lines text-slate-600">789 Industrial Park Road,<br>Guangzhou, Guangdong 510000,<br>China</address>
+                                <ul class="vt-log__meta list-unstyled mb-0">
+                                    <li><strong>Contact :</strong> +1 (555) 123-4567</li>
+                                    <li><strong>Email :</strong> demo@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vt-carrier bg-white border border-slate-100">
+                        <div class="vt-carrier__head d-flex align-items-center justify-content-between flex-wrap tw-gap-2">
+                            <h3 class="vt-address__title fw-semibold text-slate-800 mb-0">Carrier Details</h3>
+                            <span class="vt-carrier__badge d-inline-flex align-items-center rounded-pill bg-main-50 text-main-600"><i class="ph-fill ph-clock"></i>Awaiting Shipment</span>
+                        </div>
+                        <dl class="vt-carrier__row d-flex justify-content-between flex-wrap mb-0">
+                            <div><dt>Carrier Name</dt><dd>To be assigned</dd></div>
+                            <span class="vt-carrier__divider" aria-hidden="true"></span>
+                            <div><dt>Tracking Number</dt><dd>Will be available soon</dd></div>
+                            <span class="vt-carrier__divider" aria-hidden="true"></span>
+                            <div class="text-end"><dt>Shipping Method</dt><dd>Express Air Freight</dd></div>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- order items + totals -->
+                <div class="vt-card bg-slate-25 border border-slate-100">
+                    <h2 class="vt-card__title vt-card__title--spaced fw-semibold text-main-two-600">Order Items</h2>
+                    <ul class="vt-items list-unstyled">
+                        <li class="vt-item d-flex align-items-start">
+                            <span class="vt-item__thumb flex-shrink-0 bg-white border border-slate-100"><img src="assets/images/thumbs/products/wireless-headphones.png" alt="Wireless Headphones"></span>
+                            <div class="flex-grow-1">
+                                <h3 class="vt-item__name fw-medium text-slate-800">Wireless Headphones</h3>
+                                <span class="vt-item__sku d-block text-slate-600">SKU: WH-BT-5000-BLK</span>
+                                <p class="vt-item__meta d-flex flex-wrap mb-0"><span><strong>Quantity :</strong> 200 units</span><span><strong>Unit Price :</strong> $45.00</span></p>
+                            </div>
+                            <div class="text-end flex-shrink-0">
+                                <span class="vt-item__price d-block text-orange-600">$211.70</span>
+                                <span class="vt-item__stock d-inline-flex align-items-center text-main-600"><i class="ph ph-checks"></i>In Stock</span>
+                            </div>
+                        </li>
+                        <li class="vt-item d-flex align-items-start">
+                            <span class="vt-item__thumb flex-shrink-0 bg-white border border-slate-100"><img src="assets/images/thumbs/products/solar-mono-panel.png" alt="Solar Mono Panel"></span>
+                            <div class="flex-grow-1">
+                                <h3 class="vt-item__name fw-medium text-slate-800">Solar Mono Panel</h3>
+                                <span class="vt-item__sku d-block text-slate-600">SKU: WH-BT-5000-DFL</span>
+                                <p class="vt-item__meta d-flex flex-wrap mb-0"><span><strong>Quantity :</strong> 200 units</span><span><strong>Unit Price :</strong> $45.00</span></p>
+                            </div>
+                            <div class="text-end flex-shrink-0">
+                                <span class="vt-item__price d-block text-orange-600">$211.70</span>
+                                <span class="vt-item__stock d-inline-flex align-items-center text-main-600"><i class="ph ph-checks"></i>In Stock</span>
+                            </div>
+                        </li>
+                        <li class="vt-item d-flex align-items-start">
+                            <span class="vt-item__thumb flex-shrink-0 bg-white border border-slate-100"><img src="assets/images/thumbs/products/red-ball-gown.png" alt="Red Ball Gown Dress"></span>
+                            <div class="flex-grow-1">
+                                <h3 class="vt-item__name fw-medium text-slate-800">Red Ball Gown Dress</h3>
+                                <span class="vt-item__sku d-block text-slate-600">SKU: WH-BT-5000-BLK</span>
+                                <p class="vt-item__meta d-flex flex-wrap mb-0"><span><strong>Quantity :</strong> 200 units</span><span><strong>Unit Price :</strong> $45.00</span></p>
+                            </div>
+                            <div class="text-end flex-shrink-0">
+                                <span class="vt-item__price d-block text-orange-600">$211.70</span>
+                                <span class="vt-item__stock d-inline-flex align-items-center text-main-600"><i class="ph ph-checks"></i>In Stock</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <dl class="vt-totals bg-white mb-0">
+                        <div><dt>Base Price</dt><dd>$45</dd></div>
+                        <div><dt>State Tax</dt><dd>$2.50</dd></div>
+                        <div><dt>Shipping</dt><dd>Free</dd></div>
+                        <div><dt>Discount</dt><dd>-$9</dd></div>
+                        <div class="vt-totals__total"><dt>Total</dt><dd class="text-main-600">$39.50</dd></div>
+                    </dl>
+                </div>
+            </div>
+
+            <aside class="vt-side d-flex flex-column">
+                <!-- quick summary -->
+                <div class="vt-card vt-card--side bg-slate-25 border border-slate-100">
+                    <h2 class="vt-card__title fw-semibold text-main-two-600">Quick Summary</h2>
+                    <dl class="vt-summary">
+                        <div><dt>Order Status</dt><dd><span class="vt-summary__badge bg-white rounded-pill text-main-600">Packaging</span></dd></div>
+                        <div><dt>Total Items</dt><dd>500 units</dd></div>
+                        <div><dt>Order Value</dt><dd>$18,450.00</dd></div>
+                        <div><dt>Payment Status</dt><dd class="d-flex align-items-center tw-gap-1 text-main-600"><i class="ph-fill ph-check-circle vt-summary__paid"></i>Paid</dd></div>
+                        <div><dt>Est. Delivery</dt><dd class="vt-summary__date font-heading fw-semibold text-main-600">Apr 22, 2026</dd></div>
+                    </dl>
+                    <div class="d-flex flex-column tw-gap-2">
+                        <a href="contact-us.html" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-flex align-items-center justify-content-center tw-gap-2 w-100 rounded-pill vt-card__btn py-0 font-heading fw-semibold" data-block="button">
+                            <span class="button__flair"></span>
+                            <i class="ph ph-messenger-logo tw-text-base position-relative"></i>
+                            <span class="button__label">Message Supplier</span>
+                        </a>
+                        <a href="tel:3165550116" class="btn btn-outline-main hover-style-two button--stroke tw-duration-100 d-flex align-items-center justify-content-center tw-gap-2 w-100 rounded-pill vt-card__btn py-0 font-heading fw-semibold" data-block="button">
+                            <span class="button__flair"></span>
+                            <i class="ph ph-phone-call tw-text-base position-relative"></i>
+                            <span class="button__label">Request Call Back</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- supplier -->
+                <div class="vt-card vt-card--side bg-slate-25 border border-slate-100">
+                    <div class="vt-supplier d-flex align-items-center">
+                        <img src="assets/images/thumbs/avatars/global-foods.png" alt="Global Food’s Manufacturing Co." class="vt-supplier__avatar flex-shrink-0 rounded-circle">
+                        <div>
+                            <h3 class="vt-supplier__name fw-semibold text-slate-800">Global Food’s Manufacturing Co.</h3>
+                            <div class="vt-supplier__rating d-flex align-items-center">
+                                <span class="d-inline-flex text-yellow-600" aria-label="Rated 4.5 out of 5"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star-half"></i></span>
+                                <span class="text-slate-600">(35.36k reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="vt-supplier__list list-unstyled">
+                        <li><i class="ph ph-seal-check"></i>Verified Supplier</li>
+                        <li><i class="ph ph-shield-star"></i>12+ Years in Business</li>
+                        <li><i class="ph ph-shield-check"></i>Trade Assurance Protected</li>
+                    </ul>
+                    <a href="javascript:void(0)" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-flex align-items-center justify-content-center tw-gap-2 w-100 rounded-pill vt-card__btn py-0 font-heading fw-semibold" data-block="button">
+                        <span class="button__flair"></span>
+                        <i class="ph ph-user tw-text-base position-relative"></i>
+                        <span class="button__label">View Supplier Profile</span>
+                    </a>
+                </div>
+
+                <!-- need help -->
+                <div class="vt-card vt-card--side bg-slate-25 border border-slate-100">
+                    <h2 class="vt-card__title vt-card__title--list fw-semibold text-main-two-600">Need Help?</h2>
+                    <ul class="vt-links list-unstyled mb-0">
+                        <li>
+                            <a href="javascript:void(0)" class="vt-link vt-link--orange d-flex align-items-center bg-white">
+                                <span class="vt-link__icon"><i class="ph ph-headset"></i></span>
+                                <span class="flex-grow-1">
+                                    <span class="vt-link__title d-block text-slate-800">Live Chat Support</span>
+                                    <span class="vt-link__text d-block text-slate-600">Available 24/7</span>
+                                </span>
+                                <i class="ph ph-caret-right vt-link__arrow"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="faq.html" class="vt-link vt-link--green d-flex align-items-center bg-white">
+                                <span class="vt-link__icon"><i class="ph ph-question"></i></span>
+                                <span class="flex-grow-1">
+                                    <span class="vt-link__title d-block text-slate-800">FAQs</span>
+                                    <span class="vt-link__text d-block text-slate-600">Common questions</span>
+                                </span>
+                                <i class="ph ph-caret-right vt-link__arrow"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html" class="vt-link vt-link--yellow d-flex align-items-center bg-white">
+                                <span class="vt-link__icon"><i class="ph ph-file-text"></i></span>
+                                <span class="flex-grow-1">
+                                    <span class="vt-link__title d-block text-slate-800">Report Issue</span>
+                                    <span class="vt-link__text d-block text-slate-600">Resolution center</span>
+                                </span>
+                                <i class="ph ph-caret-right vt-link__arrow"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- quick actions -->
+                <div class="vt-card vt-card--side bg-slate-25 border border-slate-100">
+                    <h2 class="vt-card__title vt-card__title--list fw-semibold text-main-two-600">Quick Actions</h2>
+                    <ul class="vt-links list-unstyled mb-0">
+                        <li>
+                            <button type="button" class="vt-link vt-link--action d-flex align-items-center w-100 bg-white">
+                                <span class="vt-link__icon"><i class="ph ph-download-simple"></i></span>
+                                <span class="vt-link__title text-slate-800">Download Invoice</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="vt-link vt-link--action vt-link--green d-flex align-items-center w-100 bg-white">
+                                <span class="vt-link__icon"><i class="ph ph-file-pdf"></i></span>
+                                <span class="vt-link__title text-slate-800">Export Order Details</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="vt-link vt-link--action vt-link--yellow d-flex align-items-center w-100 bg-white">
+                                <span class="vt-link__icon"><i class="ph ph-share-network"></i></span>
+                                <span class="vt-link__title text-slate-800">Share Tracking Link</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- recent orders (full width) -->
+        <div class="vt-card vt-recent bg-slate-25 border border-slate-100">
+            <h2 class="vt-card__title vt-card__title--spaced fw-semibold text-main-two-600">Recent Orders</h2>
+            <div class="vt-recent__grid">
+                <div class="vt-order bg-white border border-slate-100">
+                    <div class="d-flex align-items-center justify-content-between tw-gap-2">
+                        <span class="vt-order__sku text-slate-600">#SKU: WH-BT-5000-BLK</span>
+                        <span class="vt-order__badge rounded-pill">Delivered</span>
+                    </div>
+                    <div class="vt-order__product d-flex align-items-center">
+                        <span class="vt-order__thumb flex-shrink-0 bg-white border border-slate-100"><img src="assets/images/thumbs/products/macbook-m83.png" alt="MacBook M83"></span>
+                        <div>
+                            <h3 class="vt-order__name fw-semibold text-slate-800">MacBook M83</h3>
+                            <span class="vt-order__units d-block text-slate-600">300 units</span>
+                        </div>
+                    </div>
+                    <div class="vt-order__foot d-flex align-items-center justify-content-between">
+                        <span class="text-slate-600">Delivered on</span>
+                        <strong class="fw-semibold text-slate-800">Mar 10, 2026</strong>
+                    </div>
+                </div>
+                <div class="vt-order bg-white border border-slate-100">
+                    <div class="d-flex align-items-center justify-content-between tw-gap-2">
+                        <span class="vt-order__sku text-slate-600">#SKU: WH-BT-5000-BLK</span>
+                        <span class="vt-order__badge rounded-pill">Delivered</span>
+                    </div>
+                    <div class="vt-order__product d-flex align-items-center">
+                        <span class="vt-order__thumb flex-shrink-0 bg-white border border-slate-100"><img src="assets/images/thumbs/products/wrist-watch-c8.png" alt="Wrist Watch C-8"></span>
+                        <div>
+                            <h3 class="vt-order__name fw-semibold text-slate-800">Wrist Watch C-8</h3>
+                            <span class="vt-order__units d-block text-slate-600">300 units</span>
+                        </div>
+                    </div>
+                    <div class="vt-order__foot d-flex align-items-center justify-content-between">
+                        <span class="text-slate-600">Delivered on</span>
+                        <strong class="fw-semibold text-slate-800">Feb 28, 2026</strong>
+                    </div>
+                </div>
+                <div class="vt-order bg-white border border-slate-100">
+                    <div class="d-flex align-items-center justify-content-between tw-gap-2">
+                        <span class="vt-order__sku text-slate-600">#SKU: WH-BT-5000-BLK</span>
+                        <span class="vt-order__badge vt-order__badge--transit rounded-pill">In Transit</span>
+                    </div>
+                    <div class="vt-order__product d-flex align-items-center">
+                        <span class="vt-order__thumb flex-shrink-0 bg-white border border-slate-100"><img src="assets/images/thumbs/products/running-shoe-a9.png" alt="Running Shoe A9"></span>
+                        <div>
+                            <h3 class="vt-order__name fw-semibold text-slate-800">Running Shoe A9</h3>
+                            <span class="vt-order__units d-block text-slate-600">300 units</span>
+                        </div>
+                    </div>
+                    <div class="vt-order__foot d-flex align-items-center justify-content-between">
+                        <span class="text-slate-600">Delivered on</span>
+                        <strong class="fw-semibold text-slate-800">Apr 18, 2026</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======================================== View tracking end =================================== -->

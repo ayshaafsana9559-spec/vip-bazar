@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="EduAll, Social Media, and Digital Marketing Agency HTML Template. Fully responsive, creative design, and easy to customize. Ideal for EduAll agencies, marketing firms, and startups.">
+  <meta name="keywords"
+    content="EduAll HTML Template, Digital Marketing, Social Media Agency, Marketing Template, Advertising Agency, Creative Agency, Bootstrap, Responsive">
+  <meta name="robots" content="INDEX,FOLLOW">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>EduAll HTML Template</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo/favicon.png" type="image/png">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <!--==================== Preloader Start ====================-->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!--==================== Preloader End ====================-->
+
+  <!-- ========================== Settings Panel start ==================================== -->
+<div class="settings-panel position-fixed top-50 translate-middle-y tw-z-999 d-flex align-items-center">
+  <button type="button"
+    class="settings-button tw-w-12 tw-h-12 bg-main-600 text-white hover-bg-main-800 tw-duration-100 d-flex justify-content-center align-items-center">
+    <i class="ph-fill ph-gear-six setting-icon tw-text-2xl tw-leading-none animation-rotate tw-w-6 tw-h-6"></i>
+    <i class="ph-bold ph-x close-icon tw-text-2xl tw-leading-none tw-w-6 tw-h-6"></i>
+  </button>
+
+  <div class="settings-panel__content bg-white tw-px-6 tw-py-13 d-flex flex-column tw-gap-10 scroll-sm overflow-y-auto">
+    <div class="d-flex flex-column tw-gap-10">
+      <div class="">
+        <h6 class="settings-panel__title text-center tw-mb-6 text-uppercase">
+          Cursor
+        </h6>
+        <div class="settings-panel__buttons cursor__buttons d-flex tw-gap-4">
+          <button type="button"
+            class="settings-panel__button cursor-animate bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active">
+            Animate
+          </button>
+          <button type="button"
+            class="settings-panel__button cursor-default bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1">
+            Default
+          </button>
+        </div>
+      </div>
+      <div class="">
+        <h6 class="settings-panel__title text-center tw-mb-6 text-uppercase">
+          Direction
+        </h6>
+        <div class="settings-panel__buttons d-flex tw-gap-4">
+          <button type="button"
+            class="settings-panel__button direction-ltr bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1 active">
+            LTR
+          </button>
+          <button type="button"
+            class="settings-panel__button direction-rtl bg-main-two-600 hover-bg-main-600 tw-duration-300 text-white tw-text-base tw-py-305 tw-px-3 fw-medium active-scale-094 flex-grow-1">
+            RTL
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ========================== Settings Panel end ==================================== -->
+
+  <!--==================== Overlay Start ====================-->
+  <div class="overlay"></div>
+  <!--==================== Overlay End ====================-->
+
+  <!--==================== Sidebar Overlay End ====================-->
+  <div class="side-overlay"></div>
+  <!--==================== Sidebar Overlay End ====================-->
+
+  <!-- Custom Toast Message start -->
+  <div id="toast-container"></div>
+  <!-- Custom Toast Message End -->
+
+  <!-- ==================== Scroll to Top End Here ==================== -->
+  <div class="progress-wrap cursor-big">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- ==================== Scroll to Top End Here ==================== -->
+
+  <!-- Custom Cursor Start -->
+  <div class="cursor"></div>
+  <span class="dot"></span>
+  <!-- Custom Cursor End -->
+
+  <!-- ==================== Mobile Menu Start Here ==================== -->
+<div class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ">
+
+    <button type="button" class="close-button position-absolute tw-end-0 top-0 tw-me-2 tw-mt-2 tw-w-605 tw-h-605 rounded-circle d-flex justify-content-center align-items-center text-neutral-900 bg-neutral-200 hover-bg-neutral-900 hover-text-white"> 
+        <i class="ph ph-x"></i>
+    </button>
+
+    <div class="mobile-menu__inner">
+        <a href="index.html" class="mobile-menu__logo">
+            <img src="assets/images/logo/logo.png" alt="Logo">
+        </a>
+        <div class="mobile-menu__menu">
+            <!-- Nav menu Start -->
+<ul class="nav-menu d-lg-flex align-items-center nav-menu--mobile d-block tw-mt-8">
+  <li class="nav-menu__item activePage">
+    <a href="index.html" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100">Home</a>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Browsed Products</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="products.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Products</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="products-details.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Product Details</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="cart.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Cart</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="address.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Billing &amp; Address</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="checkout.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Checkout</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="top-catagories.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Top Categories</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Recently Viewed</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Best Sellers</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          New Arrivals</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Pages</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="about-us.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          About Us</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="sing-up.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Register</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="faq.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          FAQ</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="blog.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Blog</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="blog-details.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Blog Details</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Shops</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Shop Grid</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Product Details</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Cart</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item">
+    <a href="contact-us.html" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100">Contact Us</a>
+  </li>
+</ul>
+<!-- Nav menu End  -->
+
+        </div>
+    </div>
+</div>
+<!-- ==================== Mobile Menu End Here ==================== -->
+
+    <!-- ============================ Top header Start ============================ -->
+<div class="top-header top-header--gradient">
+    <div class="container container-two">
+        <div class="top-header__inner d-flex align-items-center justify-content-between tw-gap-6">
+            <div class="d-flex align-items-center tw-gap-505">
+                <a href="tel:2085550112" class="top-header__link d-flex align-items-center tw-gap-2 text-white">
+                    <i class="ph ph-phone-call tw-text-base tw-leading-none"></i>
+                    (208) 555-0112
+                </a>
+                <a href="mailto:demo@gmail.com" class="top-header__link d-md-flex d-none align-items-center tw-gap-2 text-white">
+                    <i class="ph ph-envelope-open tw-text-base tw-leading-none"></i>
+                    demo@gmail.com
+                </a>
+            </div>
+
+            <a href="javascript:void(0)" class="top-header__link d-xl-flex d-none align-items-center tw-gap-305 text-white">
+                Free delivery &amp; 40% Discount for next 3 orders!
+                <i class="ph ph-arrow-up-right tw-text-base tw-leading-none"></i>
+            </a>
+
+            <div class="d-flex align-items-center tw-gap-5">
+                <a href="order-tracking.html" class="top-header__link d-sm-flex d-none align-items-center tw-gap-2 text-white">
+                    <i class="ph ph-truck tw-text-lg tw-leading-none"></i>
+                    Tracking Orders
+                </a>
+                <span class="top-header__divider d-sm-block d-none"></span>
+                <!-- Language select -->
+                <div class="custom-select dropdown">
+                    <select name="language" class="custom-select__native visually-hidden" tabindex="-1" aria-hidden="true">
+                        <option value="en" selected>English</option>
+                        <option value="bn">বাংলা</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="es">Español</option>
+                    </select>
+                    <button type="button" class="custom-select__toggle top-header__link d-flex align-items-center tw-gap-105 text-white" data-bs-toggle="dropdown" data-bs-offset="0,14" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language">
+                        <img src="assets/images/icons/flag-uk.png" alt="English" class="custom-select__image tw-w-505 tw-h-505 rounded-circle">
+                        <span class="custom-select__value">EN</span>
+                        <i class="custom-select__caret ph ph-caret-down tw-text-sm tw-leading-none"></i>
+                    </button>
+                    <ul class="custom-select__menu dropdown-menu dropdown-menu-end" role="listbox" aria-label="Language">
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item active" role="option" aria-selected="true" data-value="en" data-label="EN" data-image="assets/images/icons/flag-uk.png" data-alt="English">
+                                <img src="assets/images/icons/flag-uk.png" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">English</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="bn" data-label="BN" data-image="assets/images/icons/flag-bd.svg" data-alt="বাংলা">
+                                <img src="assets/images/icons/flag-bd.svg" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">বাংলা</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="fr" data-label="FR" data-image="assets/images/icons/flag-fr.svg" data-alt="Français">
+                                <img src="assets/images/icons/flag-fr.svg" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">Français</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="de" data-label="DE" data-image="assets/images/icons/flag-de.svg" data-alt="Deutsch">
+                                <img src="assets/images/icons/flag-de.svg" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">Deutsch</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="es" data-label="ES" data-image="assets/images/icons/flag-es.svg" data-alt="Español">
+                                <img src="assets/images/icons/flag-es.svg" alt="" class="custom-select__flag">
+                                <span class="flex-grow-1">Español</span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <span class="top-header__divider"></span>
+                <!-- Currency select -->
+                <div class="custom-select dropdown">
+                    <select name="currency" class="custom-select__native visually-hidden" tabindex="-1" aria-hidden="true">
+                        <option value="usd" selected>USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="gbp">GBP</option>
+                        <option value="bdt">BDT</option>
+                    </select>
+                    <button type="button" class="custom-select__toggle top-header__link d-flex align-items-center tw-gap-105 text-white" data-bs-toggle="dropdown" data-bs-offset="0,14" aria-haspopup="listbox" aria-expanded="false" aria-label="Select currency">
+                        <span class="custom-select__value">USD</span>
+                        <i class="custom-select__caret ph ph-caret-down tw-text-sm tw-leading-none"></i>
+                    </button>
+                    <ul class="custom-select__menu dropdown-menu dropdown-menu-end" role="listbox" aria-label="Currency">
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item active" role="option" aria-selected="true" data-value="usd" data-label="USD">
+                                <span class="custom-select__symbol">$</span>
+                                <span class="flex-grow-1">USD <span class="custom-select__hint">US Dollar</span></span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="eur" data-label="EUR">
+                                <span class="custom-select__symbol">€</span>
+                                <span class="flex-grow-1">EUR <span class="custom-select__hint">Euro</span></span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="gbp" data-label="GBP">
+                                <span class="custom-select__symbol">£</span>
+                                <span class="flex-grow-1">GBP <span class="custom-select__hint">British Pound</span></span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                        <li role="none">
+                            <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="bdt" data-label="BDT">
+                                <span class="custom-select__symbol">৳</span>
+                                <span class="flex-grow-1">BDT <span class="custom-select__hint">Taka</span></span>
+                                <i class="custom-select__check ph-bold ph-check"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================ Top header End ============================ -->
+
+
+    <!-- ==================== Header (inner pages) Start Here ==================== -->
+<header class="header header--inner tw-transition-all tw-z-99">
+  <!-- Header Middle Start -->
+  <div class="header-middle bg-white">
+    <div class="container container-two">
+      <div class="header-middle__inner d-flex align-items-center tw-gap-6">
+        <!-- Logo Start -->
+        <div class="logo flex-shrink-0">
+          <a href="index.html" class="link d-flex">
+            <img src="assets/images/logo/logo.png" alt="eCommex">
+          </a>
+        </div>
+        <!-- Logo End  -->
+
+        <!-- Search Start -->
+        <form action="#" class="header-search max-w-806-px w-100 bg-slate-25 border border-slate-100 rounded-pill d-lg-flex d-none align-items-center">
+          <!-- Category select -->
+          <div class="custom-select dropdown flex-shrink-0">
+            <select name="category" class="custom-select__native visually-hidden" tabindex="-1" aria-hidden="true">
+              <option value="" selected>All Categories</option>
+              <option value="electronics">Electronics</option>
+              <option value="fashion">Fashion</option>
+              <option value="accessories">Accessories</option>
+              <option value="footwear">Footwear</option>
+              <option value="industrial">Industrial</option>
+              <option value="kitchen">Kitchen</option>
+              <option value="beauty">Beauty</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="furniture">Furniture</option>
+            </select>
+            <button type="button" class="custom-select__toggle d-flex align-items-center tw-gap-2 text-slate-800 tw-text-sm hover-text-main-600" data-bs-toggle="dropdown" data-bs-offset="-21,16" aria-haspopup="listbox" aria-expanded="false" aria-label="Select category">
+              <span class="custom-select__value custom-select__value--truncate">Category</span>
+              <i class="custom-select__caret ph ph-caret-down tw-text-sm tw-leading-none"></i>
+            </button>
+            <ul class="custom-select__menu custom-select__menu--lg dropdown-menu scroll-sm" role="listbox" aria-label="Category">
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item active" role="option" aria-selected="true" data-value="" data-label="Category">
+                  <i class="custom-select__icon ph ph-squares-four"></i>
+                  <span class="flex-grow-1">All Categories</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="electronics" data-label="Electronics">
+                  <img src="assets/images/icons/category/electronics.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Electronics</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="fashion" data-label="Fashion">
+                  <img src="assets/images/icons/category/fashion.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Fashion</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="accessories" data-label="Accessories">
+                  <img src="assets/images/icons/category/accessories.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Accessories</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="footwear" data-label="Footwear">
+                  <img src="assets/images/icons/category/footwear.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Footwear</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="industrial" data-label="Industrial">
+                  <img src="assets/images/icons/category/industrial.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Industrial</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="kitchen" data-label="Kitchen">
+                  <img src="assets/images/icons/category/kitchen.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Kitchen</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="beauty" data-label="Beauty">
+                  <img src="assets/images/icons/category/beauty.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Beauty</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="healthcare" data-label="Healthcare">
+                  <img src="assets/images/icons/category/healthcare.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Healthcare</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+              <li role="none">
+                <button type="button" class="custom-select__option dropdown-item" role="option" aria-selected="false" data-value="furniture" data-label="Furniture">
+                  <img src="assets/images/icons/category/furniture.png" alt="" class="custom-select__thumb">
+                  <span class="flex-grow-1">Furniture</span>
+                  <i class="custom-select__check ph-bold ph-check"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <span class="header-search__divider flex-shrink-0"></span>
+          <input type="text" class="header-search__input flex-grow-1 bg-transparent border-0 focus-outline-0 text-slate-800 tw-text-sm" placeholder="Search hare...">
+          <button type="submit" class="btn btn-main-two hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center rounded-pill flex-shrink-0 tw-h-705 tw-px-405 py-0 font-heading fw-semibold tw-text-13-px" data-block="button">
+            <span class="button__flair"></span>
+            <span class="button__label">Search</span>
+          </button>
+        </form>
+        <!-- Search End -->
+
+        <!-- Header Right Start -->
+        <div class="d-flex align-items-center tw-gap-205 flex-shrink-0 ms-auto">
+          <div class="header-actions d-flex align-items-center">
+            <button type="button" class="header-action tw-w-11 tw-h-11 bg-white border border-slate-100 rounded-circle d-flex justify-content-center align-items-center text-heading tw-text-xl position-relative hover-bg-main-600 hover-text-white" aria-label="Search">
+              <i class="ph ph-magnifying-glass"></i>
+            </button>
+            <a href="javascript:void(0)" class="header-action tw-w-11 tw-h-11 bg-white border border-slate-100 rounded-circle d-flex justify-content-center align-items-center text-heading tw-text-xl position-relative hover-bg-main-600 hover-text-white" aria-label="Wishlist">
+              <i class="ph ph-heart"></i>
+              <span class="header-action__badge tw-w-6 tw-h-6 rounded-circle bg-green-600 text-white d-flex justify-content-center align-items-center position-absolute font-heading fw-semibold tw-text-sm">5</span>
+            </a>
+            <a href="javascript:void(0)" class="header-action tw-w-11 tw-h-11 bg-white border border-slate-100 rounded-circle d-flex justify-content-center align-items-center text-heading tw-text-xl position-relative hover-bg-main-600 hover-text-white" aria-label="Cart">
+              <i class="ph ph-shopping-cart-simple"></i>
+              <span class="header-action__badge tw-w-6 tw-h-6 rounded-circle bg-orange-600 text-white d-flex justify-content-center align-items-center position-absolute font-heading fw-semibold tw-text-sm">1</span>
+            </a>
+          </div>
+          <a href="sing-up.html" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-sm-inline-flex d-none align-items-center justify-content-center tw-gap-105 rounded-pill tw-h-11 tw-px-7 py-0 font-heading fw-semibold tw-text-13-px" data-block="button">
+            <span class="button__flair"></span>
+            <span class="button__label">Register</span>
+            <i class="ph ph-arrow-up-right tw-text-base position-relative"></i>
+          </a>
+          <button type="button" class="toggle-mobileMenu d-lg-none tw-leading-none text-heading tw-text-9 tw-ms-2" aria-label="Open menu">
+            <i class="ph ph-list"></i>
+          </button>
+        </div>
+        <!-- Header Right End -->
+      </div>
+    </div>
+  </div>
+  <!-- Header Middle End -->
+
+  <!-- Header Nav Start -->
+  <div class="header-nav bg-slate-25 border-top border-bottom border-slate-100 d-lg-block d-none">
+    <div class="container container-two">
+      <div class="header-nav__inner d-flex align-items-center justify-content-between tw-gap-6">
+        <div class="d-flex align-items-center h-100">
+          <div class="dropdown h-100">
+            <button type="button" class="header-nav__categories h-100 d-flex align-items-center tw-gap-105 tw-px-6 border-start border-end border-slate-100 text-heading tw-text-sm fw-medium hover-text-main-600" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="ph ph-squares-four tw-text-lg tw-leading-none"></i>
+              Categories
+              <i class="ph ph-caret-down tw-text-sm tw-leading-none"></i>
+            </button>
+            <ul class="dropdown-menu tw-text-sm">
+              <li><a class="dropdown-item" href="javascript:void(0)">Electronics</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Fashion</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Accessories</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Footwear</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Industrial</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Kitchen</a></li>
+            </ul>
+          </div>
+          <div class="header-menu tw-ps-6">
+            <!-- Nav menu Start -->
+<ul class="nav-menu d-lg-flex align-items-center tw-gap-5">
+  <li class="nav-menu__item activePage">
+    <a href="index.html" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100">Home</a>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Browsed Products</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="products.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Products</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="products-details.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Product Details</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="cart.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Cart</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="address.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Billing &amp; Address</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="checkout.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Checkout</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="top-catagories.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Top Categories</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Recently Viewed</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Best Sellers</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          New Arrivals</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Pages</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="about-us.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          About Us</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="sing-up.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Register</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="faq.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          FAQ</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="blog.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Blog</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="blog-details.html"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Blog Details</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100 tw-pe-405">Shops</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Shop Grid</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Product Details</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="javascript:void(0)"
+          class="nav-submenu__link hover-bg-slate-50 text-heading tw-text-sm w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Cart</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-menu__item">
+    <a href="contact-us.html" class="nav-menu__link text-slate-600 tw-text-sm tw-py-3 w-100">Contact Us</a>
+  </li>
+</ul>
+<!-- Nav menu End  -->
+
+          </div>
+        </div>
+        <ul class="d-flex align-items-center tw-gap-505">
+          <li><a href="privacy-policy.html" class="text-slate-600 tw-text-sm hover-text-main-600">Refund Policy</a></li>
+          <li><a href="faq.html" class="text-slate-600 tw-text-sm hover-text-main-600">Support &amp; FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Header Nav End -->
+</header>
+<!-- ==================== Header (inner pages) End Here ==================== -->
+
+
+    <!-- ======================================== 419 error start =================================== -->
+<section class="error-page text-center">
+    <div class="container container-two">
+        <img src="assets/images/thumbs/errors/419.svg" alt="419 Page Has Expired" class="error-page__art">
+        <h1 class="error-page__title fw-semibold text-slate-800">Sorry, Your Session Has Expired</h1>
+        <p class="error-page__text text-slate-600 mx-auto">Oops! It seems your session has expired unexpectedly. Please contact your system administrator for assistance.</p>
+        <a href="index.html" class="btn btn-outline-main hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-2 rounded-pill error-page__btn py-0 font-heading fw-semibold" data-block="button">
+            <span class="button__flair"></span>
+            <i class="ph ph-arrow-left tw-text-base position-relative"></i>
+            <span class="button__label">Back To Home</span>
+        </a>
+    </div>
+</section>
+<!-- ======================================== 419 error end =================================== -->
+
+
+    <!-- ==================== Footer Three Start Here ==================== -->
+<footer class="footer footer--three bg-main-two-600 mt-auto">
+  <!-- Top row: help line, logo, socials -->
+  <div class="container container-two">
+    <div class="footer__top d-flex align-items-center justify-content-between flex-wrap">
+      <a href="tel:3025550107" class="footer__help d-flex align-items-center text-white">
+        <span class="footer__help-label">Need Any Help? :</span>
+        <span class="footer__help-phone">(302) 555-0107</span>
+      </a>
+      <a href="index.html" class="footer__logo d-inline-flex">
+        <img src="assets/images/logo/logo-white.png" alt="eCommex">
+      </a>
+      <div class="d-flex align-items-center">
+        <span class="footer__help-label text-white">Follow Us On :</span>
+        <ul class="footer__socials d-flex align-items-center">
+          <li><a href="https://www.facebook.com" class="footer__social" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a></li>
+          <li><a href="https://www.instagram.com" class="footer__social" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a></li>
+          <li><a href="https://www.pinterest.com" class="footer__social" aria-label="Pinterest"><i class="ph ph-pinterest-logo"></i></a></li>
+          <li><a href="https://www.twitch.tv" class="footer__social" aria-label="Twitch"><i class="ph ph-twitch-logo"></i></a></li>
+          <li><a href="https://www.linkedin.com" class="footer__social" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main footer -->
+  <div class="footer__main">
+    <div class="container container-two">
+      <div class="footer__grid footer__grid--three">
+        <div>
+          <h4 class="footer__title">About Us</h4>
+          <p class="footer__text text-slate-200">We provide a reliable online platform where users can discover products.</p>
+          <p class="footer__text text-slate-200">Shop with confidence, and enjoy seamless customer support.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Quick Link</h4>
+          <ul class="footer__links">
+            <li><a href="javascript:void(0)">Home</a></li>
+            <li><a href="javascript:void(0)">About Us</a></li>
+            <li><a href="javascript:void(0)">Browse Deals</a></li>
+            <li><a href="javascript:void(0)">Stores</a></li>
+            <li><a href="javascript:void(0)">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Shop Link</h4>
+          <ul class="footer__links">
+            <li><a href="javascript:void(0)">Product</a></li>
+            <li><a href="javascript:void(0)">Single Product</a></li>
+            <li><a href="javascript:void(0)">Cart</a></li>
+            <li><a href="javascript:void(0)">Billing &amp; Address</a></li>
+            <li><a href="javascript:void(0)">Payment</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Authentication</h4>
+          <ul class="footer__links">
+            <li><a href="javascript:void(0)">Sign Up</a></li>
+            <li><a href="javascript:void(0)">Sign In</a></li>
+            <li><a href="javascript:void(0)">Forgot Password</a></li>
+            <li><a href="javascript:void(0)">Verified Mail</a></li>
+            <li><a href="javascript:void(0)">New Password</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <span class="footer__text d-block text-slate-200">Send Us Email</span>
+          <a href="mailto:demo@gmail.com" class="footer__contact-value d-inline-block text-white hover-text-main-600">demo@gmail.com</a>
+          <span class="footer__text d-block text-slate-200">Visit Our Location</span>
+          <address class="footer__contact-value text-white mb-0">1901 Thornridge Cir.<br>Hawaii 54126</address>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Newsletter</h4>
+          <p class="footer__text text-slate-200">Subscribe our newsletter to get our latest update &amp; news</p>
+          <form action="#" class="footer__newsletter form-submit">
+            <input type="email" class="footer__newsletter-input" placeholder="Email address" aria-label="Email address" required>
+            <button type="submit" class="footer__newsletter-btn" aria-label="Subscribe"><i class="ph-fill ph-paper-plane-tilt"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar (gradient) -->
+  <div class="footer__bottom">
+    <div class="container container-two">
+      <div class="footer__bottom-inner d-flex align-items-center justify-content-between flex-wrap tw-gap-4">
+        <p class="text-white tw-text-sm">Copyright &copy; 2026 <a href="index.html" class="text-yellow-600 hover-underline">eCommex.</a> All rights reserved.</p>
+        <ul class="footer__payments d-flex align-items-center flex-wrap tw-gap-2">
+          <li><img src="assets/images/icons/payments-light/discover.png" alt="Discover"></li>
+          <li><img src="assets/images/icons/payments-light/visa.png" alt="Visa"></li>
+          <li><img src="assets/images/icons/payments-light/mastercard.png" alt="Mastercard"></li>
+          <li><img src="assets/images/icons/payments-light/diners.png" alt="Diners Club"></li>
+          <li><img src="assets/images/icons/payments-light/amex.png" alt="American Express"></li>
+          <li><img src="assets/images/icons/payments-light/stripe.png" alt="Stripe"></li>
+          <li><img src="assets/images/icons/payments-light/maestro.png" alt="Maestro"></li>
+          <li><img src="assets/images/icons/payments-light/paypal.png" alt="PayPal"></li>
+          <li><img src="assets/images/icons/payments-light/gpay.png" alt="Google Pay"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ==================== Footer Three End Here ==================== -->
+
+
+    <!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- phosphor Js -->
+<script src="assets/js/phosphor-icon.js"></script>
+<!-- Bootstrap Bundle Js -->
+<script src="assets/js/boostrap.bundle.min.js"></script>
+<!-- aos -->
+<script src="assets/js/aos.js"></script>
+
+<!-- GSAP js -->
+<script src="assets/js/gsap.min.js"></script>
+<!-- SplitText -->
+<script src="assets/js/SplitText.min.js"></script>
+<!-- Scroll Trigger -->
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<!-- custom GSAP -->
+<script src="assets/js/custom-gsap.js"></script>
+
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="407" height="366" viewBox="0 0 330 297">
+  <!-- soft backdrop -->
+  <path d="M14 70 C 34 36, 92 26, 150 36 C 206 46, 250 44, 290 70 C 330 96, 336 150, 318 196 C 300 240, 250 286, 180 292 C 112 298, 40 276, 14 226 C -8 184, -6 104, 14 70 Z" fill="#F5F5F6"/>
+
+  <!-- hand: palm + thumb (behind the phone) -->
+  <path d="M104 162 C 108 120, 120 86, 130 58 C 134 46, 146 44, 146 58 C 146 80, 142 104, 150 118 L 244 150 L 238 176 C 214 186, 180 190, 160 196 C 140 204, 126 210, 104 162 Z" fill="#F6926B"/>
+
+  <!-- phone -->
+  <rect x="150" y="2" width="88" height="171" rx="12" fill="#fff" stroke="#6F4FF7" stroke-width="4"/>
+  <rect x="186" y="7" width="10" height="3" rx="1.5" fill="#1D1D2B"/>
+  <circle cx="200" cy="8.5" r="1.5" fill="#1D1D2B"/>
+
+  <!-- card -->
+  <rect x="172" y="13" width="109" height="69" rx="3" fill="#6F4FF7"/>
+  <rect x="183" y="25" width="13" height="13" rx="2.5" fill="#FDC20A"/>
+  <path d="M188 25 V38 M183 31.5 H196" stroke="#E6A800" stroke-width="1"/>
+  <g stroke="#fff" stroke-width="2" stroke-linecap="round">
+    <path d="M181 52 H192 M199 52 H214 M221 52 H236 M243 52 H266"/>
+    <path d="M181 68 H200 M206 68 H225 M247 68 H252 M258 68 H266"/>
+  </g>
+
+  <!-- error mark -->
+  <circle cx="193" cy="107" r="17.5" fill="#215ADA"/>
+  <path d="M186 100 L200 114 M200 100 L186 114" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+  <rect x="158" y="133" width="71" height="15" rx="7.5" fill="#215ADA"/>
+  <text x="193.5" y="144.3" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="10.5" fill="#fff" text-anchor="middle" letter-spacing=".4">EROR</text>
+
+  <!-- fingers wrapping the phone's right edge -->
+  <g fill="#F6926B">
+    <rect x="232" y="78" width="20" height="14" rx="7"/>
+    <rect x="232" y="98" width="20" height="14" rx="7"/>
+    <rect x="232" y="124" width="18" height="14" rx="7"/>
+  </g>
+
+  <!-- yellow sleeve with cuff -->
+  <path d="M84 162 C 104 172, 126 182, 140 196 C 150 206, 152 214, 144 222 C 128 238, 118 262, 106 290 C 100 300, 86 298, 76 290 C 56 272, 32 262, 20 250 C 10 240, 12 226, 24 218 C 44 204, 64 186, 84 162 Z" fill="#FCC418"/>
+  <path d="M68 180 C 92 196, 118 212, 132 226" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="123" cy="218" r="4" fill="#fff"/>
+</svg>

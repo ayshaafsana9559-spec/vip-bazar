@@ -1,0 +1,81 @@
+<!-- Comments start -->
+<div class="bd-comments bg-slate-25 border border-slate-100">
+    <h2 class="bd-comments__title fw-semibold text-slate-800">Comments <span class="fw-normal text-slate-600">(16)</span></h2>
+
+    <!-- comment editor (toolbar is visual only) -->
+    <form action="#" class="form-submit" id="comment-form">
+        <div class="bd-editor bg-white border border-slate-100">
+            <div class="bd-editor__bar d-flex align-items-center justify-content-between flex-wrap">
+                <div class="d-flex align-items-center tw-gap-2">
+                    <button type="button" class="bd-editor__select d-inline-flex align-items-center bg-white">Text Size <i class="ph ph-caret-down"></i></button>
+                    <button type="button" class="bd-editor__select d-inline-flex align-items-center bg-white">Poppins <i class="ph ph-caret-down"></i></button>
+                </div>
+                <div class="bd-editor__tools d-flex align-items-center" role="toolbar" aria-label="Formatting">
+                    <button type="button" aria-label="Italic"><i class="ph ph-text-italic"></i></button>
+                    <button type="button" aria-label="Bold"><i class="ph ph-text-b"></i></button>
+                    <button type="button" aria-label="Bulleted list"><i class="ph ph-list-bullets"></i></button>
+                    <button type="button" aria-label="Align left"><i class="ph ph-text-align-left"></i></button>
+                    <button type="button" aria-label="Align center"><i class="ph ph-text-align-center"></i></button>
+                    <button type="button" aria-label="Align right"><i class="ph ph-text-align-right"></i></button>
+                    <button type="button" aria-label="Insert link"><i class="ph ph-link"></i></button>
+                    <button type="button" aria-label="Keyboard shortcuts"><i class="ph ph-keyboard"></i></button>
+                    <button type="button" aria-label="Full screen"><i class="ph ph-arrows-out"></i></button>
+                </div>
+            </div>
+            <textarea class="bd-editor__input w-100" placeholder="Write your comments..." aria-label="Write your comment" required></textarea>
+        </div>
+        <div class="bd-editor__foot d-flex align-items-center justify-content-between flex-wrap">
+            <div class="bd-editor__attach d-flex align-items-center">
+                <button type="button" aria-label="Add emoji"><i class="ph ph-smiley"></i></button>
+                <button type="button" aria-label="Take photo"><i class="ph ph-camera"></i></button>
+                <button type="button" aria-label="Add image"><i class="ph ph-image"></i></button>
+                <button type="button" aria-label="Add video"><i class="ph ph-video-camera"></i></button>
+                <button type="button" aria-label="Attach from drive"><i class="ph ph-google-drive-logo"></i></button>
+            </div>
+            <button type="submit" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center rounded-pill bd-comments__btn py-0 font-heading fw-semibold" data-block="button">
+                <span class="button__flair"></span>
+                <span class="button__label">Submit Comment</span>
+            </button>
+        </div>
+    </form>
+
+    <!-- threads: each comment's replies sit inside it, joined by a line from its avatar -->
+    <ul class="bd-threads list-unstyled mb-0">
+        <li class="bd-thread">
+            <div class="bd-comment">
+                @@include('../partials/_blog-comment-body.html', { "avatar": "avatar-2", "name": "Jerome Bell", "time": "20 hours ago", "likeTone": "text-slate-800", "text": "This speaker has become my favorite for any event, offering exceptional quality and deep, vibrant tones that fill the room with rich sound. Its sleek design and durable build make it perfect for both indoor." })
+                <div class="bd-comment">
+                    @@include('../partials/_blog-comment-body.html', { "avatar": "client-5", "name": "Kathryn Murphy", "time": "16 hours ago", "likeTone": "text-main-600", "text": "This speaker has become my favorite for any event, offering exceptional quality and deep, Its sleek design and durable build make it perfect for both indoor." })
+                    <div class="bd-comment">
+                        @@include('../partials/_blog-comment-body.html', { "avatar": "floyd-miles", "name": "Jacob Jones", "time": "12 hours ago", "likeTone": "text-slate-800", "text": "This speaker has become my favorite for any event, offering exceptional quality and deep, vibrant tones that fill the room with rich sound." })
+                        <form action="#" class="bd-reply position-relative form-submit">
+                            <input type="text" class="bd-reply__input w-100 bg-white rounded-pill" placeholder="Enter reply..." aria-label="Write a reply" required>
+                            <button type="submit" class="bd-reply__btn position-absolute rounded-circle bg-main-600 text-white" aria-label="Send reply"><i class="ph ph-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="bd-thread">
+            <div class="bd-comment">
+                @@include('../partials/_blog-comment-body.html', { "avatar": "client-2", "name": "Brooklyn Simmons", "time": "20 hours ago", "likeTone": "text-slate-800", "text": "This speaker has become my favorite for any event, offering exceptional quality and deep, vibrant tones that fill the room with rich sound. Its sleek design and durable build make it perfect for both indoor." })
+                <div class="bd-comment">
+                    @@include('../partials/_blog-comment-body.html', { "avatar": "avatar-3", "name": "Bessie Cooper", "time": "16 hours ago", "likeTone": "text-main-600", "text": "This speaker has become my favorite for any event, offering exceptional quality and deep, Its sleek design and durable build make it perfect for both indoor." })
+                    <div class="bd-comment">
+                        @@include('../partials/_blog-comment-body.html', { "avatar": "dianne-russell", "name": "Floyd Miles", "time": "12 hours ago", "likeTone": "text-slate-800", "text": "This speaker has become my favorite for any event, offering exceptional quality and deep, vibrant tones that fill the room with rich sound." })
+                        <form action="#" class="bd-reply position-relative form-submit">
+                            <input type="text" class="bd-reply__input w-100 bg-white rounded-pill" placeholder="Enter reply..." aria-label="Write a reply" required>
+                            <button type="submit" class="bd-reply__btn position-absolute rounded-circle bg-main-600 text-white" aria-label="Send reply"><i class="ph ph-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <a href="#comment-form" class="btn btn-main hover-style-one button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center rounded-pill bd-comments__btn bd-comments__btn--end py-0 font-heading fw-semibold" data-block="button">
+        <span class="button__flair"></span>
+        <span class="button__label">Submit Comment</span>
+    </a>
+</div>
+<!-- Comments end -->

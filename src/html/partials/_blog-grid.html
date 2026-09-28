@@ -1,0 +1,48 @@
+<!-- ======================================== Blog grid start =================================== -->
+<section class="blog-page">
+    <div class="container container-two">
+        <div class="blog-page__head d-flex align-items-end justify-content-between flex-wrap">
+            <div>
+                <span class="blog-page__tagline d-block">Latest Industry Insights</span>
+                <h1 class="blog-page__title section-title fw-semibold text-main-two-600 mb-0">Stay Updated With The Latest e-commerce Trends</h1>
+            </div>
+            <p class="blog-page__text text-slate-600">We take pride in delivering exceptional products, reliable service, and a seamless shopping experience. Read genuine reviews from customers who trust eCommex for quality, value, and satisfaction with every purchase.</p>
+        </div>
+        <!-- cards reuse the index-3 style post -->
+        <div class="blog-grid">
+            <div class="blog-grid__item">
+                @@include('../partials/_style-post.html', { "image": "style-1", "day": "26", "month": "Dec, 2026", "tag": "Exclusive", "title": "Top Fashion Trends You Need to Try This Season", "avatar": "annette-black", "author": "Annette Black", "comments": "216" })
+            </div>
+            <div class="blog-grid__item is-active">
+                @@include('../partials/_style-post.html', { "image": "style-2", "day": "26", "month": "Dec, 2026", "tag": "Exclusive", "title": "How to Style Your Outfits for Every Occasion", "avatar": "theresa-webb", "author": "Theresa Webb", "comments": "216" })
+            </div>
+            <div class="blog-grid__item">
+                @@include('../partials/_style-post.html', { "image": "style-3", "day": "26", "month": "Dec, 2026", "tag": "Exclusive", "title": "Best Summer Looks That Will Turn Every Head", "avatar": "devon-lane", "author": "Devon Lane", "comments": "216" })
+            </div>
+            <div class="blog-grid__item">
+                @@include('../partials/_style-post.html', { "image": "style-4", "day": "26", "month": "Dec, 2026", "tag": "Exclusive", "title": "Build the Perfect Wardrobe With These Simple Tips", "avatar": "guy-hawkins", "author": "Guy Hawkins", "comments": "216" })
+            </div>
+            <div class="blog-grid__item">
+                @@include('../partials/_style-post.html', { "image": "blog-1", "day": "26", "month": "Dec, 2026", "tag": "Exclusive", "title": "Top Smart Gadgets Worth Buying This Season", "avatar": "guy-hawkins", "author": "Guy Hawkins", "comments": "216" })
+            </div>
+            <div class="blog-grid__item">
+                @@include('../partials/_style-post.html', { "image": "blog-2", "day": "26", "month": "Dec, 2026", "tag": "Exclusive", "title": "Essential Shopping Tips For Better Online Deals", "avatar": "guy-hawkins", "author": "Guy Hawkins", "comments": "216" })
+            </div>
+            <div class="blog-grid__item">
+                @@include('../partials/_style-post.html', { "image": "blog-3", "day": "26", "month": "Dec, 2026", "tag": "Exclusive", "title": "Latest Tech Accessories Every Modern Lifestyle Needs", "avatar": "guy-hawkins", "author": "Guy Hawkins", "comments": "216" })
+            </div>
+            <div class="blog-grid__item">
+                @@include('../partials/_style-post.html', { "image": "blog-4", "day": "26", "month": "Dec, 2026", "tag": "Exclusive", "title": "How To Save More During Flash Sale Events", "avatar": "guy-hawkins", "author": "Guy Hawkins", "comments": "216" })
+            </div>
+        </div>
+        <nav class="shop-pagination top-categories__pagination d-flex align-items-center justify-content-center" aria-label="Blog pages">
+            <a href="javascript:void(0)" class="shop-pagination__item" aria-label="Previous page"><i class="ph ph-caret-left"></i></a>
+            <a href="javascript:void(0)" class="shop-pagination__item">1</a>
+            <a href="javascript:void(0)" class="shop-pagination__item active" aria-current="page">2</a>
+            <a href="javascript:void(0)" class="shop-pagination__item">3</a>
+            <span class="shop-pagination__item">...</span>
+            <a href="javascript:void(0)" class="shop-pagination__item shop-pagination__item--filled" aria-label="Next page"><i class="ph ph-caret-right"></i></a>
+        </nav>
+    </div>
+</section>
+<!-- ======================================== Blog grid end =================================== -->

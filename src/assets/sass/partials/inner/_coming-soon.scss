@@ -1,0 +1,126 @@
+/* coming soon page start */
+// orange → black → blue → purple, used for the ring edges, the numbers and the socials
+$soon-gradient: linear-gradient(90deg, var(--yellow-600) 0%, var(--orange-600) 12%, var(--main-two-600) 45%, var(--main-600) 75%, var(--purple-600) 100%);
+
+.soon {
+  min-height: 100vh;
+  padding-block: 60px;
+
+  &__title {
+    margin-block-end: 18px;
+    font-size: clamp(2rem, 1.3rem + 1.8vw, 2.75rem);
+    line-height: 1.2;
+  }
+
+  &__text {
+    max-width: 530px;
+    margin-block-end: 45px;
+    font-size: rem(14px);
+    line-height: 1.55;
+  }
+
+  &__timer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 246px));
+    justify-content: center;
+    gap: 32px 40px;
+    margin-block-end: 52px;
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(4, 246px);
+    }
+  }
+
+  &__form {
+    max-width: 539px;
+    margin-block-end: 27px;
+  }
+
+  &__input {
+    height: 48px;
+    padding-inline: 26px 130px;
+    border: 1px solid var(--main-400);
+    color: var(--slate-800);
+    font-size: rem(13px);
+    outline: 0;
+    transition: border-color 0.2s linear;
+
+    &::placeholder {
+      color: var(--slate-500);
+    }
+
+    &:focus {
+      border-color: var(--main-600);
+    }
+  }
+
+  &__btn {
+    top: 5px;
+    right: 5px;
+    height: 38px;
+    padding-inline: 21px;
+    font-size: rem(13px);
+  }
+
+  &__socials {
+    gap: 7px;
+  }
+
+  // gradient ring drawn with a padding-box / border-box background pair
+  &__social {
+    width: 31px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: linear-gradient(hsl(var(--white)), hsl(var(--white))) padding-box, $soon-gradient border-box;
+    color: var(--slate-800);
+    font-size: rem(14px);
+    transition: color 0.2s linear;
+
+    &--active,
+    &:hover {
+      background: $soon-gradient border-box;
+      color: hsl(var(--white));
+    }
+  }
+}
+
+.soon-unit {
+  &__ring {
+    position: relative;
+    width: 246px;
+    max-width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    // white top half, soft tinted bottom half, gradient edge
+    background:
+      linear-gradient(180deg, hsl(var(--white)) 50%, transparent 50%) padding-box,
+      linear-gradient(90deg, #fdf0ea 0%, #f1f1f1 50%, #eef0fd 100%) padding-box,
+      $soon-gradient border-box;
+  }
+
+  &__num {
+    background: $soon-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: clamp(4rem, 2.5rem + 4vw, 7.625rem);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__label {
+    margin-block-start: 24px;
+    font-size: clamp(1.5rem, 1.2rem + 0.8vw, 2rem);
+    line-height: 1.2;
+  }
+}
+/* coming soon page end */

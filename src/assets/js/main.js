@@ -527,6 +527,35 @@
         $(this).addClass("ph-bold ph-eye-closed");
       }
     });
+    // button version (auth pages): <button data-password-toggle="#inputId"><i class="ph ph-eye-slash"></i></button>
+    $("[data-password-toggle]").on("click", function () {
+      let $input = $($(this).data("password-toggle"));
+      let show = $input.attr("type") === "password";
+      $input.attr("type", show ? "text" : "password");
+      $(this).attr({ "aria-pressed": show, "aria-label": show ? "Hide password" : "Show password" });
+      $(this).find("i").toggleClass("ph-eye", show).toggleClass("ph-eye-slash", !show);
+    });
+
+    // OTP boxes: digits only, typing moves forward, backspace on an empty box moves back, a pasted code fills the row
+    $("[data-otp]").each(function () {
+      let $boxes = $(this).find("input");
+      $boxes.on("input", function () {
+        this.value = this.value.replace(/\D/g, "").slice(-1);
+        if (this.value) $boxes.eq($boxes.index(this) + 1).trigger("focus");
+      });
+      $boxes.on("keydown", function (e) {
+        if (e.key === "Backspace" && !this.value) $boxes.eq(Math.max(0, $boxes.index(this) - 1)).trigger("focus");
+      });
+      $boxes.on("paste", function (e) {
+        let digits = (e.originalEvent.clipboardData.getData("text") || "").replace(/\D/g, "").split("");
+        if (!digits.length) return;
+        e.preventDefault();
+        $boxes.slice($boxes.index(this)).each(function (i) {
+          if (digits[i] !== undefined) this.value = digits[i];
+        });
+        $boxes.eq(Math.min($boxes.length - 1, $boxes.index(this) + digits.length)).trigger("focus");
+      });
+    });
     // ========================= Password Show Hide Js End ===========================
 
     // ========================= AOS Js Start ===========================
